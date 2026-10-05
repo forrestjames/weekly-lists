@@ -15,6 +15,10 @@ Each picks file looks like:
   ]
 }
 
+A one-off list can name its own playlist instead of "rob"/"juno":
+  {"list": "dub", "playlist_name": "10 Essential Dub Albums", "items": [...]}
+The playlist is created the first time and reused after that.
+
 Albums go in whole. Tracks go in as single tracks. Order is kept, so
 singles land where they were placed in the list. Anything already in the
 playlist is skipped, so re-running is harmless. Anything Spotify doesn't
@@ -169,13 +173,34 @@ def add_uris(token, playlist_id, uris):
         http("POST", f"{API}/playlists/{playlist_id}/items", token, data={"uris": uris[i:i + ADD_CHUNK]})
 
 
+def find_or_create_playlist(token, name, description=""):
+    url = f"{API}/me/playlists?limit=50"
+    while url:
+        page = http("GET", url, token)
+        for pl in page.get("items", []):
+            if pl and pl.get("name") == name:
+                print(f"Using existing playlist '{name}' ({pl['id']})")
+                return pl["id"]
+        url = page.get("next")
+    pl = http("POST", f"{API}/me/playlists", token,
+              data={"name": name, "description": description, "public": False})
+    print(f"Created playlist '{name}' ({pl['id']})")
+    return pl["id"]
+
+
 def process(token, path, summary):
     with open(path) as f:
         picks = json.load(f)
     which = (picks.get("list") or "").lower()
-    if which not in PLAYLIST_ENV:
-        raise SpotifyError(f"{path}: 'list' must be 'rob' or 'juno', got {which!r}")
-    playlist_id = env(PLAYLIST_ENV[which])
+    if picks.get("playlist_name"):
+        # One-off list with its own playlist, found by name or created.
+        playlist_id = find_or_create_playlist(
+            token, picks["playlist_name"], picks.get("playlist_description", ""))
+        which = which or "custom"
+    elif which in PLAYLIST_ENV:
+        playlist_id = env(PLAYLIST_ENV[which])
+    else:
+        raise SpotifyError(f"{path}: 'list' must be 'rob' or 'juno' (or give a 'playlist_name'), got {which!r}")
 
     already = existing_uris(token, playlist_id)
     to_add, lines, missing = [], [], []
