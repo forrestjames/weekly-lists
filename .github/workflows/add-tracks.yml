@@ -1,0 +1,53 @@
+name: Add picks to Spotify
+
+on:
+  push:
+    paths:
+      - "picks/**/*.json"
+  workflow_dispatch:
+    inputs:
+      files:
+        description: "Picks files to (re)run, space separated, e.g. picks/juno/2026-10-05.json"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  add:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Work out which picks files changed
+        id: files
+        env:
+          BEFORE: ${{ github.event.before }}
+          MANUAL: ${{ github.event.inputs.files }}
+        run: |
+          if [ -n "$MANUAL" ]; then
+            FILES="$MANUAL"
+          elif [ -z "$BEFORE" ] || [ "$BEFORE" = "0000000000000000000000000000000000000000" ]; then
+            FILES=$(git ls-files 'picks/*.json' 'picks/**/*.json' | tr '\n' ' ')
+          else
+            FILES=$(git diff --name-only --diff-filter=AM "$BEFORE" "$GITHUB_SHA" -- 'picks/' | grep '\.json$' | tr '\n' ' ' || true)
+          fi
+          echo "files=$FILES" >> "$GITHUB_OUTPUT"
+          echo "Processing: $FILES"
+
+      - name: Add to playlists
+        if: steps.files.outputs.files != ''
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+          ROB_PLAYLIST_ID: ${{ secrets.ROB_PLAYLIST_ID }}
+          JUNO_PLAYLIST_ID: ${{ secrets.JUNO_PLAYLIST_ID }}
+          FILES: ${{ steps.files.outputs.files }}
+        run: python add_tracks.py $FILES
