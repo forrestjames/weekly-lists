@@ -1,0 +1,18 @@
+{
+  "list": "rob",
+  "date": "2026-10-05",
+  "items": [
+    {"artist": "Helen", "title": "Linda's Head", "kind": "album", "spotify_url": "https://open.spotify.com/album/2wB9detc1PQGC8MmHmQEPg"},
+    {"artist": "nthng", "title": "Last Light of the Sun", "kind": "album", "spotify_url": "https://open.spotify.com/album/2Mo21eA9tvNiWOOE51RHDD"},
+    {"artist": "Sunken Cages", "title": "Neram Pularumbol", "kind": "album"},
+    {"artist": "William Basinski", "title": "Passing the Cup of Sorrows 1.1", "kind": "track", "spotify_url": "https://open.spotify.com/track/4XBabOsUmMQb8N06GQy5hr"},
+    {"artist": "Vanishing Twin", "title": "Archives", "kind": "album", "spotify_url": "https://open.spotify.com/album/4Ljv5I3EQtAZtSw0wZxkob"},
+    {"artist": "J.D. Allen III", "title": "SÖWT", "kind": "album", "spotify_url": "https://open.spotify.com/album/4sb0xNlVbIfBFAVLjeWVEx"},
+    {"artist": "Siavash Amini", "title": "Songs for Sad Poets Vol. III", "kind": "album", "spotify_url": "https://open.spotify.com/album/7iLOGmvw49UOoNZnhunm49"},
+    {"artist": "Adriano Zanni", "title": "Post Dub Cities", "kind": "album"},
+    {"artist": "DjRUM", "title": "Psychic Video", "kind": "album", "spotify_url": "https://open.spotify.com/album/0fhgHKYgm2Mwpq0d2i8bF4"},
+    {"artist": "Tasgeelat Al-Husni", "title": "Shell and Core", "kind": "album", "spotify_url": "https://open.spotify.com/album/4agoblFfRJKduMhfcrWYzV"},
+    {"artist": "Jan Prax", "title": "Traces of Light", "kind": "album", "spotify_url": "https://open.spotify.com/album/5oYf3kx38Kc5eFuSaV6Pi6"},
+    {"artist": "Ava Mendoza", "title": "Alive Alone, Alive Together", "kind": "album", "spotify_url": "https://open.spotify.com/album/73fZwSCTGKSNv4Xn6cCdpH"}
+  ]
+}
