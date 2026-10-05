@@ -1,0 +1,16 @@
+{
+  "list": "juno",
+  "date": "2026-10-05",
+  "items": [
+    {"artist": "Jon Hassell", "title": "Music Is Invisible (Pentimento Volume Three)", "kind": "album", "spotify_url": "https://open.spotify.com/album/7y6nrogjpYO43Z0V1Gdlq8"},
+    {"artist": "Maria W Horn", "title": "Melting Pillars of Snow", "kind": "album", "spotify_url": "https://open.spotify.com/album/6hnBPFkeCokEbke3GtRmzI"},
+    {"artist": "Allison de Groot & Rich Ruth", "title": "Allison de Groot & Rich Ruth", "kind": "album", "spotify_url": "https://open.spotify.com/album/78GCLznGXkzJVxtllgeNFw"},
+    {"artist": "C'mon Tigre", "title": "Lumina", "kind": "album", "spotify_url": "https://open.spotify.com/album/0kUx2VJ5zFrxfxjsMjYimW"},
+    {"artist": "Bullion", "title": "Nearly", "kind": "album", "spotify_url": "https://open.spotify.com/album/0XpKZlGWTpea5gidjWsuuN"},
+    {"artist": "Kaitlyn Aurelia Smith", "title": "Ruin: It's Not Just Music", "kind": "album", "spotify_url": "https://open.spotify.com/album/1sYKpHvzVmZxcc2RxiVOk0"},
+    {"artist": "Nao", "title": "Eugene / Save The World", "kind": "album", "spotify_url": "https://open.spotify.com/album/6Dusr0zMg57KbTwHFapiQj"},
+    {"artist": "nthng", "title": "Last Light of the Sun", "kind": "album", "spotify_url": "https://open.spotify.com/album/2Mo21eA9tvNiWOOE51RHDD"},
+    {"artist": "Vanishing Twin", "title": "Archives", "kind": "album", "spotify_url": "https://open.spotify.com/album/4Ljv5I3EQtAZtSw0wZxkob"},
+    {"artist": "Turner Club", "title": "All For Free", "kind": "track"}
+  ]
+}
