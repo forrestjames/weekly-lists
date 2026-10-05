@@ -2,17 +2,58 @@
   "list": "dub",
   "date": "2026-10-05",
   "playlist_name": "10 Essential Dub Albums",
+  "new_playlist": true,
   "playlist_description": "Ten On-U Sound era dub essentials, full albums in list order.",
   "items": [
-    {"artist": "Creation Rebel", "title": "Starship Africa", "kind": "album"},
-    {"artist": "African Head Charge", "title": "My Life in a Hole in the Ground", "kind": "album"},
-    {"artist": "Dub Syndicate", "title": "The Pounding System", "kind": "album"},
-    {"artist": "Creation Rebel", "title": "Psychotic Jonkanoo", "kind": "album"},
-    {"artist": "New Age Steppers", "title": "New Age Steppers", "kind": "album"},
-    {"artist": "Prince Far I", "title": "Cry Tuff Dub Encounter Chapter 1", "kind": "album"},
-    {"artist": "Dub Syndicate", "title": "Tunes from the Missing Channel", "kind": "album"},
-    {"artist": "Tackhead", "title": "Tackhead Tape Time", "kind": "album"},
-    {"artist": "Mark Stewart", "title": "Learning to Cope with Cowardice", "kind": "album"},
-    {"artist": "Adrian Sherwood", "title": "Never Trust a Hippy", "kind": "album"}
+    {
+      "artist": "Creation Rebel",
+      "title": "Starship Africa",
+      "kind": "album"
+    },
+    {
+      "artist": "African Head Charge",
+      "title": "My Life in a Hole in the Ground",
+      "kind": "album"
+    },
+    {
+      "artist": "Dub Syndicate",
+      "title": "The Pounding System",
+      "kind": "album"
+    },
+    {
+      "artist": "Creation Rebel",
+      "title": "Psychotic Jonkanoo",
+      "kind": "album"
+    },
+    {
+      "artist": "New Age Steppers",
+      "title": "New Age Steppers",
+      "kind": "album"
+    },
+    {
+      "artist": "Prince Far I",
+      "title": "Cry Tuff Dub Encounter Chapter 1",
+      "kind": "album"
+    },
+    {
+      "artist": "Dub Syndicate",
+      "title": "Tunes from the Missing Channel",
+      "kind": "album"
+    },
+    {
+      "artist": "Tackhead",
+      "title": "Tackhead Tape Time",
+      "kind": "album"
+    },
+    {
+      "artist": "Mark Stewart",
+      "title": "Learning to Cope with Cowardice",
+      "kind": "album"
+    },
+    {
+      "artist": "Adrian Sherwood",
+      "title": "Never Trust a Hippy",
+      "kind": "album"
+    }
   ]
 }

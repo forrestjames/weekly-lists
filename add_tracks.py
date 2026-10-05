@@ -173,8 +173,8 @@ def add_uris(token, playlist_id, uris):
         http("POST", f"{API}/playlists/{playlist_id}/items", token, data={"uris": uris[i:i + ADD_CHUNK]})
 
 
-def find_or_create_playlist(token, name, description=""):
-    url = f"{API}/me/playlists?limit=50"
+def find_or_create_playlist(token, name, description="", force_new=False):
+    url = None if force_new else f"{API}/me/playlists?limit=50"
     while url:
         page = http("GET", url, token)
         for pl in page.get("items", []):
@@ -195,7 +195,9 @@ def process(token, path, summary):
     if picks.get("playlist_name"):
         # One-off list with its own playlist, found by name or created.
         playlist_id = find_or_create_playlist(
-            token, picks["playlist_name"], picks.get("playlist_description", ""))
+            token, picks["playlist_name"], picks.get("playlist_description", ""),
+            force_new=bool(picks.get("new_playlist")))
+        print(f"::notice title=Playlist::https://open.spotify.com/playlist/{playlist_id}")
         which = which or "custom"
     elif which in PLAYLIST_ENV:
         playlist_id = env(PLAYLIST_ENV[which])
@@ -233,8 +235,10 @@ def process(token, path, summary):
     summary.append("\n".join([header, *lines, ""]))
     print(header)
     print("\n".join(lines))
+    print(f"::notice title=Result::{len(to_add)} tracks added")
     if missing:
         print("Not on Spotify:", "; ".join(missing))
+        print(f"::warning title=Not on Spotify::{'; '.join(missing)}")
 
 
 def main(paths):
