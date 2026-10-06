@@ -27,16 +27,26 @@ ID_RE = re.compile(r"open\.spotify\.com/(album|track)/([A-Za-z0-9]+)")
 
 
 def token():
-    r = requests.post(
-        "https://accounts.spotify.com/api/token",
-        data={"grant_type": "refresh_token",
-              "refresh_token": os.environ["SPOTIFY_REFRESH_TOKEN"]},
-        auth=(os.environ["SPOTIFY_CLIENT_ID"], os.environ["SPOTIFY_CLIENT_SECRET"]),
-        timeout=30)
-    if not r.ok:
-        # Spotify explains the failure in the body (e.g. invalid_grant). No secrets are printed.
-        sys.exit(f"Spotify token request failed {r.status_code}: {r.text[:300]}")
-    return r.json()["access_token"]
+    cid = os.environ["SPOTIFY_CLIENT_ID"].strip()
+    secret = os.environ["SPOTIFY_CLIENT_SECRET"].strip()
+    refresh = os.environ["SPOTIFY_REFRESH_TOKEN"].strip()
+    print(f"Secrets present: id={bool(cid)} (len {len(cid)}), "
+          f"secret={bool(secret)} (len {len(secret)}), refresh={bool(refresh)}")
+    base = {"grant_type": "refresh_token", "refresh_token": refresh}
+    attempts = (
+        ("basic auth", dict(data=base, auth=(cid, secret))),
+        ("credentials in body", dict(data={**base, "client_id": cid, "client_secret": secret})),
+        ("client id only (PKCE)", dict(data={**base, "client_id": cid})),
+    )
+    last = ""
+    for label, kwargs in attempts:
+        r = requests.post("https://accounts.spotify.com/api/token", timeout=30, **kwargs)
+        if r.ok:
+            print(f"Spotify login ok via {label}")
+            return r.json()["access_token"]
+        last = f"{label}: {r.status_code} {r.text[:200]}"
+        print(f"  login failed, {last}")
+    sys.exit(f"Spotify token request failed. Last attempt: {last}")
 
 
 S = requests.Session()
