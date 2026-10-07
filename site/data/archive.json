@@ -1,0 +1,221 @@
+{
+  "updated": "2026-10-07T07:30:48Z",
+  "editions": {
+    "rob": {
+      "name": "Rob's List",
+      "playlist": "https://open.spotify.com/playlist/6YpWmU0EK7fFa62dpR8Ip7",
+      "weeks": [
+        {
+          "date": "2026-10-06",
+          "items": [
+            {
+              "artist": "Jon Hassell",
+              "title": "Music Is Invisible (Pentimento Volume Three)",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/7y6nrogjpYO43Z0V1Gdlq8"
+            },
+            {
+              "artist": "Actress",
+              "title": "Radical Frame",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/4bvfwACExnuV8cVqmTvneG"
+            },
+            {
+              "artist": "Marta Salogni & Stefano Pilia",
+              "title": "Phren",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/1tK2bpVMhH9vVgpeJW3ARX"
+            },
+            {
+              "artist": "Hristijan Risteski",
+              "title": "Waters Dance",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/6WPbIiC1Z0ItpSZBjl9FY1"
+            },
+            {
+              "artist": "Emily A. Sprague",
+              "title": "Cyano",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/3Pj62N3JtqsSgYs6ejCHYu"
+            },
+            {
+              "artist": "C'mon Tigre",
+              "title": "LUMINA",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/0kUx2VJ5zFrxfxjsMjYimW"
+            },
+            {
+              "artist": "Andrew Tuttle & Darren Cross",
+              "title": "AT/DC",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/5TnnsoOsO8LqwxwJifgzpJ"
+            },
+            {
+              "artist": "Kaitlyn Aurelia Smith",
+              "title": "RUIN: It's Not Just Music",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/1sYKpHvzVmZxcc2RxiVOk0"
+            },
+            {
+              "artist": "Timothy Fairless",
+              "title": "Friction",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/2h5G3eWajkGXuVnMsElyMG"
+            },
+            {
+              "artist": "Jordan Sand",
+              "title": "Baby Ghost",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/0nayUOcEDjfGW8Z9oIs2sr"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-05",
+          "items": [
+            {
+              "artist": "Helen",
+              "title": "Linda's Head",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/2wB9detc1PQGC8MmHmQEPg"
+            },
+            {
+              "artist": "nthng",
+              "title": "Last Light of the Sun",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/2Mo21eA9tvNiWOOE51RHDD"
+            },
+            {
+              "artist": "Sunken Cages",
+              "title": "Neram Pularumbol",
+              "kind": "album"
+            },
+            {
+              "artist": "William Basinski",
+              "title": "Passing the Cup of Sorrows 1.1",
+              "kind": "track",
+              "spotify_url": "https://open.spotify.com/track/4XBabOsUmMQb8N06GQy5hr"
+            },
+            {
+              "artist": "Vanishing Twin",
+              "title": "Archives",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/4Ljv5I3EQtAZtSw0wZxkob"
+            },
+            {
+              "artist": "J.D. Allen III",
+              "title": "SÖWT",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/4sb0xNlVbIfBFAVLjeWVEx"
+            },
+            {
+              "artist": "Siavash Amini",
+              "title": "Songs for Sad Poets Vol. III",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/7iLOGmvw49UOoNZnhunm49"
+            },
+            {
+              "artist": "Adriano Zanni",
+              "title": "Post Dub Cities",
+              "kind": "album"
+            },
+            {
+              "artist": "DjRUM",
+              "title": "Psychic Video",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/0fhgHKYgm2Mwpq0d2i8bF4"
+            },
+            {
+              "artist": "Tasgeelat Al-Husni",
+              "title": "Shell and Core",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/4agoblFfRJKduMhfcrWYzV"
+            },
+            {
+              "artist": "Jan Prax",
+              "title": "Traces of Light",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/5oYf3kx38Kc5eFuSaV6Pi6"
+            },
+            {
+              "artist": "Ava Mendoza",
+              "title": "Alive Alone, Alive Together",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/73fZwSCTGKSNv4Xn6cCdpH"
+            }
+          ]
+        }
+      ]
+    },
+    "juno": {
+      "name": "Juno Weekly",
+      "playlist": "",
+      "weeks": [
+        {
+          "date": "2026-10-05",
+          "items": [
+            {
+              "artist": "Jon Hassell",
+              "title": "Music Is Invisible (Pentimento Volume Three)",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/7y6nrogjpYO43Z0V1Gdlq8"
+            },
+            {
+              "artist": "Maria W Horn",
+              "title": "Melting Pillars of Snow",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/6hnBPFkeCokEbke3GtRmzI"
+            },
+            {
+              "artist": "Allison de Groot & Rich Ruth",
+              "title": "Allison de Groot & Rich Ruth",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/78GCLznGXkzJVxtllgeNFw"
+            },
+            {
+              "artist": "C'mon Tigre",
+              "title": "Lumina",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/0kUx2VJ5zFrxfxjsMjYimW"
+            },
+            {
+              "artist": "Bullion",
+              "title": "Nearly",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/0XpKZlGWTpea5gidjWsuuN"
+            },
+            {
+              "artist": "Kaitlyn Aurelia Smith",
+              "title": "Ruin: It's Not Just Music",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/1sYKpHvzVmZxcc2RxiVOk0"
+            },
+            {
+              "artist": "Nao",
+              "title": "Eugene / Save The World",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/6Dusr0zMg57KbTwHFapiQj"
+            },
+            {
+              "artist": "nthng",
+              "title": "Last Light of the Sun",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/2Mo21eA9tvNiWOOE51RHDD"
+            },
+            {
+              "artist": "Vanishing Twin",
+              "title": "Archives",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/4Ljv5I3EQtAZtSw0wZxkob"
+            },
+            {
+              "artist": "Turner Club",
+              "title": "All For Free",
+              "kind": "track"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

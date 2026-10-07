@@ -17,3 +17,17 @@ Secrets needed (Settings > Secrets and variables > Actions):
 `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN`,
 `ROB_PLAYLIST_ID`, `JUNO_PLAYLIST_ID`. Get them by running `get_token.py`
 once on your Mac.
+
+## Website data
+
+Every time a Rob or Juno picks file lands on main, the "Build site data"
+action rebuilds two files the website reads:
+
+- `site/data/latest.json`: this week's picks for both editions
+- `site/data/archive.json`: every past week, newest first
+
+Picks can carry extra fields for the site, all optional:
+`tags` (list), `note`, `source`, and `link` (a Bandcamp or label link when
+there's no Spotify one). The Spotify script ignores them.
+
+To rebuild by hand: `python scripts/build_site_data.py`.
