@@ -1,70 +1,43 @@
 {
-  "updated": "2026-10-07T07:30:48Z",
+  "updated": "2026-10-12T06:10:22Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
       "playlist": "https://open.spotify.com/playlist/6YpWmU0EK7fFa62dpR8Ip7",
-      "date": "2026-10-06",
+      "date": "2026-10-12",
       "items": [
         {
-          "artist": "Jon Hassell",
-          "title": "Music Is Invisible (Pentimento Volume Three)",
-          "kind": "album",
-          "spotify_url": "https://open.spotify.com/album/7y6nrogjpYO43Z0V1Gdlq8"
+          "artist": "Jeremiah Chiu",
+          "title": "Edge Conditions",
+          "kind": "album"
         },
         {
-          "artist": "Actress",
-          "title": "Radical Frame",
+          "artist": "Klara Lewis",
+          "title": "Opening",
           "kind": "album",
-          "spotify_url": "https://open.spotify.com/album/4bvfwACExnuV8cVqmTvneG"
+          "spotify_url": "https://open.spotify.com/album/2A5pQEn7L2DgcKzMyfEKVo"
         },
         {
-          "artist": "Marta Salogni & Stefano Pilia",
-          "title": "Phren",
+          "artist": "Koen Holtkamp",
+          "title": "Nightlife",
           "kind": "album",
-          "spotify_url": "https://open.spotify.com/album/1tK2bpVMhH9vVgpeJW3ARX"
+          "spotify_url": "https://open.spotify.com/album/5wVxP7kRF4lymB0VPjJ8Cm"
         },
         {
-          "artist": "Hristijan Risteski",
-          "title": "Waters Dance",
-          "kind": "album",
-          "spotify_url": "https://open.spotify.com/album/6WPbIiC1Z0ItpSZBjl9FY1"
+          "artist": "Lothar Ohlmeier / Isambard Khroustaliov / Rudi Fischerlehner",
+          "title": "Landscapes",
+          "kind": "album"
         },
         {
-          "artist": "Emily A. Sprague",
-          "title": "Cyano",
-          "kind": "album",
-          "spotify_url": "https://open.spotify.com/album/3Pj62N3JtqsSgYs6ejCHYu"
+          "artist": "crys cole",
+          "title": "Testing the Waters",
+          "kind": "album"
         },
         {
-          "artist": "C'mon Tigre",
-          "title": "LUMINA",
+          "artist": "Emna Mâaref",
+          "title": "Ama Lel Hawa",
           "kind": "album",
-          "spotify_url": "https://open.spotify.com/album/0kUx2VJ5zFrxfxjsMjYimW"
-        },
-        {
-          "artist": "Andrew Tuttle & Darren Cross",
-          "title": "AT/DC",
-          "kind": "album",
-          "spotify_url": "https://open.spotify.com/album/5TnnsoOsO8LqwxwJifgzpJ"
-        },
-        {
-          "artist": "Kaitlyn Aurelia Smith",
-          "title": "RUIN: It's Not Just Music",
-          "kind": "album",
-          "spotify_url": "https://open.spotify.com/album/1sYKpHvzVmZxcc2RxiVOk0"
-        },
-        {
-          "artist": "Timothy Fairless",
-          "title": "Friction",
-          "kind": "album",
-          "spotify_url": "https://open.spotify.com/album/2h5G3eWajkGXuVnMsElyMG"
-        },
-        {
-          "artist": "Jordan Sand",
-          "title": "Baby Ghost",
-          "kind": "album",
-          "spotify_url": "https://open.spotify.com/album/0nayUOcEDjfGW8Z9oIs2sr"
+          "spotify_url": "https://open.spotify.com/album/4EMDLVeKE9yz2d6UoBs06u"
         }
       ]
     },

@@ -1,10 +1,48 @@
 {
-  "updated": "2026-10-07T07:30:48Z",
+  "updated": "2026-10-12T06:10:22Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
       "playlist": "https://open.spotify.com/playlist/6YpWmU0EK7fFa62dpR8Ip7",
       "weeks": [
+        {
+          "date": "2026-10-12",
+          "items": [
+            {
+              "artist": "Jeremiah Chiu",
+              "title": "Edge Conditions",
+              "kind": "album"
+            },
+            {
+              "artist": "Klara Lewis",
+              "title": "Opening",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/2A5pQEn7L2DgcKzMyfEKVo"
+            },
+            {
+              "artist": "Koen Holtkamp",
+              "title": "Nightlife",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/5wVxP7kRF4lymB0VPjJ8Cm"
+            },
+            {
+              "artist": "Lothar Ohlmeier / Isambard Khroustaliov / Rudi Fischerlehner",
+              "title": "Landscapes",
+              "kind": "album"
+            },
+            {
+              "artist": "crys cole",
+              "title": "Testing the Waters",
+              "kind": "album"
+            },
+            {
+              "artist": "Emna Mâaref",
+              "title": "Ama Lel Hawa",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/4EMDLVeKE9yz2d6UoBs06u"
+            }
+          ]
+        },
         {
           "date": "2026-10-06",
           "items": [
