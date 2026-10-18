@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weekly Lists</title>
+<style>
+:root{
+  --bg:#0e0e11; --panel:#17171c; --panel2:#1f1f26; --line:#2b2b34;
+  --text:#f2f1ee; --dim:#9b9aa5; --rob:#ff8a3d; --juno:#4fd1c5; --both:#e879f9;
+  --radius:12px; --size:190px;
+}
+:root[data-theme="light"]{
+  --bg:#f6f4ef; --panel:#fff; --panel2:#efece5; --line:#ddd8cc;
+  --text:#1b1b1f; --dim:#6c6a74;
+}
+@media (prefers-color-scheme: light){
+  :root:not([data-theme="dark"]){
+    --bg:#f6f4ef; --panel:#fff; --panel2:#efece5; --line:#ddd8cc;
+    --text:#1b1b1f; --dim:#6c6a74;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif}
+button,input,select{font:inherit;color:inherit}
+header{padding:28px 16px 8px;max-width:1500px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;justify-content:space-between}
+h1{margin:0;font-size:28px;letter-spacing:-.02em}
+h1 span{color:var(--dim);font-weight:400}
+.stats{color:var(--dim);font-size:13px}
+.stats b{color:var(--text)}
+.controls{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.controls-inner{max-width:1500px;margin:0 auto;padding:10px 16px;display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+.seg{display:inline-flex;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:3px;gap:2px}
+.seg button{background:none;border:0;padding:6px 12px;border-radius:7px;cursor:pointer;color:var(--dim);white-space:nowrap}
+.seg button:hover{color:var(--text)}
+.seg button[aria-pressed="true"]{background:var(--panel2);color:var(--text);box-shadow:0 0 0 1px var(--line)}
+.seg button .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}
+.search{flex:1 1 180px;min-width:150px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 12px;outline:none}
+.search:focus{border-color:var(--dim)}
+select{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.size{display:flex;align-items:center;gap:6px;color:var(--dim);font-size:12px}
+input[type=range]{accent-color:var(--text);width:90px}
+.chips{max-width:1500px;margin:0 auto;padding:0 16px 10px;display:flex;gap:6px;overflow-x:auto;scrollbar-width:thin}
+.chip{flex:none;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:4px 11px;font-size:13px;cursor:pointer;color:var(--dim)}
+.chip:hover{color:var(--text)}
+.chip[aria-pressed="true"]{background:var(--text);color:var(--bg);border-color:var(--text)}
+.chip small{opacity:.6;margin-left:4px}
+main{max-width:1500px;margin:0 auto;padding:18px 16px 80px}
+.empty{color:var(--dim);text-align:center;padding:80px 0}
+
+/* cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--size),1fr));gap:18px 14px}
+.card{cursor:pointer;background:none;border:0;padding:0;text-align:left;display:block;min-width:0}
+.art{position:relative;aspect-ratio:1;border-radius:8px;overflow:hidden;background:var(--panel2);box-shadow:0 6px 18px rgba(0,0,0,.28);transition:transform .18s,box-shadow .18s}
+.card:hover .art,.card:focus-visible .art{transform:translateY(-4px) scale(1.02);box-shadow:0 14px 28px rgba(0,0,0,.4)}
+.card:focus-visible{outline:2px solid var(--text);outline-offset:4px;border-radius:8px}
+.art img{width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .4s}
+.art img.on{opacity:1}
+.ph{position:absolute;inset:0;display:flex;align-items:flex-end;padding:10px;font-weight:700;font-size:13px;line-height:1.15;color:rgba(255,255,255,.92);text-shadow:0 1px 3px rgba(0,0,0,.4)}
+.badges{position:absolute;top:6px;left:6px;display:flex;gap:4px}
+.badge{width:10px;height:10px;border-radius:50%;box-shadow:0 0 0 2px rgba(0,0,0,.45)}
+.badge.rob{background:var(--rob)} .badge.juno{background:var(--juno)}
+.both-flag{position:absolute;top:6px;right:6px;background:var(--both);color:#1b0a20;font-size:10px;font-weight:700;padding:2px 6px;border-radius:999px}
+.meta{padding:8px 2px 0}
+.t{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.a{color:var(--dim);font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.g{color:var(--dim);font-size:12px;opacity:.8;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* mosaic */
+.mosaic{display:grid;grid-template-columns:repeat(auto-fill,minmax(calc(var(--size)*.5),1fr));gap:2px}
+.mosaic .art{border-radius:0;box-shadow:none;transition:filter .15s}
+.mosaic .card:hover .art{transform:none;filter:brightness(1.15);box-shadow:inset 0 0 0 3px var(--text)}
+.mosaic .ph{font-size:10px;padding:5px}
+.mosaic .badges,.mosaic .both-flag{display:none}
+
+/* sections */
+.sec{margin-bottom:34px}
+.sec h2{font-size:18px;margin:0 0 4px;display:flex;align-items:baseline;gap:10px;letter-spacing:-.01em}
+.sec h2 small{color:var(--dim);font-weight:400;font-size:13px}
+.sec .sub{margin:14px 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);display:flex;align-items:center;gap:6px}
+.sec .sub .dot{width:8px;height:8px;border-radius:50%}
+.sec .grid{margin-top:12px}
+
+/* list */
+.list{width:100%;border-collapse:collapse}
+.list th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--dim);text-align:left;padding:6px 10px;font-weight:500}
+.list td{padding:6px 10px;border-top:1px solid var(--line);vertical-align:middle}
+.list tr.row{cursor:pointer}
+.list tr.row:hover td{background:var(--panel)}
+.list .thumb{width:44px}
+.list .thumb .art{width:44px;box-shadow:none;border-radius:4px}
+.list .thumb .ph{font-size:0}
+.src-tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;border:1px solid currentColor;margin-right:4px}
+.src-tag.rob{color:var(--rob)} .src-tag.juno{color:var(--juno)}
+.dim{color:var(--dim)}
+
+/* modal */
+dialog{border:1px solid var(--line);border-radius:16px;background:var(--panel);color:var(--text);padding:0;width:min(760px,calc(100vw - 24px));max-height:calc(100vh - 24px);overflow:auto}
+dialog::backdrop{background:rgba(0,0,0,.65);backdrop-filter:blur(4px)}
+.detail{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:22px;padding:22px}
+.detail .art{box-shadow:0 12px 30px rgba(0,0,0,.4)}
+.detail h3{margin:0;font-size:24px;letter-spacing:-.02em;line-height:1.15}
+.detail .by{font-size:17px;color:var(--dim);margin:2px 0 14px}
+dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0 0 16px;font-size:14px}
+dt{color:var(--dim)} dd{margin:0}
+.note{background:var(--panel2);border-radius:8px;padding:10px 12px;margin-bottom:14px;font-size:14px}
+.links{display:flex;flex-wrap:wrap;gap:8px}
+.links a{background:var(--text);color:var(--bg);text-decoration:none;font-weight:600;padding:8px 14px;border-radius:999px;font-size:14px}
+.links a.alt{background:var(--panel2);color:var(--text);border:1px solid var(--line);font-weight:500}
+.close{position:absolute;top:10px;right:12px;background:var(--panel2);border:1px solid var(--line);width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:16px}
+@media (max-width:620px){
+  .detail{grid-template-columns:1fr;padding:16px}
+  .detail .art{max-width:260px;margin:0 auto}
+  :root{--size:150px}
+  .size{display:none}
+  .list .hide-m{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Weekly Lists <span>/ Rob's List &amp; Juno Weekly</span></h1>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="controls">
+  <div class="controls-inner">
+    <div class="seg" id="source" role="group" aria-label="Source">
+      <button data-v="all" aria-pressed="true">All</button>
+      <button data-v="rob"><span class="dot" style="background:var(--rob)"></span>Rob's List</button>
+      <button data-v="juno"><span class="dot" style="background:var(--juno)"></span>Juno Weekly</button>
+      <button data-v="both"><span class="dot" style="background:var(--both)"></span>On both</button>
+    </div>
+    <div class="seg" id="view" role="group" aria-label="View">
+      <button data-v="grid" aria-pressed="true">Grid</button>
+      <button data-v="mosaic">Mosaic</button>
+      <button data-v="weeks">Weeks</button>
+      <button data-v="genres">Genres</button>
+      <button data-v="list">List</button>
+    </div>
+    <input class="search" id="q" type="search" placeholder="Search artist, album, genre…" aria-label="Search">
+    <select id="sort" aria-label="Sort">
+      <option value="date">Newest first</option>
+      <option value="dateAsc">Oldest first</option>
+      <option value="artist">Artist A–Z</option>
+      <option value="title">Album A–Z</option>
+      <option value="genre">Genre</option>
+    </select>
+    <label class="size">Size <input type="range" id="size" min="110" max="320" value="190"></label>
+    <button class="seg" id="theme" style="padding:7px 10px;cursor:pointer" aria-label="Toggle theme">◐</button>
+  </div>
+  <div class="chips" id="chips"></div>
+</div>
+
+<main id="main"><div class="empty">Loading…</div></main>
+
+<dialog id="dlg"><button class="close" id="dlgClose" aria-label="Close">✕</button><div id="dlgBody"></div></dialog>
+
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : "";
+const norm = s => String(s||"").toLowerCase().normalize("NFKD").replace(/[̀-ͯ]/g,"").replace(/\(.*?\)|\[.*?\]/g," ").replace(/[^a-z0-9]+/g," ").trim();
+const hue = s => { let h = 0; for (const c of s) h = (h*31 + c.charCodeAt(0)) >>> 0; return h % 360; };
+const SRC = { rob:{name:"Rob's List"}, juno:{name:"Juno Weekly"} };
+
+const state = { source:"all", view:"grid", q:"", sort:"date", genre:"" , albums:[], meta:{} };
+try { Object.assign(state, JSON.parse(localStorage.getItem("wl-state")||"{}"), {albums:[],meta:{}}); } catch {}
+const save = () => { try { localStorage.setItem("wl-state", JSON.stringify({source:state.source,view:state.view,sort:state.sort,size:$("#size").value,theme:document.documentElement.dataset.theme||""})); } catch {} };
+
+/* ---------- art + genre lookup (iTunes Search API, cached) ---------- */
+let cache = {};
+try { cache = JSON.parse(localStorage.getItem("wl-art")||"{}"); } catch {}
+const persist = () => { try { localStorage.setItem("wl-art", JSON.stringify(cache)); } catch {} };
+const TTL_MISS = 7*864e5;
+
+function pickResult(results, a) {
+  const t = norm(a.title), ar = norm(a.artist);
+  const score = r => {
+    const rt = norm(r.collectionName), ra = norm(r.artistName);
+    let s = 0;
+    if (rt === t) s += 4; else if (rt.includes(t) || t.includes(rt)) s += 2;
+    if (ra === ar) s += 3; else if (ra.includes(ar.split(" ")[0]) || ar.includes(ra)) s += 1;
+    return s;
+  };
+  const best = results.map(r => [score(r), r]).sort((x,y) => y[0]-x[0])[0];
+  return best && best[0] >= 4 ? best[1] : null;
+}
+async function lookup(a) {
+  const term = encodeURIComponent(`${a.artist} ${a.title}`);
+  const res = await fetch(`https://itunes.apple.com/search?term=${term}&entity=album&limit=8`);
+  if (!res.ok) throw new Error(res.status);
+  const r = pickResult((await res.json()).results || [], a);
+  return r ? {
+    art: (r.artworkUrl100||"").replace("100x100bb","600x600bb"),
+    genre: r.primaryGenreName || "",
+    year: (r.releaseDate||"").slice(0,4),
+    apple: r.collectionViewUrl || ""
+  } : { miss: Date.now() };
+}
+const queue = []; let active = 0, rerenderT;
+function enqueue(a) {
+  const c = cache[a.key];
+  if (c && (!c.miss || Date.now() - c.miss < TTL_MISS)) return;
+  queue.push(a); pump();
+}
+function pump() {
+  while (active < 4 && queue.length) {
+    const a = queue.shift(); active++;
+    lookup(a).then(v => { cache[a.key] = v; }, () => {}).finally(() => {
+      active--; persist(); clearTimeout(rerenderT); rerenderT = setTimeout(onMeta, 350); pump();
+    });
+  }
+}
+const info = a => cache[a.key] && !cache[a.key].miss ? cache[a.key] : {};
+const genreOf = a => (a.tags && a.tags[0]) || info(a).genre || "";
+
+/* ---------- data ---------- */
+async function load() {
+  const res = await fetch("data/archive.json", {cache:"no-cache"});
+  const data = await res.json();
+  const map = new Map();
+  for (const [ed, e] of Object.entries(data.editions)) {
+    SRC[ed] = {name:e.name, playlist:e.playlist};
+    for (const w of e.weeks) for (const it of w.items) {
+      const key = norm(it.artist) + "|" + norm(it.title);
+      let a = map.get(key);
+      if (!a) map.set(key, a = {key, artist:it.artist, title:it.title, kind:it.kind||"album", tags:[], picks:[], links:{}, notes:[]});
+      a.picks.push({list:ed, date:w.date, source:it.source||""});
+      if (it.tags) it.tags.forEach(t => a.tags.includes(t) || a.tags.push(t));
+      if (it.note) a.notes.push(it.note);
+      if (it.spotify_url) a.links.spotify = it.spotify_url;
+      if (it.link) a.links.other = it.link;
+    }
+  }
+  state.albums = [...map.values()].map(a => {
+    a.picks.sort((x,y) => x.date < y.date ? -1 : 1);
+    a.added = a.picks[0].date; a.latest = a.picks[a.picks.length-1].date;
+    a.lists = [...new Set(a.picks.map(p => p.list))];
+    return a;
+  });
+  state.albums.forEach(enqueue);
+}
+function onMeta() { buildChips(); render(); }
+
+/* ---------- filtering ---------- */
+function filtered() {
+  const q = norm(state.q);
+  let out = state.albums.filter(a => {
+    if (state.source === "rob" || state.source === "juno") { if (!a.lists.includes(state.source)) return false; }
+    if (state.source === "both" && a.lists.length < 2) return false;
+    if (state.genre && genreOf(a) !== state.genre) return false;
+    if (q && !norm(`${a.artist} ${a.title} ${genreOf(a)} ${a.tags.join(" ")}`).includes(q)) return false;
+    return true;
+  });
+  const cmp = {
+    date: (x,y) => y.latest.localeCompare(x.latest) || x.artist.localeCompare(y.artist),
+    dateAsc: (x,y) => x.added.localeCompare(y.added) || x.artist.localeCompare(y.artist),
+    artist: (x,y) => norm(x.artist).localeCompare(norm(y.artist)),
+    title: (x,y) => norm(x.title).localeCompare(norm(y.title)),
+    genre: (x,y) => (genreOf(x)||"~").localeCompare(genreOf(y)||"~") || norm(x.artist).localeCompare(norm(y.artist)),
+  }[state.sort];
+  return out.sort(cmp);
+}
+
+/* ---------- rendering ---------- */
+function artHTML(a, withBadges=true) {
+  const i = info(a), h = hue(a.key);
+  const ph = `<div class="ph" style="background:linear-gradient(135deg,hsl(${h} 45% 32%),hsl(${(h+50)%360} 55% 20%))">${esc(a.title)}</div>`;
+  const img = i.art ? `<img src="${esc(i.art.replace("600x600","400x400"))}" alt="" loading="lazy" onload="this.classList.add('on')">` : "";
+  const dots = withBadges ? `<div class="badges">${a.lists.map(l=>`<span class="badge ${l}" title="${esc(SRC[l].name)}"></span>`).join("")}</div>${a.lists.length>1?'<span class="both-flag">BOTH</span>':""}` : "";
+  return `<div class="art">${ph}${img}${dots}</div>`;
+}
+function cardHTML(a) {
+  return `<button class="card" data-k="${esc(a.key)}" title="${esc(a.artist)} — ${esc(a.title)}">${artHTML(a)}
+    <div class="meta"><div class="t">${esc(a.title)}</div><div class="a">${esc(a.artist)}</div><div class="g">${esc(genreOf(a)||" ")}</div></div></button>`;
+}
+const fmtDate = d => new Date(d+"T12:00:00").toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"});
+
+function render() {
+  const items = filtered(), main = $("#main");
+  const nGenre = new Set(state.albums.map(genreOf).filter(Boolean)).size;
+  $("#stats").innerHTML = `<b>${items.length}</b> of ${state.albums.length} albums · ${nGenre} genres · ${new Set(state.albums.flatMap(a=>a.picks.map(p=>p.date))).size} weeks`;
+  document.documentElement.style.setProperty("--size", $("#size").value + "px");
+  if (!items.length) { main.innerHTML = `<div class="empty">Nothing matches.</div>`; return; }
+  let html = "";
+  if (state.view === "grid") html = `<div class="grid">${items.map(cardHTML).join("")}</div>`;
+  else if (state.view === "mosaic") html = `<div class="mosaic">${items.map(a=>`<button class="card" data-k="${esc(a.key)}" title="${esc(a.artist)} — ${esc(a.title)}">${artHTML(a,false)}</button>`).join("")}</div>`;
+  else if (state.view === "weeks") {
+    const dates = [...new Set(items.flatMap(a => a.picks.map(p=>p.date)))].sort().reverse();
+    if (state.sort === "dateAsc") dates.reverse();
+    html = dates.map(d => {
+      const sub = ["rob","juno"].map(l => {
+        const here = items.filter(a => a.picks.some(p => p.date===d && p.list===l));
+        if (state.source==="rob" && l!=="rob" || state.source==="juno" && l!=="juno" || !here.length) return "";
+        return `<div class="sub"><span class="dot" style="background:var(--${l})"></span>${esc(SRC[l].name)} · ${here.length}</div><div class="grid">${here.map(cardHTML).join("")}</div>`;
+      }).join("");
+      return sub ? `<section class="sec"><h2>${fmtDate(d)}</h2>${sub}</section>` : "";
+    }).join("");
+  } else if (state.view === "genres") {
+    const groups = new Map();
+    items.forEach(a => { const g = genreOf(a) || "Unknown / loading"; (groups.get(g) || groups.set(g,[]).get(g)).push(a); });
+    html = [...groups].sort((x,y) => y[1].length - x[1].length || x[0].localeCompare(y[0])).map(([g,list]) =>
+      `<section class="sec"><h2>${esc(g)} <small>${list.length}</small></h2><div class="grid">${list.map(cardHTML).join("")}</div></section>`).join("");
+  } else {
+    html = `<table class="list"><thead><tr><th></th><th>Album</th><th>Artist</th><th class="hide-m">Genre</th><th>Source</th><th class="hide-m">Added</th></tr></thead><tbody>${items.map(a => `
+      <tr class="row" data-k="${esc(a.key)}"><td class="thumb">${artHTML(a,false)}</td><td><b>${esc(a.title)}</b></td><td>${esc(a.artist)}</td>
+      <td class="hide-m dim">${esc(genreOf(a))}</td><td>${a.lists.map(l=>`<span class="src-tag ${l}">${esc(SRC[l].name)}</span>`).join("")}</td>
+      <td class="hide-m dim">${fmtDate(a.added)}</td></tr>`).join("")}</tbody></table>`;
+  }
+  main.innerHTML = html;
+}
+
+function buildChips() {
+  const base = state.albums.filter(a => state.source==="all" || (state.source==="both" ? a.lists.length>1 : a.lists.includes(state.source)));
+  const counts = new Map();
+  base.forEach(a => { const g = genreOf(a); if (g) counts.set(g,(counts.get(g)||0)+1); });
+  const top = [...counts].sort((x,y)=>y[1]-x[1]||x[0].localeCompare(y[0]));
+  if (state.genre && !counts.has(state.genre)) state.genre = "";
+  $("#chips").innerHTML = `<button class="chip" data-g="" aria-pressed="${!state.genre}">All genres</button>` +
+    top.map(([g,n]) => `<button class="chip" data-g="${esc(g)}" aria-pressed="${state.genre===g}">${esc(g)}<small>${n}</small></button>`).join("");
+}
+
+function openDetail(key) {
+  const a = state.albums.find(x => x.key === key); if (!a) return;
+  const i = info(a);
+  const spot = safeUrl(a.links.spotify) || `https://open.spotify.com/search/${encodeURIComponent(a.artist+" "+a.title)}`;
+  const picks = a.picks.map(p => `${esc(SRC[p.list].name)} · ${fmtDate(p.date)}${p.source?` <span class="dim">(${esc(p.source)})</span>`:""}`).join("<br>");
+  const sources = [...new Set(a.picks.map(p=>p.source).filter(Boolean))];
+  $("#dlgBody").innerHTML = `<div class="detail">${artHTML(a,false)}<div>
+    <h3>${esc(a.title)}</h3><div class="by">${esc(a.artist)}</div>
+    <dl><dt>Added</dt><dd>${fmtDate(a.added)}</dd>
+    <dt>Picked by</dt><dd>${picks}</dd>
+    ${genreOf(a)?`<dt>Genre</dt><dd>${esc([genreOf(a),...a.tags.slice(genreOf(a)===a.tags[0]?1:0)].join(", "))}</dd>`:""}
+    ${i.year?`<dt>Released</dt><dd>${esc(i.year)}</dd>`:""}
+    <dt>Type</dt><dd>${esc(a.kind)}</dd>
+    ${sources.length?`<dt>Via</dt><dd>${esc(sources.join(", "))}</dd>`:""}</dl>
+    ${a.notes.length?`<div class="note">${esc(a.notes.join(" "))}</div>`:""}
+    <div class="links"><a href="${esc(spot)}" target="_blank" rel="noopener">Spotify</a>
+    ${safeUrl(a.links.other)?`<a class="alt" href="${esc(a.links.other)}" target="_blank" rel="noopener">Listen elsewhere</a>`:""}
+    ${safeUrl(i.apple)?`<a class="alt" href="${esc(i.apple)}" target="_blank" rel="noopener">Apple Music</a>`:""}</div>
+  </div></div>`;
+  $("#dlg").showModal();
+}
+
+/* ---------- wiring ---------- */
+function seg(id, key) {
+  const el = $(id);
+  const sync = () => el.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === state[key]));
+  el.addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; state[key] = b.dataset.v; sync(); buildChips(); render(); save(); });
+  sync();
+}
+seg("#source","source"); seg("#view","view");
+$("#sort").value = state.sort;
+$("#sort").onchange = e => { state.sort = e.target.value; render(); save(); };
+$("#q").oninput = e => { state.q = e.target.value; render(); };
+if (state.size) $("#size").value = state.size;
+$("#size").oninput = () => { render(); save(); };
+if (state.theme) document.documentElement.dataset.theme = state.theme;
+$("#theme").onclick = () => {
+  const dark = matchMedia("(prefers-color-scheme: dark)").matches;
+  const cur = document.documentElement.dataset.theme || (dark ? "dark" : "light");
+  document.documentElement.dataset.theme = cur === "dark" ? "light" : "dark"; save();
+};
+$("#chips").onclick = e => { const b = e.target.closest(".chip"); if (!b) return; state.genre = b.dataset.g; buildChips(); render(); };
+$("#main").onclick = e => { const c = e.target.closest("[data-k]"); if (c) openDetail(c.dataset.k); };
+$("#dlgClose").onclick = () => $("#dlg").close();
+$("#dlg").addEventListener("click", e => { if (e.target === $("#dlg")) $("#dlg").close(); });
+
+load().then(() => { buildChips(); render(); }).catch(err => {
+  $("#main").innerHTML = `<div class="empty">Couldn't load data/archive.json (${esc(err.message)}).<br>Serve the <code>site/</code> folder over http, e.g. <code>python3 -m http.server -d site</code>.</div>`;
+});
+</script>
+</body>
+</html>

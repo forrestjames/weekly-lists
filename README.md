@@ -31,3 +31,16 @@ Picks can carry extra fields for the site, all optional:
 there's no Spotify one). The Spotify script ignores them.
 
 To rebuild by hand: `python scripts/build_site_data.py`.
+
+## The website
+
+`site/index.html` is a single-page browser for every pick. It reads
+`site/data/archive.json` and looks up album art, genre and release year from
+the iTunes Search API in the browser (cached in localStorage). Genre comes
+from a pick's `tags` first, then iTunes.
+
+Views: Grid, Mosaic (covers only), Weeks, Genres, List. Filter by list
+(Rob / Juno / on both), genre chip, or search.
+
+To preview locally: `python3 -m http.server -d site`, then open
+http://localhost:8000.
