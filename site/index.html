@@ -175,8 +175,8 @@ const save = () => { try { localStorage.setItem("wl-state", JSON.stringify({sour
 
 /* ---------- art + genre lookup (iTunes Search API, cached) ---------- */
 let cache = {};
-try { cache = JSON.parse(localStorage.getItem("wl-art")||"{}"); } catch {}
-const persist = () => { try { localStorage.setItem("wl-art", JSON.stringify(cache)); } catch {} };
+try { cache = JSON.parse(localStorage.getItem("wl-art2")||"{}"); } catch {}
+const persist = () => { try { localStorage.setItem("wl-art2", JSON.stringify(cache)); } catch {} };
 const TTL_MISS = 7*864e5;
 
 function pickResult(results, a) {
@@ -191,17 +191,40 @@ function pickResult(results, a) {
   const best = results.map(r => [score(r), r]).sort((x,y) => y[0]-x[0])[0];
   return best && best[0] >= 4 ? best[1] : null;
 }
-async function lookup(a) {
-  const term = encodeURIComponent(`${a.artist} ${a.title}`);
-  const res = await fetch(`https://itunes.apple.com/search?term=${term}&entity=album&limit=8`);
+async function getJSON(url) {
+  const res = await fetch(url);
   if (!res.ok) throw new Error(res.status);
-  const r = pickResult((await res.json()).results || [], a);
-  return r ? {
-    art: (r.artworkUrl100||"").replace("100x100bb","600x600bb"),
-    genre: r.primaryGenreName || "",
-    year: (r.releaseDate||"").slice(0,4),
-    apple: r.collectionViewUrl || ""
-  } : { miss: Date.now() };
+  return res.json();
+}
+// Cover sources, in order: the pick's own Spotify link (exact, no matching
+// needed), then Apple (also gives genre/year), then MusicBrainz + Cover Art
+// Archive for anything neither has.
+async function lookup(a) {
+  const out = {};
+  const tasks = [];
+  if (a.links.spotify) tasks.push(getJSON(`https://open.spotify.com/oembed?url=${encodeURIComponent(a.links.spotify)}`)
+    .then(j => { if (j.thumbnail_url) out.art = j.thumbnail_url.replace("ab67616d00001e02", "ab67616d0000b273"); }, () => {}));
+  const term = encodeURIComponent(`${a.artist} ${a.title}`);
+  let failed = false;
+  tasks.push(getJSON(`https://itunes.apple.com/search?term=${term}&entity=album&limit=8`).then(j => {
+    const r = pickResult(j.results || [], a);
+    if (!r) return;
+    out.itunesArt = (r.artworkUrl100||"").replace("100x100bb","600x600bb");
+    Object.assign(out, { genre: r.primaryGenreName || "", year: (r.releaseDate||"").slice(0,4), apple: r.collectionViewUrl || "" });
+  }, () => { failed = true; }));
+  await Promise.all(tasks);
+  if (!out.art) out.art = out.itunesArt;
+  delete out.itunesArt;
+  if (!out.art && !failed) {
+    try {
+      const q = encodeURIComponent(`releasegroup:"${a.title}" AND artist:"${a.artist}"`);
+      const g = (await getJSON(`https://musicbrainz.org/ws/2/release-group/?query=${q}&fmt=json&limit=3`))["release-groups"] || [];
+      const hit = g.find(x => x.score >= 90 && norm(x.title) === norm(a.title));
+      if (hit) out.art = `https://coverartarchive.org/release-group/${hit.id}/front-500`;
+    } catch {}
+  }
+  if (failed && !out.art) throw new Error("lookup failed");
+  return Object.keys(out).length ? out : { miss: Date.now() };
 }
 const queue = []; let active = 0, rerenderT;
 function enqueue(a) {
@@ -210,7 +233,7 @@ function enqueue(a) {
   queue.push(a); pump();
 }
 function pump() {
-  while (active < 4 && queue.length) {
+  while (active < 3 && queue.length) {
     const a = queue.shift(); active++;
     lookup(a).then(v => { cache[a.key] = v; }, () => {}).finally(() => {
       active--; persist(); clearTimeout(rerenderT); rerenderT = setTimeout(onMeta, 350); pump();
