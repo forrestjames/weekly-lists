@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T21:32:54Z",
+  "updated": "2026-10-18T23:15:24Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -10,60 +10,80 @@
           "artist": "CZN",
           "title": "Parallel Commutator",
           "kind": "album",
+          "note": "Valentina Magaletti, João Pais Filipe and Leon Marks make two long pieces of clattering polyrhythm under synth haze. The Quietus made it Album of the Week.",
+          "source": "The Quietus, The Line of Best Fit",
           "spotify_url": "https://open.spotify.com/album/3XzQFLRyacf3q1kWDe9pfl"
         },
         {
           "artist": "Lamin Fofana",
           "title": "Corps Perdu",
           "kind": "album",
+          "note": "Fofana turns the words of Aimé Césaire and others into sound. It is heavy and quiet at once.",
+          "source": "a closer listen, Fall Music Preview",
           "spotify_url": "https://open.spotify.com/album/0EdtcGlgcgoIuRoiNXypzU"
         },
         {
           "artist": "Gotts Street Park",
           "title": "Somewhere Between",
           "kind": "album",
+          "note": "The follow-up to On The Inside, with guests including Rosie Lowe and Matt Maltese. Warm, loose and soulful.",
+          "source": "Clash, retailer listings",
           "spotify_url": "https://open.spotify.com/album/2MwfrGfon5UGQ13z0Vh5tW"
         },
         {
           "artist": "A Large Sheet of Muscle",
           "title": "Chinese Benefits",
           "kind": "album",
+          "note": "Louis Johnstone, of Wanda Group, mixes stream of consciousness spoken word, abrasive noise and fractured electronics. Short tracks, odd and prickly.",
+          "source": "Resident Advisor, weekly new music",
           "spotify_url": "https://open.spotify.com/album/5DvWieD6AMa1FsSASG3v0J"
         },
         {
           "artist": "Francis Harris & Gareth Quinn Redmond",
           "title": "Eyes Bright and Low",
           "kind": "album",
+          "note": "Ambient leaning, with a ten minute title track and a guest vocal from Rachael Lavelle. Described as light waves crashing on an autumn shore.",
+          "source": "a closer listen, Fall Music Preview",
           "spotify_url": "https://open.spotify.com/album/0Yma6JlD705kGgZDjYlnpK"
         },
         {
           "artist": "Omasta",
           "title": "Hits Different",
           "kind": "album",
+          "note": "The second album from the Kraków jazz group, after Jazz Report From The Hood. It shifts to a narrator's point of view.",
+          "source": "Soundohm listing",
           "spotify_url": "https://open.spotify.com/album/4TcwtDg79cd6RZq2OTsoaF"
         },
         {
           "artist": "Matt Rösner",
           "title": "Lost Meridians",
           "kind": "album",
+          "note": "Music to pause to, inspired by open prairies. One long title piece, and some short ones.",
+          "source": "a closer listen, Fall Music Preview",
           "spotify_url": "https://open.spotify.com/album/6I24dscUFuyYA5bdeUodTQ"
         },
         {
           "artist": "Bibio & Dorian Concept",
           "title": "Answers",
           "kind": "album",
+          "note": "Fully instrumental, recorded remotely between Wales and Austria. Tape warmed guitar on one side, liquid synth on the other. Lead single is \"Lichen Trip\".",
+          "source": "Retailer write-ups",
           "spotify_url": "https://open.spotify.com/album/1bILUgo25ahrzoGF9l4Wlk"
         },
         {
           "artist": "Matthew O'Neill",
           "title": "Through to Us",
           "kind": "album",
+          "note": "Experimental compositions built on nature recordings, birdsong, synths and a piano passage. The title track runs about eight minutes.",
+          "source": "NYS Music, a closer listen",
           "spotify_url": "https://open.spotify.com/album/421iZgNqOz5WMxCHbeBPoc"
         },
         {
           "artist": "Joey DeFrancesco",
           "title": "Live at Keystone Korner",
           "kind": "album",
+          "note": "A posthumous live set from the organist, recorded in 2022. Eight tracks, with long takes on \"Lady G\" and \"Vibrations in Blue\".",
+          "source": "Mack Avenue",
           "spotify_url": "https://open.spotify.com/album/77ekFH3nYwLB63xdfsqSSR"
         }
       ]
@@ -76,58 +96,78 @@
         {
           "artist": "The Avalanches",
           "title": "No Bad Memories",
-          "kind": "album"
+          "kind": "album",
+          "note": "Their first album in six years, and it sounds like it. A sun soaked collage of samples and guest vocals, very much in the spirit of Since I Left You.",
+          "source": "Juno: Leftfield"
         },
         {
           "artist": "Enrico Rava Fearless Five with Joe Lovano",
           "title": "Corners",
-          "kind": "album"
+          "kind": "album",
+          "note": "Rava's quintet with Joe Lovano sitting in, recorded in Rome. Loose and lyrical, with the kind of chemistry you only get from players who've logged this many years together.",
+          "source": "Juno: Jazz"
         },
         {
           "artist": "A Large Sheet of Muscle",
           "title": "Chinese Benefits",
           "kind": "album",
+          "note": "Louis Johnstone, who also records as Wanda Group, mixing stream of consciousness spoken word with harsh noise and broken electronics. Bleak and bracing.",
+          "source": "Juno: Ambient / Drone / Experimental",
           "spotify_url": "https://open.spotify.com/album/5DvWieD6AMa1FsSASG3v0J"
         },
         {
           "artist": "June McDoom",
           "title": "Follow The Light",
           "kind": "album",
+          "note": "Her debut, blending dub reggae with vintage psych folk and classic soul, shaped by growing up in a Jamaican household in South Florida. Warm and unhurried.",
+          "source": "Juno: Reggae / Dub",
           "spotify_url": "https://open.spotify.com/album/5VHfVW8PISNYyVG9Hb4G2Y"
         },
         {
           "artist": "Richard Thompson",
           "title": "Hippies, Thugs and Heroes",
           "kind": "album",
+          "note": "His 20th studio album, and one of his strongest in years. The songwriting leads, the band stays tight behind him, and the guitar work is there without ever showing off.",
+          "source": "Juno: Leftfield",
           "spotify_url": "https://open.spotify.com/album/4fourLlwRgWXLg9qpirYw9"
         },
         {
           "artist": "Fontaines D.C.",
           "title": "Dopamine Chamber",
           "kind": "album",
+          "note": "Fifth album, picked up a five star review this week. Denser and more unsettled than what came before, but still unmistakably them.",
+          "source": "Juno: Leftfield",
           "spotify_url": "https://open.spotify.com/album/0JICUfSKOdGqzE9FJSrNci"
         },
         {
           "artist": "ONMO",
           "title": "In Time And Spirit",
           "kind": "album",
+          "note": "A London sextet led by guitarist Jean de Talhouët, built around a three part title suite with contrapuntal writing. Unusually optimistic for contemporary jazz.",
+          "source": "Juno: Jazz",
           "spotify_url": "https://open.spotify.com/album/3oLpCoxGA1b4FLtWZvCOjR"
         },
         {
           "artist": "Lorne Lofsky / Nigel Price Quartet",
           "title": "Live at the Globe",
-          "kind": "album"
+          "kind": "album",
+          "note": "Canadian guitar legend Lorne Lofsky and Nigel Price trading lines live in the north of England, recorded last November. Conversational, unhurried guitar jazz.",
+          "source": "Juno: Jazz"
         },
         {
           "artist": "IMOGEN & Regal86",
           "title": "Back to The Halcyon",
           "kind": "album",
+          "note": "A joint EP marking five years of IMOGEN's WIGS label. White knuckle rave nostalgia, unapologetically maximalist.",
+          "source": "Juno: Techno",
           "spotify_url": "https://open.spotify.com/album/5hB0HFwJqzAAU85NecYE5U"
         },
         {
           "artist": "Gnod",
           "title": "Chronicles of Gnowt (Vol 2)",
           "kind": "album",
+          "note": "Second in Gnod's new triptych, heavy and repetitive with dub abstraction and spoken word running through the centerpiece track. Technically out October 9th, but too good to leave out.",
+          "source": "Juno: Ambient / Drone / Experimental",
           "spotify_url": "https://open.spotify.com/album/3CVFXNmW8bXOBMYYIfyFMl"
         }
       ]

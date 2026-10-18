@@ -1,12 +1,86 @@
-{"list": "rob", "date": "2026-10-18", "items": [
-  {"artist": "CZN", "title": "Parallel Commutator", "kind": "album", "spotify_url": "https://open.spotify.com/album/3XzQFLRyacf3q1kWDe9pfl"},
-  {"artist": "Lamin Fofana", "title": "Corps Perdu", "kind": "album", "spotify_url": "https://open.spotify.com/album/0EdtcGlgcgoIuRoiNXypzU"},
-  {"artist": "Gotts Street Park", "title": "Somewhere Between", "kind": "album", "spotify_url": "https://open.spotify.com/album/2MwfrGfon5UGQ13z0Vh5tW"},
-  {"artist": "A Large Sheet of Muscle", "title": "Chinese Benefits", "kind": "album", "spotify_url": "https://open.spotify.com/album/5DvWieD6AMa1FsSASG3v0J"},
-  {"artist": "Francis Harris & Gareth Quinn Redmond", "title": "Eyes Bright and Low", "kind": "album", "spotify_url": "https://open.spotify.com/album/0Yma6JlD705kGgZDjYlnpK"},
-  {"artist": "Omasta", "title": "Hits Different", "kind": "album", "spotify_url": "https://open.spotify.com/album/4TcwtDg79cd6RZq2OTsoaF"},
-  {"artist": "Matt Rösner", "title": "Lost Meridians", "kind": "album", "spotify_url": "https://open.spotify.com/album/6I24dscUFuyYA5bdeUodTQ"},
-  {"artist": "Bibio & Dorian Concept", "title": "Answers", "kind": "album", "spotify_url": "https://open.spotify.com/album/1bILUgo25ahrzoGF9l4Wlk"},
-  {"artist": "Matthew O'Neill", "title": "Through to Us", "kind": "album", "spotify_url": "https://open.spotify.com/album/421iZgNqOz5WMxCHbeBPoc"},
-  {"artist": "Joey DeFrancesco", "title": "Live at Keystone Korner", "kind": "album", "spotify_url": "https://open.spotify.com/album/77ekFH3nYwLB63xdfsqSSR"}
-]}
+{
+  "list": "rob",
+  "date": "2026-10-18",
+  "items": [
+    {
+      "artist": "CZN",
+      "title": "Parallel Commutator",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/3XzQFLRyacf3q1kWDe9pfl",
+      "note": "Valentina Magaletti, João Pais Filipe and Leon Marks make two long pieces of clattering polyrhythm under synth haze. The Quietus made it Album of the Week.",
+      "source": "The Quietus, The Line of Best Fit"
+    },
+    {
+      "artist": "Lamin Fofana",
+      "title": "Corps Perdu",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/0EdtcGlgcgoIuRoiNXypzU",
+      "note": "Fofana turns the words of Aimé Césaire and others into sound. It is heavy and quiet at once.",
+      "source": "a closer listen, Fall Music Preview"
+    },
+    {
+      "artist": "Gotts Street Park",
+      "title": "Somewhere Between",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/2MwfrGfon5UGQ13z0Vh5tW",
+      "note": "The follow-up to On The Inside, with guests including Rosie Lowe and Matt Maltese. Warm, loose and soulful.",
+      "source": "Clash, retailer listings"
+    },
+    {
+      "artist": "A Large Sheet of Muscle",
+      "title": "Chinese Benefits",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/5DvWieD6AMa1FsSASG3v0J",
+      "note": "Louis Johnstone, of Wanda Group, mixes stream of consciousness spoken word, abrasive noise and fractured electronics. Short tracks, odd and prickly.",
+      "source": "Resident Advisor, weekly new music"
+    },
+    {
+      "artist": "Francis Harris & Gareth Quinn Redmond",
+      "title": "Eyes Bright and Low",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/0Yma6JlD705kGgZDjYlnpK",
+      "note": "Ambient leaning, with a ten minute title track and a guest vocal from Rachael Lavelle. Described as light waves crashing on an autumn shore.",
+      "source": "a closer listen, Fall Music Preview"
+    },
+    {
+      "artist": "Omasta",
+      "title": "Hits Different",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/4TcwtDg79cd6RZq2OTsoaF",
+      "note": "The second album from the Kraków jazz group, after Jazz Report From The Hood. It shifts to a narrator's point of view.",
+      "source": "Soundohm listing"
+    },
+    {
+      "artist": "Matt Rösner",
+      "title": "Lost Meridians",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/6I24dscUFuyYA5bdeUodTQ",
+      "note": "Music to pause to, inspired by open prairies. One long title piece, and some short ones.",
+      "source": "a closer listen, Fall Music Preview"
+    },
+    {
+      "artist": "Bibio & Dorian Concept",
+      "title": "Answers",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/1bILUgo25ahrzoGF9l4Wlk",
+      "note": "Fully instrumental, recorded remotely between Wales and Austria. Tape warmed guitar on one side, liquid synth on the other. Lead single is \"Lichen Trip\".",
+      "source": "Retailer write-ups"
+    },
+    {
+      "artist": "Matthew O'Neill",
+      "title": "Through to Us",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/421iZgNqOz5WMxCHbeBPoc",
+      "note": "Experimental compositions built on nature recordings, birdsong, synths and a piano passage. The title track runs about eight minutes.",
+      "source": "NYS Music, a closer listen"
+    },
+    {
+      "artist": "Joey DeFrancesco",
+      "title": "Live at Keystone Korner",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/77ekFH3nYwLB63xdfsqSSR",
+      "note": "A posthumous live set from the organist, recorded in 2022. Eight tracks, with long takes on \"Lady G\" and \"Vibrations in Blue\".",
+      "source": "Mack Avenue"
+    }
+  ]
+}

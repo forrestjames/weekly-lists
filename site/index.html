@@ -106,9 +106,10 @@ dt{color:var(--dim)} dd{margin:0}
 .links{display:flex;flex-wrap:wrap;gap:8px}
 .links a{background:var(--text);color:var(--bg);text-decoration:none;font-weight:600;padding:8px 14px;border-radius:999px;font-size:14px}
 .links a.alt{background:var(--panel2);color:var(--text);border:1px solid var(--line);font-weight:500}
-.desc{font-size:14px;line-height:1.5;margin:0 0 14px;color:var(--text)}
-.desc small{display:block;margin-top:4px;color:var(--dim)}
-.desc small a{color:inherit}
+.desc{font-size:14px;line-height:1.5;margin:0 0 10px;color:var(--text)}
+.desc{background:var(--panel2);border-radius:8px;padding:10px 12px}
+.desc .who{display:block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:3px}
+.who.rob{color:var(--rob)} .who.juno{color:var(--juno)}
 .close{position:absolute;top:10px;right:12px;background:var(--panel2);border:1px solid var(--line);width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:16px}
 @media (max-width:620px){
   .detail{grid-template-columns:1fr;padding:16px}
@@ -216,25 +217,6 @@ function pump() {
     });
   }
 }
-/* ---------- description (Wikipedia, only when a matching album page exists) ---------- */
-let dcache = {};
-try { dcache = JSON.parse(localStorage.getItem("wl-desc")||"{}"); } catch {}
-async function describe(a) {
-  const c = dcache[a.key];
-  if (c && (!c.miss || Date.now() - c.miss < TTL_MISS)) return c.miss ? null : c;
-  let out = { miss: Date.now() };
-  try {
-    const q = encodeURIComponent(`${a.title} ${a.artist} album`);
-    const res = await fetch(`https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&generator=search&gsrsearch=${q}&gsrlimit=4&prop=extracts|info&inprop=url&exintro=1&explaintext=1&exsentences=4`);
-    const pages = Object.values((await res.json()).query?.pages || {}).sort((x,y) => x.index - y.index);
-    const t = norm(a.title), first = norm(a.artist).split(" ")[0];
-    const hit = pages.find(pg => { const n = norm(pg.title), x = norm(pg.extract); return n.includes(t) && x.includes(first) && /album|\bep\b|record/.test(x); });
-    if (hit && hit.extract.length > 40) out = { text: hit.extract.trim(), url: hit.fullurl };
-  } catch { return null; }
-  dcache[a.key] = out;
-  try { localStorage.setItem("wl-desc", JSON.stringify(dcache)); } catch {}
-  return out.miss ? null : out;
-}
 const info = a => cache[a.key] && !cache[a.key].miss ? cache[a.key] : {};
 const genreOf = a => (a.tags && a.tags[0]) || info(a).genre || "";
 
@@ -248,10 +230,9 @@ async function load() {
     for (const w of e.weeks) for (const it of w.items) {
       const key = norm(it.artist) + "|" + norm(it.title);
       let a = map.get(key);
-      if (!a) map.set(key, a = {key, artist:it.artist, title:it.title, kind:it.kind||"album", tags:[], picks:[], links:{}, notes:[]});
-      a.picks.push({list:ed, date:w.date, source:it.source||""});
+      if (!a) map.set(key, a = {key, artist:it.artist, title:it.title, kind:it.kind||"album", tags:[], picks:[], links:{}});
+      a.picks.push({list:ed, date:w.date, source:it.source||"", note:it.note||""});
       if (it.tags) it.tags.forEach(t => a.tags.includes(t) || a.tags.push(t));
-      if (it.note) a.notes.push(it.note);
       if (it.spotify_url) a.links.spotify = it.spotify_url;
       if (it.link) a.links.other = it.link;
     }
@@ -349,7 +330,6 @@ function openDetail(key) {
   const i = info(a);
   const spot = safeUrl(a.links.spotify) || `https://open.spotify.com/search/${encodeURIComponent(a.artist+" "+a.title)}`;
   const picks = a.picks.map(p => `${esc(SRC[p.list].name)} · ${fmtDate(p.date)}${p.source?` <span class="dim">(${esc(p.source)})</span>`:""}`).join("<br>");
-  const sources = [...new Set(a.picks.map(p=>p.source).filter(Boolean))];
   $("#dlgBody").innerHTML = `<div class="detail">${artHTML(a,false)}<div>
     <h3>${esc(a.title)}</h3><div class="by">${esc(a.artist)}</div>
     <dl><dt>Added</dt><dd>${fmtDate(a.added)}</dd>
@@ -357,19 +337,13 @@ function openDetail(key) {
     ${genreOf(a)?`<dt>Genre</dt><dd>${esc([genreOf(a),...a.tags.slice(genreOf(a)===a.tags[0]?1:0)].join(", "))}</dd>`:""}
     ${i.year?`<dt>Released</dt><dd>${esc(i.year)}</dd>`:""}
     <dt>Type</dt><dd>${esc(a.kind)}</dd>
-    ${sources.length?`<dt>Via</dt><dd>${esc(sources.join(", "))}</dd>`:""}</dl>
-    <div class="desc" id="desc"></div>
-    ${a.notes.length?`<div class="note">${esc(a.notes.join(" "))}</div>`:""}
+</dl>
+    ${a.picks.filter(p => p.note).map(p => `<div class="desc"><small class="who ${p.list}">${esc(SRC[p.list].name)}</small>${esc(p.note)}</div>`).join("")}
     <div class="links"><a href="${esc(spot)}" target="_blank" rel="noopener">Spotify</a>
     ${safeUrl(a.links.other)?`<a class="alt" href="${esc(a.links.other)}" target="_blank" rel="noopener">Listen elsewhere</a>`:""}
     ${safeUrl(i.apple)?`<a class="alt" href="${esc(i.apple)}" target="_blank" rel="noopener">Apple Music</a>`:""}</div>
   </div></div>`;
   $("#dlg").showModal();
-  describe(a).then(d => {
-    const el = $("#desc");
-    if (d && el && $("#dlg").open && $("#dlgBody h3").textContent === a.title)
-      el.innerHTML = `${esc(d.text)}<small>From <a href="${esc(d.url)}" target="_blank" rel="noopener">Wikipedia</a></small>`;
-  });
 }
 
 /* ---------- wiring ---------- */

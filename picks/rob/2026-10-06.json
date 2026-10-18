@@ -1,12 +1,86 @@
-{"list": "rob", "date": "2026-10-06", "items": [
-  {"artist": "Jon Hassell", "title": "Music Is Invisible (Pentimento Volume Three)", "kind": "album", "spotify_url": "https://open.spotify.com/album/7y6nrogjpYO43Z0V1Gdlq8"},
-  {"artist": "Actress", "title": "Radical Frame", "kind": "album", "spotify_url": "https://open.spotify.com/album/4bvfwACExnuV8cVqmTvneG"},
-  {"artist": "Marta Salogni & Stefano Pilia", "title": "Phren", "kind": "album", "spotify_url": "https://open.spotify.com/album/1tK2bpVMhH9vVgpeJW3ARX"},
-  {"artist": "Hristijan Risteski", "title": "Waters Dance", "kind": "album", "spotify_url": "https://open.spotify.com/album/6WPbIiC1Z0ItpSZBjl9FY1"},
-  {"artist": "Emily A. Sprague", "title": "Cyano", "kind": "album", "spotify_url": "https://open.spotify.com/album/3Pj62N3JtqsSgYs6ejCHYu"},
-  {"artist": "C'mon Tigre", "title": "LUMINA", "kind": "album", "spotify_url": "https://open.spotify.com/album/0kUx2VJ5zFrxfxjsMjYimW"},
-  {"artist": "Andrew Tuttle & Darren Cross", "title": "AT/DC", "kind": "album", "spotify_url": "https://open.spotify.com/album/5TnnsoOsO8LqwxwJifgzpJ"},
-  {"artist": "Kaitlyn Aurelia Smith", "title": "RUIN: It's Not Just Music", "kind": "album", "spotify_url": "https://open.spotify.com/album/1sYKpHvzVmZxcc2RxiVOk0"},
-  {"artist": "Timothy Fairless", "title": "Friction", "kind": "album", "spotify_url": "https://open.spotify.com/album/2h5G3eWajkGXuVnMsElyMG"},
-  {"artist": "Jordan Sand", "title": "Baby Ghost", "kind": "album", "spotify_url": "https://open.spotify.com/album/0nayUOcEDjfGW8Z9oIs2sr"}
-]}
+{
+  "list": "rob",
+  "date": "2026-10-06",
+  "items": [
+    {
+      "artist": "Jon Hassell",
+      "title": "Music Is Invisible (Pentimento Volume Three)",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/7y6nrogjpYO43Z0V1Gdlq8",
+      "note": "Out October 2 on Ndeya. Music from his Pentimento Trilogy. Worth a listen for that fourth-world trumpet haze.",
+      "source": "a closer listen"
+    },
+    {
+      "artist": "Actress",
+      "title": "Radical Frame",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/4bvfwACExnuV8cVqmTvneG",
+      "note": "Musique concrete mixed with club-ready production. A strange, dense record.",
+      "source": "Electronic releases roundup"
+    },
+    {
+      "artist": "Marta Salogni & Stefano Pilia",
+      "title": "Phren",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/1tK2bpVMhH9vVgpeJW3ARX",
+      "note": "A collaboration between a producer and a guitarist. Listed as ambient and experimental.",
+      "source": "a closer listen"
+    },
+    {
+      "artist": "Hristijan Risteski",
+      "title": "Waters Dance",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/6WPbIiC1Z0ItpSZBjl9FY1",
+      "note": "Listed as jazz on Bandcamp. I found little else, so this one is a hunch.",
+      "source": "Bandcamp"
+    },
+    {
+      "artist": "Emily A. Sprague",
+      "title": "Cyano",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/3Pj62N3JtqsSgYs6ejCHYu",
+      "note": "Out on RVNG Intl. Ambient, experimental electronic, from a reliably calm writer.",
+      "source": "Electronic releases roundup"
+    },
+    {
+      "artist": "C'mon Tigre",
+      "title": "LUMINA",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/0kUx2VJ5zFrxfxjsMjYimW",
+      "note": "The Italian duo moves electronics to the centre, with synths and club rhythms beside oud, cello and vibraphone.",
+      "source": "Electronic releases roundup"
+    },
+    {
+      "artist": "Andrew Tuttle & Darren Cross",
+      "title": "AT/DC",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/5TnnsoOsO8LqwxwJifgzpJ",
+      "note": "Warm guitar and banjo with reverb and synth. Described as close to Rain Drinkers.",
+      "source": "a closer listen"
+    },
+    {
+      "artist": "Kaitlyn Aurelia Smith",
+      "title": "RUIN: It's Not Just Music",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/1sYKpHvzVmZxcc2RxiVOk0",
+      "note": "Ambient, experimental electronic. I could not find more detail than that.",
+      "source": "Electronic releases roundup"
+    },
+    {
+      "artist": "Timothy Fairless",
+      "title": "Friction",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/2h5G3eWajkGXuVnMsElyMG",
+      "note": "Out on Dragon's Eye Recordings. Field recordings with wordless vocals and a sense of endless space.",
+      "source": "a closer listen"
+    },
+    {
+      "artist": "Jordan Sand",
+      "title": "Baby Ghost",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/0nayUOcEDjfGW8Z9oIs2sr",
+      "note": "Falsetto voice mixed with bowed double bass, which gives it an otherworldly feel.",
+      "source": "Experimental releases list"
+    }
+  ]
+}
