@@ -27,6 +27,11 @@ jobs:
           python-version: "3.12"
 
       - name: Build latest.json and archive.json
+        env:
+          # Used to look up cover art on Spotify. Optional: without them the
+          # data still builds and the page looks covers up in the browser.
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
         run: python scripts/build_site_data.py
 
       - name: Commit if anything changed

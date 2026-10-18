@@ -27,17 +27,29 @@ action rebuilds two files the website reads:
 - `site/data/archive.json`: every past week, newest first
 
 Picks can carry extra fields for the site, all optional:
-`tags` (list), `note`, `source`, and `link` (a Bandcamp or label link when
-there's no Spotify one). The Spotify script ignores them.
+`tags` (list), `note`, `source`, `link` (a Bandcamp or label link when
+there's no Spotify one), and `art` (a cover image URL, to set a cover by
+hand). The Spotify script ignores them.
+
+Cover art: the same action looks up every pick that has no `art` on Spotify
+and saves the cover (and the album link, if the pick had none) into
+`archive.json`. Earlier results are reused, so only new picks cost a lookup.
+It uses the `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` secrets; without
+them, or if Spotify is down, the data still builds and the page falls back to
+finding covers in the browser. Anything Spotify can't match is logged as
+"Not found on Spotify" in the run, and you can add an `art` URL for it.
 
 To rebuild by hand: `python scripts/build_site_data.py`.
 
 ## The website
 
 `site/index.html` is a single-page browser for every pick. It reads
-`site/data/archive.json` and looks up album art, genre and release year from
-the iTunes Search API in the browser (cached in localStorage). Genre comes
-from a pick's `tags` first, then iTunes.
+`site/data/archive.json`, which carries the cover art, and looks up genre and
+release year from the iTunes Search API in the browser (cached in
+localStorage). If a pick has no saved cover it also tries Spotify, iTunes and
+MusicBrainz. A lookup that fails (offline, rate limited) is retried after an
+hour; one that finds nothing is retried after a week. Genre comes from a
+pick's `tags` first, then iTunes.
 
 Views: Grid, Mosaic (covers only), Weeks, Genres, List. Filter by list
 (Rob / Juno / on both), genre chip, or search.
