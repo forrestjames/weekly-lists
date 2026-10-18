@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T23:15:24Z",
+  "updated": "2026-10-18T23:44:52Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -14,7 +14,8 @@
               "kind": "album",
               "note": "Valentina Magaletti, João Pais Filipe and Leon Marks make two long pieces of clattering polyrhythm under synth haze. The Quietus made it Album of the Week.",
               "source": "The Quietus, The Line of Best Fit",
-              "spotify_url": "https://open.spotify.com/album/3XzQFLRyacf3q1kWDe9pfl"
+              "spotify_url": "https://open.spotify.com/album/3XzQFLRyacf3q1kWDe9pfl",
+              "art": "https://i.scdn.co/image/ab67616d0000b273cb462539efaaa455c0161cec"
             },
             {
               "artist": "Lamin Fofana",
@@ -22,7 +23,8 @@
               "kind": "album",
               "note": "Fofana turns the words of Aimé Césaire and others into sound. It is heavy and quiet at once.",
               "source": "a closer listen, Fall Music Preview",
-              "spotify_url": "https://open.spotify.com/album/0EdtcGlgcgoIuRoiNXypzU"
+              "spotify_url": "https://open.spotify.com/album/0EdtcGlgcgoIuRoiNXypzU",
+              "art": "https://i.scdn.co/image/ab67616d0000b273a309d0c9e723ac2afdb8535b"
             },
             {
               "artist": "Gotts Street Park",
@@ -30,7 +32,8 @@
               "kind": "album",
               "note": "The follow-up to On The Inside, with guests including Rosie Lowe and Matt Maltese. Warm, loose and soulful.",
               "source": "Clash, retailer listings",
-              "spotify_url": "https://open.spotify.com/album/2MwfrGfon5UGQ13z0Vh5tW"
+              "spotify_url": "https://open.spotify.com/album/2MwfrGfon5UGQ13z0Vh5tW",
+              "art": "https://i.scdn.co/image/ab67616d0000b27380e79e1e4aa993c0302bf9c5"
             },
             {
               "artist": "A Large Sheet of Muscle",
@@ -38,7 +41,8 @@
               "kind": "album",
               "note": "Louis Johnstone, of Wanda Group, mixes stream of consciousness spoken word, abrasive noise and fractured electronics. Short tracks, odd and prickly.",
               "source": "Resident Advisor, weekly new music",
-              "spotify_url": "https://open.spotify.com/album/5DvWieD6AMa1FsSASG3v0J"
+              "spotify_url": "https://open.spotify.com/album/5DvWieD6AMa1FsSASG3v0J",
+              "art": "https://i.scdn.co/image/ab67616d0000b2731e988abd6dc593da1a234658"
             },
             {
               "artist": "Francis Harris & Gareth Quinn Redmond",
@@ -46,7 +50,8 @@
               "kind": "album",
               "note": "Ambient leaning, with a ten minute title track and a guest vocal from Rachael Lavelle. Described as light waves crashing on an autumn shore.",
               "source": "a closer listen, Fall Music Preview",
-              "spotify_url": "https://open.spotify.com/album/0Yma6JlD705kGgZDjYlnpK"
+              "spotify_url": "https://open.spotify.com/album/0Yma6JlD705kGgZDjYlnpK",
+              "art": "https://i.scdn.co/image/ab67616d0000b273ee6d0d9f272b3d35007b9ca4"
             },
             {
               "artist": "Omasta",
@@ -54,7 +59,8 @@
               "kind": "album",
               "note": "The second album from the Kraków jazz group, after Jazz Report From The Hood. It shifts to a narrator's point of view.",
               "source": "Soundohm listing",
-              "spotify_url": "https://open.spotify.com/album/4TcwtDg79cd6RZq2OTsoaF"
+              "spotify_url": "https://open.spotify.com/album/4TcwtDg79cd6RZq2OTsoaF",
+              "art": "https://i.scdn.co/image/ab67616d0000b2736901a5a08ac606240226c4ce"
             },
             {
               "artist": "Matt Rösner",
@@ -62,7 +68,8 @@
               "kind": "album",
               "note": "Music to pause to, inspired by open prairies. One long title piece, and some short ones.",
               "source": "a closer listen, Fall Music Preview",
-              "spotify_url": "https://open.spotify.com/album/6I24dscUFuyYA5bdeUodTQ"
+              "spotify_url": "https://open.spotify.com/album/6I24dscUFuyYA5bdeUodTQ",
+              "art": "https://i.scdn.co/image/ab67616d0000b27304c6b74393fac0c5c0fc934f"
             },
             {
               "artist": "Bibio & Dorian Concept",
@@ -70,7 +77,8 @@
               "kind": "album",
               "note": "Fully instrumental, recorded remotely between Wales and Austria. Tape warmed guitar on one side, liquid synth on the other. Lead single is \"Lichen Trip\".",
               "source": "Retailer write-ups",
-              "spotify_url": "https://open.spotify.com/album/1bILUgo25ahrzoGF9l4Wlk"
+              "spotify_url": "https://open.spotify.com/album/1bILUgo25ahrzoGF9l4Wlk",
+              "art": "https://i.scdn.co/image/ab67616d0000b273feb515b5c5dd1a45f2a04383"
             },
             {
               "artist": "Matthew O'Neill",
@@ -78,7 +86,8 @@
               "kind": "album",
               "note": "Experimental compositions built on nature recordings, birdsong, synths and a piano passage. The title track runs about eight minutes.",
               "source": "NYS Music, a closer listen",
-              "spotify_url": "https://open.spotify.com/album/421iZgNqOz5WMxCHbeBPoc"
+              "spotify_url": "https://open.spotify.com/album/421iZgNqOz5WMxCHbeBPoc",
+              "art": "https://i.scdn.co/image/ab67616d0000b2734db844ff13ae76bdb901530a"
             },
             {
               "artist": "Joey DeFrancesco",
@@ -86,7 +95,8 @@
               "kind": "album",
               "note": "A posthumous live set from the organist, recorded in 2022. Eight tracks, with long takes on \"Lady G\" and \"Vibrations in Blue\".",
               "source": "Mack Avenue",
-              "spotify_url": "https://open.spotify.com/album/77ekFH3nYwLB63xdfsqSSR"
+              "spotify_url": "https://open.spotify.com/album/77ekFH3nYwLB63xdfsqSSR",
+              "art": "https://i.scdn.co/image/ab67616d0000b2737939776651627b585200ce18"
             }
           ]
         },
@@ -106,7 +116,8 @@
               "kind": "album",
               "note": "Reversed acoustic instruments and stretched vocal samples, and it leans on unease through simplicity. Quiet, strange and patient.",
               "source": "Bandcamp Daily, Essential Releases",
-              "spotify_url": "https://open.spotify.com/album/2A5pQEn7L2DgcKzMyfEKVo"
+              "spotify_url": "https://open.spotify.com/album/2A5pQEn7L2DgcKzMyfEKVo",
+              "art": "https://i.scdn.co/image/ab67616d0000b273b4c9254994758b20941278f7"
             },
             {
               "artist": "Koen Holtkamp",
@@ -114,7 +125,8 @@
               "kind": "album",
               "note": "Western Vinyl. Modular synth with Greg Fox on drums and Matt Bauder on sax and flute, made in late night sessions. Spacious and a bit like a small band playing in a dark room.",
               "source": "AllMusic new releases, retailer listings",
-              "spotify_url": "https://open.spotify.com/album/5wVxP7kRF4lymB0VPjJ8Cm"
+              "spotify_url": "https://open.spotify.com/album/5wVxP7kRF4lymB0VPjJ8Cm",
+              "art": "https://i.scdn.co/image/ab67616d0000b273eb056c325f8473dd2e38abc6"
             },
             {
               "artist": "Lothar Ohlmeier / Isambard Khroustaliov / Rudi Fischerlehner",
@@ -136,7 +148,8 @@
               "kind": "album",
               "note": "Mostly solo oud, rooted in maqam, with three ensemble pieces that open it up gently. Her first solo full length. Warm and close.",
               "source": "a closer listen",
-              "spotify_url": "https://open.spotify.com/album/4EMDLVeKE9yz2d6UoBs06u"
+              "spotify_url": "https://open.spotify.com/album/4EMDLVeKE9yz2d6UoBs06u",
+              "art": "https://i.scdn.co/image/ab67616d0000b273d8b93d43b843bb25d6f526f7"
             }
           ]
         },
@@ -149,7 +162,8 @@
               "kind": "album",
               "note": "Out October 2 on Ndeya. Music from his Pentimento Trilogy. Worth a listen for that fourth-world trumpet haze.",
               "source": "a closer listen",
-              "spotify_url": "https://open.spotify.com/album/7y6nrogjpYO43Z0V1Gdlq8"
+              "spotify_url": "https://open.spotify.com/album/7y6nrogjpYO43Z0V1Gdlq8",
+              "art": "https://i.scdn.co/image/ab67616d0000b2731663c519f75c0cefe924af3f"
             },
             {
               "artist": "Actress",
@@ -157,7 +171,8 @@
               "kind": "album",
               "note": "Musique concrete mixed with club-ready production. A strange, dense record.",
               "source": "Electronic releases roundup",
-              "spotify_url": "https://open.spotify.com/album/4bvfwACExnuV8cVqmTvneG"
+              "spotify_url": "https://open.spotify.com/album/4bvfwACExnuV8cVqmTvneG",
+              "art": "https://i.scdn.co/image/ab67616d0000b273f6f7b357a1dcf5b14298aa0c"
             },
             {
               "artist": "Marta Salogni & Stefano Pilia",
@@ -165,7 +180,8 @@
               "kind": "album",
               "note": "A collaboration between a producer and a guitarist. Listed as ambient and experimental.",
               "source": "a closer listen",
-              "spotify_url": "https://open.spotify.com/album/1tK2bpVMhH9vVgpeJW3ARX"
+              "spotify_url": "https://open.spotify.com/album/1tK2bpVMhH9vVgpeJW3ARX",
+              "art": "https://i.scdn.co/image/ab67616d0000b2730a08b701af492708b2d756b8"
             },
             {
               "artist": "Hristijan Risteski",
@@ -173,7 +189,8 @@
               "kind": "album",
               "note": "Listed as jazz on Bandcamp. I found little else, so this one is a hunch.",
               "source": "Bandcamp",
-              "spotify_url": "https://open.spotify.com/album/6WPbIiC1Z0ItpSZBjl9FY1"
+              "spotify_url": "https://open.spotify.com/album/6WPbIiC1Z0ItpSZBjl9FY1",
+              "art": "https://i.scdn.co/image/ab67616d0000b273cf92cdfb99ab9c3f7063bcb6"
             },
             {
               "artist": "Emily A. Sprague",
@@ -181,7 +198,8 @@
               "kind": "album",
               "note": "Out on RVNG Intl. Ambient, experimental electronic, from a reliably calm writer.",
               "source": "Electronic releases roundup",
-              "spotify_url": "https://open.spotify.com/album/3Pj62N3JtqsSgYs6ejCHYu"
+              "spotify_url": "https://open.spotify.com/album/3Pj62N3JtqsSgYs6ejCHYu",
+              "art": "https://i.scdn.co/image/ab67616d0000b273815a191bc4f43bc4a4c5fd54"
             },
             {
               "artist": "C'mon Tigre",
@@ -189,7 +207,8 @@
               "kind": "album",
               "note": "The Italian duo moves electronics to the centre, with synths and club rhythms beside oud, cello and vibraphone.",
               "source": "Electronic releases roundup",
-              "spotify_url": "https://open.spotify.com/album/0kUx2VJ5zFrxfxjsMjYimW"
+              "spotify_url": "https://open.spotify.com/album/0kUx2VJ5zFrxfxjsMjYimW",
+              "art": "https://i.scdn.co/image/ab67616d0000b273e5babfd73c1d8789ffb4ce3e"
             },
             {
               "artist": "Andrew Tuttle & Darren Cross",
@@ -197,7 +216,8 @@
               "kind": "album",
               "note": "Warm guitar and banjo with reverb and synth. Described as close to Rain Drinkers.",
               "source": "a closer listen",
-              "spotify_url": "https://open.spotify.com/album/5TnnsoOsO8LqwxwJifgzpJ"
+              "spotify_url": "https://open.spotify.com/album/5TnnsoOsO8LqwxwJifgzpJ",
+              "art": "https://i.scdn.co/image/ab67616d0000b273cf8fa7ee23691f5976bb7ef6"
             },
             {
               "artist": "Kaitlyn Aurelia Smith",
@@ -205,7 +225,8 @@
               "kind": "album",
               "note": "Ambient, experimental electronic. I could not find more detail than that.",
               "source": "Electronic releases roundup",
-              "spotify_url": "https://open.spotify.com/album/1sYKpHvzVmZxcc2RxiVOk0"
+              "spotify_url": "https://open.spotify.com/album/1sYKpHvzVmZxcc2RxiVOk0",
+              "art": "https://i.scdn.co/image/ab67616d0000b2733ed89caeb6fb407b5bef97d3"
             },
             {
               "artist": "Timothy Fairless",
@@ -213,7 +234,8 @@
               "kind": "album",
               "note": "Out on Dragon's Eye Recordings. Field recordings with wordless vocals and a sense of endless space.",
               "source": "a closer listen",
-              "spotify_url": "https://open.spotify.com/album/2h5G3eWajkGXuVnMsElyMG"
+              "spotify_url": "https://open.spotify.com/album/2h5G3eWajkGXuVnMsElyMG",
+              "art": "https://i.scdn.co/image/ab67616d0000b273f9f4f51ce7cc04ec95e4110b"
             },
             {
               "artist": "Jordan Sand",
@@ -221,7 +243,8 @@
               "kind": "album",
               "note": "Falsetto voice mixed with bowed double bass, which gives it an otherworldly feel.",
               "source": "Experimental releases list",
-              "spotify_url": "https://open.spotify.com/album/0nayUOcEDjfGW8Z9oIs2sr"
+              "spotify_url": "https://open.spotify.com/album/0nayUOcEDjfGW8Z9oIs2sr",
+              "art": "https://i.scdn.co/image/ab67616d0000b273234c5e0a3beaa83d4595cd0f"
             }
           ]
         },
@@ -234,7 +257,8 @@
               "kind": "album",
               "note": "Guitar songs that drift and smudge, on Grouper's own label. Quiet, strange and worth the full run.",
               "source": "Bandcamp Daily Hotlist",
-              "spotify_url": "https://open.spotify.com/album/2wB9detc1PQGC8MmHmQEPg"
+              "spotify_url": "https://open.spotify.com/album/2wB9detc1PQGC8MmHmQEPg",
+              "art": "https://i.scdn.co/image/ab67616d0000b273706ed40347d60a9876111635"
             },
             {
               "artist": "nthng",
@@ -242,7 +266,8 @@
               "kind": "album",
               "note": "Ambient, IDM, dub techno and a little drum and bass, with bamboo flute and typewriter in the mix. Soft on top, with real movement underneath.",
               "source": "Bandcamp Daily Hotlist",
-              "spotify_url": "https://open.spotify.com/album/2Mo21eA9tvNiWOOE51RHDD"
+              "spotify_url": "https://open.spotify.com/album/2Mo21eA9tvNiWOOE51RHDD",
+              "art": "https://i.scdn.co/image/ab67616d0000b27305215fb49ebb4d73700e9f84"
             },
             {
               "artist": "Sunken Cages",
@@ -257,7 +282,8 @@
               "kind": "track",
               "note": "The first piece from his album due 23 October. Tape-loop ambient, slow and sad.",
               "source": "Bandcamp Daily Hotlist",
-              "spotify_url": "https://open.spotify.com/track/4XBabOsUmMQb8N06GQy5hr"
+              "spotify_url": "https://open.spotify.com/track/4XBabOsUmMQb8N06GQy5hr",
+              "art": "https://i.scdn.co/image/ab67616d0000b273f9ad90d99964bc82ba624ea4"
             },
             {
               "artist": "Vanishing Twin",
@@ -265,7 +291,8 @@
               "kind": "album",
               "note": "Homemade instruments and chopped samples, built remotely between rural France and a London boat. The Quietus hears Autechre reworking The Wicker Man. Raw and odd.",
               "source": "The Quietus",
-              "spotify_url": "https://open.spotify.com/album/4Ljv5I3EQtAZtSw0wZxkob"
+              "spotify_url": "https://open.spotify.com/album/4Ljv5I3EQtAZtSw0wZxkob",
+              "art": "https://i.scdn.co/image/ab67616d0000b273787772bfe16950fbfe145193"
             },
             {
               "artist": "J.D. Allen III",
@@ -273,7 +300,8 @@
               "kind": "album",
               "note": "Tenor saxophone drawing on Moroccan Gnawa tradition, set against blues-rooted jazz. A good one for a long evening.",
               "source": "Presto jazz round-up",
-              "spotify_url": "https://open.spotify.com/album/4sb0xNlVbIfBFAVLjeWVEx"
+              "spotify_url": "https://open.spotify.com/album/4sb0xNlVbIfBFAVLjeWVEx",
+              "art": "https://i.scdn.co/image/ab67616d0000b27374dd9cf6242429dcd4b3105c"
             },
             {
               "artist": "Siavash Amini",
@@ -281,14 +309,17 @@
               "kind": "album",
               "note": "Drone that breaks into short bursts out of long silence. Dark, patient and well suited to headphones.",
               "source": "A Closer Listen",
-              "spotify_url": "https://open.spotify.com/album/7iLOGmvw49UOoNZnhunm49"
+              "spotify_url": "https://open.spotify.com/album/7iLOGmvw49UOoNZnhunm49",
+              "art": "https://i.scdn.co/image/ab67616d0000b27389e9a25ba6a9c65cacd41e37"
             },
             {
               "artist": "Adriano Zanni",
               "title": "Post Dub Cities",
               "kind": "album",
               "note": "Austere dub-leaning electronics that sound like empty streets and wear. Cold and spare, in a good way.",
-              "source": "A Closer Listen"
+              "source": "A Closer Listen",
+              "spotify_url": "https://open.spotify.com/album/4KzfuOk1BGKpyEnDRzUKqX",
+              "art": "https://i.scdn.co/image/ab67616d0000b273002414a6d75f0ee1da8693a6"
             },
             {
               "artist": "DjRUM",
@@ -296,7 +327,8 @@
               "kind": "album",
               "note": "A preview from his DJ-Kicks mix, out 16 October. Dark, textured club music.",
               "source": "Bandcamp Daily Hotlist",
-              "spotify_url": "https://open.spotify.com/album/0fhgHKYgm2Mwpq0d2i8bF4"
+              "spotify_url": "https://open.spotify.com/album/0fhgHKYgm2Mwpq0d2i8bF4",
+              "art": "https://i.scdn.co/image/ab67616d0000b273755998f336a6c552e5d6fd25"
             },
             {
               "artist": "Tasgeelat Al-Husni",
@@ -304,7 +336,8 @@
               "kind": "album",
               "note": "Arabic-language post-rock and jazz, about lives left unfinished, like abandoned buildings.",
               "source": "A Closer Listen",
-              "spotify_url": "https://open.spotify.com/album/4agoblFfRJKduMhfcrWYzV"
+              "spotify_url": "https://open.spotify.com/album/4agoblFfRJKduMhfcrWYzV",
+              "art": "https://i.scdn.co/image/ab67616d0000b27384f362aee0e8ffba2e10bb50"
             },
             {
               "artist": "Jan Prax",
@@ -312,7 +345,8 @@
               "kind": "album",
               "note": "A saxophone quartet in quiet, searching post-bop, nine originals. The gentle pick of the week.",
               "source": "Presto jazz round-up",
-              "spotify_url": "https://open.spotify.com/album/5oYf3kx38Kc5eFuSaV6Pi6"
+              "spotify_url": "https://open.spotify.com/album/5oYf3kx38Kc5eFuSaV6Pi6",
+              "art": "https://i.scdn.co/image/ab67616d0000b273c048470698214c807267fe78"
             },
             {
               "artist": "Ava Mendoza",
@@ -320,7 +354,8 @@
               "kind": "album",
               "note": "Live guitar from four cities, fuzz and blues running through it, with Hamid Drake on drums for four tracks.",
               "source": "Free Jazz Collective",
-              "spotify_url": "https://open.spotify.com/album/73fZwSCTGKSNv4Xn6cCdpH"
+              "spotify_url": "https://open.spotify.com/album/73fZwSCTGKSNv4Xn6cCdpH",
+              "art": "https://i.scdn.co/image/ab67616d0000b27377ccaddf8f1e0eaa5913ab5a"
             }
           ]
         }
@@ -338,7 +373,9 @@
               "title": "No Bad Memories",
               "kind": "album",
               "note": "Their first album in six years, and it sounds like it. A sun soaked collage of samples and guest vocals, very much in the spirit of Since I Left You.",
-              "source": "Juno: Leftfield"
+              "source": "Juno: Leftfield",
+              "spotify_url": "https://open.spotify.com/album/3De7Ues320SIjGCaz5b6fX",
+              "art": "https://i.scdn.co/image/ab67616d0000b2734d100df0be7285a2f1176c7a"
             },
             {
               "artist": "Enrico Rava Fearless Five with Joe Lovano",
@@ -353,7 +390,8 @@
               "kind": "album",
               "note": "Louis Johnstone, who also records as Wanda Group, mixing stream of consciousness spoken word with harsh noise and broken electronics. Bleak and bracing.",
               "source": "Juno: Ambient / Drone / Experimental",
-              "spotify_url": "https://open.spotify.com/album/5DvWieD6AMa1FsSASG3v0J"
+              "spotify_url": "https://open.spotify.com/album/5DvWieD6AMa1FsSASG3v0J",
+              "art": "https://i.scdn.co/image/ab67616d0000b2731e988abd6dc593da1a234658"
             },
             {
               "artist": "June McDoom",
@@ -361,7 +399,8 @@
               "kind": "album",
               "note": "Her debut, blending dub reggae with vintage psych folk and classic soul, shaped by growing up in a Jamaican household in South Florida. Warm and unhurried.",
               "source": "Juno: Reggae / Dub",
-              "spotify_url": "https://open.spotify.com/album/5VHfVW8PISNYyVG9Hb4G2Y"
+              "spotify_url": "https://open.spotify.com/album/5VHfVW8PISNYyVG9Hb4G2Y",
+              "art": "https://i.scdn.co/image/ab67616d0000b27343538c044ebafd7c0640993e"
             },
             {
               "artist": "Richard Thompson",
@@ -369,7 +408,8 @@
               "kind": "album",
               "note": "His 20th studio album, and one of his strongest in years. The songwriting leads, the band stays tight behind him, and the guitar work is there without ever showing off.",
               "source": "Juno: Leftfield",
-              "spotify_url": "https://open.spotify.com/album/4fourLlwRgWXLg9qpirYw9"
+              "spotify_url": "https://open.spotify.com/album/4fourLlwRgWXLg9qpirYw9",
+              "art": "https://i.scdn.co/image/ab67616d0000b273a4d507b75e9e2bd01ac1341a"
             },
             {
               "artist": "Fontaines D.C.",
@@ -377,7 +417,8 @@
               "kind": "album",
               "note": "Fifth album, picked up a five star review this week. Denser and more unsettled than what came before, but still unmistakably them.",
               "source": "Juno: Leftfield",
-              "spotify_url": "https://open.spotify.com/album/0JICUfSKOdGqzE9FJSrNci"
+              "spotify_url": "https://open.spotify.com/album/0JICUfSKOdGqzE9FJSrNci",
+              "art": "https://i.scdn.co/image/ab67616d0000b273a01e49054c2135f979e06de0"
             },
             {
               "artist": "ONMO",
@@ -385,7 +426,8 @@
               "kind": "album",
               "note": "A London sextet led by guitarist Jean de Talhouët, built around a three part title suite with contrapuntal writing. Unusually optimistic for contemporary jazz.",
               "source": "Juno: Jazz",
-              "spotify_url": "https://open.spotify.com/album/3oLpCoxGA1b4FLtWZvCOjR"
+              "spotify_url": "https://open.spotify.com/album/3oLpCoxGA1b4FLtWZvCOjR",
+              "art": "https://i.scdn.co/image/ab67616d0000b2730b26516b49083ab4f2760dc9"
             },
             {
               "artist": "Lorne Lofsky / Nigel Price Quartet",
@@ -400,7 +442,8 @@
               "kind": "album",
               "note": "A joint EP marking five years of IMOGEN's WIGS label. White knuckle rave nostalgia, unapologetically maximalist.",
               "source": "Juno: Techno",
-              "spotify_url": "https://open.spotify.com/album/5hB0HFwJqzAAU85NecYE5U"
+              "spotify_url": "https://open.spotify.com/album/5hB0HFwJqzAAU85NecYE5U",
+              "art": "https://i.scdn.co/image/ab67616d0000b27322063fe4793dff415e6d2cb8"
             },
             {
               "artist": "Gnod",
@@ -408,7 +451,8 @@
               "kind": "album",
               "note": "Second in Gnod's new triptych, heavy and repetitive with dub abstraction and spoken word running through the centerpiece track. Technically out October 9th, but too good to leave out.",
               "source": "Juno: Ambient / Drone / Experimental",
-              "spotify_url": "https://open.spotify.com/album/3CVFXNmW8bXOBMYYIfyFMl"
+              "spotify_url": "https://open.spotify.com/album/3CVFXNmW8bXOBMYYIfyFMl",
+              "art": "https://i.scdn.co/image/ab67616d0000b273889eb60f4867a9b1b8d4c4b0"
             }
           ]
         },
@@ -421,7 +465,8 @@
               "kind": "album",
               "note": "Previously unheard trio recordings of the late Fourth World pioneer, reworking themes from across his catalogue. It completes a trilogy he never lived to finish and it's the closest thing to a lost Hassell album we're going to get.",
               "source": "Juno: Ambient / Drone / Experimental",
-              "spotify_url": "https://open.spotify.com/album/7y6nrogjpYO43Z0V1Gdlq8"
+              "spotify_url": "https://open.spotify.com/album/7y6nrogjpYO43Z0V1Gdlq8",
+              "art": "https://i.scdn.co/image/ab67616d0000b2731663c519f75c0cefe924af3f"
             },
             {
               "artist": "Maria W Horn",
@@ -429,7 +474,8 @@
               "kind": "album",
               "note": "Contrabass recorder, shō, bowed cymbals and tape loops of spoken W.G. Sebald, with Swans' Michael Gira turning up on one track. Dense, slow-building electroacoustic work. Needs a dark room and your full attention.",
               "source": "Juno: Ambient / Drone / Experimental",
-              "spotify_url": "https://open.spotify.com/album/6hnBPFkeCokEbke3GtRmzI"
+              "spotify_url": "https://open.spotify.com/album/6hnBPFkeCokEbke3GtRmzI",
+              "art": "https://i.scdn.co/image/ab67616d0000b273c1fc5709c7633f68a2ed8666"
             },
             {
               "artist": "Allison de Groot & Rich Ruth",
@@ -437,7 +483,8 @@
               "kind": "album",
               "note": "A bluegrass banjo player and an ambient synth producer from Nashville, out on Western Vinyl. Clawhammer banjo through looping and delay set against pedal steel, strings and field recordings of cicadas. The two sounds never fully merge, which is what makes it work.",
               "source": "Juno: Jazz",
-              "spotify_url": "https://open.spotify.com/album/78GCLznGXkzJVxtllgeNFw"
+              "spotify_url": "https://open.spotify.com/album/78GCLznGXkzJVxtllgeNFw",
+              "art": "https://i.scdn.co/image/ab67616d0000b2731eb0c9068659226f8e9e0fec"
             },
             {
               "artist": "C'mon Tigre",
@@ -445,7 +492,8 @@
               "kind": "album",
               "note": "Italian duo mixing drum machines and arpeggiators with oud, cello, xylophone and vibraphone. More club-facing than their earlier records but still unmistakably their own thing, world music that doesn't sound like a pastiche.",
               "source": "Juno: Leftfield",
-              "spotify_url": "https://open.spotify.com/album/0kUx2VJ5zFrxfxjsMjYimW"
+              "spotify_url": "https://open.spotify.com/album/0kUx2VJ5zFrxfxjsMjYimW",
+              "art": "https://i.scdn.co/image/ab67616d0000b273e5babfd73c1d8789ffb4ce3e"
             },
             {
               "artist": "Bullion",
@@ -453,7 +501,8 @@
               "kind": "album",
               "note": "Nathan Jenkins' first solo album in two years, made across London, Toronto and Montreal. Vocal-led electronic pop with L Devine guesting, understated and well-arranged rather than flashy. A grower.",
               "source": "Juno: Leftfield",
-              "spotify_url": "https://open.spotify.com/album/0XpKZlGWTpea5gidjWsuuN"
+              "spotify_url": "https://open.spotify.com/album/0XpKZlGWTpea5gidjWsuuN",
+              "art": "https://i.scdn.co/image/ab67616d0000b273a1e6a4e8682ac791e3c809f8"
             },
             {
               "artist": "Kaitlyn Aurelia Smith",
@@ -461,7 +510,8 @@
               "kind": "album",
               "note": "A hard swerve from her usual modular ambient work into jungle, drum & bass and future garage, most of it past 170 BPM. Still unmistakably her, just with teeth.",
               "source": "Juno: Leftfield",
-              "spotify_url": "https://open.spotify.com/album/1sYKpHvzVmZxcc2RxiVOk0"
+              "spotify_url": "https://open.spotify.com/album/1sYKpHvzVmZxcc2RxiVOk0",
+              "art": "https://i.scdn.co/image/ab67616d0000b2733ed89caeb6fb407b5bef97d3"
             },
             {
               "artist": "Nao",
@@ -469,7 +519,8 @@
               "kind": "album",
               "note": "Two sides of UK soul from Nao, one tender, one more upbeat. Not a huge event release but a genuinely good pair of songs.",
               "source": "Juno: Soul / Funk",
-              "spotify_url": "https://open.spotify.com/album/6Dusr0zMg57KbTwHFapiQj"
+              "spotify_url": "https://open.spotify.com/album/6Dusr0zMg57KbTwHFapiQj",
+              "art": "https://i.scdn.co/image/ab67616d0000b273350e8af0387da809bcb5c7db"
             },
             {
               "artist": "nthng",
@@ -477,7 +528,8 @@
               "kind": "album",
               "note": "Amsterdam producer hopping between ambient, techno, dub, dream pop and drum & bass across one record without it feeling scattered.",
               "source": "Juno: Leftfield",
-              "spotify_url": "https://open.spotify.com/album/2Mo21eA9tvNiWOOE51RHDD"
+              "spotify_url": "https://open.spotify.com/album/2Mo21eA9tvNiWOOE51RHDD",
+              "art": "https://i.scdn.co/image/ab67616d0000b27305215fb49ebb4d73700e9f84"
             },
             {
               "artist": "Vanishing Twin",
@@ -485,14 +537,17 @@
               "kind": "album",
               "note": "New studio album despite the title, the trio swapping instruments and working remotely across different cities. A collage of postmodern songcraft, warm and a bit woozy rather than clinical.",
               "source": "Juno: Leftfield",
-              "spotify_url": "https://open.spotify.com/album/4Ljv5I3EQtAZtSw0wZxkob"
+              "spotify_url": "https://open.spotify.com/album/4Ljv5I3EQtAZtSw0wZxkob",
+              "art": "https://i.scdn.co/image/ab67616d0000b273787772bfe16950fbfe145193"
             },
             {
               "artist": "Turner Club",
               "title": "All For Free",
               "kind": "track",
               "note": "A Juno Daily exclusive this week. Dub-inflected downbeat, slow and spacious.",
-              "source": "Juno: Reggae / Dub"
+              "source": "Juno: Reggae / Dub",
+              "spotify_url": "https://open.spotify.com/track/0ez8CxTG4VlOq8LRVsDx3j",
+              "art": "https://i.scdn.co/image/ab67616d0000b273736ded86ab3cd11bdb150eac"
             }
           ]
         }
