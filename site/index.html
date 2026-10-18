@@ -97,23 +97,30 @@ main{max-width:1500px;margin:0 auto;padding:18px 16px 80px}
 .dim{color:var(--dim)}
 
 /* modal */
-dialog{border:1px solid var(--line);border-radius:16px;background:var(--panel);color:var(--text);padding:0;width:min(760px,calc(100vw - 24px));max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);overflow:auto;overscroll-behavior:contain}
+dialog{border:1px solid var(--line);border-radius:18px;background:var(--panel);color:var(--text);padding:0;width:min(1040px,calc(100vw - 32px));max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);overflow:auto;overscroll-behavior:contain}
 dialog::backdrop{background:rgba(0,0,0,.65);backdrop-filter:blur(4px)}
-.detail{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:22px;padding:22px}
-.detail .art{box-shadow:0 12px 30px rgba(0,0,0,.4)}
-.detail h3{margin:0;font-size:24px;letter-spacing:-.02em;line-height:1.15}
-.detail .by{font-size:17px;color:var(--dim);margin:2px 0 14px}
-dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0 0 16px;font-size:14px}
-dt{color:var(--dim)} dd{margin:0}
-.note{background:var(--panel2);border-radius:8px;padding:10px 12px;margin-bottom:14px;font-size:14px}
-.links{display:flex;flex-wrap:wrap;gap:8px}
-.links a{background:var(--text);color:var(--bg);text-decoration:none;font-weight:600;padding:8px 14px;border-radius:999px;font-size:14px}
-.links a.alt{background:var(--panel2);color:var(--text);border:1px solid var(--line);font-weight:500}
-.desc{font-size:14px;line-height:1.5;margin:0 0 10px;color:var(--text)}
-.desc{background:var(--panel2);border-radius:8px;padding:10px 12px}
-.desc .who{display:block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:3px}
+:root{--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif}
+/* The overlay reads like a magazine page: big serif headline, a dateline above
+   it, each list's take set as a paragraph with a coloured rule, facts below. */
+.detail{display:grid;grid-template-columns:minmax(0,360px) minmax(0,1fr);gap:52px;padding:60px 60px 56px;align-items:start}
+.detail .art{border-radius:4px;box-shadow:0 20px 48px rgba(0,0,0,.42);position:sticky;top:24px}
+.kicker{font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.detail h3{margin:14px 0 10px;font:700 clamp(36px,4.6vw,58px)/1.03 var(--serif);letter-spacing:-.025em;text-wrap:balance}
+.detail .by{font:italic 400 clamp(21px,2.4vw,28px)/1.3 var(--serif);color:var(--dim);margin:0 0 30px;padding-bottom:28px;border-bottom:1px solid var(--line)}
+.pick{margin:0 0 34px;padding-left:22px;border-left:3px solid var(--line)}
+.pick.rob{border-color:var(--rob)} .pick.juno{border-color:var(--juno)}
+.pick .who{display:block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
 .who.rob{color:var(--rob)} .who.juno{color:var(--juno)}
-.close{position:absolute;top:10px;right:12px;background:var(--panel2);border:1px solid var(--line);width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:16px}
+.pick .when{font-size:14px;color:var(--dim);margin-top:3px}
+.pick p{margin:14px 0 0;font:400 clamp(19px,1.9vw,22px)/1.65 var(--serif);max-width:34em;text-wrap:pretty}
+.facts{display:flex;flex-wrap:wrap;gap:22px 44px;margin:6px 0 34px;padding-top:26px;border-top:1px solid var(--line)}
+.facts .k{display:block;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:5px}
+.facts .v{font:400 19px/1.3 var(--serif)}
+.links{display:flex;flex-wrap:wrap;gap:12px}
+.links a{background:var(--text);color:var(--bg);text-decoration:none;font-weight:600;padding:14px 24px;border-radius:999px;font-size:16px}
+.links a.alt{background:var(--panel2);color:var(--text);border:1px solid var(--line);font-weight:500}
+.close{position:absolute;top:18px;right:20px;background:var(--panel2);border:1px solid var(--line);width:44px;height:44px;border-radius:50%;cursor:pointer;font-size:18px;z-index:3}
+@media (max-width:860px){.detail{grid-template-columns:minmax(0,250px) minmax(0,1fr);gap:34px;padding:56px 36px 40px}}
 .by-m{display:none}
 @media (max-width:620px){
   /* header: stack the subtitle under the title */
@@ -154,12 +161,14 @@ dt{color:var(--dim)} dd{margin:0}
   .src-tag{font-size:0;width:10px;height:10px;padding:0;border:0;background:currentColor;margin-right:5px;vertical-align:middle}
 
   /* detail dialog: near full width, close button stays reachable while scrolling */
-  dialog{width:calc(100vw - 20px);max-height:calc(100vh - 20px);max-height:calc(100dvh - 20px);border-radius:14px}
-  .detail{grid-template-columns:1fr;padding:52px 16px 20px;gap:16px}
-  .detail .art{width:100%;max-width:260px;margin:0 auto}
-  .detail h3{font-size:22px}
-  .close{position:sticky;top:8px;right:auto;float:right;width:40px;height:40px;margin:8px 8px -48px 0;z-index:3}
-  .links a{padding:11px 16px}
+  dialog{width:calc(100vw - 16px);max-height:calc(100vh - 16px);max-height:calc(100dvh - 16px);border-radius:16px}
+  .detail{grid-template-columns:1fr;padding:64px 22px 30px;gap:28px}
+  .detail .art{position:relative;top:auto;width:100%;max-width:210px;margin:0}
+  .detail h3{font-size:clamp(34px,10vw,42px)}
+  .detail .by{font-size:21px;margin-bottom:24px;padding-bottom:22px}
+  .pick p{font-size:19px;line-height:1.6}
+  .close{position:sticky;top:10px;right:auto;float:right;margin:10px 10px -54px 0}
+  .links a{padding:14px 22px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -218,9 +227,13 @@ const save = () => { try { localStorage.setItem("wl-state", JSON.stringify({sour
 
 /* ---------- art + genre lookup (iTunes Search API, cached) ---------- */
 let cache = {};
-try { cache = JSON.parse(localStorage.getItem("wl-art2")||"{}"); } catch {}
-const persist = () => { try { localStorage.setItem("wl-art2", JSON.stringify(cache)); } catch {} };
-const TTL_MISS = 7*864e5;
+try { cache = JSON.parse(localStorage.getItem("wl-art3")||"{}"); } catch {}
+const persist = () => { try { localStorage.setItem("wl-art3", JSON.stringify(cache)); } catch {} };
+const TTL_MISS = 7*864e5;   // nothing found anywhere: look again in a week
+const TTL_RETRY = 36e5;     // a request failed (offline, rate limited): look again in an hour
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const isTransient = e => !/^40[04]$/.test(String(e && e.message));  // 400/404 are real answers, anything else may pass
+const stale = c => !Object.keys(c).length || (c.retry && Date.now() > c.retry) || (c.miss && Date.now() - c.miss > TTL_MISS) || (c.noart && Date.now() - c.noart > TTL_MISS);
 
 function pickResult(results, a) {
   const t = norm(a.title), ar = norm(a.artist);
@@ -239,40 +252,51 @@ async function getJSON(url) {
   if (!res.ok) throw new Error(res.status);
   return res.json();
 }
-// Cover sources, in order: the pick's own Spotify link (exact, no matching
-// needed), then Apple (also gives genre/year), then MusicBrainz + Cover Art
-// Archive for anything neither has.
+// Cover sources, in order: "art" from the site data (the build step looks each
+// pick up on Spotify and saves the cover, so nothing is needed here), then the
+// pick's own Spotify link, then Apple (also gives genre/year), then MusicBrainz
+// + Cover Art Archive for anything else. When a request fails for a reason that
+// may pass (offline, rate limited) the result is marked to retry in an hour
+// instead of being remembered as "nothing found" for a week.
+let mbNext = 0;
+async function mbGet(url) {   // MusicBrainz allows about one request a second
+  const start = Math.max(Date.now(), mbNext);
+  mbNext = start + 1100;
+  await sleep(start - Date.now());
+  return getJSON(url);
+}
 async function lookup(a) {
   const out = {};
   const tasks = [];
-  if (a.links.spotify) tasks.push(getJSON(`https://open.spotify.com/oembed?url=${encodeURIComponent(a.links.spotify)}`)
-    .then(j => { if (j.thumbnail_url) out.art = j.thumbnail_url.replace("ab67616d00001e02", "ab67616d0000b273"); }, () => {}));
+  let transient = false, itunesFailed = false;
+  if (!a.art && a.links.spotify) tasks.push(getJSON(`https://open.spotify.com/oembed?url=${encodeURIComponent(a.links.spotify)}`)
+    .then(j => { if (j.thumbnail_url) out.art = j.thumbnail_url.replace("ab67616d00001e02", "ab67616d0000b273"); },
+          e => { if (isTransient(e)) transient = true; }));
   const term = encodeURIComponent(`${a.artist} ${a.title}`);
-  let failed = false;
   tasks.push(getJSON(`https://itunes.apple.com/search?term=${term}&entity=album&limit=8`).then(j => {
     const r = pickResult(j.results || [], a);
     if (!r) return;
     out.itunesArt = (r.artworkUrl100||"").replace("100x100bb","600x600bb");
     Object.assign(out, { genre: r.primaryGenreName || "", year: (r.releaseDate||"").slice(0,4), apple: r.collectionViewUrl || "" });
-  }, () => { failed = true; }));
+  }, e => { itunesFailed = true; if (isTransient(e)) transient = true; }));
   await Promise.all(tasks);
-  if (!out.art) out.art = out.itunesArt;
-  delete out.itunesArt;
-  if (!out.art && !failed) {
+  if (!out.art && !a.art && out.itunesArt) out.art = out.itunesArt;
+  delete out.itunesArt;   // (assigning undefined here used to save an empty entry that was never retried)
+  if (!out.art && !a.art && !itunesFailed) {
     try {
       const q = encodeURIComponent(`releasegroup:"${a.title}" AND artist:"${a.artist}"`);
-      const g = (await getJSON(`https://musicbrainz.org/ws/2/release-group/?query=${q}&fmt=json&limit=3`))["release-groups"] || [];
+      const g = (await mbGet(`https://musicbrainz.org/ws/2/release-group/?query=${q}&fmt=json&limit=3`))["release-groups"] || [];
       const hit = g.find(x => x.score >= 90 && norm(x.title) === norm(a.title));
       if (hit) out.art = `https://coverartarchive.org/release-group/${hit.id}/front-500`;
-    } catch {}
+    } catch (e) { if (isTransient(e)) transient = true; }
   }
-  if (failed && !out.art) throw new Error("lookup failed");
+  if (transient) out.retry = Date.now() + TTL_RETRY;
   return Object.keys(out).length ? out : { miss: Date.now() };
 }
 const queue = []; let active = 0, rerenderT;
 function enqueue(a) {
   const c = cache[a.key];
-  if (c && (!c.miss || Date.now() - c.miss < TTL_MISS)) return;
+  if (c && !stale(c)) return;
   queue.push(a); pump();
 }
 function pump() {
@@ -284,6 +308,15 @@ function pump() {
   }
 }
 const info = a => cache[a.key] && !cache[a.key].miss ? cache[a.key] : {};
+// Cover URL for a pick, skipping any address that already failed to load.
+const badArt = new Set();
+const artOf = a => { const u = a.art || info(a).art || ""; return badArt.has(u) ? "" : u; };
+function artFailed(img) {
+  const u = img.dataset.u, c = cache[img.dataset.k];
+  badArt.add(u);
+  if (c && c.art === u) { delete c.art; c.noart = Date.now(); persist(); }   // drop the dead address; look again in a week
+  img.remove();
+}
 const genreOf = a => (a.tags && a.tags[0]) || info(a).genre || "";
 
 /* ---------- data ---------- */
@@ -300,6 +333,7 @@ async function load() {
       a.picks.push({list:ed, date:w.date, source:it.source||"", note:it.note||""});
       if (it.tags) it.tags.forEach(t => a.tags.includes(t) || a.tags.push(t));
       if (it.spotify_url) a.links.spotify = it.spotify_url;
+      if (it.art) a.art = it.art;
       if (it.link) a.links.other = it.link;
     }
   }
@@ -335,9 +369,9 @@ function filtered() {
 
 /* ---------- rendering ---------- */
 function artHTML(a, withBadges=true) {
-  const i = info(a), h = hue(a.key);
+  const u = artOf(a), h = hue(a.key);
   const ph = `<div class="ph" style="background:linear-gradient(135deg,hsl(${h} 45% 32%),hsl(${(h+50)%360} 55% 20%))">${esc(a.title)}</div>`;
-  const img = i.art ? `<img src="${esc(i.art.replace("600x600","400x400"))}" alt="" loading="lazy" onerror="this.remove()">` : "";
+  const img = u ? `<img src="${esc(u.replace("600x600","400x400"))}" data-k="${esc(a.key)}" data-u="${esc(u)}" alt="" loading="lazy" onerror="artFailed(this)">` : "";
   const dots = withBadges ? `<div class="badges">${a.lists.map(l=>`<span class="badge ${l}" title="${esc(SRC[l].name)}"></span>`).join("")}</div>${a.lists.length>1?'<span class="both-flag">BOTH</span>':""}` : "";
   return `<div class="art">${ph}${img}${dots}</div>`;
 }
@@ -395,20 +429,23 @@ function openDetail(key) {
   const a = state.albums.find(x => x.key === key); if (!a) return;
   const i = info(a);
   const spot = safeUrl(a.links.spotify) || `https://open.spotify.com/search/${encodeURIComponent(a.artist+" "+a.title)}`;
-  const picks = a.picks.map(p => `${esc(SRC[p.list].name)} · ${fmtDate(p.date)}${p.source?` <span class="dim">(${esc(p.source)})</span>`:""}`).join("<br>");
-  $("#dlgBody").innerHTML = `<div class="detail">${artHTML(a,false)}<div>
+  const kicker = `${a.lists.map(l => esc(SRC[l].name)).join(" &amp; ")} · ${fmtDate(a.added)}`;
+  const picks = a.picks.map(p => `<section class="pick ${esc(p.list)}">
+      <span class="who ${esc(p.list)}">${esc(SRC[p.list].name)}</span>
+      <div class="when">${fmtDate(p.date)}${p.source ? ` · ${esc(p.source)}` : ""}</div>
+      ${p.note ? `<p>${esc(p.note)}</p>` : ""}</section>`).join("");
+  const fact = (k, v) => v ? `<div><span class="k">${k}</span><span class="v">${esc(v)}</span></div>` : "";
+  const genres = genreOf(a) ? [genreOf(a), ...a.tags.slice(genreOf(a) === a.tags[0] ? 1 : 0)].join(", ") : "";
+  const kind = a.kind ? a.kind.charAt(0).toUpperCase() + a.kind.slice(1) : "";
+  $("#dlgBody").innerHTML = `<div class="detail">${artHTML(a,false)}<article>
+    <div class="kicker">${kicker}</div>
     <h3>${esc(a.title)}</h3><div class="by">${esc(a.artist)}</div>
-    <dl><dt>Added</dt><dd>${fmtDate(a.added)}</dd>
-    <dt>Picked by</dt><dd>${picks}</dd>
-    ${genreOf(a)?`<dt>Genre</dt><dd>${esc([genreOf(a),...a.tags.slice(genreOf(a)===a.tags[0]?1:0)].join(", "))}</dd>`:""}
-    ${i.year?`<dt>Released</dt><dd>${esc(i.year)}</dd>`:""}
-    <dt>Type</dt><dd>${esc(a.kind)}</dd>
-</dl>
-    ${a.picks.filter(p => p.note).map(p => `<div class="desc"><small class="who ${p.list}">${esc(SRC[p.list].name)}</small>${esc(p.note)}</div>`).join("")}
-    <div class="links"><a href="${esc(spot)}" target="_blank" rel="noopener">Spotify</a>
+    ${picks}
+    <div class="facts">${fact("Genre", genres)}${fact("Released", i.year)}${fact("Format", kind)}</div>
+    <div class="links"><a href="${esc(spot)}" target="_blank" rel="noopener">Listen on Spotify</a>
     ${safeUrl(a.links.other)?`<a class="alt" href="${esc(a.links.other)}" target="_blank" rel="noopener">Listen elsewhere</a>`:""}
     ${safeUrl(i.apple)?`<a class="alt" href="${esc(i.apple)}" target="_blank" rel="noopener">Apple Music</a>`:""}</div>
-  </div></div>`;
+  </article></div>`;
   $("#dlg").showModal();
 }
 
