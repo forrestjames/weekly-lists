@@ -1,43 +1,70 @@
 {
-  "updated": "2026-10-12T06:10:22Z",
+  "updated": "2026-10-18T20:17:05Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
       "playlist": "https://open.spotify.com/playlist/6YpWmU0EK7fFa62dpR8Ip7",
-      "date": "2026-10-12",
+      "date": "2026-10-18",
       "items": [
         {
-          "artist": "Jeremiah Chiu",
-          "title": "Edge Conditions",
-          "kind": "album"
-        },
-        {
-          "artist": "Klara Lewis",
-          "title": "Opening",
+          "artist": "CZN",
+          "title": "Parallel Commutator",
           "kind": "album",
-          "spotify_url": "https://open.spotify.com/album/2A5pQEn7L2DgcKzMyfEKVo"
+          "spotify_url": "https://open.spotify.com/album/3XzQFLRyacf3q1kWDe9pfl"
         },
         {
-          "artist": "Koen Holtkamp",
-          "title": "Nightlife",
+          "artist": "Lamin Fofana",
+          "title": "Corps Perdu",
           "kind": "album",
-          "spotify_url": "https://open.spotify.com/album/5wVxP7kRF4lymB0VPjJ8Cm"
+          "spotify_url": "https://open.spotify.com/album/0EdtcGlgcgoIuRoiNXypzU"
         },
         {
-          "artist": "Lothar Ohlmeier / Isambard Khroustaliov / Rudi Fischerlehner",
-          "title": "Landscapes",
-          "kind": "album"
-        },
-        {
-          "artist": "crys cole",
-          "title": "Testing the Waters",
-          "kind": "album"
-        },
-        {
-          "artist": "Emna Mâaref",
-          "title": "Ama Lel Hawa",
+          "artist": "Gotts Street Park",
+          "title": "Somewhere Between",
           "kind": "album",
-          "spotify_url": "https://open.spotify.com/album/4EMDLVeKE9yz2d6UoBs06u"
+          "spotify_url": "https://open.spotify.com/album/2MwfrGfon5UGQ13z0Vh5tW"
+        },
+        {
+          "artist": "A Large Sheet of Muscle",
+          "title": "Chinese Benefits",
+          "kind": "album",
+          "spotify_url": "https://open.spotify.com/album/5DvWieD6AMa1FsSASG3v0J"
+        },
+        {
+          "artist": "Francis Harris & Gareth Quinn Redmond",
+          "title": "Eyes Bright and Low",
+          "kind": "album",
+          "spotify_url": "https://open.spotify.com/album/0Yma6JlD705kGgZDjYlnpK"
+        },
+        {
+          "artist": "Omasta",
+          "title": "Hits Different",
+          "kind": "album",
+          "spotify_url": "https://open.spotify.com/album/4TcwtDg79cd6RZq2OTsoaF"
+        },
+        {
+          "artist": "Matt Rösner",
+          "title": "Lost Meridians",
+          "kind": "album",
+          "spotify_url": "https://open.spotify.com/album/6I24dscUFuyYA5bdeUodTQ"
+        },
+        {
+          "artist": "Bibio & Dorian Concept",
+          "title": "Answers",
+          "kind": "album",
+          "spotify_url": "https://open.spotify.com/album/1bILUgo25ahrzoGF9l4Wlk"
+        },
+        {
+          "artist": "Matthew O'Neill",
+          "title": "Through to Us",
+          "kind": "album",
+          "spotify_url": "https://open.spotify.com/album/421iZgNqOz5WMxCHbeBPoc"
+        },
+        {
+          "artist": "Joey DeFrancesco",
+          "title": "Live at Keystone Korner",
+          "kind": "album",
+          "spotify_url": "https://open.spotify.com/album/77ekFH3nYwLB63xdfsqSSR"
         }
       ]
     },
