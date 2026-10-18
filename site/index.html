@@ -106,6 +106,9 @@ dt{color:var(--dim)} dd{margin:0}
 .links{display:flex;flex-wrap:wrap;gap:8px}
 .links a{background:var(--text);color:var(--bg);text-decoration:none;font-weight:600;padding:8px 14px;border-radius:999px;font-size:14px}
 .links a.alt{background:var(--panel2);color:var(--text);border:1px solid var(--line);font-weight:500}
+.desc{font-size:14px;line-height:1.5;margin:0 0 14px;color:var(--text)}
+.desc small{display:block;margin-top:4px;color:var(--dim)}
+.desc small a{color:inherit}
 .close{position:absolute;top:10px;right:12px;background:var(--panel2);border:1px solid var(--line);width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:16px}
 @media (max-width:620px){
   .detail{grid-template-columns:1fr;padding:16px}
@@ -212,6 +215,25 @@ function pump() {
       active--; persist(); clearTimeout(rerenderT); rerenderT = setTimeout(onMeta, 350); pump();
     });
   }
+}
+/* ---------- description (Wikipedia, only when a matching album page exists) ---------- */
+let dcache = {};
+try { dcache = JSON.parse(localStorage.getItem("wl-desc")||"{}"); } catch {}
+async function describe(a) {
+  const c = dcache[a.key];
+  if (c && (!c.miss || Date.now() - c.miss < TTL_MISS)) return c.miss ? null : c;
+  let out = { miss: Date.now() };
+  try {
+    const q = encodeURIComponent(`${a.title} ${a.artist} album`);
+    const res = await fetch(`https://en.wikipedia.org/w/api.php?action=query&format=json&origin=*&generator=search&gsrsearch=${q}&gsrlimit=4&prop=extracts|info&inprop=url&exintro=1&explaintext=1&exsentences=4`);
+    const pages = Object.values((await res.json()).query?.pages || {}).sort((x,y) => x.index - y.index);
+    const t = norm(a.title), first = norm(a.artist).split(" ")[0];
+    const hit = pages.find(pg => { const n = norm(pg.title), x = norm(pg.extract); return n.includes(t) && x.includes(first) && /album|\bep\b|record/.test(x); });
+    if (hit && hit.extract.length > 40) out = { text: hit.extract.trim(), url: hit.fullurl };
+  } catch { return null; }
+  dcache[a.key] = out;
+  try { localStorage.setItem("wl-desc", JSON.stringify(dcache)); } catch {}
+  return out.miss ? null : out;
 }
 const info = a => cache[a.key] && !cache[a.key].miss ? cache[a.key] : {};
 const genreOf = a => (a.tags && a.tags[0]) || info(a).genre || "";
@@ -336,12 +358,18 @@ function openDetail(key) {
     ${i.year?`<dt>Released</dt><dd>${esc(i.year)}</dd>`:""}
     <dt>Type</dt><dd>${esc(a.kind)}</dd>
     ${sources.length?`<dt>Via</dt><dd>${esc(sources.join(", "))}</dd>`:""}</dl>
+    <div class="desc" id="desc"></div>
     ${a.notes.length?`<div class="note">${esc(a.notes.join(" "))}</div>`:""}
     <div class="links"><a href="${esc(spot)}" target="_blank" rel="noopener">Spotify</a>
     ${safeUrl(a.links.other)?`<a class="alt" href="${esc(a.links.other)}" target="_blank" rel="noopener">Listen elsewhere</a>`:""}
     ${safeUrl(i.apple)?`<a class="alt" href="${esc(i.apple)}" target="_blank" rel="noopener">Apple Music</a>`:""}</div>
   </div></div>`;
   $("#dlg").showModal();
+  describe(a).then(d => {
+    const el = $("#desc");
+    if (d && el && $("#dlg").open && $("#dlgBody h3").textContent === a.title)
+      el.innerHTML = `${esc(d.text)}<small>From <a href="${esc(d.url)}" target="_blank" rel="noopener">Wikipedia</a></small>`;
+  });
 }
 
 /* ---------- wiring ---------- */
