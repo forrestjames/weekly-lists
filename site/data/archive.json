@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18T20:17:05Z",
+  "updated": "2026-10-18T21:32:54Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -254,6 +254,68 @@
       "name": "Juno Weekly",
       "playlist": "",
       "weeks": [
+        {
+          "date": "2026-10-18",
+          "items": [
+            {
+              "artist": "The Avalanches",
+              "title": "No Bad Memories",
+              "kind": "album"
+            },
+            {
+              "artist": "Enrico Rava Fearless Five with Joe Lovano",
+              "title": "Corners",
+              "kind": "album"
+            },
+            {
+              "artist": "A Large Sheet of Muscle",
+              "title": "Chinese Benefits",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/5DvWieD6AMa1FsSASG3v0J"
+            },
+            {
+              "artist": "June McDoom",
+              "title": "Follow The Light",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/5VHfVW8PISNYyVG9Hb4G2Y"
+            },
+            {
+              "artist": "Richard Thompson",
+              "title": "Hippies, Thugs and Heroes",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/4fourLlwRgWXLg9qpirYw9"
+            },
+            {
+              "artist": "Fontaines D.C.",
+              "title": "Dopamine Chamber",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/0JICUfSKOdGqzE9FJSrNci"
+            },
+            {
+              "artist": "ONMO",
+              "title": "In Time And Spirit",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/3oLpCoxGA1b4FLtWZvCOjR"
+            },
+            {
+              "artist": "Lorne Lofsky / Nigel Price Quartet",
+              "title": "Live at the Globe",
+              "kind": "album"
+            },
+            {
+              "artist": "IMOGEN & Regal86",
+              "title": "Back to The Halcyon",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/5hB0HFwJqzAAU85NecYE5U"
+            },
+            {
+              "artist": "Gnod",
+              "title": "Chronicles of Gnowt (Vol 2)",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/3CVFXNmW8bXOBMYYIfyFMl"
+            }
+          ]
+        },
         {
           "date": "2026-10-05",
           "items": [
