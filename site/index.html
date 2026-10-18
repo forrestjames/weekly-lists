@@ -202,6 +202,7 @@ async function getJSON(url) {
 async function lookup(a) {
   const out = {};
   const tasks = [];
+  if (a.links.cover) return { art: a.links.cover, manual: true };
   if (a.links.spotify) tasks.push(getJSON(`https://open.spotify.com/oembed?url=${encodeURIComponent(a.links.spotify)}`)
     .then(j => { if (j.thumbnail_url) out.art = j.thumbnail_url.replace("ab67616d00001e02", "ab67616d0000b273"); }, () => {}));
   const term = encodeURIComponent(`${a.artist} ${a.title}`);
@@ -240,7 +241,7 @@ function pump() {
     });
   }
 }
-const info = a => cache[a.key] && !cache[a.key].miss ? cache[a.key] : {};
+const info = a => a.links.cover ? {...(cache[a.key]||{}), art: a.links.cover} : cache[a.key] && !cache[a.key].miss ? cache[a.key] : {};
 const genreOf = a => (a.tags && a.tags[0]) || info(a).genre || "";
 
 /* ---------- data ---------- */
@@ -258,6 +259,7 @@ async function load() {
       if (it.tags) it.tags.forEach(t => a.tags.includes(t) || a.tags.push(t));
       if (it.spotify_url) a.links.spotify = it.spotify_url;
       if (it.link) a.links.other = it.link;
+      if (it.cover) a.links.cover = it.cover;
     }
   }
   state.albums = [...map.values()].map(a => {

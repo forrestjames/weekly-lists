@@ -16,6 +16,7 @@ Each pick can carry extra fields for the site. All optional:
   "note":   "One or two honest sentences."
   "source": "The Quietus"
   "link":   "https://...bandcamp.com/..."   # listen link when not on Spotify
+  "cover":  "covers/name.jpg" or an image URL   # when no cover can be found automatically
 """
 
 import json
@@ -32,7 +33,7 @@ EDITIONS = {
     "juno": {"name": "Juno Weekly", "playlist": ""},
 }
 
-FIELDS = ["artist", "title", "kind", "tags", "note", "source", "spotify_url", "link"]
+FIELDS = ["artist", "title", "kind", "tags", "note", "source", "spotify_url", "link", "cover"]
 
 
 def clean(item):
