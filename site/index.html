@@ -21,6 +21,7 @@
   }
 }
 *{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--text);font:15px/1.4 system-ui,-apple-system,"Segoe UI",sans-serif}
 button,input,select{font:inherit;color:inherit}
 header{padding:28px 16px 8px;max-width:1500px;margin:0 auto;display:flex;flex-wrap:wrap;gap:8px 24px;align-items:baseline;justify-content:space-between}
@@ -52,7 +53,9 @@ main{max-width:1500px;margin:0 auto;padding:18px 16px 80px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--size),1fr));gap:18px 14px}
 .card{cursor:pointer;background:none;border:0;padding:0;text-align:left;display:block;min-width:0}
 .art{position:relative;aspect-ratio:1;border-radius:8px;overflow:hidden;background:var(--panel2);box-shadow:0 6px 18px rgba(0,0,0,.28);transition:transform .18s,box-shadow .18s}
-.card:hover .art,.card:focus-visible .art{transform:translateY(-4px) scale(1.02);box-shadow:0 14px 28px rgba(0,0,0,.4)}
+.card{-webkit-tap-highlight-color:transparent}
+.card:focus-visible .art{transform:translateY(-4px) scale(1.02);box-shadow:0 14px 28px rgba(0,0,0,.4)}
+@media (hover:hover){.card:hover .art{transform:translateY(-4px) scale(1.02);box-shadow:0 14px 28px rgba(0,0,0,.4)}}
 .card:focus-visible{outline:2px solid var(--text);outline-offset:4px;border-radius:8px}
 .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 .ph{position:absolute;inset:0;display:flex;align-items:flex-end;padding:10px;font-weight:700;font-size:13px;line-height:1.15;color:rgba(255,255,255,.92);text-shadow:0 1px 3px rgba(0,0,0,.4)}
@@ -68,7 +71,7 @@ main{max-width:1500px;margin:0 auto;padding:18px 16px 80px}
 /* mosaic */
 .mosaic{display:grid;grid-template-columns:repeat(auto-fill,minmax(calc(var(--size)*.5),1fr));gap:2px}
 .mosaic .art{border-radius:0;box-shadow:none;transition:filter .15s}
-.mosaic .card:hover .art{transform:none;filter:brightness(1.15);box-shadow:inset 0 0 0 3px var(--text)}
+@media (hover:hover){.mosaic .card:hover .art{transform:none;filter:brightness(1.15);box-shadow:inset 0 0 0 3px var(--text)}}
 .mosaic .ph{font-size:10px;padding:5px}
 .mosaic .badges,.mosaic .both-flag{display:none}
 
@@ -94,7 +97,7 @@ main{max-width:1500px;margin:0 auto;padding:18px 16px 80px}
 .dim{color:var(--dim)}
 
 /* modal */
-dialog{border:1px solid var(--line);border-radius:16px;background:var(--panel);color:var(--text);padding:0;width:min(760px,calc(100vw - 24px));max-height:calc(100vh - 24px);overflow:auto}
+dialog{border:1px solid var(--line);border-radius:16px;background:var(--panel);color:var(--text);padding:0;width:min(760px,calc(100vw - 24px));max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);overflow:auto;overscroll-behavior:contain}
 dialog::backdrop{background:rgba(0,0,0,.65);backdrop-filter:blur(4px)}
 .detail{display:grid;grid-template-columns:minmax(0,300px) 1fr;gap:22px;padding:22px}
 .detail .art{box-shadow:0 12px 30px rgba(0,0,0,.4)}
@@ -111,12 +114,52 @@ dt{color:var(--dim)} dd{margin:0}
 .desc .who{display:block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;margin-bottom:3px}
 .who.rob{color:var(--rob)} .who.juno{color:var(--juno)}
 .close{position:absolute;top:10px;right:12px;background:var(--panel2);border:1px solid var(--line);width:32px;height:32px;border-radius:50%;cursor:pointer;font-size:16px}
+.by-m{display:none}
 @media (max-width:620px){
-  .detail{grid-template-columns:1fr;padding:16px}
-  .detail .art{max-width:260px;margin:0 auto}
-  :root{--size:150px}
+  /* header: stack the subtitle under the title */
+  header{display:block;padding:18px 16px 4px}
+  h1{font-size:22px;line-height:1.2}
+  h1 span{display:block;font-size:14px;margin-top:2px}
+  .stats{margin-top:6px}
+
+  /* controls: scroll away with the page instead of eating half the screen,
+     one control per row, 16px inputs so iOS doesn't zoom on focus */
+  .controls{position:static;backdrop-filter:none}
+  .controls-inner{gap:8px;padding:8px 16px}
+  .seg{display:flex;width:100%;overflow-x:auto;scrollbar-width:none}
+  .seg::-webkit-scrollbar{display:none}
+  .seg button{flex:1 0 auto;padding:10px 8px;font-size:14px}
+  .search{flex:1 1 100%;min-width:0;font-size:16px;padding:11px 12px;-webkit-appearance:none;appearance:none}
+  select{flex:1 1 0;min-width:0;font-size:16px;padding:11px 10px}
+  #theme{width:auto;flex:none;min-height:44px;padding:0 16px!important;align-items:center;justify-content:center;font-size:20px;line-height:1}
   .size{display:none}
+  .chips{padding-bottom:12px;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{padding:7px 13px}
+  main{padding:14px 16px 60px}
+
+  /* grid sizes itself here; the desktop size slider (and its saved value)
+     no longer decides the column count on a phone */
+  .grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:16px 12px}
+  .mosaic{grid-template-columns:repeat(auto-fill,minmax(80px,1fr))}
+  .t{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+  .sec{margin-bottom:26px}
+
+  /* list: artist under the album, source as colour dots */
   .list .hide-m{display:none}
+  .by-m{display:block;font-size:13px}
+  .list th,.list td{padding:8px 6px}
+  .list .thumb{width:52px}
+  .list .thumb .art{width:44px}
+  .src-tag{font-size:0;width:10px;height:10px;padding:0;border:0;background:currentColor;margin-right:5px;vertical-align:middle}
+
+  /* detail dialog: near full width, close button stays reachable while scrolling */
+  dialog{width:calc(100vw - 20px);max-height:calc(100vh - 20px);max-height:calc(100dvh - 20px);border-radius:14px}
+  .detail{grid-template-columns:1fr;padding:52px 16px 20px;gap:16px}
+  .detail .art{width:100%;max-width:260px;margin:0 auto}
+  .detail h3{font-size:22px}
+  .close{position:sticky;top:8px;right:auto;float:right;width:40px;height:40px;margin:8px 8px -48px 0;z-index:3}
+  .links a{padding:11px 16px}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -330,8 +373,8 @@ function render() {
     html = [...groups].sort((x,y) => y[1].length - x[1].length || x[0].localeCompare(y[0])).map(([g,list]) =>
       `<section class="sec"><h2>${esc(g)} <small>${list.length}</small></h2><div class="grid">${list.map(cardHTML).join("")}</div></section>`).join("");
   } else {
-    html = `<table class="list"><thead><tr><th></th><th>Album</th><th>Artist</th><th class="hide-m">Genre</th><th>Source</th><th class="hide-m">Added</th></tr></thead><tbody>${items.map(a => `
-      <tr class="row" data-k="${esc(a.key)}"><td class="thumb">${artHTML(a,false)}</td><td><b>${esc(a.title)}</b></td><td>${esc(a.artist)}</td>
+    html = `<table class="list"><thead><tr><th></th><th>Album</th><th class="hide-m">Artist</th><th class="hide-m">Genre</th><th>Source</th><th class="hide-m">Added</th></tr></thead><tbody>${items.map(a => `
+      <tr class="row" data-k="${esc(a.key)}"><td class="thumb">${artHTML(a,false)}</td><td><b>${esc(a.title)}</b><div class="by-m dim">${esc(a.artist)}</div></td><td class="hide-m">${esc(a.artist)}</td>
       <td class="hide-m dim">${esc(genreOf(a))}</td><td>${a.lists.map(l=>`<span class="src-tag ${l}">${esc(SRC[l].name)}</span>`).join("")}</td>
       <td class="hide-m dim">${fmtDate(a.added)}</td></tr>`).join("")}</tbody></table>`;
   }
