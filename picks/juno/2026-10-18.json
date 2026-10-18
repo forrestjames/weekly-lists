@@ -2,15 +2,82 @@
   "list": "juno",
   "date": "2026-10-18",
   "items": [
-    {"artist": "The Avalanches", "title": "No Bad Memories", "kind": "album"},
-    {"artist": "Enrico Rava Fearless Five with Joe Lovano", "title": "Corners", "kind": "album"},
-    {"artist": "A Large Sheet of Muscle", "title": "Chinese Benefits", "kind": "album", "spotify_url": "https://open.spotify.com/album/5DvWieD6AMa1FsSASG3v0J"},
-    {"artist": "June McDoom", "title": "Follow The Light", "kind": "album", "spotify_url": "https://open.spotify.com/album/5VHfVW8PISNYyVG9Hb4G2Y"},
-    {"artist": "Richard Thompson", "title": "Hippies, Thugs and Heroes", "kind": "album", "spotify_url": "https://open.spotify.com/album/4fourLlwRgWXLg9qpirYw9"},
-    {"artist": "Fontaines D.C.", "title": "Dopamine Chamber", "kind": "album", "spotify_url": "https://open.spotify.com/album/0JICUfSKOdGqzE9FJSrNci"},
-    {"artist": "ONMO", "title": "In Time And Spirit", "kind": "album", "spotify_url": "https://open.spotify.com/album/3oLpCoxGA1b4FLtWZvCOjR"},
-    {"artist": "Lorne Lofsky / Nigel Price Quartet", "title": "Live at the Globe", "kind": "album"},
-    {"artist": "IMOGEN & Regal86", "title": "Back to The Halcyon", "kind": "album", "spotify_url": "https://open.spotify.com/album/5hB0HFwJqzAAU85NecYE5U"},
-    {"artist": "Gnod", "title": "Chronicles of Gnowt (Vol 2)", "kind": "album", "spotify_url": "https://open.spotify.com/album/3CVFXNmW8bXOBMYYIfyFMl"}
+    {
+      "artist": "The Avalanches",
+      "title": "No Bad Memories",
+      "kind": "album",
+      "note": "Their first album in six years, and it sounds like it. A sun soaked collage of samples and guest vocals, very much in the spirit of Since I Left You.",
+      "source": "Juno: Leftfield"
+    },
+    {
+      "artist": "Enrico Rava Fearless Five with Joe Lovano",
+      "title": "Corners",
+      "kind": "album",
+      "note": "Rava's quintet with Joe Lovano sitting in, recorded in Rome. Loose and lyrical, with the kind of chemistry you only get from players who've logged this many years together.",
+      "source": "Juno: Jazz"
+    },
+    {
+      "artist": "A Large Sheet of Muscle",
+      "title": "Chinese Benefits",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/5DvWieD6AMa1FsSASG3v0J",
+      "note": "Louis Johnstone, who also records as Wanda Group, mixing stream of consciousness spoken word with harsh noise and broken electronics. Bleak and bracing.",
+      "source": "Juno: Ambient / Drone / Experimental"
+    },
+    {
+      "artist": "June McDoom",
+      "title": "Follow The Light",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/5VHfVW8PISNYyVG9Hb4G2Y",
+      "note": "Her debut, blending dub reggae with vintage psych folk and classic soul, shaped by growing up in a Jamaican household in South Florida. Warm and unhurried.",
+      "source": "Juno: Reggae / Dub"
+    },
+    {
+      "artist": "Richard Thompson",
+      "title": "Hippies, Thugs and Heroes",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/4fourLlwRgWXLg9qpirYw9",
+      "note": "His 20th studio album, and one of his strongest in years. The songwriting leads, the band stays tight behind him, and the guitar work is there without ever showing off.",
+      "source": "Juno: Leftfield"
+    },
+    {
+      "artist": "Fontaines D.C.",
+      "title": "Dopamine Chamber",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/0JICUfSKOdGqzE9FJSrNci",
+      "note": "Fifth album, picked up a five star review this week. Denser and more unsettled than what came before, but still unmistakably them.",
+      "source": "Juno: Leftfield"
+    },
+    {
+      "artist": "ONMO",
+      "title": "In Time And Spirit",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/3oLpCoxGA1b4FLtWZvCOjR",
+      "note": "A London sextet led by guitarist Jean de Talhouët, built around a three part title suite with contrapuntal writing. Unusually optimistic for contemporary jazz.",
+      "source": "Juno: Jazz"
+    },
+    {
+      "artist": "Lorne Lofsky / Nigel Price Quartet",
+      "title": "Live at the Globe",
+      "kind": "album",
+      "note": "Canadian guitar legend Lorne Lofsky and Nigel Price trading lines live in the north of England, recorded last November. Conversational, unhurried guitar jazz.",
+      "source": "Juno: Jazz"
+    },
+    {
+      "artist": "IMOGEN & Regal86",
+      "title": "Back to The Halcyon",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/5hB0HFwJqzAAU85NecYE5U",
+      "note": "A joint EP marking five years of IMOGEN's WIGS label. White knuckle rave nostalgia, unapologetically maximalist.",
+      "source": "Juno: Techno"
+    },
+    {
+      "artist": "Gnod",
+      "title": "Chronicles of Gnowt (Vol 2)",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/3CVFXNmW8bXOBMYYIfyFMl",
+      "note": "Second in Gnod's new triptych, heavy and repetitive with dub abstraction and spoken word running through the centerpiece track. Technically out October 9th, but too good to leave out.",
+      "source": "Juno: Ambient / Drone / Experimental"
+    }
   ]
 }

@@ -1,8 +1,51 @@
-{"list": "rob", "date": "2026-10-12", "items": [
-  {"artist": "Jeremiah Chiu", "title": "Edge Conditions", "kind": "album"},
-  {"artist": "Klara Lewis", "title": "Opening", "kind": "album", "spotify_url": "https://open.spotify.com/album/2A5pQEn7L2DgcKzMyfEKVo"},
-  {"artist": "Koen Holtkamp", "title": "Nightlife", "kind": "album", "spotify_url": "https://open.spotify.com/album/5wVxP7kRF4lymB0VPjJ8Cm"},
-  {"artist": "Lothar Ohlmeier / Isambard Khroustaliov / Rudi Fischerlehner", "title": "Landscapes", "kind": "album"},
-  {"artist": "crys cole", "title": "Testing the Waters", "kind": "album"},
-  {"artist": "Emna Mâaref", "title": "Ama Lel Hawa", "kind": "album", "spotify_url": "https://open.spotify.com/album/4EMDLVeKE9yz2d6UoBs06u"}
-]}
+{
+  "list": "rob",
+  "date": "2026-10-12",
+  "items": [
+    {
+      "artist": "Jeremiah Chiu",
+      "title": "Edge Conditions",
+      "kind": "album",
+      "note": "Out October 9 on International Anthem. Eleven tracks of electronic music that AllMusic hears as 90s post-rock meeting experimental electro, with Booker Stardrum and Takako Minekawa along. Worth it for the band feel inside the machines.",
+      "source": "AllMusic new releases, Klof Magazine"
+    },
+    {
+      "artist": "Klara Lewis",
+      "title": "Opening",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/2A5pQEn7L2DgcKzMyfEKVo",
+      "note": "Reversed acoustic instruments and stretched vocal samples, and it leans on unease through simplicity. Quiet, strange and patient.",
+      "source": "Bandcamp Daily, Essential Releases"
+    },
+    {
+      "artist": "Koen Holtkamp",
+      "title": "Nightlife",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/5wVxP7kRF4lymB0VPjJ8Cm",
+      "note": "Western Vinyl. Modular synth with Greg Fox on drums and Matt Bauder on sax and flute, made in late night sessions. Spacious and a bit like a small band playing in a dark room.",
+      "source": "AllMusic new releases, retailer listings"
+    },
+    {
+      "artist": "Lothar Ohlmeier / Isambard Khroustaliov / Rudi Fischerlehner",
+      "title": "Landscapes",
+      "kind": "album",
+      "note": "Third album from this Berlin trio on Not Applicable. Bass clarinet, drums and electronics, free improv that nods to musique concrete and punk.",
+      "source": "a closer listen, Not Applicable"
+    },
+    {
+      "artist": "crys cole",
+      "title": "Testing the Waters",
+      "kind": "album",
+      "note": "A long electroacoustic piece in five movements, first made for WDR 3 radio in Cologne in 2023. Field recordings and slow detail.",
+      "source": "a closer listen, retailer listings"
+    },
+    {
+      "artist": "Emna Mâaref",
+      "title": "Ama Lel Hawa",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/4EMDLVeKE9yz2d6UoBs06u",
+      "note": "Mostly solo oud, rooted in maqam, with three ensemble pieces that open it up gently. Her first solo full length. Warm and close.",
+      "source": "a closer listen"
+    }
+  ]
+}

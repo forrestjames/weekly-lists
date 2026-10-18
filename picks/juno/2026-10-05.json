@@ -2,15 +2,84 @@
   "list": "juno",
   "date": "2026-10-05",
   "items": [
-    {"artist": "Jon Hassell", "title": "Music Is Invisible (Pentimento Volume Three)", "kind": "album", "spotify_url": "https://open.spotify.com/album/7y6nrogjpYO43Z0V1Gdlq8"},
-    {"artist": "Maria W Horn", "title": "Melting Pillars of Snow", "kind": "album", "spotify_url": "https://open.spotify.com/album/6hnBPFkeCokEbke3GtRmzI"},
-    {"artist": "Allison de Groot & Rich Ruth", "title": "Allison de Groot & Rich Ruth", "kind": "album", "spotify_url": "https://open.spotify.com/album/78GCLznGXkzJVxtllgeNFw"},
-    {"artist": "C'mon Tigre", "title": "Lumina", "kind": "album", "spotify_url": "https://open.spotify.com/album/0kUx2VJ5zFrxfxjsMjYimW"},
-    {"artist": "Bullion", "title": "Nearly", "kind": "album", "spotify_url": "https://open.spotify.com/album/0XpKZlGWTpea5gidjWsuuN"},
-    {"artist": "Kaitlyn Aurelia Smith", "title": "Ruin: It's Not Just Music", "kind": "album", "spotify_url": "https://open.spotify.com/album/1sYKpHvzVmZxcc2RxiVOk0"},
-    {"artist": "Nao", "title": "Eugene / Save The World", "kind": "album", "spotify_url": "https://open.spotify.com/album/6Dusr0zMg57KbTwHFapiQj"},
-    {"artist": "nthng", "title": "Last Light of the Sun", "kind": "album", "spotify_url": "https://open.spotify.com/album/2Mo21eA9tvNiWOOE51RHDD"},
-    {"artist": "Vanishing Twin", "title": "Archives", "kind": "album", "spotify_url": "https://open.spotify.com/album/4Ljv5I3EQtAZtSw0wZxkob"},
-    {"artist": "Turner Club", "title": "All For Free", "kind": "track"}
+    {
+      "artist": "Jon Hassell",
+      "title": "Music Is Invisible (Pentimento Volume Three)",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/7y6nrogjpYO43Z0V1Gdlq8",
+      "note": "Previously unheard trio recordings of the late Fourth World pioneer, reworking themes from across his catalogue. It completes a trilogy he never lived to finish and it's the closest thing to a lost Hassell album we're going to get.",
+      "source": "Juno: Ambient / Drone / Experimental"
+    },
+    {
+      "artist": "Maria W Horn",
+      "title": "Melting Pillars of Snow",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/6hnBPFkeCokEbke3GtRmzI",
+      "note": "Contrabass recorder, shō, bowed cymbals and tape loops of spoken W.G. Sebald, with Swans' Michael Gira turning up on one track. Dense, slow-building electroacoustic work. Needs a dark room and your full attention.",
+      "source": "Juno: Ambient / Drone / Experimental"
+    },
+    {
+      "artist": "Allison de Groot & Rich Ruth",
+      "title": "Allison de Groot & Rich Ruth",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/78GCLznGXkzJVxtllgeNFw",
+      "note": "A bluegrass banjo player and an ambient synth producer from Nashville, out on Western Vinyl. Clawhammer banjo through looping and delay set against pedal steel, strings and field recordings of cicadas. The two sounds never fully merge, which is what makes it work.",
+      "source": "Juno: Jazz"
+    },
+    {
+      "artist": "C'mon Tigre",
+      "title": "Lumina",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/0kUx2VJ5zFrxfxjsMjYimW",
+      "note": "Italian duo mixing drum machines and arpeggiators with oud, cello, xylophone and vibraphone. More club-facing than their earlier records but still unmistakably their own thing, world music that doesn't sound like a pastiche.",
+      "source": "Juno: Leftfield"
+    },
+    {
+      "artist": "Bullion",
+      "title": "Nearly",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/0XpKZlGWTpea5gidjWsuuN",
+      "note": "Nathan Jenkins' first solo album in two years, made across London, Toronto and Montreal. Vocal-led electronic pop with L Devine guesting, understated and well-arranged rather than flashy. A grower.",
+      "source": "Juno: Leftfield"
+    },
+    {
+      "artist": "Kaitlyn Aurelia Smith",
+      "title": "Ruin: It's Not Just Music",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/1sYKpHvzVmZxcc2RxiVOk0",
+      "note": "A hard swerve from her usual modular ambient work into jungle, drum & bass and future garage, most of it past 170 BPM. Still unmistakably her, just with teeth.",
+      "source": "Juno: Leftfield"
+    },
+    {
+      "artist": "Nao",
+      "title": "Eugene / Save The World",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/6Dusr0zMg57KbTwHFapiQj",
+      "note": "Two sides of UK soul from Nao, one tender, one more upbeat. Not a huge event release but a genuinely good pair of songs.",
+      "source": "Juno: Soul / Funk"
+    },
+    {
+      "artist": "nthng",
+      "title": "Last Light of the Sun",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/2Mo21eA9tvNiWOOE51RHDD",
+      "note": "Amsterdam producer hopping between ambient, techno, dub, dream pop and drum & bass across one record without it feeling scattered.",
+      "source": "Juno: Leftfield"
+    },
+    {
+      "artist": "Vanishing Twin",
+      "title": "Archives",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/4Ljv5I3EQtAZtSw0wZxkob",
+      "note": "New studio album despite the title, the trio swapping instruments and working remotely across different cities. A collage of postmodern songcraft, warm and a bit woozy rather than clinical.",
+      "source": "Juno: Leftfield"
+    },
+    {
+      "artist": "Turner Club",
+      "title": "All For Free",
+      "kind": "track",
+      "note": "A Juno Daily exclusive this week. Dub-inflected downbeat, slow and spacious.",
+      "source": "Juno: Reggae / Dub"
+    }
   ]
 }

@@ -2,17 +2,99 @@
   "list": "rob",
   "date": "2026-10-05",
   "items": [
-    {"artist": "Helen", "title": "Linda's Head", "kind": "album", "spotify_url": "https://open.spotify.com/album/2wB9detc1PQGC8MmHmQEPg"},
-    {"artist": "nthng", "title": "Last Light of the Sun", "kind": "album", "spotify_url": "https://open.spotify.com/album/2Mo21eA9tvNiWOOE51RHDD"},
-    {"artist": "Sunken Cages", "title": "Neram Pularumbol", "kind": "album"},
-    {"artist": "William Basinski", "title": "Passing the Cup of Sorrows 1.1", "kind": "track", "spotify_url": "https://open.spotify.com/track/4XBabOsUmMQb8N06GQy5hr"},
-    {"artist": "Vanishing Twin", "title": "Archives", "kind": "album", "spotify_url": "https://open.spotify.com/album/4Ljv5I3EQtAZtSw0wZxkob"},
-    {"artist": "J.D. Allen III", "title": "SÖWT", "kind": "album", "spotify_url": "https://open.spotify.com/album/4sb0xNlVbIfBFAVLjeWVEx"},
-    {"artist": "Siavash Amini", "title": "Songs for Sad Poets Vol. III", "kind": "album", "spotify_url": "https://open.spotify.com/album/7iLOGmvw49UOoNZnhunm49"},
-    {"artist": "Adriano Zanni", "title": "Post Dub Cities", "kind": "album"},
-    {"artist": "DjRUM", "title": "Psychic Video", "kind": "album", "spotify_url": "https://open.spotify.com/album/0fhgHKYgm2Mwpq0d2i8bF4"},
-    {"artist": "Tasgeelat Al-Husni", "title": "Shell and Core", "kind": "album", "spotify_url": "https://open.spotify.com/album/4agoblFfRJKduMhfcrWYzV"},
-    {"artist": "Jan Prax", "title": "Traces of Light", "kind": "album", "spotify_url": "https://open.spotify.com/album/5oYf3kx38Kc5eFuSaV6Pi6"},
-    {"artist": "Ava Mendoza", "title": "Alive Alone, Alive Together", "kind": "album", "spotify_url": "https://open.spotify.com/album/73fZwSCTGKSNv4Xn6cCdpH"}
+    {
+      "artist": "Helen",
+      "title": "Linda's Head",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/2wB9detc1PQGC8MmHmQEPg",
+      "note": "Guitar songs that drift and smudge, on Grouper's own label. Quiet, strange and worth the full run.",
+      "source": "Bandcamp Daily Hotlist"
+    },
+    {
+      "artist": "nthng",
+      "title": "Last Light of the Sun",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/2Mo21eA9tvNiWOOE51RHDD",
+      "note": "Ambient, IDM, dub techno and a little drum and bass, with bamboo flute and typewriter in the mix. Soft on top, with real movement underneath.",
+      "source": "Bandcamp Daily Hotlist"
+    },
+    {
+      "artist": "Sunken Cages",
+      "title": "Neram Pularumbol",
+      "kind": "album",
+      "note": "Kerala drumming, drones and club bass, followed by a second half of remixes. Heavy in places, but it treats tradition as something alive.",
+      "source": "A Closer Listen"
+    },
+    {
+      "artist": "William Basinski",
+      "title": "Passing the Cup of Sorrows 1.1",
+      "kind": "track",
+      "spotify_url": "https://open.spotify.com/track/4XBabOsUmMQb8N06GQy5hr",
+      "note": "The first piece from his album due 23 October. Tape-loop ambient, slow and sad.",
+      "source": "Bandcamp Daily Hotlist"
+    },
+    {
+      "artist": "Vanishing Twin",
+      "title": "Archives",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/4Ljv5I3EQtAZtSw0wZxkob",
+      "note": "Homemade instruments and chopped samples, built remotely between rural France and a London boat. The Quietus hears Autechre reworking The Wicker Man. Raw and odd.",
+      "source": "The Quietus"
+    },
+    {
+      "artist": "J.D. Allen III",
+      "title": "SÖWT",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/4sb0xNlVbIfBFAVLjeWVEx",
+      "note": "Tenor saxophone drawing on Moroccan Gnawa tradition, set against blues-rooted jazz. A good one for a long evening.",
+      "source": "Presto jazz round-up"
+    },
+    {
+      "artist": "Siavash Amini",
+      "title": "Songs for Sad Poets Vol. III",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/7iLOGmvw49UOoNZnhunm49",
+      "note": "Drone that breaks into short bursts out of long silence. Dark, patient and well suited to headphones.",
+      "source": "A Closer Listen"
+    },
+    {
+      "artist": "Adriano Zanni",
+      "title": "Post Dub Cities",
+      "kind": "album",
+      "note": "Austere dub-leaning electronics that sound like empty streets and wear. Cold and spare, in a good way.",
+      "source": "A Closer Listen"
+    },
+    {
+      "artist": "DjRUM",
+      "title": "Psychic Video",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/0fhgHKYgm2Mwpq0d2i8bF4",
+      "note": "A preview from his DJ-Kicks mix, out 16 October. Dark, textured club music.",
+      "source": "Bandcamp Daily Hotlist"
+    },
+    {
+      "artist": "Tasgeelat Al-Husni",
+      "title": "Shell and Core",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/4agoblFfRJKduMhfcrWYzV",
+      "note": "Arabic-language post-rock and jazz, about lives left unfinished, like abandoned buildings.",
+      "source": "A Closer Listen"
+    },
+    {
+      "artist": "Jan Prax",
+      "title": "Traces of Light",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/5oYf3kx38Kc5eFuSaV6Pi6",
+      "note": "A saxophone quartet in quiet, searching post-bop, nine originals. The gentle pick of the week.",
+      "source": "Presto jazz round-up"
+    },
+    {
+      "artist": "Ava Mendoza",
+      "title": "Alive Alone, Alive Together",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/73fZwSCTGKSNv4Xn6cCdpH",
+      "note": "Live guitar from four cities, fuzz and blues running through it, with Hamid Drake on drums for four tracks.",
+      "source": "Free Jazz Collective"
+    }
   ]
 }
