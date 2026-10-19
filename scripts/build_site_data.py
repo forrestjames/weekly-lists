@@ -15,6 +15,7 @@ Each pick can carry extra fields for the site. All optional:
   "tags":   ["ambient", "jazz"]
   "note":   "One or two honest sentences."
   "source": "The Quietus"
+  "source_url": "https://thequietus.com/..."  # exact article; the page links it as "Source: ..."
   "link":   "https://...bandcamp.com/..."   # listen link when not on Spotify
   "art":    "https://...jpg"                # cover image, if you want to set it by hand
 
@@ -46,7 +47,7 @@ EDITIONS = {
     "juno": {"name": "Juno Weekly", "playlist": ""},
 }
 
-FIELDS = ["artist", "title", "kind", "tags", "note", "source", "spotify_url", "link", "art"]
+FIELDS = ["artist", "title", "kind", "tags", "note", "source", "source_url", "spotify_url", "link", "art"]
 MAX_SPOTIFY_FAILURES = 3  # give up on Spotify for this run after this many errors in a row
 
 

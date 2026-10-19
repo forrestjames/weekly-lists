@@ -27,7 +27,10 @@ action rebuilds two files the website reads:
 - `site/data/archive.json`: every past week, newest first
 
 Picks can carry extra fields for the site, all optional:
-`tags` (list), `note`, `source`, `link` (a Bandcamp or label link when
+`tags` (list), `note`, `source`, `source_url` (the exact article; the page
+shows it as a "Source" button, and without it the button links to the
+publication's site when the name is one the page knows, listed in
+`SOURCE_SITES` in `site/index.html`), `link` (a Bandcamp or label link when
 there's no Spotify one), and `art` (a cover image URL, to set a cover by
 hand). The Spotify script ignores them.
 

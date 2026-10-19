@@ -334,7 +334,7 @@ async function load() {
       const key = norm(it.artist) + "|" + norm(it.title);
       let a = map.get(key);
       if (!a) map.set(key, a = {key, artist:it.artist, title:it.title, kind:it.kind||"album", tags:[], picks:[], links:{}});
-      a.picks.push({list:ed, date:w.date, source:it.source||"", note:it.note||""});
+      a.picks.push({list:ed, date:w.date, source:it.source||"", sourceUrl:it.source_url||"", note:it.note||""});
       if (it.tags) it.tags.forEach(t => a.tags.includes(t) || a.tags.push(t));
       if (it.spotify_url) a.links.spotify = it.spotify_url;
       if (it.art) a.art = it.art;
@@ -382,6 +382,30 @@ function artHTML(a, withBadges=true) {
 function cardHTML(a) {
   return `<button class="card" data-k="${esc(a.key)}" title="${esc(a.artist)} — ${esc(a.title)}">${artHTML(a)}
     <div class="meta"><div class="t">${esc(a.title)}</div><div class="a">${esc(a.artist)}</div><div class="g">${esc(genreOf(a)||" ")}</div></div></button>`;
+}
+/* Where a pick came from. A pick's own "source_url" (the exact article) wins.
+   Otherwise each name in its "source" text that matches a publication below
+   links to that publication's site. Names not listed stay plain text. To link
+   a new publication, add it here (lower case). */
+const SOURCE_SITES = {
+  "resident advisor":["Resident Advisor","https://ra.co"], "the quietus":["The Quietus","https://thequietus.com"],
+  "the line of best fit":["The Line of Best Fit","https://www.thelineofbestfit.com"], "a closer listen":["A Closer Listen","https://acloserlisten.com"],
+  "bandcamp daily":["Bandcamp Daily","https://daily.bandcamp.com"], "bandcamp":["Bandcamp","https://bandcamp.com"],
+  "allmusic":["AllMusic","https://www.allmusic.com"], "clash":["Clash","https://www.clashmusic.com"],
+  "nys music":["NYS Music","https://nysmusic.com"], "free jazz collective":["Free Jazz Collective","https://www.freejazzblog.org"],
+  "soundohm":["Soundohm","https://www.soundohm.com"], "mack avenue":["Mack Avenue","https://mackavenue.com"],
+  "presto":["Presto","https://www.prestomusic.com"], "juno":["Juno","https://www.junodownload.com"]
+};
+const SITE_KEYS = Object.keys(SOURCE_SITES).sort((x,y) => y.length - x.length);   // longest first, so "bandcamp daily" beats "bandcamp"
+function sourceLink(p) {
+  const direct = safeUrl(p.sourceUrl);
+  const parts = (p.source || "").split(",").map(s => s.trim()).filter(Boolean);
+  if (direct) return { name: parts[0] || "source", url: direct };
+  for (const part of parts) {
+    const k = SITE_KEYS.find(k => part.toLowerCase().startsWith(k));
+    if (k) return { name: SOURCE_SITES[k][0], url: SOURCE_SITES[k][1] };
+  }
+  return null;
 }
 const fmtDate = d => new Date(d+"T12:00:00").toLocaleDateString(undefined,{month:"short",day:"numeric",year:"numeric"});
 
@@ -443,7 +467,8 @@ function openDetail(key) {
   const kind = a.kind ? a.kind.charAt(0).toUpperCase() + a.kind.slice(1) : "";
   const links = `<div class="links"><a href="${esc(spot)}" target="_blank" rel="noopener">Listen on Spotify</a>
     ${safeUrl(a.links.other)?`<a class="alt" href="${esc(a.links.other)}" target="_blank" rel="noopener">Listen elsewhere</a>`:""}
-    ${safeUrl(i.apple)?`<a class="alt" href="${esc(i.apple)}" target="_blank" rel="noopener">Apple Music</a>`:""}</div>`;
+    ${safeUrl(i.apple)?`<a class="alt" href="${esc(i.apple)}" target="_blank" rel="noopener">Apple Music</a>`:""}
+    ${[...new Map(a.picks.map(sourceLink).filter(Boolean).map(s => [s.url, s])).values()].map(s => `<a class="alt src" href="${esc(s.url)}" target="_blank" rel="noopener">Source: ${esc(s.name)}</a>`).join("")}</div>`;
   $("#dlgBody").innerHTML = `<div class="detail"><div class="side">${artHTML(a,false)}${links}</div><article>
     <div class="kicker">${kicker}</div>
     <h3>${esc(a.title)}</h3><div class="by">${esc(a.artist)}</div>
