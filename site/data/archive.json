@@ -1,10 +1,83 @@
 {
-  "updated": "2026-10-18T23:44:52Z",
+  "updated": "2026-10-19T06:21:11Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
       "playlist": "https://open.spotify.com/playlist/6YpWmU0EK7fFa62dpR8Ip7",
       "weeks": [
+        {
+          "date": "2026-10-19",
+          "items": [
+            {
+              "artist": "Jacques Greene",
+              "title": "jg",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/0eyTz4axCv1nyRSCHxDNY0",
+              "art": "https://i.scdn.co/image/ab67616d0000b2738f8848aac92ccf33249d65bb"
+            },
+            {
+              "artist": "Francis Harris & Gareth Quinn Redmond",
+              "title": "Eyes Bright and Low",
+              "kind": "album",
+              "art": "https://i.scdn.co/image/ab67616d0000b273ee6d0d9f272b3d35007b9ca4",
+              "spotify_url": "https://open.spotify.com/album/0Yma6JlD705kGgZDjYlnpK"
+            },
+            {
+              "artist": "Braff/Eldh/König",
+              "title": "Outside",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/38xLuvXb9wuDyuxOY1fBUS",
+              "art": "https://i.scdn.co/image/ab67616d0000b273d25af8b0d517b4049ed88ea4"
+            },
+            {
+              "artist": "Geologist & Kyle Simon",
+              "title": "The Sirens (Hunter's Moon)",
+              "kind": "track"
+            },
+            {
+              "artist": "Matthew O'Neill",
+              "title": "Through to Us",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/421iZgNqOz5WMxCHbeBPoc",
+              "art": "https://i.scdn.co/image/ab67616d0000b2734db844ff13ae76bdb901530a"
+            },
+            {
+              "artist": "Various Artists",
+              "title": "Beirut City Pop (Habibi Funk 035)",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/6EDu9n8AWflraW5maE6tYl",
+              "art": "https://i.scdn.co/image/ab67616d0000b273122eb1458b6ef93f1ef6a221"
+            },
+            {
+              "artist": "Stephen Byth",
+              "title": "Growth in Stasis",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/4QcqtOb2rJqLa6jnPiitvq",
+              "art": "https://i.scdn.co/image/ab67616d0000b273b1ce9388fd0033f545882007"
+            },
+            {
+              "artist": "Gotts Street Park",
+              "title": "Somewhere Between",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/2MwfrGfon5UGQ13z0Vh5tW",
+              "art": "https://i.scdn.co/image/ab67616d0000b27380e79e1e4aa993c0302bf9c5"
+            },
+            {
+              "artist": "Zacchae'us Paul",
+              "title": "Jazz Money Vol. 2: Swingin' R&B",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/4Vc0Hu86e35hERsmWQ7S2j",
+              "art": "https://i.scdn.co/image/ab67616d0000b273a2246a12a163207f7b74799a"
+            },
+            {
+              "artist": "Adam F",
+              "title": "Colours Revisited",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/2JGG1WnyqvK4uTatkHcW8e",
+              "art": "https://i.scdn.co/image/ab67616d0000b273f66403b9f6f1592946b52af1"
+            }
+          ]
+        },
         {
           "date": "2026-10-18",
           "items": [
@@ -318,8 +391,8 @@
               "kind": "album",
               "note": "Austere dub-leaning electronics that sound like empty streets and wear. Cold and spare, in a good way.",
               "source": "A Closer Listen",
-              "spotify_url": "https://open.spotify.com/album/4KzfuOk1BGKpyEnDRzUKqX",
-              "art": "https://i.scdn.co/image/ab67616d0000b273002414a6d75f0ee1da8693a6"
+              "art": "https://i.scdn.co/image/ab67616d0000b273002414a6d75f0ee1da8693a6",
+              "spotify_url": "https://open.spotify.com/album/4KzfuOk1BGKpyEnDRzUKqX"
             },
             {
               "artist": "DjRUM",
@@ -374,15 +447,17 @@
               "kind": "album",
               "note": "Their first album in six years, and it sounds like it. A sun soaked collage of samples and guest vocals, very much in the spirit of Since I Left You.",
               "source": "Juno: Leftfield",
-              "spotify_url": "https://open.spotify.com/album/3De7Ues320SIjGCaz5b6fX",
-              "art": "https://i.scdn.co/image/ab67616d0000b2734d100df0be7285a2f1176c7a"
+              "art": "https://i.scdn.co/image/ab67616d0000b2734d100df0be7285a2f1176c7a",
+              "spotify_url": "https://open.spotify.com/album/3De7Ues320SIjGCaz5b6fX"
             },
             {
               "artist": "Enrico Rava Fearless Five with Joe Lovano",
               "title": "Corners",
               "kind": "album",
               "note": "Rava's quintet with Joe Lovano sitting in, recorded in Rome. Loose and lyrical, with the kind of chemistry you only get from players who've logged this many years together.",
-              "source": "Juno: Jazz"
+              "source": "Juno: Jazz",
+              "spotify_url": "https://open.spotify.com/album/4wQEj8FEDiDF0Lj1n26KMv",
+              "art": "https://i.scdn.co/image/ab67616d0000b273bff518da05c4a7f1875fd889"
             },
             {
               "artist": "A Large Sheet of Muscle",
@@ -546,8 +621,8 @@
               "kind": "track",
               "note": "A Juno Daily exclusive this week. Dub-inflected downbeat, slow and spacious.",
               "source": "Juno: Reggae / Dub",
-              "spotify_url": "https://open.spotify.com/track/0ez8CxTG4VlOq8LRVsDx3j",
-              "art": "https://i.scdn.co/image/ab67616d0000b273736ded86ab3cd11bdb150eac"
+              "art": "https://i.scdn.co/image/ab67616d0000b273736ded86ab3cd11bdb150eac",
+              "spotify_url": "https://open.spotify.com/track/0ez8CxTG4VlOq8LRVsDx3j"
             }
           ]
         }
