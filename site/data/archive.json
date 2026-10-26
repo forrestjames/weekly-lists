@@ -1,10 +1,55 @@
 {
-  "updated": "2026-10-19T06:21:11Z",
+  "updated": "2026-10-26T06:13:33Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
       "playlist": "https://open.spotify.com/playlist/6YpWmU0EK7fFa62dpR8Ip7",
       "weeks": [
+        {
+          "date": "2026-10-26",
+          "items": [
+            {
+              "artist": "James Brandon Lewis & Red Lily",
+              "title": "Calling Antonín",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/38CuumF7Y9rLbfdXWSq17S",
+              "art": "https://i.scdn.co/image/ab67616d0000b2734776a524f260fae90beabf02"
+            },
+            {
+              "artist": "Section 6",
+              "title": "Part 2",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/2uLQRkaEcp7R3r7oOaITx8",
+              "art": "https://i.scdn.co/image/ab67616d0000b27357dedf4b22ebfaa420437a9c"
+            },
+            {
+              "artist": "Nabihah Iqbal",
+              "title": "Heaven Can Wait",
+              "kind": "track",
+              "spotify_url": "https://open.spotify.com/track/6ee7KId6UZeOyliYOCsYYt",
+              "art": "https://i.scdn.co/image/ab67616d0000b2730f7bc1c9543f011ad82a661b"
+            },
+            {
+              "artist": "Orchestra Baobab",
+              "title": "Made In Senegal",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/7IbmxU46JigXBR3utnRosM",
+              "art": "https://i.scdn.co/image/ab67616d0000b273b787c19d594a1533848036f8"
+            },
+            {
+              "artist": "Hildur Guðnadóttir",
+              "title": "This Will Be Us",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/2QQrvgTX9dLwUTycq6gi2N",
+              "art": "https://i.scdn.co/image/ab67616d0000b27356fab9c69fb9ca42ffd5ac88"
+            },
+            {
+              "artist": "Lauren Flax & S4M23",
+              "title": "Nightmare On Jack!",
+              "kind": "track"
+            }
+          ]
+        },
         {
           "date": "2026-10-19",
           "items": [
