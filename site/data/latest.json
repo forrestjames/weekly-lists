@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26T06:13:33Z",
+  "updated": "2026-10-27T07:48:36Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -38,8 +38,8 @@
           "artist": "Hildur Guðnadóttir",
           "title": "This Will Be Us",
           "kind": "album",
-          "spotify_url": "https://open.spotify.com/album/2QQrvgTX9dLwUTycq6gi2N",
-          "art": "https://i.scdn.co/image/ab67616d0000b27356fab9c69fb9ca42ffd5ac88"
+          "art": "https://i.scdn.co/image/ab67616d0000b27356fab9c69fb9ca42ffd5ac88",
+          "spotify_url": "https://open.spotify.com/album/2QQrvgTX9dLwUTycq6gi2N"
         },
         {
           "artist": "Lauren Flax & S4M23",
@@ -51,95 +51,150 @@
     "juno": {
       "name": "Juno Weekly",
       "playlist": "",
-      "date": "2026-10-18",
+      "date": "2026-10-26",
       "items": [
         {
-          "artist": "The Avalanches",
-          "title": "No Bad Memories",
+          "artist": "William Basinski",
+          "title": "Passing the Cup of Sorrows",
           "kind": "album",
-          "note": "Their first album in six years, and it sounds like it. A sun soaked collage of samples and guest vocals, very much in the spirit of Since I Left You.",
-          "source": "Juno: Leftfield",
-          "art": "https://i.scdn.co/image/ab67616d0000b2734d100df0be7285a2f1176c7a",
-          "spotify_url": "https://open.spotify.com/album/3De7Ues320SIjGCaz5b6fX"
-        },
-        {
-          "artist": "Enrico Rava Fearless Five with Joe Lovano",
-          "title": "Corners",
-          "kind": "album",
-          "note": "Rava's quintet with Joe Lovano sitting in, recorded in Rome. Loose and lyrical, with the kind of chemistry you only get from players who've logged this many years together.",
-          "source": "Juno: Jazz",
-          "art": "https://i.scdn.co/image/ab67616d0000b273bff518da05c4a7f1875fd889",
-          "spotify_url": "https://open.spotify.com/album/4wQEj8FEDiDF0Lj1n26KMv"
-        },
-        {
-          "artist": "A Large Sheet of Muscle",
-          "title": "Chinese Benefits",
-          "kind": "album",
-          "note": "Louis Johnstone, who also records as Wanda Group, mixing stream of consciousness spoken word with harsh noise and broken electronics. Bleak and bracing.",
+          "tags": [
+            "ambient",
+            "drone",
+            "piano",
+            "experimental"
+          ],
+          "note": "A return to solo piano for the Disintegration Loops composer, recorded alone and mostly unadorned. Spare and meditative, with more grief in it than usual.",
           "source": "Juno: Ambient / Drone / Experimental",
-          "spotify_url": "https://open.spotify.com/album/5DvWieD6AMa1FsSASG3v0J",
-          "art": "https://i.scdn.co/image/ab67616d0000b2731e988abd6dc593da1a234658"
+          "spotify_url": "https://open.spotify.com/album/6KuXDpGHxQIYtLclM2Nihz",
+          "art": "https://i.scdn.co/image/ab67616d0000b273c52bab2d5ca6fa8e258d1ae0"
         },
         {
-          "artist": "June McDoom",
-          "title": "Follow The Light",
+          "artist": "Michael Kiwanuka",
+          "title": "FUDGE",
           "kind": "album",
-          "note": "Her debut, blending dub reggae with vintage psych folk and classic soul, shaped by growing up in a Jamaican household in South Florida. Warm and unhurried.",
-          "source": "Juno: Reggae / Dub",
-          "spotify_url": "https://open.spotify.com/album/5VHfVW8PISNYyVG9Hb4G2Y",
-          "art": "https://i.scdn.co/image/ab67616d0000b27343538c044ebafd7c0640993e"
+          "tags": [
+            "soul",
+            "songwriter",
+            "retro soul"
+          ],
+          "note": "His first album since going public with a serious health battle, and it sounds like a man taking his time to get things right. Warm, classic soul songwriting, understated rather than showy.",
+          "source": "Juno: Soul / Funk",
+          "spotify_url": "https://open.spotify.com/album/4Qy4QeE6QL941JsIyEVqF2",
+          "art": "https://i.scdn.co/image/ab67616d0000b273477e1c8155bcd3394113fc05"
         },
         {
-          "artist": "Richard Thompson",
-          "title": "Hippies, Thugs and Heroes",
-          "kind": "album",
-          "note": "His 20th studio album, and one of his strongest in years. The songwriting leads, the band stays tight behind him, and the guitar work is there without ever showing off.",
+          "artist": "Nabihah Iqbal",
+          "title": "Heaven Can Wait",
+          "kind": "track",
+          "tags": [
+            "electronic",
+            "leftfield",
+            "pop"
+          ],
+          "note": "Her first release on Ghostly International, a euphoric, slightly woozy track about the rush of city life. Short and good, worth the three minutes.",
           "source": "Juno: Leftfield",
-          "spotify_url": "https://open.spotify.com/album/4fourLlwRgWXLg9qpirYw9",
-          "art": "https://i.scdn.co/image/ab67616d0000b273a4d507b75e9e2bd01ac1341a"
+          "spotify_url": "https://open.spotify.com/track/6ee7KId6UZeOyliYOCsYYt",
+          "art": "https://i.scdn.co/image/ab67616d0000b2730f7bc1c9543f011ad82a661b"
         },
         {
-          "artist": "Fontaines D.C.",
-          "title": "Dopamine Chamber",
+          "artist": "Mike Reed's Separatist Party",
+          "title": "Sing the Color Blue",
           "kind": "album",
-          "note": "Fifth album, picked up a five star review this week. Denser and more unsettled than what came before, but still unmistakably them.",
-          "source": "Juno: Leftfield",
-          "spotify_url": "https://open.spotify.com/album/0JICUfSKOdGqzE9FJSrNci",
-          "art": "https://i.scdn.co/image/ab67616d0000b273a01e49054c2135f979e06de0"
-        },
-        {
-          "artist": "ONMO",
-          "title": "In Time And Spirit",
-          "kind": "album",
-          "note": "A London sextet led by guitarist Jean de Talhouët, built around a three part title suite with contrapuntal writing. Unusually optimistic for contemporary jazz.",
+          "tags": [
+            "jazz",
+            "chicago jazz",
+            "experimental"
+          ],
+          "note": "Chicago drummer Mike Reed's genre-blurring quintet, moving between post-bop, chamber music and something closer to indie rock without ever losing the swing.",
           "source": "Juno: Jazz",
-          "spotify_url": "https://open.spotify.com/album/3oLpCoxGA1b4FLtWZvCOjR",
-          "art": "https://i.scdn.co/image/ab67616d0000b2730b26516b49083ab4f2760dc9"
+          "spotify_url": "https://open.spotify.com/album/5TqlQib62vhNxdlnLkBD2L",
+          "art": "https://i.scdn.co/image/ab67616d0000b2732aed0e5b2fe06dc4cdbecac1"
         },
         {
-          "artist": "Lorne Lofsky / Nigel Price Quartet",
-          "title": "Live at the Globe",
-          "kind": "album",
-          "note": "Canadian guitar legend Lorne Lofsky and Nigel Price trading lines live in the north of England, recorded last November. Conversational, unhurried guitar jazz.",
-          "source": "Juno: Jazz"
+          "artist": "Ecco2k",
+          "title": "Aldehydes and Ketones",
+          "kind": "track",
+          "tags": [
+            "experimental",
+            "hyperpop",
+            "electronic"
+          ],
+          "note": "His first solo single in almost five years, slow burning with a heavy low end and textures that feel like they're dissolving as you listen. Genuinely strange in a good way.",
+          "source": "Juno: Leftfield",
+          "spotify_url": "https://open.spotify.com/track/6n9heLkoKbQu2uOQFDRPaj",
+          "art": "https://i.scdn.co/image/ab67616d0000b273f4ec8ef77e64a113d2fb0d7d"
         },
         {
-          "artist": "IMOGEN & Regal86",
-          "title": "Back to The Halcyon",
+          "artist": "Elf Traps",
+          "title": "LP1",
           "kind": "album",
-          "note": "A joint EP marking five years of IMOGEN's WIGS label. White knuckle rave nostalgia, unapologetically maximalist.",
-          "source": "Juno: Techno",
-          "spotify_url": "https://open.spotify.com/album/5hB0HFwJqzAAU85NecYE5U",
-          "art": "https://i.scdn.co/image/ab67616d0000b27322063fe4793dff415e6d2cb8"
+          "tags": [
+            "nu jazz",
+            "electronic",
+            "beat-based",
+            "spiritual jazz"
+          ],
+          "note": "Ex GoGo Penguin drummer Rob Turner and keyboardist Liviu Gheorghe's debut as a duo, spiritual jazz run through beat driven electronics. Good for anyone who liked GoGo Penguin but wanted it rougher round the edges.",
+          "source": "Juno: Broken Beat / Nu-Jazz",
+          "link": "https://elftraps.bandcamp.com/album/elf-traps"
         },
         {
-          "artist": "Gnod",
-          "title": "Chronicles of Gnowt (Vol 2)",
+          "artist": "Matthew Herbert",
+          "title": "theukhasmorefoodbanksthanbranchesofmcdonalds.com",
           "kind": "album",
-          "note": "Second in Gnod's new triptych, heavy and repetitive with dub abstraction and spoken word running through the centerpiece track. Technically out October 9th, but too good to leave out.",
+          "tags": [
+            "experimental",
+            "sample-based",
+            "electronic",
+            "political"
+          ],
+          "note": "Built entirely from samples of food bank items, pasta, tinned fruit, toilet roll, as a pointed piece about poverty in Britain. Conceptual in a way that could feel gimmicky but mostly just lands.",
+          "source": "Juno: Leftfield",
+          "spotify_url": "https://open.spotify.com/album/1Ud4SosexrNvlNrMXBEvRZ",
+          "art": "https://i.scdn.co/image/ab67616d0000b273a35ca2080fc60a0cd207bbff"
+        },
+        {
+          "artist": "China Charmeleon",
+          "title": "We Never Learn (feat. Kudbeu)",
+          "kind": "track",
+          "tags": [
+            "deep house",
+            "amapiano",
+            "south african"
+          ],
+          "note": "A restrained, quietly ecstatic deep house cut from one of South Africa's steadiest producers. Good late night driving music.",
+          "source": "Juno: Deep House",
+          "spotify_url": "https://open.spotify.com/track/5Mr497kOm5h9IUMUkKx70O",
+          "art": "https://i.scdn.co/image/ab67616d0000b27382596c60b4379301c5a96014"
+        },
+        {
+          "artist": "Shabazz Palaces",
+          "title": "It's a Style Sport",
+          "kind": "album",
+          "tags": [
+            "experimental hip hop",
+            "beat-based",
+            "electronic"
+          ],
+          "note": "Ishmael Butler's project keeps mutating, this one woozier and more collaged than the last couple of records. Dense and slippery, rewards repeat listens.",
+          "source": "Juno: Leftfield",
+          "spotify_url": "https://open.spotify.com/album/24MyPYK5qT4OloO3ta5Noj",
+          "art": "https://i.scdn.co/image/ab67616d0000b2731eeeeb22c9e71adc45bc6bd9"
+        },
+        {
+          "artist": "Jeremiah Chiu",
+          "title": "Edge Conditions",
+          "kind": "album",
+          "tags": [
+            "ambient",
+            "modular synth",
+            "field recording"
+          ],
+          "note": "Modular synths woven through acoustic instruments and field recordings into something warm and human, a little Jon Hassell in its spirit. Came out a couple weeks back but too good to leave off.",
           "source": "Juno: Ambient / Drone / Experimental",
-          "spotify_url": "https://open.spotify.com/album/3CVFXNmW8bXOBMYYIfyFMl",
-          "art": "https://i.scdn.co/image/ab67616d0000b273889eb60f4867a9b1b8d4c4b0"
+          "link": "https://intlanthem.bandcamp.com/album/edge-conditions",
+          "spotify_url": "https://open.spotify.com/album/0BQzGC68umJ0krfWQMqGfb",
+          "art": "https://i.scdn.co/image/ab67616d0000b27337baadc9ae36e14b953e09b3"
         }
       ]
     }

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26T06:13:33Z",
+  "updated": "2026-10-27T07:48:36Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -40,8 +40,8 @@
               "artist": "Hildur Guðnadóttir",
               "title": "This Will Be Us",
               "kind": "album",
-              "spotify_url": "https://open.spotify.com/album/2QQrvgTX9dLwUTycq6gi2N",
-              "art": "https://i.scdn.co/image/ab67616d0000b27356fab9c69fb9ca42ffd5ac88"
+              "art": "https://i.scdn.co/image/ab67616d0000b27356fab9c69fb9ca42ffd5ac88",
+              "spotify_url": "https://open.spotify.com/album/2QQrvgTX9dLwUTycq6gi2N"
             },
             {
               "artist": "Lauren Flax & S4M23",
@@ -226,7 +226,9 @@
               "title": "Edge Conditions",
               "kind": "album",
               "note": "Out October 9 on International Anthem. Eleven tracks of electronic music that AllMusic hears as 90s post-rock meeting experimental electro, with Booker Stardrum and Takako Minekawa along. Worth it for the band feel inside the machines.",
-              "source": "AllMusic new releases, Klof Magazine"
+              "source": "AllMusic new releases, Klof Magazine",
+              "spotify_url": "https://open.spotify.com/album/0BQzGC68umJ0krfWQMqGfb",
+              "art": "https://i.scdn.co/image/ab67616d0000b27337baadc9ae36e14b953e09b3"
             },
             {
               "artist": "Klara Lewis",
@@ -483,6 +485,154 @@
       "name": "Juno Weekly",
       "playlist": "",
       "weeks": [
+        {
+          "date": "2026-10-26",
+          "items": [
+            {
+              "artist": "William Basinski",
+              "title": "Passing the Cup of Sorrows",
+              "kind": "album",
+              "tags": [
+                "ambient",
+                "drone",
+                "piano",
+                "experimental"
+              ],
+              "note": "A return to solo piano for the Disintegration Loops composer, recorded alone and mostly unadorned. Spare and meditative, with more grief in it than usual.",
+              "source": "Juno: Ambient / Drone / Experimental",
+              "spotify_url": "https://open.spotify.com/album/6KuXDpGHxQIYtLclM2Nihz",
+              "art": "https://i.scdn.co/image/ab67616d0000b273c52bab2d5ca6fa8e258d1ae0"
+            },
+            {
+              "artist": "Michael Kiwanuka",
+              "title": "FUDGE",
+              "kind": "album",
+              "tags": [
+                "soul",
+                "songwriter",
+                "retro soul"
+              ],
+              "note": "His first album since going public with a serious health battle, and it sounds like a man taking his time to get things right. Warm, classic soul songwriting, understated rather than showy.",
+              "source": "Juno: Soul / Funk",
+              "spotify_url": "https://open.spotify.com/album/4Qy4QeE6QL941JsIyEVqF2",
+              "art": "https://i.scdn.co/image/ab67616d0000b273477e1c8155bcd3394113fc05"
+            },
+            {
+              "artist": "Nabihah Iqbal",
+              "title": "Heaven Can Wait",
+              "kind": "track",
+              "tags": [
+                "electronic",
+                "leftfield",
+                "pop"
+              ],
+              "note": "Her first release on Ghostly International, a euphoric, slightly woozy track about the rush of city life. Short and good, worth the three minutes.",
+              "source": "Juno: Leftfield",
+              "spotify_url": "https://open.spotify.com/track/6ee7KId6UZeOyliYOCsYYt",
+              "art": "https://i.scdn.co/image/ab67616d0000b2730f7bc1c9543f011ad82a661b"
+            },
+            {
+              "artist": "Mike Reed's Separatist Party",
+              "title": "Sing the Color Blue",
+              "kind": "album",
+              "tags": [
+                "jazz",
+                "chicago jazz",
+                "experimental"
+              ],
+              "note": "Chicago drummer Mike Reed's genre-blurring quintet, moving between post-bop, chamber music and something closer to indie rock without ever losing the swing.",
+              "source": "Juno: Jazz",
+              "spotify_url": "https://open.spotify.com/album/5TqlQib62vhNxdlnLkBD2L",
+              "art": "https://i.scdn.co/image/ab67616d0000b2732aed0e5b2fe06dc4cdbecac1"
+            },
+            {
+              "artist": "Ecco2k",
+              "title": "Aldehydes and Ketones",
+              "kind": "track",
+              "tags": [
+                "experimental",
+                "hyperpop",
+                "electronic"
+              ],
+              "note": "His first solo single in almost five years, slow burning with a heavy low end and textures that feel like they're dissolving as you listen. Genuinely strange in a good way.",
+              "source": "Juno: Leftfield",
+              "spotify_url": "https://open.spotify.com/track/6n9heLkoKbQu2uOQFDRPaj",
+              "art": "https://i.scdn.co/image/ab67616d0000b273f4ec8ef77e64a113d2fb0d7d"
+            },
+            {
+              "artist": "Elf Traps",
+              "title": "LP1",
+              "kind": "album",
+              "tags": [
+                "nu jazz",
+                "electronic",
+                "beat-based",
+                "spiritual jazz"
+              ],
+              "note": "Ex GoGo Penguin drummer Rob Turner and keyboardist Liviu Gheorghe's debut as a duo, spiritual jazz run through beat driven electronics. Good for anyone who liked GoGo Penguin but wanted it rougher round the edges.",
+              "source": "Juno: Broken Beat / Nu-Jazz",
+              "link": "https://elftraps.bandcamp.com/album/elf-traps"
+            },
+            {
+              "artist": "Matthew Herbert",
+              "title": "theukhasmorefoodbanksthanbranchesofmcdonalds.com",
+              "kind": "album",
+              "tags": [
+                "experimental",
+                "sample-based",
+                "electronic",
+                "political"
+              ],
+              "note": "Built entirely from samples of food bank items, pasta, tinned fruit, toilet roll, as a pointed piece about poverty in Britain. Conceptual in a way that could feel gimmicky but mostly just lands.",
+              "source": "Juno: Leftfield",
+              "spotify_url": "https://open.spotify.com/album/1Ud4SosexrNvlNrMXBEvRZ",
+              "art": "https://i.scdn.co/image/ab67616d0000b273a35ca2080fc60a0cd207bbff"
+            },
+            {
+              "artist": "China Charmeleon",
+              "title": "We Never Learn (feat. Kudbeu)",
+              "kind": "track",
+              "tags": [
+                "deep house",
+                "amapiano",
+                "south african"
+              ],
+              "note": "A restrained, quietly ecstatic deep house cut from one of South Africa's steadiest producers. Good late night driving music.",
+              "source": "Juno: Deep House",
+              "spotify_url": "https://open.spotify.com/track/5Mr497kOm5h9IUMUkKx70O",
+              "art": "https://i.scdn.co/image/ab67616d0000b27382596c60b4379301c5a96014"
+            },
+            {
+              "artist": "Shabazz Palaces",
+              "title": "It's a Style Sport",
+              "kind": "album",
+              "tags": [
+                "experimental hip hop",
+                "beat-based",
+                "electronic"
+              ],
+              "note": "Ishmael Butler's project keeps mutating, this one woozier and more collaged than the last couple of records. Dense and slippery, rewards repeat listens.",
+              "source": "Juno: Leftfield",
+              "spotify_url": "https://open.spotify.com/album/24MyPYK5qT4OloO3ta5Noj",
+              "art": "https://i.scdn.co/image/ab67616d0000b2731eeeeb22c9e71adc45bc6bd9"
+            },
+            {
+              "artist": "Jeremiah Chiu",
+              "title": "Edge Conditions",
+              "kind": "album",
+              "tags": [
+                "ambient",
+                "modular synth",
+                "field recording"
+              ],
+              "note": "Modular synths woven through acoustic instruments and field recordings into something warm and human, a little Jon Hassell in its spirit. Came out a couple weeks back but too good to leave off.",
+              "source": "Juno: Ambient / Drone / Experimental",
+              "link": "https://intlanthem.bandcamp.com/album/edge-conditions",
+              "spotify_url": "https://open.spotify.com/album/0BQzGC68umJ0krfWQMqGfb",
+              "art": "https://i.scdn.co/image/ab67616d0000b27337baadc9ae36e14b953e09b3"
+            }
+          ]
+        },
         {
           "date": "2026-10-18",
           "items": [
