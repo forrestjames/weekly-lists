@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27T07:48:36Z",
+  "updated": "2026-11-02T09:40:57Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -227,8 +227,8 @@
               "kind": "album",
               "note": "Out October 9 on International Anthem. Eleven tracks of electronic music that AllMusic hears as 90s post-rock meeting experimental electro, with Booker Stardrum and Takako Minekawa along. Worth it for the band feel inside the machines.",
               "source": "AllMusic new releases, Klof Magazine",
-              "spotify_url": "https://open.spotify.com/album/0BQzGC68umJ0krfWQMqGfb",
-              "art": "https://i.scdn.co/image/ab67616d0000b27337baadc9ae36e14b953e09b3"
+              "art": "https://i.scdn.co/image/ab67616d0000b27337baadc9ae36e14b953e09b3",
+              "spotify_url": "https://open.spotify.com/album/0BQzGC68umJ0krfWQMqGfb"
             },
             {
               "artist": "Klara Lewis",
@@ -486,6 +486,161 @@
       "playlist": "",
       "weeks": [
         {
+          "date": "2026-11-02",
+          "items": [
+            {
+              "artist": "Córas Trio",
+              "title": "Birth Is Upon Me, Death Is Upon Me",
+              "kind": "album",
+              "tags": [
+                "jazz",
+                "irish folk",
+                "experimental",
+                "improvisation"
+              ],
+              "note": "Belfast trio using the studio as an instrument, threading fiddle and guitar through heavily improvised, electronics-tinged jazz. Inspired by personal loss and their Northern Irish surroundings, it's atmospheric and genuinely moving.",
+              "source": "Juno: Jazz",
+              "spotify_url": "https://open.spotify.com/album/4GsSiduETsYjnUsdm9wVgF",
+              "art": "https://i.scdn.co/image/ab67616d0000b27394c66865158d08aa72ceb83a"
+            },
+            {
+              "artist": "Moses Boyd",
+              "title": "Songs For Sinners",
+              "kind": "album",
+              "tags": [
+                "jazz",
+                "gospel",
+                "soundsystem",
+                "beat-based"
+              ],
+              "note": "His first album in six years, mixing gospel, jazz and Caribbean soundsystem rhythms with 808s. London jazz with a dancefloor pulse, from one of its best drummers.",
+              "source": "Juno: Broken Beat / Nu-Jazz",
+              "spotify_url": "https://open.spotify.com/album/6lwvh4m0R124kNxrjjVFem",
+              "art": "https://i.scdn.co/image/ab67616d0000b273ccf84ad106cda6ea1bc2f3cc"
+            },
+            {
+              "artist": "Sampa the Great",
+              "title": "Nu Zamrock",
+              "kind": "album",
+              "tags": [
+                "soul",
+                "hip hop",
+                "zamrock",
+                "world"
+              ],
+              "note": "Third album, reimagining 1970s Zambian Zamrock through hip-hop, poetry and soul. Confident and rhythm-forward, rooted in her own family history.",
+              "source": "Juno: Soul / Funk",
+              "link": "https://music.apple.com/album/6800037021",
+              "spotify_url": "https://open.spotify.com/album/3XRKBEcQMSiMzGcGQJ2qDz",
+              "art": "https://i.scdn.co/image/ab67616d0000b27319c8cdb7769bbfd66587f26f"
+            },
+            {
+              "artist": "Andy Stott",
+              "title": "Late Loop",
+              "kind": "album",
+              "tags": [
+                "techno",
+                "dub",
+                "electronic",
+                "experimental"
+              ],
+              "note": "First album in five years, built under strict self-imposed rules, with vocals from Alison Skidmore and Elaine Howley threaded through his usual heavy, waterlogged low end. Still unmistakably his own sound.",
+              "source": "Juno: Techno",
+              "spotify_url": "https://open.spotify.com/album/5ma4Jeo1KwJXQpBOKkq2PF",
+              "art": "https://i.scdn.co/image/ab67616d0000b273a5d591caf6b4200c78b52a3e"
+            },
+            {
+              "artist": "Eerie Enterprise",
+              "title": "Places Remember Events",
+              "kind": "album",
+              "tags": [
+                "electronica",
+                "ambient",
+                "bass",
+                "leftfield"
+              ],
+              "note": "upsammy and Piezo's debut as a duo, made across the Netherlands and Italy. Elegant, angular electronica mixing her ambient instincts with his bass and techno leanings, with a nostalgic streak running through it.",
+              "source": "Juno: Leftfield",
+              "spotify_url": "https://open.spotify.com/album/1yuH3TKLvw0ezuVNXYbYWQ",
+              "art": "https://i.scdn.co/image/ab67616d0000b27326345fb70496ef5bd5c5135d"
+            },
+            {
+              "artist": "OR",
+              "title": "Music for Empty Stadiums",
+              "kind": "album",
+              "tags": [
+                "ambient",
+                "beatless",
+                "experimental"
+              ],
+              "note": "John Talabot's new ambient alias, a 17 track, 95 minute beatless record made during lockdown. Patient and uneventful in the best way, built for empty rooms rather than dancefloors.",
+              "source": "Juno: Ambient / Drone / Experimental",
+              "spotify_url": "https://open.spotify.com/album/5TrIb5RT795Fuwx2Gqnv1U",
+              "art": "https://i.scdn.co/image/ab67616d0000b273393276e66c9f62302bceb345"
+            },
+            {
+              "artist": "Kali Malone",
+              "title": "Burning Song",
+              "kind": "album",
+              "tags": [
+                "drone",
+                "organ",
+                "contemporary classical",
+                "ambient"
+              ],
+              "note": "Recorded alone at Leipzig's Thomaskirche, her first solo album in two years. Slow moving pipe organ drone that rewards full attention, with more weight and grief in it than usual.",
+              "source": "Juno: Ambient / Drone / Experimental",
+              "spotify_url": "https://open.spotify.com/album/6rkiieHSmjekjpj5OZ05wQ",
+              "art": "https://i.scdn.co/image/ab67616d0000b2736153a93ea0494f7ef19650ab"
+            },
+            {
+              "artist": "RIP Magic",
+              "title": "1,2,3",
+              "kind": "album",
+              "tags": [
+                "dance punk",
+                "no wave",
+                "beat-based",
+                "experimental"
+              ],
+              "note": "Debut album, described as a rock record with no guitars: live drums and bass colliding with synths and samples, with James Murphy producing one track. Restless and narcotic, built for moving.",
+              "source": "Juno: Leftfield",
+              "link": "https://stereogum.com/2512311/rip-magic-announce-debut-album-123-hear-stadium-drive/music",
+              "spotify_url": "https://open.spotify.com/album/1tMPaXMpEEWTYeDEiAlcVv",
+              "art": "https://i.scdn.co/image/ab67616d0000b27327dc1260a1b6682306473476"
+            },
+            {
+              "artist": "Yr Knives",
+              "title": "Begin Yr Singing",
+              "kind": "album",
+              "tags": [
+                "experimental",
+                "guitar",
+                "jazz-rock",
+                "improvisation"
+              ],
+              "note": "A Chicago supergroup's debut, six live-tracked instrumentals with two overdriven guitars and improvised horns. Somewhere between Sonny Sharrock and Crazy Horse, loose and physical.",
+              "source": "Juno: Leftfield",
+              "spotify_url": "https://open.spotify.com/album/0In6IpHlFMAV4eNiwrmXnM",
+              "art": "https://i.scdn.co/image/ab67616d0000b2736bc5fbba18ead051a2de5ae0"
+            },
+            {
+              "artist": "Skee Mask & North Americans",
+              "title": "Final Circle",
+              "kind": "album",
+              "tags": [
+                "ambient",
+                "dub",
+                "americana",
+                "downtempo"
+              ],
+              "note": "A five track meeting of Skee Mask's dub ambience and North Americans' dreamy Americana guitar work. Understated and warm, good for the long nights coming.",
+              "source": "Juno: Balearic / Downtempo",
+              "link": "https://ra.co/news/86128"
+            }
+          ]
+        },
+        {
           "date": "2026-10-26",
           "items": [
             {
@@ -514,8 +669,8 @@
               ],
               "note": "His first album since going public with a serious health battle, and it sounds like a man taking his time to get things right. Warm, classic soul songwriting, understated rather than showy.",
               "source": "Juno: Soul / Funk",
-              "spotify_url": "https://open.spotify.com/album/4Qy4QeE6QL941JsIyEVqF2",
-              "art": "https://i.scdn.co/image/ab67616d0000b273477e1c8155bcd3394113fc05"
+              "art": "https://i.scdn.co/image/ab67616d0000b273477e1c8155bcd3394113fc05",
+              "spotify_url": "https://open.spotify.com/album/4Qy4QeE6QL941JsIyEVqF2"
             },
             {
               "artist": "Nabihah Iqbal",
@@ -628,8 +783,8 @@
               "note": "Modular synths woven through acoustic instruments and field recordings into something warm and human, a little Jon Hassell in its spirit. Came out a couple weeks back but too good to leave off.",
               "source": "Juno: Ambient / Drone / Experimental",
               "link": "https://intlanthem.bandcamp.com/album/edge-conditions",
-              "spotify_url": "https://open.spotify.com/album/0BQzGC68umJ0krfWQMqGfb",
-              "art": "https://i.scdn.co/image/ab67616d0000b27337baadc9ae36e14b953e09b3"
+              "art": "https://i.scdn.co/image/ab67616d0000b27337baadc9ae36e14b953e09b3",
+              "spotify_url": "https://open.spotify.com/album/0BQzGC68umJ0krfWQMqGfb"
             }
           ]
         },
