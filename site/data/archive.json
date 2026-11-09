@@ -1,10 +1,79 @@
 {
-  "updated": "2026-11-02T09:40:57Z",
+  "updated": "2026-11-09T07:13:33Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
       "playlist": "https://open.spotify.com/playlist/6YpWmU0EK7fFa62dpR8Ip7",
       "weeks": [
+        {
+          "date": "2026-11-09",
+          "items": [
+            {
+              "artist": "Ana Lua Caiano",
+              "title": "Devagar Que A Vida É Curta",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/6WctvU1Itl3ipep21NKQTu",
+              "art": "https://i.scdn.co/image/ab67616d0000b273cd0e158809eaeace3d33b886"
+            },
+            {
+              "artist": "Randall Dunn",
+              "title": "Manifold of Partially Actualized Realities",
+              "kind": "album"
+            },
+            {
+              "artist": "Boris with Planning for Burial",
+              "title": "Farewell -Halloween 2026-",
+              "kind": "track",
+              "spotify_url": "https://open.spotify.com/track/1zcV54IyIHMrIDhTytt3b2",
+              "art": "https://i.scdn.co/image/ab67616d0000b273728c73f734bfe4c9204304d0"
+            },
+            {
+              "artist": "Dawuna",
+              "title": "Love's Arp",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/4hXdSScuXDeJWbaeZ6KTPH",
+              "art": "https://i.scdn.co/image/ab67616d0000b273692d5986440d61df02bde426"
+            },
+            {
+              "artist": "Mathis Picard",
+              "title": "The Sound Orchestra",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/5fPiPQu2Sumtfri5ruLunz",
+              "art": "https://i.scdn.co/image/ab67616d0000b2735f251e995a59e7c28de3fa4e"
+            },
+            {
+              "artist": "Ciarán",
+              "title": "Róisín",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/62vi9DCEeLUe128est6dDQ",
+              "art": "https://i.scdn.co/image/ab67616d0000b273d9aca49ab3e0094cc739c3b6"
+            },
+            {
+              "artist": "Darius Brubeck",
+              "title": "Live Again",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/27gJiT0DWMeRMAY6Ig0erF",
+              "art": "https://i.scdn.co/image/ab67616d0000b273850e6c56af50ffc6a7eb78ec"
+            },
+            {
+              "artist": "Moonbuilding",
+              "title": "Moonbuilding Autumn 2026",
+              "kind": "album"
+            },
+            {
+              "artist": "Caixa Cubo Trio",
+              "title": "Ultracooked",
+              "kind": "album"
+            },
+            {
+              "artist": "Sylvie",
+              "title": "New Season",
+              "kind": "album",
+              "spotify_url": "https://open.spotify.com/album/0Hci3QTWU3ErP8pXyDq7SU",
+              "art": "https://i.scdn.co/image/ab67616d0000b2739118a2c92c50d1c2a3a78a4d"
+            }
+          ]
+        },
         {
           "date": "2026-10-26",
           "items": [
@@ -531,8 +600,8 @@
               "note": "Third album, reimagining 1970s Zambian Zamrock through hip-hop, poetry and soul. Confident and rhythm-forward, rooted in her own family history.",
               "source": "Juno: Soul / Funk",
               "link": "https://music.apple.com/album/6800037021",
-              "spotify_url": "https://open.spotify.com/album/3XRKBEcQMSiMzGcGQJ2qDz",
-              "art": "https://i.scdn.co/image/ab67616d0000b27319c8cdb7769bbfd66587f26f"
+              "art": "https://i.scdn.co/image/ab67616d0000b27319c8cdb7769bbfd66587f26f",
+              "spotify_url": "https://open.spotify.com/album/3XRKBEcQMSiMzGcGQJ2qDz"
             },
             {
               "artist": "Andy Stott",
@@ -606,8 +675,8 @@
               "note": "Debut album, described as a rock record with no guitars: live drums and bass colliding with synths and samples, with James Murphy producing one track. Restless and narcotic, built for moving.",
               "source": "Juno: Leftfield",
               "link": "https://stereogum.com/2512311/rip-magic-announce-debut-album-123-hear-stadium-drive/music",
-              "spotify_url": "https://open.spotify.com/album/1tMPaXMpEEWTYeDEiAlcVv",
-              "art": "https://i.scdn.co/image/ab67616d0000b27327dc1260a1b6682306473476"
+              "art": "https://i.scdn.co/image/ab67616d0000b27327dc1260a1b6682306473476",
+              "spotify_url": "https://open.spotify.com/album/1tMPaXMpEEWTYeDEiAlcVv"
             },
             {
               "artist": "Yr Knives",
