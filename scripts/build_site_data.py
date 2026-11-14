@@ -224,7 +224,7 @@ IMG_EXT = re.compile(r"\.(jpe?g|png|webp|gif)(\?|$)", re.I)
 SKIP_IMG = re.compile(r"logo|icon|sprite|favicon|avatar|placeholder|blank|pixel|badge|payment|flag|spacer|space-|arrow|button|"
                       r"menu|close|loader|inactive|\.svg", re.I)
 STOP = {"a", "an", "the", "of", "on", "in", "and", "to", "for", "by", "de", "la", "le", "du", "des", "no", "vol", "issue"}
-MIN_SIDE = 300  # pictures smaller than this on their short side are icons, not covers
+MIN_SIDE = 180  # pictures smaller than this on their short side are icons, not covers
 
 
 def simplify(s):
@@ -401,6 +401,7 @@ def web_search(title, by):
         print(f"  bing: {e}", file=sys.stderr)
     urls = [u for u in dict.fromkeys(urls) if u.startswith("http")
             and not re.search(r"instagram|facebook|twitter|x\.com|pinterest|youtube|amazon|duckduckgo|bing\.com", u)]
+    print(f"  web search for {q!r}: {len(urls)} result(s) {urls[:3]}", file=sys.stderr)
     for u in urls[:8]:
         try:
             body = fetch(u)
@@ -408,6 +409,8 @@ def web_search(title, by):
             continue
         m = re.search(r'<meta[^>]+property=["\']og:title["\'][^>]*content=["\']([^"\']+)', body, re.I) or \
             re.search(r"<title[^>]*>([^<]+)", body, re.I)
+        if m:
+            print(f"    {u} -> {m.group(1)[:80]!r}", file=sys.stderr)
         if m and same_title(m.group(1), title):
             imgs = good(page_images(u))
             if imgs:
