@@ -508,10 +508,32 @@ function openDesign(a) {
     ${picks}
     <div class="facts">${fact("Tags", a.tags.map(cap).join(", "))}${fact("Type", KIND[a.kind] || cap(a.kind))}${fact("Price", a.price)}${fact("Shop", a.shop)}</div>
   </article></div>`;
-  $("#dlg").showModal();
+  showDlg();
 }
+/* Overlay: opening it, and stepping through entries with the arrow keys in
+   the same order they're shown on the page (whatever view, filter or sort). */
+let current = null;
+function showDlg() {
+  const d = $("#dlg");
+  if (!d.open) d.showModal();
+  d.scrollTop = 0;
+}
+function step(dir) {
+  const keys = [...new Set([...document.querySelectorAll("#main [data-k]")].map(el => el.dataset.k))];
+  if (keys.length < 2) return;
+  const i = keys.indexOf(current);
+  const next = keys[(i + dir + keys.length) % keys.length];
+  openDetail(next);
+  document.querySelector(`#main [data-k="${CSS.escape(next)}"]`)?.scrollIntoView({block:"nearest"});
+}
+document.addEventListener("keydown", e => {
+  if (!$("#dlg").open || e.altKey || e.ctrlKey || e.metaKey) return;
+  if (e.key === "ArrowRight") { e.preventDefault(); step(1); }
+  else if (e.key === "ArrowLeft") { e.preventDefault(); step(-1); }
+});
 function openDetail(key) {
   const a = state.albums.find(x => x.key === key); if (!a) return;
+  current = key;
   if (a.design) return openDesign(a);
   const i = info(a);
   const spot = safeUrl(a.links.spotify) || `https://open.spotify.com/search/${encodeURIComponent(a.artist+" "+a.title)}`;
@@ -533,7 +555,7 @@ function openDetail(key) {
     ${picks}
     <div class="facts">${fact("Genre", genres)}${fact("Released", i.year)}${fact("Format", kind)}</div>
   </article></div>`;
-  $("#dlg").showModal();
+  showDlg();
 }
 
 /* ---------- wiring ---------- */
