@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T14:57:07Z",
+  "updated": "2026-11-14T15:00:59Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -250,7 +250,9 @@
             "@drawdownbooks"
           ],
           "shop": "Draw Down",
-          "price": "$75"
+          "price": "$75",
+          "art": "http://draw-down.com/cdn/shop/files/DossierScriptoriumdeToulouse.jpg?v=1745192069",
+          "art_checked": true
         },
         {
           "title": "Some Other Book(i)s(h) Logos",
@@ -269,6 +271,7 @@
           ],
           "shop": "Draw Down",
           "price": "$35",
+          "art_checked": true,
           "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/SomeOtherBook_i_s_h_Logos.jpg?v=1743797423",
           "images": [
             "https://cdn.shopify.com/s/files/1/1681/2497/files/SomeOtherBook_i_s_h_Logos.jpg?v=1743797423",
@@ -295,6 +298,7 @@
           ],
           "shop": "Slanted",
           "price": "€14 (pre-order)",
+          "art_checked": true,
           "art": "https://www.slanted.de/wp-content/uploads/2026/10/GraphicDesignZip_Cover.png"
         },
         {
@@ -313,7 +317,9 @@
             "@drawdownbooks"
           ],
           "shop": "Draw Down",
-          "price": "$16"
+          "price": "$16",
+          "art": "http://draw-down.com/cdn/shop/files/DreaderThanDreads.jpg?v=1745192800",
+          "art_checked": true
         },
         {
           "title": "PLOP #03: Polish Design Revue",
@@ -333,6 +339,7 @@
           ],
           "shop": "Slanted",
           "price": "€12 (pre-order)",
+          "art_checked": true,
           "art": "https://www.slanted.de/wp-content/uploads/2026/10/PLOP-03-Cover-2560px-scaled.jpg"
         },
         {
@@ -352,6 +359,7 @@
           ],
           "shop": "magCulture",
           "price": "£25",
+          "art_checked": true,
           "art": "https://cdn.shopify.com/s/files/1/0514/7889/files/MagtoMagazineJournal_2.jpg?v=1793716303"
         },
         {
@@ -371,6 +379,7 @@
           ],
           "shop": "Perimeter Books",
           "price": "A$77",
+          "art_checked": true,
           "art": "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5832.jpg?v=1732769878",
           "images": [
             "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5832.jpg?v=1732769878",
@@ -397,6 +406,7 @@
           ],
           "shop": "Magma",
           "price": "£18.99",
+          "art_checked": true,
           "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1782.jpg?v=1779372415",
           "images": [
             "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1782.jpg?v=1779372415",
@@ -423,6 +433,7 @@
           ],
           "shop": "Draw Down",
           "price": "$19.95",
+          "art_checked": true,
           "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/MeettheLithographer.jpg?v=1745193734"
         },
         {
@@ -441,6 +452,7 @@
             "@podpunkt"
           ],
           "shop": "Studio site",
+          "art_checked": true,
           "art": "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c462d1fd37fb5963348104_PP-ilustracje-beauty.jpg",
           "images": [
             "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c462d1fd37fb5963348104_PP-ilustracje-beauty.jpg",
