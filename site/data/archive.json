@@ -1071,8 +1071,8 @@
               ],
               "shop": "Draw Down",
               "price": "$75",
-              "art": "https://draw-down.com/cdn/shop/files/DossierScriptoriumdeToulouse.jpg?v=1745192069",
-              "art_checked": true
+              "art_checked": true,
+              "art": "https://draw-down.com/cdn/shop/files/DossierScriptoriumdeToulouse.jpg?v=1745192069"
             },
             {
               "title": "Some Other Book(i)s(h) Logos",
@@ -1138,8 +1138,8 @@
               ],
               "shop": "Draw Down",
               "price": "$16",
-              "art": "https://draw-down.com/cdn/shop/files/DreaderThanDreads.jpg?v=1745192800",
-              "art_checked": true
+              "art_checked": true,
+              "art": "https://draw-down.com/cdn/shop/files/DreaderThanDreads.jpg?v=1745192800"
             },
             {
               "title": "PLOP #03: Polish Design Revue",
@@ -1776,7 +1776,9 @@
                 "@editionsb42"
               ],
               "shop": "Magma",
-              "price": "£45"
+              "price": "£45",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-10-13155001.png?v=1791904371",
+              "art_checked": true
             },
             {
               "title": "Women's Rights are Human Rights",
@@ -2188,8 +2190,8 @@
               ],
               "shop": "magCulture",
               "price": "£22",
-              "art": "https://cdn.shopify.com/s/files/1/0514/7889/files/Screenshot2026-10-13at16.58.03.png?v=1791907096",
               "art_checked": true,
+              "art": "https://cdn.shopify.com/s/files/1/0514/7889/files/Screenshot2026-10-13at16.58.03.png?v=1791907096",
               "link_fixed": true
             },
             {
@@ -2315,8 +2317,8 @@
               ],
               "shop": "Magma",
               "price": "£18",
-              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-19122019.png?v=1771503817",
               "art_checked": true,
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-19122019.png?v=1771503817",
               "images": [
                 "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-19122019.png?v=1771503817",
                 "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-19122033.png?v=1771503817",
@@ -2339,8 +2341,8 @@
               ],
               "shop": "Magma",
               "price": "£35",
-              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/ABookonZines.jpg?v=1784926912",
               "art_checked": true,
+              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/ABookonZines.jpg?v=1784926912",
               "images": [
                 "https://cdn.shopify.com/s/files/1/1681/2497/files/ABookonZines.jpg?v=1784926912",
                 "https://cdn.shopify.com/s/files/1/1681/2497/files/i05-1.jpg?v=1758918468",
@@ -2571,8 +2573,8 @@
               "by": "Bruno Munari",
               "shop": "Magma",
               "price": "£19.99",
-              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/FantasyInvention_Creativity.jpg?v=1734121516",
               "art_checked": true,
+              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/FantasyInvention_Creativity.jpg?v=1734121516",
               "images": [
                 "https://cdn.shopify.com/s/files/1/1681/2497/files/FantasyInvention_Creativity.jpg?v=1734121516",
                 "https://cdn.shopify.com/s/files/1/1681/2497/files/DSCN6033.jpg?v=1734123988",
@@ -2705,8 +2707,8 @@
               ],
               "shop": "Magma",
               "price": "£13.50",
-              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-42-23LogoInRealLife-SetMargins.png?v=1779889408",
               "art_checked": true,
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-42-23LogoInRealLife-SetMargins.png?v=1779889408",
               "images": [
                 "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-42-23LogoInRealLife-SetMargins.png?v=1779889408",
                 "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-42-09LogoInRealLife-SetMargins.png?v=1779889409",
@@ -2729,8 +2731,8 @@
               ],
               "shop": "Magma",
               "price": "£16.99",
-              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-35-16Ninety-NineGraphicDesignWorkshops-SetMargins.png?v=1779888951",
               "art_checked": true,
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-35-16Ninety-NineGraphicDesignWorkshops-SetMargins.png?v=1779888951",
               "images": [
                 "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-35-16Ninety-NineGraphicDesignWorkshops-SetMargins.png?v=1779888951",
                 "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-35-12Ninety-NineGraphicDesignWorkshops-SetMargins.png?v=1779888952",

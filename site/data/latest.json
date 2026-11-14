@@ -251,8 +251,8 @@
           ],
           "shop": "Draw Down",
           "price": "$75",
-          "art": "https://draw-down.com/cdn/shop/files/DossierScriptoriumdeToulouse.jpg?v=1745192069",
-          "art_checked": true
+          "art_checked": true,
+          "art": "https://draw-down.com/cdn/shop/files/DossierScriptoriumdeToulouse.jpg?v=1745192069"
         },
         {
           "title": "Some Other Book(i)s(h) Logos",
@@ -318,8 +318,8 @@
           ],
           "shop": "Draw Down",
           "price": "$16",
-          "art": "https://draw-down.com/cdn/shop/files/DreaderThanDreads.jpg?v=1745192800",
-          "art_checked": true
+          "art_checked": true,
+          "art": "https://draw-down.com/cdn/shop/files/DreaderThanDreads.jpg?v=1745192800"
         },
         {
           "title": "PLOP #03: Polish Design Revue",
