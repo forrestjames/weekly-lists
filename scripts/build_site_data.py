@@ -212,7 +212,8 @@ def absolute(u, base):
     u = html.unescape((u or "").strip())
     if u.startswith("//"):
         u = "https:" + u
-    return urllib.parse.urljoin(base, u) if u else ""
+    u = urllib.parse.urljoin(base, u) if u else ""
+    return "https://" + u[7:] if u.startswith("http://") else u   # the site is https, so http pictures wouldn't show
 
 
 # Design shops that run on Shopify. Each has a product search at
@@ -247,7 +248,12 @@ def same_title(a, b):
     wa, wb = words(a), words(b)
     if not ma or not mb:
         return False
-    return (ma <= wb or mb <= wa) and len(wa & wb) >= min(2, len(wa), len(wb))
+    if (ma <= wb and len(mb - wa) <= 1) or (mb <= wa and len(ma - wb) <= 1):
+        return True
+    # "Bruno Munari: Fantasy" is the book "Fantasy": compare the part after the colon too.
+    sa = words(a.split(":", 1)[1]) if ":" in a else set()
+    sb = words(b.split(":", 1)[1]) if ":" in b else set()
+    return bool(sa and sa == mb) or bool(sb and sb == ma)
 
 
 def image_ok(url):
@@ -372,21 +378,30 @@ def wayback(link):
         return []
     imgs = page_images(snap)
     # Archived image addresses point back into archive.org; strip that so the shop's CDN serves them.
-    return [re.sub(r"^https?://web\.archive\.org/web/\d+(im_)?/", "", u) for u in imgs]
+    imgs = [re.sub(r"^https?://web\.archive\.org/web/\d+(im_)?/", "", u) for u in imgs]
+    return ["https://" + u[7:] if u.startswith("http://") else u for u in imgs]
 
 
 def web_search(title, by):
     """Last resort: search the web for the title and take the picture from a
     result page whose own title matches."""
     q = f'{title} {re.sub(r"[(].*?[)]", "", by or "")}'.strip()
-    page = fetch("https://html.duckduckgo.com/html/?" + urllib.parse.urlencode({"q": q}))
     urls = []
-    for href in re.findall(r'class="result__a"[^>]*href="([^"]+)"', page):
-        m = re.search(r"uddg=([^&]+)", href)
-        u = urllib.parse.unquote(m.group(1)) if m else html.unescape(href)
-        if u.startswith("http") and not re.search(r"instagram|facebook|twitter|x\.com|pinterest|youtube|amazon", u):
-            urls.append(u)
-    for u in urls[:6]:
+    try:   # DuckDuckGo's plain HTML results
+        page = fetch("https://html.duckduckgo.com/html/?" + urllib.parse.urlencode({"q": q}))
+        for href in re.findall(r'class="result__a"[^>]*href="([^"]+)"', page):
+            m = re.search(r"uddg=([^&]+)", href)
+            urls.append(urllib.parse.unquote(m.group(1)) if m else html.unescape(href))
+    except Exception as e:  # noqa: BLE001
+        print(f"  duckduckgo: {e}", file=sys.stderr)
+    try:   # then Bing
+        page = fetch("https://www.bing.com/search?" + urllib.parse.urlencode({"q": q}))
+        urls += [html.unescape(u) for u in re.findall(r'<li class="b_algo".*?<a[^>]+href="(https?://[^"]+)"', page, re.S)]
+    except Exception as e:  # noqa: BLE001
+        print(f"  bing: {e}", file=sys.stderr)
+    urls = [u for u in dict.fromkeys(urls) if u.startswith("http")
+            and not re.search(r"instagram|facebook|twitter|x\.com|pinterest|youtube|amazon|duckduckgo|bing\.com", u)]
+    for u in urls[:8]:
         try:
             body = fetch(u)
         except Exception:  # noqa: BLE001
@@ -462,14 +477,16 @@ def find_pictures(it):
             if imgs:
                 return imgs, None
     else:
-        # Designers: their Typographic Posters archive page.
+        # Designers: their own home page, then their Typographic Posters archive page.
         name = re.split(r",| m23", title)[0]
-        for url in dict.fromkeys((f"https://www.typographicposters.com/{slug(title)}", f"https://www.typographicposters.com/{slug(name)}")):
+        home = f"https://{host}/" if host else ""
+        for url in dict.fromkeys(filter(None, (home, f"https://www.typographicposters.com/{slug(title)}",
+                                               f"https://www.typographicposters.com/{slug(name)}"))):
             imgs = checked(url, lambda url=url: page_images(url))
             if imgs:
                 return imgs, None
     # 5. Search the web.
-    imgs = attempt("web search", lambda: web_search(title, by))
+    imgs = attempt("web search", lambda: web_search(title + (" posters" if designer else ""), "" if designer else by))
     if imgs:
         return imgs, None
     print(f"  No picture for {title}. Tried: " + "; ".join(tried), file=sys.stderr)
@@ -501,6 +518,10 @@ def add_design_art(archive, previous):
                 for k in ("art", "images", "link"):
                     if old.get(k) and (k != "link" or old.get("link_fixed")):
                         it[k] = old[k]
+                https = lambda u: "https://" + u[7:] if u.startswith("http://") else u  # noqa: E731
+                it["art"] = https(it["art"])
+                if it.get("images"):
+                    it["images"] = [https(u) for u in it["images"]]
                 if old.get("link_fixed"):
                     it["link_fixed"] = True
                 continue
