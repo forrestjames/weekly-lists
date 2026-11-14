@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T07:13:33Z",
+  "updated": "2026-11-14T14:42:13Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -22,15 +22,15 @@
           "artist": "Boris with Planning for Burial",
           "title": "Farewell -Halloween 2026-",
           "kind": "track",
-          "spotify_url": "https://open.spotify.com/track/1zcV54IyIHMrIDhTytt3b2",
-          "art": "https://i.scdn.co/image/ab67616d0000b273728c73f734bfe4c9204304d0"
+          "art": "https://i.scdn.co/image/ab67616d0000b273728c73f734bfe4c9204304d0",
+          "spotify_url": "https://open.spotify.com/track/1zcV54IyIHMrIDhTytt3b2"
         },
         {
           "artist": "Dawuna",
           "title": "Love's Arp",
           "kind": "album",
-          "spotify_url": "https://open.spotify.com/album/4hXdSScuXDeJWbaeZ6KTPH",
-          "art": "https://i.scdn.co/image/ab67616d0000b273692d5986440d61df02bde426"
+          "art": "https://i.scdn.co/image/ab67616d0000b273692d5986440d61df02bde426",
+          "spotify_url": "https://open.spotify.com/album/4hXdSScuXDeJWbaeZ6KTPH"
         },
         {
           "artist": "Mathis Picard",
@@ -226,6 +226,193 @@
           "note": "A five track meeting of Skee Mask's dub ambience and North Americans' dreamy Americana guitar work. Understated and warm, good for the long nights coming.",
           "source": "Juno: Balearic / Downtempo",
           "link": "https://ra.co/news/86128"
+        }
+      ]
+    },
+    "design": {
+      "name": "Design Shelf",
+      "playlist": "",
+      "date": "2026-11-14",
+      "items": [
+        {
+          "title": "Dossier Scriptorium de Toulouse",
+          "kind": "book",
+          "tags": [
+            "type design",
+            "calligraphy",
+            "teaching"
+          ],
+          "note": "The story of the Scriptorium de Toulouse, a type and calligraphy workshop that ran from 1967 to 2005 and trained a generation of French letter makers. Mostly unpublished documents and first-hand accounts, with contributions from nearly twenty type designers and calligraphers. 240 pages, two colour offset, French and English, designed by Juliette Flécheux with Bureau 205 and co-published with ANRT. A good one on how a school's way of teaching shapes the work that comes after it.",
+          "link": "https://draw-down.com/products/dossier-scriptorium-de-toulouse",
+          "by": "Bureau 205 and ANRT",
+          "instagram": [
+            "@bureau_205",
+            "@drawdownbooks"
+          ],
+          "shop": "Draw Down",
+          "price": "$75"
+        },
+        {
+          "title": "Some Other Book(i)s(h) Logos",
+          "kind": "book",
+          "tags": [
+            "logos",
+            "small press",
+            "artist's book"
+          ],
+          "note": "174 logos from small presses, zine makers, bookshops, book fairs and printers, all redrawn by hand by a third grader called Zaiah Drawing. It's a colouring book too, and the back of each fold gives the name, a short bio and the Instagram handle, so it doubles as a directory of the art book world. Designed by Kristen Mueller, coil bound, risograph and inkjet. Funny, and a sharp test of which marks survive being drawn by a child.",
+          "link": "https://draw-down.com/products/some-other-bookish-logos",
+          "by": "Zaiah Drawing",
+          "instagram": [
+            "@someotherbooks",
+            "@drawdownbooks"
+          ],
+          "shop": "Draw Down",
+          "price": "$35"
+        },
+        {
+          "title": "GraphicDesign.zip",
+          "kind": "book",
+          "tags": [
+            "stamps",
+            "swiss design",
+            "small formats",
+            "pre-order"
+          ],
+          "note": "Nearly a century of Swiss stamp design, looked at through eight lenses: format, shape, sheet layout, material, cropping, symbols, typography and imagery. Braille embossing, fabric stamps and foils turn up along the way. Tiny at 7.4 x 10.5 cm, 96 pages, Wire-O bound. Small screens are your world, and this is all about saying a lot in very little space.",
+          "link": "https://www.slanted.de/product/graphicdesign-zip/",
+          "by": "Svenja Kolly and Mia Gujer",
+          "instagram": [
+            "@slanted_publishers"
+          ],
+          "shop": "Slanted",
+          "price": "€14 (pre-order)"
+        },
+        {
+          "title": "Dreader Than Dreads: Posters by Fred Voisin",
+          "kind": "book",
+          "tags": [
+            "posters",
+            "reggae",
+            "paris"
+          ],
+          "note": "A folio of concert posters Frédéric Voisin made for reggae shows in Paris: Yellowman, Aswad, Culture, Burning Spear, Dennis Brown. Unbound, 16 pages, full colour, with a short text by Olivier Cachin. Published by le Signe, the national graphic design centre in Chaumont. This week's poster pick, and at $16 an easy one to say yes to.",
+          "link": "https://draw-down.com/products/dreader-than-dreads-posters-by-fred-voisin",
+          "by": "Fred Voisin",
+          "instagram": [
+            "@lesigne_cndg",
+            "@drawdownbooks"
+          ],
+          "shop": "Draw Down",
+          "price": "$16"
+        },
+        {
+          "title": "PLOP #03: Polish Design Revue",
+          "kind": "magazine",
+          "tags": [
+            "magazine",
+            "poland",
+            "social design",
+            "pre-order"
+          ],
+          "note": "A slim Polish design magazine asking what graphic design can do beyond selling or looking good. The theme is wrażliwość, roughly sensitivity or openness. Inside: Poster Rex's collective screen printing, Sonia Góral's family imagery, and Podpunkt's safety booklet that went to 16.8 million Polish households. 32 pages. Out in December.",
+          "link": "https://www.slanted.de/product/plop-03-polish-design-revue/",
+          "by": "Marian Misiak, Rene Wawrzkiewicz and Lars Harmsen",
+          "instagram": [
+            "@slanted_publishers",
+            "@podpunkt"
+          ],
+          "shop": "Slanted",
+          "price": "€12 (pre-order)"
+        },
+        {
+          "title": "Mag to Mag Journal #2",
+          "kind": "magazine",
+          "tags": [
+            "magazine",
+            "independent publishing",
+            "editorial design"
+          ],
+          "note": "The journal of Milan's independent magazine fair, run by the shop Frab's. This issue's theme is \"Error\", with interviews with MacGuffin's Ernst van der Hoeven, TypeOne's Amber Weaver and the Fukt team, plus a look at the Dutch distributor Idea Books. Big format, 160 pages, designed by Laura Bortolotti. A quick read on where indie magazines are now.",
+          "link": "https://magculture.com/collections/new-this-week/products/mag-to-mag-journal-2",
+          "by": "Frab's, Milan",
+          "instagram": [
+            "@mag__to__mag",
+            "@magculture"
+          ],
+          "shop": "magCulture",
+          "price": "£25"
+        },
+        {
+          "title": "Fracture: Japanese Graphic Design 1875 to 1975",
+          "kind": "book",
+          "tags": [
+            "design history",
+            "japan",
+            "essays"
+          ],
+          "note": "Not new (2024), but it fits well after the Japan books from earlier lists. Lynam traces Japanese graphic design from the graphic arts to just before digital, through essays on modernity, empire, gender, commerce and taste. 447 pages, hardback, from Set Margins'.",
+          "link": "https://perimeterbooks.com/products/fracture-japanese-graphic-design-1875-1975",
+          "by": "Ian Lynam",
+          "instagram": [
+            "@ianlynam",
+            "@perimeterbooks"
+          ],
+          "shop": "Perimeter Books",
+          "price": "A$77"
+        },
+        {
+          "title": "Graphic Design Play Book, Second Edition",
+          "kind": "book",
+          "tags": [
+            "visual thinking",
+            "workshops",
+            "puzzles"
+          ],
+          "note": "Sophie Cure and Aurélien Farina teach type, signage, logos, posters and branding through puzzles: spot the difference, matching, dot to dot. Work by Otl Aicher, Otto Neurath and Gerd Arntz turns up along the way. Light, but handy for warming up a team workshop.",
+          "link": "https://magma-shop.com/collections/design-books/products/graphic-design-play-book-copy",
+          "by": "Sophie Cure and Aurélien Farina",
+          "instagram": [
+            "@laurencekingpub",
+            "@magma_books"
+          ],
+          "shop": "Magma",
+          "price": "£18.99"
+        },
+        {
+          "title": "Meet the Lithographer",
+          "kind": "book",
+          "tags": [
+            "print",
+            "picture book",
+            "process"
+          ],
+          "note": "A picture book tour of a lithographer's workshop, from the invention of lithography to how books, posters and magazines get printed now. 40 pages, illustrations in three colours. Made for kids, but a clear, charming explainer at any age. Its sister book, Meet the Typographer, is there too.",
+          "link": "https://draw-down.com/products/meet-the-lithographer",
+          "by": "Gaby Bazin",
+          "instagram": [
+            "@davidzwirnerbooks",
+            "@drawdownbooks"
+          ],
+          "shop": "Draw Down",
+          "price": "$19.95"
+        },
+        {
+          "title": "Podpunkt",
+          "kind": "designer",
+          "tags": [
+            "identity",
+            "wayfinding",
+            "public design",
+            "warsaw"
+          ],
+          "note": "Warsaw branding studio behind the City of Warsaw logo, Culture.pl, the Adam Mickiewicz Institute and the Kraków National Museum, with a digital sister studio, Superskrypt, for UX and code. They also designed Poland's national safety guide. Public-facing design at real scale. Follow for identity systems that have to work for everyone.",
+          "link": "https://www.podpunkt.pl/",
+          "by": "Studio, Warsaw",
+          "instagram": [
+            "@podpunkt"
+          ],
+          "shop": "Studio site"
         }
       ]
     }

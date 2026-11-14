@@ -4,12 +4,23 @@ Builds the JSON the website reads, from the weekly picks files.
 
 Usage:  python scripts/build_site_data.py
 
-Reads   picks/rob/*.json and picks/juno/*.json
-Writes  site/data/latest.json    this week's picks for both editions
+Reads   picks/rob/*.json, picks/juno/*.json and design/*.json
+Writes  site/data/latest.json    this week's picks for every edition
         site/data/archive.json   every past week, newest first
 
 The page only needs to fetch these two files. One-off lists (like
 picks/dub) are left out.
+
+Design Shelf picks live in design/ rather than picks/, so the Spotify
+workflow never sees them. Each design pick looks like this (all but
+"title" optional):
+  {"title": "...", "by": "author, studio or editor", "kind": "book",
+   "tags": ["posters", "type"], "note": "...", "instagram": ["@handle"],
+   "shop": "Magma", "price": "£25", "link": "https://...", "art": "https://..."}
+kind is "book", "magazine" or "designer". For any design pick without
+"art", this script reads the shop page and saves its cover image (and, for
+Shopify shops, up to four more pictures) into archive.json. Earlier
+results are reused, so only new picks cost a request.
 
 Each pick can carry extra fields for the site. All optional:
   "tags":   ["ambient", "jazz"]
@@ -29,10 +40,14 @@ looking covers up in the browser.
 """
 
 import base64
+import html
 import json
 import os
 import pathlib
+import re
 import sys
+import urllib.parse
+import urllib.request
 from datetime import datetime, timezone
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -40,14 +55,20 @@ sys.path.insert(0, str(ROOT))
 import add_tracks as sp  # noqa: E402  (reuses its Spotify search and matching)
 
 PICKS = ROOT / "picks"
+DESIGN = ROOT / "design"
 OUT = ROOT / "site" / "data"
 
 EDITIONS = {
     "rob": {"name": "Rob's List", "playlist": "https://open.spotify.com/playlist/6YpWmU0EK7fFa62dpR8Ip7"},
     "juno": {"name": "Juno Weekly", "playlist": ""},
+    "design": {"name": "Design Shelf", "playlist": ""},
 }
+FOLDERS = {"rob": PICKS / "rob", "juno": PICKS / "juno", "design": DESIGN}
+MUSIC = ["rob", "juno"]
 
-FIELDS = ["artist", "title", "kind", "tags", "note", "source", "source_url", "spotify_url", "link", "art"]
+FIELDS = ["artist", "title", "kind", "tags", "note", "source", "source_url", "spotify_url", "link", "art",
+          "by", "instagram", "shop", "price", "images"]
+MAX_IMAGES = 5
 MAX_SPOTIFY_FAILURES = 3  # give up on Spotify for this run after this many errors in a row
 
 
@@ -60,7 +81,7 @@ def clean(item):
 
 def load_weeks(edition):
     weeks = []
-    for path in sorted((PICKS / edition).glob("*.json")):
+    for path in sorted(FOLDERS[edition].glob("*.json")):
         try:
             data = json.loads(path.read_text())
         except json.JSONDecodeError as e:
@@ -124,8 +145,8 @@ def add_art(archive, previous):
                     known[(it.get("artist"), it.get("title"))] = it
 
     todo = []
-    for ed in archive.values():
-        for week in ed["weeks"]:
+    for key in MUSIC:
+        for week in archive[key]["weeks"]:
             for it in week["items"]:
                 if it.get("art"):
                     continue
@@ -176,6 +197,85 @@ def add_art(archive, previous):
     print(f"Cover art: {found} pick(s) filled in, {len(todo)} needed it.")
 
 
+UA = "Mozilla/5.0 (weekly-lists site builder; +https://github.com/forrestjames/weekly-lists)"
+
+
+def fetch(url, timeout=20):
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
+    with urllib.request.urlopen(req, timeout=timeout) as res:
+        return res.read().decode("utf-8", "replace")
+
+
+def absolute(u, base):
+    u = html.unescape((u or "").strip())
+    if u.startswith("//"):
+        u = "https:" + u
+    return urllib.parse.urljoin(base, u) if u else ""
+
+
+def shop_pictures(link):
+    """Cover and extra pictures for a design pick, read from its shop page.
+
+    Shopify shops (Magma, magCulture, Draw Down, Counter-Print, Perimeter)
+    publish every product photo at the product URL plus ".json". Anything
+    else falls back to the page's og:image. Returns a list of URLs, cover
+    first, or [] if nothing was found."""
+    parts = urllib.parse.urlsplit(link)
+    if "/products/" in parts.path:
+        try:
+            data = json.loads(fetch(urllib.parse.urlunsplit(
+                (parts.scheme, parts.netloc, parts.path.rstrip("/") + ".json", "", ""))))
+            imgs = [absolute(i.get("src"), link) for i in (data.get("product") or {}).get("images", [])]
+            imgs = [i for i in imgs if i]
+            if imgs:
+                return imgs[:MAX_IMAGES]
+        except Exception as e:  # noqa: BLE001  (not Shopify, or the shop is down: try the page)
+            print(f"  no product JSON for {link}: {e}", file=sys.stderr)
+    page = fetch(link)
+    for pat in (r'<meta[^>]+property=["\']og:image(?::secure_url)?["\'][^>]*content=["\']([^"\']+)',
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]*property=["\']og:image',
+                r'<meta[^>]+name=["\']twitter:image["\'][^>]*content=["\']([^"\']+)'):
+        m = re.search(pat, page, re.I)
+        if m:
+            return [absolute(m.group(1), link)]
+    return []
+
+
+def add_design_art(archive, previous):
+    """Fills in "art" (and "images") on design picks that lack them."""
+    known = {}
+    for week in ((previous or {}).get("editions", {}).get("design") or {}).get("weeks", []):
+        for it in week.get("items", []):
+            if it.get("art") and it.get("link"):
+                known[it["link"]] = it
+    found = tried = 0
+    for week in archive["design"]["weeks"]:
+        for it in week["items"]:
+            if it.get("art") or not it.get("link"):
+                continue
+            old = known.get(it["link"])
+            if old:
+                it["art"] = old["art"]
+                if old.get("images") and not it.get("images"):
+                    it["images"] = old["images"]
+                continue
+            tried += 1
+            try:
+                pics = shop_pictures(it["link"])
+            except Exception as e:  # noqa: BLE001
+                print(f"Couldn't read {it['link']}: {e}", file=sys.stderr)
+                continue
+            if pics:
+                it["art"] = pics[0]
+                if len(pics) > 1 and not it.get("images"):
+                    it["images"] = pics
+                found += 1
+            else:
+                print(f"No picture found for {it.get('title')}")
+    if tried:
+        print(f"Design pictures: {found} of {tried} new pick(s) filled in.")
+
+
 def main():
     latest, archive = {}, {}
     for key, meta in EDITIONS.items():
@@ -188,6 +288,7 @@ def main():
     except json.JSONDecodeError:
         previous_archive = {}
     add_art(archive, previous_archive)
+    add_design_art(archive, previous_archive)
 
     for key, meta in EDITIONS.items():
         weeks = archive[key]["weeks"]

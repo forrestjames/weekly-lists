@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T07:13:33Z",
+  "updated": "2026-11-14T14:42:13Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -24,15 +24,15 @@
               "artist": "Boris with Planning for Burial",
               "title": "Farewell -Halloween 2026-",
               "kind": "track",
-              "spotify_url": "https://open.spotify.com/track/1zcV54IyIHMrIDhTytt3b2",
-              "art": "https://i.scdn.co/image/ab67616d0000b273728c73f734bfe4c9204304d0"
+              "art": "https://i.scdn.co/image/ab67616d0000b273728c73f734bfe4c9204304d0",
+              "spotify_url": "https://open.spotify.com/track/1zcV54IyIHMrIDhTytt3b2"
             },
             {
               "artist": "Dawuna",
               "title": "Love's Arp",
               "kind": "album",
-              "spotify_url": "https://open.spotify.com/album/4hXdSScuXDeJWbaeZ6KTPH",
-              "art": "https://i.scdn.co/image/ab67616d0000b273692d5986440d61df02bde426"
+              "art": "https://i.scdn.co/image/ab67616d0000b273692d5986440d61df02bde426",
+              "spotify_url": "https://open.spotify.com/album/4hXdSScuXDeJWbaeZ6KTPH"
             },
             {
               "artist": "Mathis Picard",
@@ -1042,6 +1042,1369 @@
               "source": "Juno: Reggae / Dub",
               "art": "https://i.scdn.co/image/ab67616d0000b273736ded86ab3cd11bdb150eac",
               "spotify_url": "https://open.spotify.com/track/0ez8CxTG4VlOq8LRVsDx3j"
+            }
+          ]
+        }
+      ]
+    },
+    "design": {
+      "name": "Design Shelf",
+      "playlist": "",
+      "weeks": [
+        {
+          "date": "2026-11-14",
+          "items": [
+            {
+              "title": "Dossier Scriptorium de Toulouse",
+              "kind": "book",
+              "tags": [
+                "type design",
+                "calligraphy",
+                "teaching"
+              ],
+              "note": "The story of the Scriptorium de Toulouse, a type and calligraphy workshop that ran from 1967 to 2005 and trained a generation of French letter makers. Mostly unpublished documents and first-hand accounts, with contributions from nearly twenty type designers and calligraphers. 240 pages, two colour offset, French and English, designed by Juliette Flécheux with Bureau 205 and co-published with ANRT. A good one on how a school's way of teaching shapes the work that comes after it.",
+              "link": "https://draw-down.com/products/dossier-scriptorium-de-toulouse",
+              "by": "Bureau 205 and ANRT",
+              "instagram": [
+                "@bureau_205",
+                "@drawdownbooks"
+              ],
+              "shop": "Draw Down",
+              "price": "$75"
+            },
+            {
+              "title": "Some Other Book(i)s(h) Logos",
+              "kind": "book",
+              "tags": [
+                "logos",
+                "small press",
+                "artist's book"
+              ],
+              "note": "174 logos from small presses, zine makers, bookshops, book fairs and printers, all redrawn by hand by a third grader called Zaiah Drawing. It's a colouring book too, and the back of each fold gives the name, a short bio and the Instagram handle, so it doubles as a directory of the art book world. Designed by Kristen Mueller, coil bound, risograph and inkjet. Funny, and a sharp test of which marks survive being drawn by a child.",
+              "link": "https://draw-down.com/products/some-other-bookish-logos",
+              "by": "Zaiah Drawing",
+              "instagram": [
+                "@someotherbooks",
+                "@drawdownbooks"
+              ],
+              "shop": "Draw Down",
+              "price": "$35"
+            },
+            {
+              "title": "GraphicDesign.zip",
+              "kind": "book",
+              "tags": [
+                "stamps",
+                "swiss design",
+                "small formats",
+                "pre-order"
+              ],
+              "note": "Nearly a century of Swiss stamp design, looked at through eight lenses: format, shape, sheet layout, material, cropping, symbols, typography and imagery. Braille embossing, fabric stamps and foils turn up along the way. Tiny at 7.4 x 10.5 cm, 96 pages, Wire-O bound. Small screens are your world, and this is all about saying a lot in very little space.",
+              "link": "https://www.slanted.de/product/graphicdesign-zip/",
+              "by": "Svenja Kolly and Mia Gujer",
+              "instagram": [
+                "@slanted_publishers"
+              ],
+              "shop": "Slanted",
+              "price": "€14 (pre-order)"
+            },
+            {
+              "title": "Dreader Than Dreads: Posters by Fred Voisin",
+              "kind": "book",
+              "tags": [
+                "posters",
+                "reggae",
+                "paris"
+              ],
+              "note": "A folio of concert posters Frédéric Voisin made for reggae shows in Paris: Yellowman, Aswad, Culture, Burning Spear, Dennis Brown. Unbound, 16 pages, full colour, with a short text by Olivier Cachin. Published by le Signe, the national graphic design centre in Chaumont. This week's poster pick, and at $16 an easy one to say yes to.",
+              "link": "https://draw-down.com/products/dreader-than-dreads-posters-by-fred-voisin",
+              "by": "Fred Voisin",
+              "instagram": [
+                "@lesigne_cndg",
+                "@drawdownbooks"
+              ],
+              "shop": "Draw Down",
+              "price": "$16"
+            },
+            {
+              "title": "PLOP #03: Polish Design Revue",
+              "kind": "magazine",
+              "tags": [
+                "magazine",
+                "poland",
+                "social design",
+                "pre-order"
+              ],
+              "note": "A slim Polish design magazine asking what graphic design can do beyond selling or looking good. The theme is wrażliwość, roughly sensitivity or openness. Inside: Poster Rex's collective screen printing, Sonia Góral's family imagery, and Podpunkt's safety booklet that went to 16.8 million Polish households. 32 pages. Out in December.",
+              "link": "https://www.slanted.de/product/plop-03-polish-design-revue/",
+              "by": "Marian Misiak, Rene Wawrzkiewicz and Lars Harmsen",
+              "instagram": [
+                "@slanted_publishers",
+                "@podpunkt"
+              ],
+              "shop": "Slanted",
+              "price": "€12 (pre-order)"
+            },
+            {
+              "title": "Mag to Mag Journal #2",
+              "kind": "magazine",
+              "tags": [
+                "magazine",
+                "independent publishing",
+                "editorial design"
+              ],
+              "note": "The journal of Milan's independent magazine fair, run by the shop Frab's. This issue's theme is \"Error\", with interviews with MacGuffin's Ernst van der Hoeven, TypeOne's Amber Weaver and the Fukt team, plus a look at the Dutch distributor Idea Books. Big format, 160 pages, designed by Laura Bortolotti. A quick read on where indie magazines are now.",
+              "link": "https://magculture.com/collections/new-this-week/products/mag-to-mag-journal-2",
+              "by": "Frab's, Milan",
+              "instagram": [
+                "@mag__to__mag",
+                "@magculture"
+              ],
+              "shop": "magCulture",
+              "price": "£25"
+            },
+            {
+              "title": "Fracture: Japanese Graphic Design 1875 to 1975",
+              "kind": "book",
+              "tags": [
+                "design history",
+                "japan",
+                "essays"
+              ],
+              "note": "Not new (2024), but it fits well after the Japan books from earlier lists. Lynam traces Japanese graphic design from the graphic arts to just before digital, through essays on modernity, empire, gender, commerce and taste. 447 pages, hardback, from Set Margins'.",
+              "link": "https://perimeterbooks.com/products/fracture-japanese-graphic-design-1875-1975",
+              "by": "Ian Lynam",
+              "instagram": [
+                "@ianlynam",
+                "@perimeterbooks"
+              ],
+              "shop": "Perimeter Books",
+              "price": "A$77"
+            },
+            {
+              "title": "Graphic Design Play Book, Second Edition",
+              "kind": "book",
+              "tags": [
+                "visual thinking",
+                "workshops",
+                "puzzles"
+              ],
+              "note": "Sophie Cure and Aurélien Farina teach type, signage, logos, posters and branding through puzzles: spot the difference, matching, dot to dot. Work by Otl Aicher, Otto Neurath and Gerd Arntz turns up along the way. Light, but handy for warming up a team workshop.",
+              "link": "https://magma-shop.com/collections/design-books/products/graphic-design-play-book-copy",
+              "by": "Sophie Cure and Aurélien Farina",
+              "instagram": [
+                "@laurencekingpub",
+                "@magma_books"
+              ],
+              "shop": "Magma",
+              "price": "£18.99"
+            },
+            {
+              "title": "Meet the Lithographer",
+              "kind": "book",
+              "tags": [
+                "print",
+                "picture book",
+                "process"
+              ],
+              "note": "A picture book tour of a lithographer's workshop, from the invention of lithography to how books, posters and magazines get printed now. 40 pages, illustrations in three colours. Made for kids, but a clear, charming explainer at any age. Its sister book, Meet the Typographer, is there too.",
+              "link": "https://draw-down.com/products/meet-the-lithographer",
+              "by": "Gaby Bazin",
+              "instagram": [
+                "@davidzwirnerbooks",
+                "@drawdownbooks"
+              ],
+              "shop": "Draw Down",
+              "price": "$19.95"
+            },
+            {
+              "title": "Podpunkt",
+              "kind": "designer",
+              "tags": [
+                "identity",
+                "wayfinding",
+                "public design",
+                "warsaw"
+              ],
+              "note": "Warsaw branding studio behind the City of Warsaw logo, Culture.pl, the Adam Mickiewicz Institute and the Kraków National Museum, with a digital sister studio, Superskrypt, for UX and code. They also designed Poland's national safety guide. Public-facing design at real scale. Follow for identity systems that have to work for everyone.",
+              "link": "https://www.podpunkt.pl/",
+              "by": "Studio, Warsaw",
+              "instagram": [
+                "@podpunkt"
+              ],
+              "shop": "Studio site"
+            }
+          ]
+        },
+        {
+          "date": "2026-11-07",
+          "items": [
+            {
+              "title": "Velvetyne Saved My Life",
+              "kind": "book",
+              "tags": [
+                "type design",
+                "open source",
+                "foundry"
+              ],
+              "note": "A book about Velvetyne, the French collective that has released open source typefaces since 2011. It's built around a group interview by Sandra Chamaret, with essays on their key typefaces and a catalogue of more than 70 fonts by almost as many designers. Half reading book, half specimen, and good on what a foundry can be when the fonts are free.",
+              "link": "https://magma-shop.com/collections/design-books/products/velvetyne-saved-my-life",
+              "by": "Velvetyne",
+              "instagram": [
+                "@velvetyne_type_foundry",
+                "@magma_books"
+              ],
+              "shop": "Magma",
+              "price": "£42"
+            },
+            {
+              "title": "Zweikommasieben #31",
+              "kind": "magazine",
+              "tags": [
+                "magazine",
+                "music",
+                "editorial design"
+              ],
+              "note": "The Lucerne music magazine turns 15 in print with a 452-page issue shaped like a cigarette packet, 55 x 88 mm. The theme is \"Where there is smoke, there is fire\": Sylvie Fleury talks with Russell Haswell, there's a piece on the band Kleenex, and an essay on how digital life breaks up our sense of time. Designed by Studio Laurenz Brunner. A format idea worth stealing.",
+              "link": "https://magculture.com/collections/new-this-week/products/zweikommasieben-31",
+              "by": "Studio Laurenz Brunner",
+              "instagram": [
+                "@zweikommasieben",
+                "@magculture"
+              ],
+              "shop": "magCulture",
+              "price": "£16"
+            },
+            {
+              "title": "Revue Faire no. 30 bis: Types of Types, the Typographic Specimen by Lineto",
+              "kind": "magazine",
+              "tags": [
+                "typography",
+                "specimens",
+                "type marketing"
+              ],
+              "note": "A short study of how the Swiss foundry Lineto sells its typefaces: books, posters, envelopes, videos, inflatables, even bootleg logos. It includes REALA's 2000 LL Biff specimen, which drew on graffiti. 84 pages, French and English, an expanded reprint from Editions Empire. A specimen is product design, really, and this shows it.",
+              "link": "https://draw-down.com/collections/new-titles/products/revue-faire-no-30-bis-types-of-types-the-typographic-specimen-by-lineto",
+              "by": "Revue Faire",
+              "instagram": [
+                "@revuefaire",
+                "@drawdownbooks"
+              ],
+              "shop": "Draw Down",
+              "price": "$22"
+            },
+            {
+              "title": "Bye Bye Binary, No. eụ: Archives typo·graphiques du futur",
+              "kind": "magazine",
+              "tags": [
+                "type",
+                "inclusive language",
+                "research"
+              ],
+              "note": "The second magazine from the Franco-Belgian collective that designs type for gender inclusive French. This one is about archives: essays, visual research, Clara Balaguer looking back at Filipino Folk Foundry, and two type specimens built from texts by bell hooks, Sara Ahmed and others. Pocket sized, 160 pages, black and white, in French. Worth it even with rusty French, for how type can carry a political idea.",
+              "link": "https://draw-down.com/collections/new-titles/products/bye-bye-binary-no-e-u-archives-typo-graphiques-du-futur",
+              "by": "Bye Bye Binary",
+              "instagram": [
+                "@bye_bye_binary",
+                "@drawdownbooks"
+              ],
+              "shop": "Draw Down",
+              "price": "$21"
+            },
+            {
+              "title": "Yearbook of Type #8: History Edition",
+              "kind": "book",
+              "tags": [
+                "type design",
+                "reference",
+                "pre-order"
+              ],
+              "note": "Slanted's survey of type released from 2024 to 2026, this time leaning on history and heritage. Each typeface gets three pages: a specimen spread, then a profile with weights, language support and OpenType features. 528 pages, hardcover with open thread stitching, designed by Samira Niedermayer and Viola Dessin. A handy desk reference when you're choosing type for a product.",
+              "link": "https://www.slanted.de/?p=811680",
+              "by": "Slanted",
+              "instagram": [
+                "@slanted_publishers"
+              ],
+              "shop": "Slanted",
+              "price": "€38 (pre-order)"
+            },
+            {
+              "title": "Signs and Artifacts No. 5: CDMX, Mexico City",
+              "kind": "book",
+              "tags": [
+                "vernacular",
+                "signage",
+                "lettering"
+              ],
+              "note": "Shop signs from Mexico City, photographed and lifted out of their streets so you can really look at the lettering. Collected and designed by Can Can Press and Secret Riso Club, 230 pages, one colour offset, English and Spanish. Sits nicely next to the Showa Modern signs book from last week.",
+              "link": "https://draw-down.com/collections/new-titles/products/signs-and-artifacts-no-5-cdmx-mexico-city",
+              "by": "Can Can Press and Secret Riso Club",
+              "instagram": [
+                "@cancanpress",
+                "@drawdownbooks"
+              ],
+              "shop": "Draw Down",
+              "price": "$46"
+            },
+            {
+              "title": "Breakout #2: 100 Posters",
+              "kind": "book",
+              "tags": [
+                "posters",
+                "typography",
+                "daily practice"
+              ],
+              "note": "Tamti started making a poster a day on Instagram as a \"graphic design gym\". Some won awards and brought in clients. This second book collects 100 posters from 2022 to 2025, from commissions to community work, with a foreword by Götz Gramlich. 128 pages, from Slanted. This week's poster pick, and a good case for practice as a habit.",
+              "link": "https://draw-down.com/products/breakout-2-100-posters",
+              "by": "Cihan Tamti",
+              "instagram": [
+                "@drawdownbooks"
+              ],
+              "shop": "Draw Down",
+              "price": "$34"
+            },
+            {
+              "title": "POSEUTEO POSTER: Contemporary Poster Designs from Korea",
+              "kind": "book",
+              "tags": [
+                "posters",
+                "korea",
+                "survey"
+              ],
+              "note": "538 pages of current Korean posters, from work rooted in calligraphy to plain modern type. It's a Victionary survey, so it skims, but it pairs well with Slanted's Seoul issue from last week. Compact and softbound.",
+              "link": "https://www.counter-print.co.uk/products/poseuteo-poster-contemporary-poster-designs-from-korea",
+              "by": "Victionary",
+              "instagram": [
+                "@victionworkshop",
+                "@counterprintbooks"
+              ],
+              "shop": "Counter-Print",
+              "price": "£35"
+            },
+            {
+              "title": "Merch: We Love Our Customers",
+              "kind": "book",
+              "tags": [
+                "identity",
+                "merchandise",
+                "branding"
+              ],
+              "note": "Counter-Print's case for merch as a real brand channel, from political badges and oil company road maps to the tote bag. Examples include Hey Studio's identity for Casa ñidro, carried across awning, totes and staff shirts. Light reading, but useful the next time merch turns up as an afterthought on a brief.",
+              "link": "https://magma-shop.com/collections/design-books/products/merch-we-love-our-customers",
+              "by": "Counter-Print",
+              "instagram": [
+                "@counterprintbooks",
+                "@magma_books"
+              ],
+              "shop": "Magma",
+              "price": "£25"
+            },
+            {
+              "title": "Götz Gramlich, gggrafik",
+              "kind": "designer",
+              "tags": [
+                "posters",
+                "heidelberg"
+              ],
+              "note": "Gramlich runs gggrafik in Heidelberg, after a spell assisting Niklaus Troxler in Willisau. Bold, often political posters, the Mut zur Wut poster competition he started in 2011, and a stint as president of 100 Beste Plakate. Follow for the posters.",
+              "link": "https://www.gggrafik.de",
+              "by": "Designer, Heidelberg",
+              "instagram": [
+                "@instagggramlich"
+              ],
+              "shop": "gggrafik"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-31",
+          "items": [
+            {
+              "title": "Letters and Spirit: New Typography, 2025 to 2026",
+              "kind": "book",
+              "tags": [
+                "typography",
+                "ai",
+                "research"
+              ],
+              "note": "Takes Tschichold's The New Typography as a starting point and asks what \"new typography\" means when layout gets handed to algorithms and generative tools. Essays, case studies and visual experiments, with contributions from Radim Peško, Marian Misiak and others. Designed by Noviki, 272 pages, small and black and white. Probably the most relevant book on this list to your day job.",
+              "link": "https://draw-down.com/collections/new-titles/products/letters-and-spirit-new-typography-2025-2026",
+              "by": "Katarzyna Nestorowicz (ed.)",
+              "instagram": [
+                "@drawdownbooks"
+              ],
+              "shop": "Draw Down",
+              "price": "$28"
+            },
+            {
+              "title": "Alphabettes Soup: Feminist Approaches to Type",
+              "kind": "book",
+              "tags": [
+                "type design",
+                "history",
+                "specimen"
+              ],
+              "note": "Ten years of Alphabettes, the network of women in type, collected into one book. Key articles from the site, new essays, interviews and a specimen of over 100 typefaces by women and non-binary designers. Designed by Tereza Bettinardi, 384 pages, from Bikini Books. It sits well next to the Popova book and UN/SEEN from earlier lists.",
+              "link": "https://www.counter-print.co.uk/products/alphabettes-soup-feminist-approaches-to-type",
+              "by": "Amy Papaelias (ed.)",
+              "instagram": [
+                "@alphabettes_org",
+                "@tbettinardi",
+                "@counterprintbooks"
+              ],
+              "shop": "Counter-Print",
+              "price": "£54"
+            },
+            {
+              "title": "Alphabet in Motion: How Letters Get Their Shape",
+              "kind": "book",
+              "tags": [
+                "type history",
+                "paper engineering"
+              ],
+              "note": "A type history told in 17 pop-ups. One uses projected light for 1960s psychedelic lettering, one explains anti-aliasing, one is a modular puzzle based on Albers' Kombinations-Schrift. A 128-page essay section puts each one in context. Pricey, but it shows how type follows technology better than most textbooks.",
+              "link": "https://www.counter-print.co.uk/products/alphabet-in-motion-how-letters-get-their-shape",
+              "by": "Kelli Anderson",
+              "instagram": [
+                "@kellianderson",
+                "@counterprintbooks"
+              ],
+              "shop": "Counter-Print",
+              "price": "£70"
+            },
+            {
+              "title": "Oh So Pretty: Punk in Print 1976 to 1980",
+              "kind": "book",
+              "tags": [
+                "posters",
+                "flyers",
+                "fanzines"
+              ],
+              "note": "About 500 items from Toby Mott's punk collection: gig posters, flyers, fanzines and badges, from famous bands to tiny venues and political groups. Rick Poynor writes on it. 512 pages, now £20. This week's poster pick, and a good reminder that cheap and fast can still be great design.",
+              "link": "https://www.counter-print.co.uk/products/oh-so-pretty-punk-in-print-1976-1980",
+              "by": "Toby Mott",
+              "instagram": [
+                "@counterprintbooks"
+              ],
+              "shop": "Counter-Print",
+              "price": "£20"
+            },
+            {
+              "title": "Isidro Ferrer: About Nothing",
+              "kind": "book",
+              "tags": [
+                "posters",
+                "illustration",
+                "spain"
+              ],
+              "note": "Ferrer is one of Spain's great poster makers, with a sense of humour built out of found objects and odd juxtapositions. This isn't a straight monograph. It's arranged around themes like farce, disorder, wandering and time, mixing well known and lesser known work with his own writing. 224 pages, from Hoaki (2023).",
+              "link": "https://draw-down.com/collections/new-titles/products/isidro-ferrer-about-nothing",
+              "by": "Isidro Ferrer",
+              "instagram": [
+                "@hoakibooks",
+                "@drawdownbooks"
+              ],
+              "shop": "Draw Down",
+              "price": "$39.95"
+            },
+            {
+              "title": "Slanted #48: Seoul",
+              "kind": "magazine",
+              "tags": [
+                "magazine",
+                "city issue",
+                "korea"
+              ],
+              "note": "Slanted's city issue on Seoul. The team visited fifteen studios and covers graphic design, type, architecture and digital work, plus essays on K-pop, fashion and city life. 224 pages, in English. Seoul's design scene is one of the liveliest anywhere right now, and this is a quick way in.",
+              "link": "https://www.slanted.de/?p=811669",
+              "by": "Slanted",
+              "instagram": [
+                "@slanted_publishers"
+              ],
+              "shop": "Slanted",
+              "price": "€24"
+            },
+            {
+              "title": "BranD #82: Philippe Weisbecker",
+              "kind": "magazine",
+              "tags": [
+                "magazine",
+                "illustration",
+                "drawing"
+              ],
+              "note": "The Hong Kong design magazine gives a whole issue to Weisbecker, the French artist who draws everyday objects and machines with \"nothing more than a pencil and a line\". Biography, a 2023 interview and excerpts from his books, in a chalk coloured card casing. 200 pages, Chinese and English. Quiet, patient work.",
+              "link": "https://magculture.com/collections/new-this-week/products/brand-82",
+              "by": "BranD",
+              "instagram": [
+                "@brandmagazine.hk",
+                "@magculture"
+              ],
+              "shop": "magCulture",
+              "price": "£21.95"
+            },
+            {
+              "title": "Showa Modern: Signs and Store Designs, 1920s to 30s",
+              "kind": "book",
+              "tags": [
+                "vernacular",
+                "signage",
+                "japan"
+              ],
+              "note": "The sister book to the Showa Modern ad book from an earlier list. Shop signs, window displays and street graphics from Japanese cities as Western styles poured in. Pocket sized, 264 pages, Japanese and English. Cheap, and full of lettering ideas.",
+              "link": "https://magma-shop.com/collections/design-books/products/showa-modern-signs-and-store-designs-1920s-30s-new-ed",
+              "instagram": [
+                "@magma_books"
+              ],
+              "shop": "Magma",
+              "price": "£21.99"
+            },
+            {
+              "title": "NODE Berlin Oslo",
+              "kind": "designer",
+              "tags": [
+                "posters",
+                "exhibitions",
+                "identity"
+              ],
+              "note": "Serge Rompza and Anders Hofgaard's studio, split between Berlin and Oslo since 2003. Exhibition graphics, books and identities, usually built on a strong typographic idea. Their 2026 poster for Seeing Words, Reading Images at the PalaisPopulaire, a show about writing in art, is a good place to start.",
+              "link": "https://www.typographicposters.com/node/69adc16d98b3b6509b2d2338",
+              "by": "Studio, Berlin and Oslo",
+              "instagram": [
+                "@nodeberlinoslo",
+                "@typographicposters"
+              ],
+              "shop": "Typographic Posters"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-24",
+          "items": [
+            {
+              "title": "Graphic Design in Japan: Mapping a Generation",
+              "kind": "book",
+              "tags": [
+                "graphic design",
+                "japan",
+                "survey"
+              ],
+              "note": "Eighteen Japanese studios and designers born between 1970 and 1990, drawn from about twenty interviews Dimos has done since 2018. It skips the Yokoo and Tanaka history lesson and looks at how this generation works now, across culture and commerce with no hard line between them. Most of the work hasn't been seen much in Europe. 192 pages, from Éditions B42.",
+              "link": "https://magma-shop.com/collections/design-books/products/graphic-design-in-japan-mapping-a-generation",
+              "by": "Alexandre Dimos (ed.)",
+              "instagram": [
+                "@alexandre.dimos",
+                "@editionsb42"
+              ],
+              "shop": "Magma",
+              "price": "£45"
+            },
+            {
+              "title": "Women's Rights are Human Rights",
+              "kind": "book",
+              "tags": [
+                "posters",
+                "activism",
+                "international"
+              ],
+              "note": "International posters on gender inequality, violence and reproductive rights, by dozens of designers and agencies. Resnick introduces it and Steven Heller adds a text. 224 pages, 23 x 30 cm, from Set Margins'. This week's poster pick, and a reminder of what a poster can still do when it has something to say.",
+              "link": "https://www.perimeterbooks.com/collections/design/products/elizabeth-resnick-women-s-rights-are-human-rights-international-posters-on-gender-based-inequality-violence-and-discrimination",
+              "by": "Elizabeth Resnick (curator)",
+              "instagram": [
+                "@setmargins",
+                "@perimeterbooks"
+              ],
+              "shop": "Perimeter Books",
+              "price": "A$64"
+            },
+            {
+              "title": "Letterform Frequencies: Exploring the Visual Imprint of Arabic Type",
+              "kind": "book",
+              "tags": [
+                "type design",
+                "arabic",
+                "research",
+                "pre-order"
+              ],
+              "note": "Nammour runs the Arabic Type Research Unit in Beirut. Here she counts and maps how often letters and their contextual forms repeat in running Arabic text, which behaves nothing like Latin. Part data, part visual experiment, 264 pages with a poster wrap. Pattern finding that changes how you design.",
+              "link": "https://draw-down.com/collections/pre-sales/products/letterform-frequencies-exploring-the-visual-imprint-of-arabic-type",
+              "by": "Yara Khoury Nammour",
+              "instagram": [
+                "@drawdownbooks",
+                "@hmctartcenter"
+              ],
+              "shop": "Draw Down",
+              "price": "$35 (pre-sale)"
+            },
+            {
+              "title": "To design is also getting on a bus, gazing out the window and thinking on the move",
+              "kind": "book",
+              "tags": [
+                "design practice",
+                "essays",
+                "attention"
+              ],
+              "note": "Notes a Barcelona designer wrote on the H6 bus, which became a newsletter, then a book. Impostor syndrome, uncertainty, who gets to decide, and a case against constant digital urgency. Small, 160 pages, from Set Margins'. One to hand to anyone on your team who's running hot.",
+              "link": "https://www.perimeterbooks.com/collections/design/products/ingrid-picanyol-to-design-is-also-getting-on-a-bus-gazing-out-the-window-and-thinking-on-the-move-notes-on-design-time-and-attention",
+              "by": "Ingrid Picanyol",
+              "instagram": [
+                "@ingridpicanyol",
+                "@ingridpicanyolstudio",
+                "@setmargins"
+              ],
+              "shop": "Perimeter Books",
+              "price": "A$59"
+            },
+            {
+              "title": "Logos of the Venezuelan Minitecas",
+              "kind": "book",
+              "tags": [
+                "logos",
+                "vernacular",
+                "music"
+              ],
+              "note": "Hundreds of logos from Venezuela's minitecas, the small sound systems that played electro, Miami bass and Italo disco from the 70s on. Compiled by Phran, part of Klasse Wrecks' pocket KFAX logo series. 70 pages, palm sized. Pure vernacular identity work, made by people who never called it that.",
+              "link": "https://www.counter-print.co.uk/products/logos-of-the-venezuelen-minitecas",
+              "by": "Phran",
+              "instagram": [
+                "@klassewrecks",
+                "@counterprintbooks"
+              ],
+              "shop": "Counter-Print",
+              "price": "£17"
+            },
+            {
+              "title": "Partners #4",
+              "kind": "magazine",
+              "tags": [
+                "magazine",
+                "editorial design",
+                "photography"
+              ],
+              "note": "A Tokyo annual about relationships, one question per issue. This one asks \"What do you follow?\" and opens with butterflies and Tokuko Ushioda's photos of more than 100 fridges. Designed by Julie Peeters, 400 pages in a compact book format. A study in pacing, like her Bill.",
+              "link": "https://magculture.com/collections/new/products/partners-4",
+              "by": "Julie Peeters (design)",
+              "instagram": [
+                "@partnersmagazine",
+                "@juliempeeters"
+              ],
+              "shop": "magCulture",
+              "price": "£28"
+            },
+            {
+              "title": "Slanted Experimental Type 4.0",
+              "kind": "book",
+              "tags": [
+                "typography",
+                "experimental",
+                "variable fonts"
+              ],
+              "note": "The fourth round from students at Dortmund, led by Lars Harmsen and Andreas Ruhe. Typefaces built from accidents, imprecision and odd systems, including variable and AI-made fonts. 296 pages. Not all of it will land, but it's a good look at where students are pushing type.",
+              "link": "https://www.counter-print.co.uk/products/slanted-experimental-type-4-0",
+              "by": "Lars Harmsen and Andreas Ruhe",
+              "instagram": [
+                "@slanted_publishers",
+                "@counterprintbooks"
+              ],
+              "shop": "Counter-Print",
+              "price": "£23"
+            },
+            {
+              "title": "Jurriaan Schrofer (1926 to 1990)",
+              "kind": "book",
+              "tags": [
+                "monograph",
+                "dutch design",
+                "typography"
+              ],
+              "note": "Not new (2014), but on Counter-Print's shelf and worth knowing. Schrofer did photobooks, brochures, magazines and typefaces, and spent years on optical effects and perspective in type. 424 pages, designed by Jaap van Triest and Karel Martens, so it pairs well with the Martens books from earlier lists.",
+              "link": "https://www.counter-print.co.uk/products/jurriaan-schrofer-1926-1990",
+              "by": "Jurriaan Schrofer",
+              "instagram": [
+                "@counterprintbooks"
+              ],
+              "shop": "Counter-Print",
+              "price": "£40"
+            },
+            {
+              "title": "Amphorae: An Incomplete Compendium of Non-Ancient Greek Vessels",
+              "kind": "book",
+              "tags": [
+                "illustration",
+                "visual culture",
+                "athens"
+              ],
+              "note": "157 drawings of made-up amphorae, some close to the real thing, some not at all, many carrying hand-lettered lines like \"Can I Pet Your Dog?\". A tiny 320-page softcover from Hyper Hypo in Athens. Light relief, and a smart riff on decoration as message.",
+              "link": "https://magma-shop.com/collections/design-books/products/flower-stamps-charles-deroyan-copy",
+              "by": "Anna Kiosse",
+              "instagram": [
+                "@hyper.hypo.athens"
+              ],
+              "shop": "Magma",
+              "price": "£18"
+            },
+            {
+              "title": "Fons Hickmann m23",
+              "kind": "designer",
+              "tags": [
+                "posters",
+                "identity",
+                "berlin"
+              ],
+              "note": "Hickmann co-founded the Berlin studio in 2001 with Gesine Grotrian-Steinweg. Conceptual posters, books and identity systems, and he has led the 100 Beste Plakate poster association since 2018. He teaches at the Berlin University of the Arts too. Follow for the posters.",
+              "link": "https://www.typographicposters.com/fons-hickmann-m23",
+              "by": "Studio, Berlin",
+              "instagram": [
+                "@fons_hickmann",
+                "@typographicposters"
+              ],
+              "shop": "Typographic Posters"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-17",
+          "items": [
+            {
+              "title": "Segments: Atlas of a Data Leak",
+              "kind": "book",
+              "tags": [
+                "data visualisation",
+                "information design",
+                "pre-order"
+              ],
+              "note": "Albrecht took a leaked set of over 650,000 audience segments from 93 data brokers and mapped them. These are the boxes people get sorted into by behaviour, mood and even morals. 330 pages, 97 diagrams, set in Monument Grotesk. The closest thing to your day job on this list, and a sobering one.",
+              "link": "https://www.setmargins.press/books/atlas-of-a-data-leak/",
+              "by": "Kim Albrecht",
+              "instagram": [
+                "@setmargins"
+              ],
+              "shop": "Set Margins'",
+              "price": "€30"
+            },
+            {
+              "title": "Karel Martens: Cloakroom Tickets",
+              "kind": "book",
+              "tags": [
+                "typography",
+                "print",
+                "monoprints"
+              ],
+              "note": "Martens kept a booklet of numbered cloakroom tickets in his studio for years, meaning to print over it one day. He finally did: 50 monoprints, reproduced front and back at actual size. A quieter, odder companion to his 2027 calendar.",
+              "link": "https://magma-shop.com/collections/design-books/products/karel-martens-cloakroom-tickets",
+              "by": "Karel Martens",
+              "instagram": [
+                "@roma.publications",
+                "@magma_books"
+              ],
+              "shop": "Magma",
+              "price": "£33"
+            },
+            {
+              "title": "Saâdane Afif: Affiches 2",
+              "kind": "book",
+              "tags": [
+                "posters",
+                "artist's monograph"
+              ],
+              "note": "The first book given over entirely to Afif's posters, in an expanded edition from Triangle Books in Brussels. Each poster was made for a show or performance and carries its title, date and collaborators, so together they read as an archive of his work. 176 pages, 24 x 32 cm. A good case for the poster as a record, not just an announcement.",
+              "link": "https://www.perimeterbooks.com/collections/design/products/saadane-afif-affiches-2",
+              "by": "Saâdane Afif",
+              "instagram": [
+                "@lagunastribute",
+                "@perimeterbooks"
+              ],
+              "shop": "Perimeter Books",
+              "price": "A$99"
+            },
+            {
+              "title": "Assume Nothing: On Practice-Based Art, Design and Education",
+              "kind": "book",
+              "tags": [
+                "design education",
+                "practice"
+              ],
+              "note": "Projects by 32 recent graduates of the design and art faculty in Bolzano, paired with new essays on teaching. The idea is that not knowing is a working condition, not a failing. Designed by Melani De Luca, 224 pages. Worth a look if you mentor people early in their careers.",
+              "link": "https://www.setmargins.press/books/assume-nothing/",
+              "by": "Giulia Cordin (ed.)",
+              "instagram": [
+                "@setmargins"
+              ],
+              "shop": "Set Margins'",
+              "price": "€20"
+            },
+            {
+              "title": "Fine Design: A Studio Guide to Remixing Design, Art, Craft, and Industry",
+              "kind": "book",
+              "tags": [
+                "design practice",
+                "teaching",
+                "workbook"
+              ],
+              "note": "Twenty years of studio teaching boiled down into essays and workbook-style exercises, about design that sits between art, craft and industry. Foreword by Andrew Blauvelt. It leans towards objects rather than graphics, but the exercises would work with any team.",
+              "link": "https://www.setmargins.press/books/fine-design/",
+              "by": "Scott Klinker",
+              "instagram": [
+                "@setmargins"
+              ],
+              "shop": "Set Margins'",
+              "price": "€30"
+            },
+            {
+              "title": "Street Report 7: Naptime",
+              "kind": "book",
+              "tags": [
+                "visual culture",
+                "drawing",
+                "singapore"
+              ],
+              "note": "Singapore is often called one of the most sleep-deprived countries in the world. Zohri watched people napping in public, on commutes, at lunch and between shifts, and turned it into explanatory drawings and short texts. A small 144-page paperback. Gentle, funny, and a nice bit of observational information design.",
+              "link": "https://www.perimeterbooks.com/collections/design/products/faiz-bin-zohri-street-report-7-naptime",
+              "by": "Faiz Bin Zohri",
+              "instagram": [
+                "@temporarypress"
+              ],
+              "shop": "Perimeter Books",
+              "price": "A$48"
+            },
+            {
+              "title": "The National Grid #9",
+              "kind": "magazine",
+              "tags": [
+                "journal",
+                "graphic design",
+                "new zealand"
+              ],
+              "note": "A graphic design journal from Aotearoa New Zealand, \"occasionally looking elsewhere\". Edited and designed by Luke Wood, Katie Kerr and Matthew Galloway, 112 pages, co-published with GLORIA Books. A way into a design scene that rarely reaches London.",
+              "link": "https://www.perimeterbooks.com/collections/design/products/forthcoming-the-national-grid-9",
+              "by": "Luke Wood, Katie Kerr and Matthew Galloway",
+              "instagram": [
+                "@gloria__books"
+              ],
+              "shop": "Perimeter Books",
+              "price": "A$25"
+            },
+            {
+              "title": "Tools #6: To Blow",
+              "kind": "magazine",
+              "tags": [
+                "magazine",
+                "making",
+                "editorial design"
+              ],
+              "note": "A Paris annual about making, this time on air and breath. Objects made from balloons, a history of inflatable buildings, crystal glassblowing at Saint-Louis, and an essay on breathlessness and bad air. Art directed by Twice studio, 248 pages, French and English. Calm, well paced pages.",
+              "link": "https://magculture.com/collections/new-this-week/products/tools-7",
+              "by": "Twice studio (art direction)",
+              "instagram": [
+                "@tools_magazine_"
+              ],
+              "shop": "magCulture",
+              "price": "£22"
+            },
+            {
+              "title": "Tinted #1",
+              "kind": "magazine",
+              "tags": [
+                "magazine",
+                "art and design",
+                "copenhagen"
+              ],
+              "note": "A new non-profit annual from Copenhagen that keeps AI-generated content out. Issue one, The Illusion of Hierarchy, is about the gap between what people do and who they are: six interviews, a cover story on veins, an essay on armour. Edited and art directed by Ida Yndal, openbound, 216 pages.",
+              "link": "https://magculture.com/collections/new/products/tinted-issue-1",
+              "by": "Ida Yndal (ed.)",
+              "shop": "magCulture",
+              "price": "£35"
+            },
+            {
+              "title": "Daan Rietbergen",
+              "kind": "designer",
+              "tags": [
+                "posters",
+                "type",
+                "murals",
+                "utrecht"
+              ],
+              "note": "Utrecht designer who worked at Studio Dumbar and came away with a love of grids and systems. His heavy letterforms turn up on posters and as painted murals, including his Nespor typeface on walls in Amsterdam, Utrecht and Eindhoven. A clear line back to Crouwel, with more swagger. Follow for the posters and the walls.",
+              "link": "https://www.typographicposters.com/daan-rietbergen",
+              "by": "Designer, Utrecht",
+              "instagram": [
+                "@daan_rietbergen",
+                "@typographicposters"
+              ],
+              "shop": "Typographic Posters"
+            }
+          ]
+        },
+        {
+          "date": "2026-10-03",
+          "items": [
+            {
+              "title": "Volumes: Design Reviewed Remixed Revealed",
+              "kind": "book",
+              "tags": [
+                "design criticism",
+                "essays",
+                "music"
+              ],
+              "note": "Thirty-odd texts from 25 years of writing about graphic design, with four new pieces and fresh afterwords on the old ones. Sections on teaching, on music and album covers, and some short fiction. Liner notes by Rudy VanderLans of Emigre. Good to argue with.",
+              "link": "https://magma-shop.com/products/volumes-by-kenneth-fitzgerald",
+              "by": "Kenneth FitzGerald",
+              "instagram": [
+                "@setmargins"
+              ],
+              "shop": "Magma",
+              "price": "£11.99"
+            },
+            {
+              "title": "How Many Female Type Designers Do You Know?",
+              "kind": "book",
+              "tags": [
+                "typography",
+                "type history"
+              ],
+              "note": "Part history, part interviews, part specimen. Popova talks to 14 people including Zuzana Licko, Louise Fili and Indra Kupferschmid, then shows typefaces drawn by women. Small hardback, nicely made. A good companion to UN/SEEN.",
+              "link": "https://www.setmargins.press/books/how-many-female-type-designers-do-you-know/",
+              "by": "Yulia Popova",
+              "instagram": [
+                "@setmargins"
+              ],
+              "shop": "Set Margins'",
+              "price": "€29"
+            },
+            {
+              "title": "Translator #4",
+              "kind": "magazine",
+              "tags": [
+                "magazine",
+                "editorial design"
+              ],
+              "note": "A London quarterly of journalism translated into English from around the world. This issue covers Icelandic fishing, Vietnamese markets and a Serbian mining fight. Big format, art directed by Sofia Azcona, and it was first designed at magCulture. Words first, but the pages are well built.",
+              "link": "https://magculture.com/products/translator-4",
+              "by": "Sofia Azcona (art direction)",
+              "instagram": [
+                "@translatormag"
+              ],
+              "shop": "magCulture",
+              "price": "£12"
+            },
+            {
+              "title": "Sorties #1",
+              "kind": "magazine",
+              "tags": [
+                "magazine",
+                "visual culture",
+                "type"
+              ],
+              "note": "A first issue about how images of women get made and who they are made for. Rich and poor images sit side by side on purpose. Display type by Selina Bernet, edition of 500, printed in Latvia. Small, pointed, and nicely odd.",
+              "link": "https://magma-shop.com/collections/design-books/products/a-collection-of-canned-food-labels-made-in-japan-copy",
+              "by": "Selina Bernet (display type)",
+              "instagram": [
+                "@selinabernet"
+              ],
+              "shop": "Magma",
+              "price": "£18"
+            },
+            {
+              "title": "A Book on Zines: New Aesthetics in Zine Design",
+              "kind": "book",
+              "tags": [
+                "independent publishing",
+                "editorial design"
+              ],
+              "note": "304 pages on zines now, with interviews with artists, designers, publishers and curators. It is a survey, so it skims, but it is a quick way to find people worth following.",
+              "link": "https://magma-shop.com/collections/design-books/products/a-book-on-zines",
+              "by": "Victionary",
+              "instagram": [
+                "@victionary"
+              ],
+              "shop": "Magma",
+              "price": "£35"
+            },
+            {
+              "title": "Flower Stamps",
+              "kind": "book",
+              "tags": [
+                "visual culture",
+                "ephemera",
+                "illustration"
+              ],
+              "note": "Hundreds of postage stamps from different eras and countries, all flowers and plants. Tiny pieces of state graphic design, each one doing national identity in a few square centimetres. Lovely for colour and for print texture.",
+              "link": "https://magma-shop.com/collections/design-books/products/flower-stamps-charles-deroyan",
+              "by": "Charles Deroyan",
+              "instagram": [
+                "@charlesderoyan",
+                "@magma_books"
+              ],
+              "shop": "Magma",
+              "price": "£20"
+            },
+            {
+              "title": "Only You Can Complete Me",
+              "kind": "book",
+              "tags": [
+                "vernacular",
+                "visual culture"
+              ],
+              "note": "Japanese dekotora trucks: chrome, neon and hand-painted panels on working lorries. Mutrel did the fieldwork herself in car parks and garages, and the book is bilingual French and Japanese. Vernacular identity at full volume.",
+              "link": "https://magma-shop.com/collections/design-books/products/karel-martens-love-letters-copy",
+              "by": "Louise Mutrel",
+              "instagram": [
+                "@louisemutrel",
+                "@rnvp_paris"
+              ],
+              "shop": "Magma",
+              "price": "£15.99"
+            },
+            {
+              "title": "Mascot: Mascots in Contemporary Graphic Design",
+              "kind": "book",
+              "tags": [
+                "logos",
+                "identity",
+                "character"
+              ],
+              "note": "Counter-Print's survey of brand characters from over 30 studios, split into people, animals, and food and drink. Useful if you have ever had to defend a mascot in a review. Light reading, plenty of ideas.",
+              "link": "https://magma-shop.com/collections/design-books/products/mascot-mascots-in-contemporary-graphic-design",
+              "by": "Counter-Print",
+              "instagram": [
+                "@counterprintbooks"
+              ],
+              "shop": "Magma",
+              "price": "£20"
+            },
+            {
+              "title": "I Got Something to Say: Poster Inventory, 2013 to 2021",
+              "kind": "book",
+              "tags": [
+                "posters",
+                "art book fairs"
+              ],
+              "note": "Every poster Draw Down made for book fairs, talks and workshops over eight years. One colour, Swiss bound, pocket sized, with short essays from Ian Lynam, Somnath Bhatt and others. A small map of the art book world, told through event posters.",
+              "link": "https://draw-down.com/products/i-got-something-to-say-poster-inventory-2013-2021",
+              "by": "Draw Down",
+              "instagram": [
+                "@drawdownbooks"
+              ],
+              "shop": "Draw Down",
+              "price": "$29.95"
+            },
+            {
+              "title": "baldinger•vu-huu",
+              "kind": "designer",
+              "tags": [
+                "posters",
+                "type design",
+                "identity"
+              ],
+              "note": "André Baldinger and Toan Vu-Huu's Paris studio, going since 2008. Type, identities, signage and a lot of very good posters, including this year's for the Chaumont book fair. They teach in Paris, Nancy and Zurich too.",
+              "link": "https://www.typographicposters.com/toan-vu-huu/69dd3314af388a2ebea1be97",
+              "by": "Studio, Paris",
+              "instagram": [
+                "@baldinger_vu_huu"
+              ],
+              "shop": "Typographic Posters"
+            }
+          ]
+        },
+        {
+          "date": "2026-09-26",
+          "items": [
+            {
+              "title": "ECAL: A Typographic Atlas",
+              "kind": "book",
+              "tags": [
+                "type design",
+                "specimens"
+              ],
+              "note": "536 pages of type drawn by ECAL students over ten years. Over 400 graduates from 30+ countries, Latin to kanji. A specimen book that doubles as a map of where type is right now.",
+              "link": "https://magma-shop.com/collections/design-books/products/supernew-supergraphics-copy",
+              "by": "ECAL",
+              "instagram": [
+                "@ecal_type_design",
+                "@ecal_ch"
+              ],
+              "shop": "Magma",
+              "price": "£62"
+            },
+            {
+              "title": "UN/SEEN: Women in Graphic Design up to the Bauhaus",
+              "kind": "book",
+              "tags": [
+                "design history",
+                "posters",
+                "type"
+              ],
+              "note": "Eisele and Naegele dig up the women who did book, poster, type and packaging design between 1865 and 1919. Foreword by Ellen Lupton. 422 pages, lenticular foil cover. A proper correction to the canon.",
+              "link": "https://magma-shop.com/collections/design-books/products/big-type-copy",
+              "by": "Eisele and Naegele",
+              "instagram": [
+                "@slanted_publishers"
+              ],
+              "shop": "Magma",
+              "price": "£48"
+            },
+            {
+              "title": "Experimental Jetset: Statement and Counter-Statement 2",
+              "kind": "book",
+              "tags": [
+                "monograph",
+                "typography"
+              ],
+              "note": "The Amsterdam trio's second volume. 656 pages in a pocket-sized brick, with essays from Lucy Sante and Greil Marcus. Modernism with a post-punk streak. You'll probably read it more than look at it.",
+              "link": "https://magma-shop.com/collections/design-books/products/experimental-jetset-full-scale-false-scale-copy",
+              "by": "Experimental Jetset",
+              "instagram": [
+                "@jetset_experimental"
+              ],
+              "shop": "Magma",
+              "price": "£35"
+            },
+            {
+              "title": "Bill #6",
+              "kind": "magazine",
+              "tags": [
+                "magazine",
+                "editorial design"
+              ],
+              "note": "A magazine with no words. Archive photographs, paper stocks changing as you go, and a mirrored card so you end up in the sequence yourself. Pure pacing and edit.",
+              "link": "https://magculture.com/products/bill-6",
+              "by": "Julie Peeters",
+              "instagram": [
+                "@juliempeeters",
+                "@bill_magazine"
+              ],
+              "shop": "magCulture",
+              "price": "£35"
+            },
+            {
+              "title": "Bruno Munari: Fantasy",
+              "kind": "book",
+              "tags": [
+                "theory",
+                "creativity"
+              ],
+              "note": "Munari's 1977 book on invention and imagination, in English for the first time. Annotated by Jeffrey Schnapp. Small, playful, and a good companion to Design as Art.",
+              "link": "https://magma-shop.com/collections/books/products/design-as-art-copy-1",
+              "by": "Bruno Munari",
+              "shop": "Magma",
+              "price": "£19.99"
+            },
+            {
+              "title": "Identity: Chermayeff & Geismar & Haviv",
+              "kind": "book",
+              "tags": [
+                "logos",
+                "identity"
+              ],
+              "note": "Sixty years of the firm behind the NBC peacock, the Chase octagon and the Mobil O. Now in a compact edition from Standards Manual. The logo book to own if you only own one.",
+              "link": "https://magma-shop.com/collections/design-books/products/new-york-city-transit-authority-graphics-standards-manual-copy",
+              "by": "Chermayeff & Geismar & Haviv",
+              "instagram": [
+                "@chermayeff_geismar_haviv"
+              ],
+              "shop": "Magma",
+              "price": "£58"
+            },
+            {
+              "title": "What Is Post-Branding?",
+              "kind": "book",
+              "tags": [
+                "critique",
+                "branding"
+              ],
+              "note": "Jason Grant of Brisbane activist studio Inkahoots, with Oliver Vodeb. Part essay, part satirical brand manual. A sharp pocketbook for anyone who sells brand work and wants to argue with it.",
+              "link": "https://magma-shop.com/collections/books/products/james-ballard-all-that-mattered-was-sensation-copy-1",
+              "by": "Jason Grant and Oliver Vodeb",
+              "shop": "Magma",
+              "price": "£25"
+            },
+            {
+              "title": "Showa Modern: Ad Designs, 1920s to 30s",
+              "kind": "book",
+              "tags": [
+                "posters",
+                "ephemera"
+              ],
+              "note": "Over 200 Japanese ads from the Taisho and early Showa years. Posters, flyers, matchbox labels, packaging. Cheap, dense, and full of colour ideas.",
+              "link": "https://magma-shop.com/collections/design-books/products/showa-modern-ad-designs-1920s-30s-new-ed",
+              "shop": "Magma",
+              "price": "£21.99"
+            },
+            {
+              "title": "Studio Feixen",
+              "kind": "designer",
+              "tags": [
+                "posters",
+                "type",
+                "motion"
+              ],
+              "note": "Felix Pfäffli's Lucerne studio. From 2010 to 2015 he made every poster for the Südpol venue, riso printed, with near total freedom. Now type and animation too. The feed alone is worth it.",
+              "link": "https://www.studiofeixen.ch/sudpol/",
+              "by": "Studio, Lucerne",
+              "instagram": [
+                "@studiofeixen"
+              ],
+              "shop": "Studio Feixen"
+            },
+            {
+              "title": "Against Coffee Table Books",
+              "kind": "book",
+              "tags": [
+                "publishing",
+                "book culture"
+              ],
+              "note": "Davide Tolfo and Federico Antonini on everything around books: formats, shelves, collecting, and why we buy more than we read. It started as six essays for Laguna~B's online magazine. Small, one colour, and a nice antidote to the big glossy stuff.",
+              "link": "https://magma-shop.com/collections/design-books/products/let-there-be-coffee-copy",
+              "by": "Davide Tolfo and Federico Antonini",
+              "instagram": [
+                "@books.bruno",
+                "@davidetolfo"
+              ],
+              "shop": "Magma",
+              "price": "£20"
+            },
+            {
+              "title": "Logo In Real Life",
+              "kind": "book",
+              "tags": [
+                "logos",
+                "identity",
+                "critique"
+              ],
+              "note": "What happens to logos once they leave the brand guidelines. Memes, bootlegs, protest signs, fashion. Galluzzo treats the logo as an open work that the public keeps rewriting, which is a useful thing to remember in any identity review.",
+              "link": "https://magma-shop.com/collections/design-books/products/ninety-nine-graphic-design-workshops-the-way-we-attend-to-things-copy",
+              "by": "Michele Galluzzo",
+              "instagram": [
+                "@galluzzo.michele",
+                "@setmargins"
+              ],
+              "shop": "Magma",
+              "price": "£13.50"
+            },
+            {
+              "title": "Ninety-Nine Graphic Design Workshops: The Way We Attend to Things",
+              "kind": "book",
+              "tags": [
+                "teaching",
+                "practice"
+              ],
+              "note": "Over a hundred contributors including Ellen Lupton, Johanna Drucker and Erik Kessels. Each workshop is an exercise in paying attention, no kit needed. Good for running team sessions, or just for yourself on a slow Sunday.",
+              "link": "https://magma-shop.com/collections/design-books/products/study-trip-psychedelics-for-research-and-art-copy",
+              "by": "Nick Deakin and James Dyer (eds.)",
+              "instagram": [
+                "@setmargins"
+              ],
+              "shop": "Magma",
+              "price": "£16.99"
+            },
+            {
+              "title": "Publishing as Method: Ways of Working Together in Asia",
+              "kind": "book",
+              "tags": [
+                "editorial design",
+                "independent publishing"
+              ],
+              "note": "Seoul collective mediabus interviewed more than thirty small publishers, designers and artists from East Asia to the Middle East. The design follows the argument: black and white on recycled paper, with the stock colour changing every 32 pages. The cover is set in Kedai-Kedai Merdeka by Huruf.",
+              "link": "https://magma-shop.com/collections/design-books/products/the-echo-how-to-design-brands-that-move-culture-copy",
+              "by": "mediabus",
+              "shop": "Magma",
+              "price": "£31.75"
+            },
+            {
+              "title": "Library of Artistic Print on Demand",
+              "kind": "book",
+              "tags": [
+                "publishing",
+                "post-digital"
+              ],
+              "note": "Artists using Lulu, Blurb and Kindle Direct Publishing to make books. It's honest about the catch: the freedom depends on the platforms' rules. Relevant if you think about tools, templates and who really sets the constraints.",
+              "link": "https://magma-shop.com/collections/design-books/products/nothing-about-interior-architecture-copy",
+              "by": "Annette Gilbert and Andreas Bülhoff",
+              "instagram": [
+                "@spectorbooks"
+              ],
+              "shop": "Magma",
+              "price": "£27.99"
+            },
+            {
+              "title": "MacGuffin #16: The Mirror",
+              "kind": "magazine",
+              "tags": [
+                "magazine",
+                "editorial design"
+              ],
+              "note": "The Amsterdam magazine about the life of things, this time mirrors. Gym selfies, a Norwegian town that bounces winter sun into its square, Sottsass's Ultrafragola. Designed by Sandra Kassenaar and still one of the best-paced magazines around.",
+              "link": "https://magculture.com/products/macguffin-16-the-mirror",
+              "by": "Sandra Kassenaar (design)",
+              "instagram": [
+                "@macguffinmagazine"
+              ],
+              "shop": "magCulture",
+              "price": "£26"
+            },
+            {
+              "title": "The Unimportance of Form and Other Arguments",
+              "kind": "book",
+              "tags": [
+                "design writing",
+                "product"
+              ],
+              "note": "Morrison's early writing from 1984 to 2002, including his RCA thesis and the 1991 essay that gives the book its title. Sharp and often funny. The most direct link to your day job on this list.",
+              "link": "https://magma-shop.com/collections/design-books/products/an-opinionated-guide-to-new-york-architecture-copy",
+              "by": "Jasper Morrison",
+              "shop": "Magma",
+              "price": "£25"
+            },
+            {
+              "title": "Poster Cult",
+              "kind": "book",
+              "tags": [
+                "posters",
+                "letterpress",
+                "type"
+              ],
+              "note": "Kühne prints huge posters in the Swiss Alps on 1960s presses, mixing hot-metal type with laser-cut plates. The book opens with \"The poster world is in crisis\" and then spends 160 pages arguing otherwise. The follow-up to True Print.",
+              "link": "https://draw-down.com/products/dafi-kuhne-poster-cult",
+              "by": "Dafi Kühne",
+              "instagram": [
+                "@dafikuhne",
+                "@larsmullerpublishers"
+              ],
+              "shop": "Draw Down",
+              "price": "$60"
+            },
+            {
+              "title": "Design Reviewed",
+              "kind": "designer",
+              "tags": [
+                "design history",
+                "posters",
+                "ephemera"
+              ],
+              "note": "Matt Lamont's archive of more than 10,000 posters, magazines and bits of print, shared on Instagram. It is turning into a 400-page book with Unit Editions, due summer 2027. Follow for the feed. Back it if you want the book.",
+              "link": "https://www.slanted.de/design-reviewed-the-book/",
+              "by": "Matt Lamont (archive)",
+              "instagram": [
+                "@designreviewed",
+                "@uniteditions"
+              ],
+              "shop": "Slanted",
+              "price": "from €70"
+            },
+            {
+              "title": "Huruf",
+              "kind": "designer",
+              "tags": [
+                "type design",
+                "multilingual",
+                "vernacular"
+              ],
+              "note": "A Kuala Lumpur type collective founded by Sueh Li. They draw from hawker signs, night markets and temple lettering across Malay, Chinese, Tamil and Jawi. A good corrective to Latin-only type thinking.",
+              "link": "https://www.itsnicethat.com/articles/huruf-typography-graphic-design-180221",
+              "by": "Type collective, Kuala Lumpur",
+              "instagram": [
+                "@huruf.my"
+              ],
+              "shop": "It's Nice That"
             }
           ]
         }

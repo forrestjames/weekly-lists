@@ -6,6 +6,7 @@ on:
     paths:
       - "picks/rob/*.json"
       - "picks/juno/*.json"
+      - "design/*.json"
       - "scripts/build_site_data.py"
   workflow_dispatch:
 

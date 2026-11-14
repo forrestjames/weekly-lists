@@ -7,7 +7,7 @@
 <style>
 :root{
   --bg:#0e0e11; --panel:#17171c; --panel2:#1f1f26; --line:#2b2b34;
-  --text:#f2f1ee; --dim:#9b9aa5; --rob:#ff8a3d; --juno:#4fd1c5; --both:#e879f9;
+  --text:#f2f1ee; --dim:#9b9aa5; --rob:#ff8a3d; --juno:#4fd1c5; --both:#e879f9; --design:#f5c542;
   --radius:12px; --size:190px;
 }
 :root[data-theme="light"]{
@@ -58,10 +58,18 @@ main{max-width:1500px;margin:0 auto;padding:18px 16px 80px}
 @media (hover:hover){.card:hover .art{transform:translateY(-4px) scale(1.02);box-shadow:0 14px 28px rgba(0,0,0,.4)}}
 .card:focus-visible{outline:2px solid var(--text);outline-offset:4px;border-radius:8px}
 .art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+/* Design Shelf: books and magazines aren't square, so show the whole cover */
+.art.fit img{object-fit:contain;background:var(--panel2);padding:7%}
+.mosaic .art.fit img{padding:4%}
+.list .art.fit img{padding:2px}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:10px}
+.gallery button{padding:0;border:1px solid var(--line);border-radius:4px;background:var(--panel2);aspect-ratio:1;overflow:hidden;cursor:pointer}
+.gallery button[aria-pressed="true"]{outline:2px solid var(--design);outline-offset:1px}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block}
 .ph{position:absolute;inset:0;display:flex;align-items:flex-end;padding:10px;font-weight:700;font-size:13px;line-height:1.15;color:rgba(255,255,255,.92);text-shadow:0 1px 3px rgba(0,0,0,.4)}
 .badges{position:absolute;top:6px;left:6px;display:flex;gap:4px}
 .badge{width:10px;height:10px;border-radius:50%;box-shadow:0 0 0 2px rgba(0,0,0,.45)}
-.badge.rob{background:var(--rob)} .badge.juno{background:var(--juno)}
+.badge.rob{background:var(--rob)} .badge.juno{background:var(--juno)} .badge.design{background:var(--design)}
 .both-flag{position:absolute;top:6px;right:6px;background:var(--both);color:#1b0a20;font-size:10px;font-weight:700;padding:2px 6px;border-radius:999px}
 .meta{padding:8px 2px 0}
 .t{font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
@@ -93,7 +101,7 @@ main{max-width:1500px;margin:0 auto;padding:18px 16px 80px}
 .list .thumb .art{width:44px;box-shadow:none;border-radius:4px}
 .list .thumb .ph{font-size:0}
 .src-tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;border:1px solid currentColor;margin-right:4px}
-.src-tag.rob{color:var(--rob)} .src-tag.juno{color:var(--juno)}
+.src-tag.rob{color:var(--rob)} .src-tag.juno{color:var(--juno)} .src-tag.design{color:var(--design)}
 .dim{color:var(--dim)}
 
 /* modal */
@@ -110,9 +118,9 @@ dialog::backdrop{background:rgba(0,0,0,.65);backdrop-filter:blur(4px)}
 .detail h3{margin:14px 0 10px;font:700 clamp(36px,4.6vw,58px)/1.03 var(--serif);letter-spacing:-.025em;text-wrap:balance}
 .detail .by{font:italic 400 clamp(21px,2.4vw,28px)/1.3 var(--serif);color:var(--dim);margin:0 0 30px;padding-bottom:28px;border-bottom:1px solid var(--line)}
 .pick{margin:0 0 34px;padding-left:22px;border-left:3px solid var(--line)}
-.pick.rob{border-color:var(--rob)} .pick.juno{border-color:var(--juno)}
+.pick.rob{border-color:var(--rob)} .pick.juno{border-color:var(--juno)} .pick.design{border-color:var(--design)}
 .pick .who{display:block;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
-.who.rob{color:var(--rob)} .who.juno{color:var(--juno)}
+.who.rob{color:var(--rob)} .who.juno{color:var(--juno)} .who.design{color:var(--design)}
 .pick .when{font-size:14px;color:var(--dim);margin-top:3px}
 .pick p{margin:14px 0 0;font:400 clamp(19px,1.9vw,22px)/1.65 var(--serif);max-width:34em;text-wrap:pretty}
 .facts{display:flex;flex-wrap:wrap;gap:22px 44px;margin:6px 0 34px;padding-top:26px;border-top:1px solid var(--line)}
@@ -179,32 +187,33 @@ dialog::backdrop{background:rgba(0,0,0,.65);backdrop-filter:blur(4px)}
 </head>
 <body>
 <header>
-  <h1>Weekly Lists <span>/ Rob's List &amp; Juno Weekly</span></h1>
+  <h1>Weekly Lists <span>/ Rob's List, Juno Weekly &amp; Design Shelf</span></h1>
   <div class="stats" id="stats"></div>
 </header>
 
 <div class="controls">
   <div class="controls-inner">
     <div class="seg" id="source" role="group" aria-label="Source">
-      <button data-v="all" aria-pressed="true">All</button>
+      <button data-v="all" aria-pressed="true">All music</button>
       <button data-v="rob"><span class="dot" style="background:var(--rob)"></span>Rob's List</button>
       <button data-v="juno"><span class="dot" style="background:var(--juno)"></span>Juno Weekly</button>
       <button data-v="both"><span class="dot" style="background:var(--both)"></span>On both</button>
+      <button data-v="design"><span class="dot" style="background:var(--design)"></span>Design Shelf</button>
     </div>
     <div class="seg" id="view" role="group" aria-label="View">
       <button data-v="grid" aria-pressed="true">Grid</button>
       <button data-v="mosaic">Mosaic</button>
       <button data-v="weeks">Weeks</button>
-      <button data-v="genres">Genres</button>
+      <button data-v="genres" id="genresBtn">Genres</button>
       <button data-v="list">List</button>
     </div>
     <input class="search" id="q" type="search" placeholder="Search artist, album, genre…" aria-label="Search">
     <select id="sort" aria-label="Sort">
       <option value="date">Newest first</option>
       <option value="dateAsc">Oldest first</option>
-      <option value="artist">Artist A–Z</option>
-      <option value="title">Album A–Z</option>
-      <option value="genre">Genre</option>
+      <option value="artist" id="sortArtist">Artist A–Z</option>
+      <option value="title" id="sortTitle">Album A–Z</option>
+      <option value="genre" id="sortGenre">Genre</option>
     </select>
     <label class="size">Size <input type="range" id="size" min="110" max="320" value="190"></label>
     <button class="seg" id="theme" style="padding:7px 10px;cursor:pointer" aria-label="Toggle theme">◐</button>
@@ -223,7 +232,9 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt
 const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : "";
 const norm = s => String(s||"").toLowerCase().normalize("NFKD").replace(/[̀-ͯ]/g,"").replace(/\(.*?\)|\[.*?\]/g," ").replace(/[^a-z0-9]+/g," ").trim();
 const hue = s => { let h = 0; for (const c of s) h = (h*31 + c.charCodeAt(0)) >>> 0; return h % 360; };
-const SRC = { rob:{name:"Rob's List"}, juno:{name:"Juno Weekly"} };
+const SRC = { rob:{name:"Rob's List"}, juno:{name:"Juno Weekly"}, design:{name:"Design Shelf"} };
+const MUSIC = ["rob", "juno"];
+const isDesign = () => state.source === "design";
 
 const state = { source:"all", view:"grid", q:"", sort:"date", genre:"" , albums:[], meta:{} };
 try { Object.assign(state, JSON.parse(localStorage.getItem("wl-state")||"{}"), {albums:[],meta:{}}); } catch {}
@@ -321,7 +332,8 @@ function artFailed(img) {
   if (c && c.art === u) { delete c.art; c.noart = Date.now(); persist(); }   // drop the dead address; look again in a week
   img.remove();
 }
-const genreOf = a => (a.tags && a.tags[0]) || info(a).genre || "";
+const cap = s => s ? s.charAt(0).toUpperCase() + s.slice(1) : "";
+const genreOf = a => a.design ? cap(a.tags[0]) : (a.tags && a.tags[0]) || info(a).genre || "";
 
 /* ---------- data ---------- */
 async function load() {
@@ -330,6 +342,7 @@ async function load() {
   const map = new Map();
   for (const [ed, e] of Object.entries(data.editions)) {
     SRC[ed] = {name:e.name, playlist:e.playlist};
+    if (ed === "design") { loadDesign(e, map); continue; }
     for (const w of e.weeks) for (const it of w.items) {
       const key = norm(it.artist) + "|" + norm(it.title);
       let a = map.get(key);
@@ -347,7 +360,24 @@ async function load() {
     a.lists = [...new Set(a.picks.map(p => p.list))];
     return a;
   });
-  state.albums.forEach(enqueue);
+  state.albums.filter(a => !a.design).forEach(enqueue);   // design picks get their pictures from the build step
+}
+/* Design Shelf picks: books, magazines and designers to follow. They share the
+   music cards, views and overlay, with "by" in the artist slot and tags as
+   genres. Pictures come from the shop page, saved by the build step. */
+function loadDesign(e, map) {
+  for (const w of e.weeks) for (const it of w.items) {
+    const key = "design|" + norm(it.title) + "|" + norm(it.by);
+    let a = map.get(key);
+    if (!a) map.set(key, a = {key, design:true, artist:it.by||"", title:it.title, kind:it.kind||"book", tags:[], picks:[], links:{},
+      instagram:[], shop:it.shop||"", price:it.price||"", images:[]});
+    a.picks.push({list:"design", date:w.date, source:[it.shop, it.price].filter(Boolean).join(", "), sourceUrl:"", note:it.note||""});
+    (it.tags||[]).forEach(t => a.tags.includes(t) || a.tags.push(t));
+    (it.instagram||[]).forEach(h => a.instagram.includes(h) || a.instagram.push(h));
+    if (it.link) a.links.other = it.link;
+    if (it.art) a.art = it.art;
+    if (it.images) a.images = it.images;
+  }
 }
 function onMeta() { buildChips(); render(); }
 
@@ -355,10 +385,11 @@ function onMeta() { buildChips(); render(); }
 function filtered() {
   const q = norm(state.q);
   let out = state.albums.filter(a => {
+    if (!!a.design !== isDesign()) return false;
     if (state.source === "rob" || state.source === "juno") { if (!a.lists.includes(state.source)) return false; }
     if (state.source === "both" && a.lists.length < 2) return false;
     if (state.genre && genreOf(a) !== state.genre) return false;
-    if (q && !norm(`${a.artist} ${a.title} ${genreOf(a)} ${a.tags.join(" ")}`).includes(q)) return false;
+    if (q && !norm(`${a.artist} ${a.title} ${genreOf(a)} ${a.tags.join(" ")} ${a.shop || ""} ${(a.instagram || []).join(" ")}`).includes(q)) return false;
     return true;
   });
   const cmp = {
@@ -376,8 +407,8 @@ function artHTML(a, withBadges=true) {
   const u = artOf(a), h = hue(a.key);
   const ph = `<div class="ph" style="background:linear-gradient(135deg,hsl(${h} 45% 32%),hsl(${(h+50)%360} 55% 20%))">${esc(a.title)}</div>`;
   const img = u ? `<img src="${esc(u.replace("600x600","400x400"))}" data-k="${esc(a.key)}" data-u="${esc(u)}" alt="" loading="lazy" onerror="artFailed(this)">` : "";
-  const dots = withBadges ? `<div class="badges">${a.lists.map(l=>`<span class="badge ${l}" title="${esc(SRC[l].name)}"></span>`).join("")}</div>${a.lists.length>1?'<span class="both-flag">BOTH</span>':""}` : "";
-  return `<div class="art">${ph}${img}${dots}</div>`;
+  const dots = withBadges && !a.design ? `<div class="badges">${a.lists.map(l=>`<span class="badge ${l}" title="${esc(SRC[l].name)}"></span>`).join("")}</div>${a.lists.length>1?'<span class="both-flag">BOTH</span>':""}` : "";
+  return `<div class="art${a.design ? " fit" : ""}">${ph}${img}${dots}</div>`;
 }
 function cardHTML(a) {
   return `<button class="card" data-k="${esc(a.key)}" title="${esc(a.artist)} — ${esc(a.title)}">${artHTML(a)}
@@ -411,8 +442,9 @@ const fmtDate = d => new Date(d+"T12:00:00").toLocaleDateString(undefined,{month
 
 function render() {
   const items = filtered(), main = $("#main");
-  const nGenre = new Set(state.albums.map(genreOf).filter(Boolean)).size;
-  $("#stats").innerHTML = `<b>${items.length}</b> of ${state.albums.length} albums · ${nGenre} genres · ${new Set(state.albums.flatMap(a=>a.picks.map(p=>p.date))).size} weeks`;
+  const pool = state.albums.filter(a => !!a.design === isDesign());
+  const nGenre = new Set(pool.map(genreOf).filter(Boolean)).size;
+  $("#stats").innerHTML = `<b>${items.length}</b> of ${pool.length} ${isDesign() ? "picks" : "albums"} · ${nGenre} ${isDesign() ? "tags" : "genres"} · ${new Set(pool.flatMap(a=>a.picks.map(p=>p.date))).size} weeks`;
   document.documentElement.style.setProperty("--size", $("#size").value + "px");
   if (!items.length) { main.innerHTML = `<div class="empty">Nothing matches.</div>`; return; }
   let html = "";
@@ -422,7 +454,7 @@ function render() {
     const dates = [...new Set(items.flatMap(a => a.picks.map(p=>p.date)))].sort().reverse();
     if (state.sort === "dateAsc") dates.reverse();
     html = dates.map(d => {
-      const sub = ["rob","juno"].map(l => {
+      const sub = (isDesign() ? ["design"] : MUSIC).map(l => {
         const here = items.filter(a => a.picks.some(p => p.date===d && p.list===l));
         if (state.source==="rob" && l!=="rob" || state.source==="juno" && l!=="juno" || !here.length) return "";
         return `<div class="sub"><span class="dot" style="background:var(--${l})"></span>${esc(SRC[l].name)} · ${here.length}</div><div class="grid">${here.map(cardHTML).join("")}</div>`;
@@ -431,30 +463,56 @@ function render() {
     }).join("");
   } else if (state.view === "genres") {
     const groups = new Map();
-    items.forEach(a => { const g = genreOf(a) || "Unknown / loading"; (groups.get(g) || groups.set(g,[]).get(g)).push(a); });
+    items.forEach(a => { const g = genreOf(a) || (isDesign() ? "Untagged" : "Unknown / loading"); (groups.get(g) || groups.set(g,[]).get(g)).push(a); });
     html = [...groups].sort((x,y) => y[1].length - x[1].length || x[0].localeCompare(y[0])).map(([g,list]) =>
       `<section class="sec"><h2>${esc(g)} <small>${list.length}</small></h2><div class="grid">${list.map(cardHTML).join("")}</div></section>`).join("");
   } else {
-    html = `<table class="list"><thead><tr><th></th><th>Album</th><th class="hide-m">Artist</th><th class="hide-m">Genre</th><th>Source</th><th class="hide-m">Added</th></tr></thead><tbody>${items.map(a => `
+    const d = isDesign();
+    html = `<table class="list"><thead><tr><th></th><th>${d ? "Title" : "Album"}</th><th class="hide-m">${d ? "By" : "Artist"}</th><th class="hide-m">${d ? "Tag" : "Genre"}</th><th>${d ? "Shop" : "Source"}</th><th class="hide-m">Added</th></tr></thead><tbody>${items.map(a => `
       <tr class="row" data-k="${esc(a.key)}"><td class="thumb">${artHTML(a,false)}</td><td><b>${esc(a.title)}</b><div class="by-m dim">${esc(a.artist)}</div></td><td class="hide-m">${esc(a.artist)}</td>
-      <td class="hide-m dim">${esc(genreOf(a))}</td><td>${a.lists.map(l=>`<span class="src-tag ${l}">${esc(SRC[l].name)}</span>`).join("")}</td>
+      <td class="hide-m dim">${esc(genreOf(a))}</td><td>${a.design ? `<span class="src-tag design">${esc(a.shop || "Design Shelf")}</span>` : a.lists.map(l=>`<span class="src-tag ${l}">${esc(SRC[l].name)}</span>`).join("")}</td>
       <td class="hide-m dim">${fmtDate(a.added)}</td></tr>`).join("")}</tbody></table>`;
   }
   main.innerHTML = html;
 }
 
 function buildChips() {
-  const base = state.albums.filter(a => state.source==="all" || (state.source==="both" ? a.lists.length>1 : a.lists.includes(state.source)));
+  const base = state.albums.filter(a => !!a.design === isDesign() && (state.source==="all" || (state.source==="both" ? a.lists.length>1 : a.lists.includes(state.source))));
   const counts = new Map();
   base.forEach(a => { const g = genreOf(a); if (g) counts.set(g,(counts.get(g)||0)+1); });
   const top = [...counts].sort((x,y)=>y[1]-x[1]||x[0].localeCompare(y[0]));
   if (state.genre && !counts.has(state.genre)) state.genre = "";
-  $("#chips").innerHTML = `<button class="chip" data-g="" aria-pressed="${!state.genre}">All genres</button>` +
+  $("#chips").innerHTML = `<button class="chip" data-g="" aria-pressed="${!state.genre}">${isDesign() ? "All tags" : "All genres"}</button>` +
     top.map(([g,n]) => `<button class="chip" data-g="${esc(g)}" aria-pressed="${state.genre===g}">${esc(g)}<small>${n}</small></button>`).join("");
 }
 
+const KIND = { book:"Book", magazine:"Magazine", designer:"Designer to follow" };
+function openDesign(a) {
+  const pics = [artOf(a), ...a.images.filter(u => u !== a.art)].filter(Boolean).slice(0, 5);
+  const kicker = `Design Shelf · ${fmtDate(a.added)} · ${esc(KIND[a.kind] || cap(a.kind))}`;
+  const picks = a.picks.map(p => `<section class="pick design">
+      <span class="who design">Design Shelf</span>
+      <div class="when">${fmtDate(p.date)}${p.source ? ` · ${esc(p.source)}` : ""}</div>
+      ${p.note ? `<p>${esc(p.note)}</p>` : ""}</section>`).join("");
+  const fact = (k, v) => v ? `<div><span class="k">${k}</span><span class="v">${esc(v)}</span></div>` : "";
+  const link = safeUrl(a.links.other);
+  const go = a.kind === "designer" ? `See their work` : `View at ${a.shop || "the shop"}`;
+  const ig = a.instagram.map(h => h.replace(/^@/, "")).filter(h => /^[\w.]+$/.test(h));
+  const links = `<div class="links">${link ? `<a href="${esc(link)}" target="_blank" rel="noopener">${esc(go)}</a>` : ""}
+    ${ig.map(h => `<a class="alt" href="https://www.instagram.com/${esc(h)}/" target="_blank" rel="noopener">Instagram @${esc(h)}</a>`).join("")}</div>`;
+  const gallery = pics.length > 1 ? `<div class="gallery">${pics.map((u, i) =>
+    `<button data-src="${esc(u)}" aria-pressed="${i === 0}" aria-label="Picture ${i + 1}"><img src="${esc(u)}" alt="" loading="lazy" onerror="this.parentNode.remove()"></button>`).join("")}</div>` : "";
+  $("#dlgBody").innerHTML = `<div class="detail"><div class="side">${artHTML(a,false)}${gallery}${links}</div><article>
+    <div class="kicker">${kicker}</div>
+    <h3>${esc(a.title)}</h3>${a.artist ? `<div class="by">${esc(a.artist)}</div>` : `<div class="by"></div>`}
+    ${picks}
+    <div class="facts">${fact("Tags", a.tags.map(cap).join(", "))}${fact("Type", KIND[a.kind] || cap(a.kind))}${fact("Price", a.price)}${fact("Shop", a.shop)}</div>
+  </article></div>`;
+  $("#dlg").showModal();
+}
 function openDetail(key) {
   const a = state.albums.find(x => x.key === key); if (!a) return;
+  if (a.design) return openDesign(a);
   const i = info(a);
   const spot = safeUrl(a.links.spotify) || `https://open.spotify.com/search/${encodeURIComponent(a.artist+" "+a.title)}`;
   const kicker = `${a.lists.map(l => esc(SRC[l].name)).join(" &amp; ")} · ${fmtDate(a.added)}`;
@@ -479,13 +537,21 @@ function openDetail(key) {
 }
 
 /* ---------- wiring ---------- */
+function relabel() {
+  const d = isDesign();
+  $("#q").placeholder = d ? "Search title, author, shop, tag…" : "Search artist, album, genre…";
+  $("#genresBtn").textContent = d ? "Tags" : "Genres";
+  $("#sortArtist").textContent = d ? "Author / studio A–Z" : "Artist A–Z";
+  $("#sortTitle").textContent = d ? "Title A–Z" : "Album A–Z";
+  $("#sortGenre").textContent = d ? "Tag" : "Genre";
+}
 function seg(id, key) {
   const el = $(id);
   const sync = () => el.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === state[key]));
-  el.addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; state[key] = b.dataset.v; sync(); buildChips(); render(); save(); });
+  el.addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; state[key] = b.dataset.v; sync(); relabel(); buildChips(); render(); save(); });
   sync();
 }
-seg("#source","source"); seg("#view","view");
+seg("#source","source"); seg("#view","view"); relabel();
 $("#sort").value = state.sort;
 $("#sort").onchange = e => { state.sort = e.target.value; render(); save(); };
 $("#q").oninput = e => { state.q = e.target.value; render(); };
@@ -500,6 +566,13 @@ $("#theme").onclick = () => {
 $("#chips").onclick = e => { const b = e.target.closest(".chip"); if (!b) return; state.genre = b.dataset.g; buildChips(); render(); };
 $("#main").onclick = e => { const c = e.target.closest("[data-k]"); if (c) openDetail(c.dataset.k); };
 $("#dlgClose").onclick = () => $("#dlg").close();
+$("#dlgBody").addEventListener("click", e => {
+  const b = e.target.closest(".gallery button"); if (!b) return;
+  const art = $("#dlgBody .side .art"); let img = art.querySelector("img");
+  if (!img) { img = document.createElement("img"); img.alt = ""; art.appendChild(img); }
+  img.src = b.dataset.src;
+  b.parentNode.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b));
+});
 $("#dlg").addEventListener("click", e => { if (e.target === $("#dlg")) $("#dlg").close(); });
 
 load().then(() => { buildChips(); render(); }).catch(err => {

@@ -18,12 +18,30 @@ Secrets needed (Settings > Secrets and variables > Actions):
 `ROB_PLAYLIST_ID`, `JUNO_PLAYLIST_ID`. Get them by running `get_token.py`
 once on your Mac.
 
+## Design Shelf
+
+The Saturday design list lives in `design/YYYY-MM-DD.json`, outside
+`picks/`, so the Spotify action never sees it. Each pick looks like:
+
+```json
+{"title": "Poster Cult", "by": "Dafi Kühne", "kind": "book",
+ "tags": ["posters", "letterpress"], "note": "One or two honest sentences.",
+ "instagram": ["@dafikuhne"], "shop": "Draw Down", "price": "$60",
+ "link": "https://draw-down.com/products/dafi-kuhne-poster-cult"}
+```
+
+`kind` is `book`, `magazine` or `designer`. Only `title` is required.
+Pictures: the "Build site data" action reads each new pick's shop page and
+saves the cover (plus up to four more photos from Shopify shops like Magma,
+magCulture, Draw Down, Counter-Print and Perimeter) into `archive.json`. Set
+`art` by hand if a shop page has no usable picture.
+
 ## Website data
 
-Every time a Rob or Juno picks file lands on main, the "Build site data"
-action rebuilds two files the website reads:
+Every time a Rob, Juno or Design Shelf file lands on main, the "Build site
+data" action rebuilds two files the website reads:
 
-- `site/data/latest.json`: this week's picks for both editions
+- `site/data/latest.json`: this week's picks for every edition
 - `site/data/archive.json`: every past week, newest first
 
 Picks can carry extra fields for the site, all optional:
@@ -55,7 +73,10 @@ hour; one that finds nothing is retried after a week. Genre comes from a
 pick's `tags` first, then iTunes.
 
 Views: Grid, Mosaic (covers only), Weeks, Genres, List. Filter by list
-(Rob / Juno / on both), genre chip, or search.
+(Rob / Juno / on both), genre chip, or search. The Design Shelf button
+switches the same views over to the design picks, with tags in place of
+genres and an overlay showing the shop, price, extra pictures and Instagram
+links.
 
 To preview locally: `python3 -m http.server -d site`, then open
 http://localhost:8000.
