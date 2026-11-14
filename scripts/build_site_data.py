@@ -518,7 +518,15 @@ def add_design_art(archive, previous):
     for week in archive["design"]["weeks"]:
         for it in week["items"]:
             if it.get("art"):
-                continue
+                old = known.get((it.get("title"), it.get("by")))
+                if old and old.get("art") == it["art"] and old.get("art_checked"):
+                    it["art_checked"] = True
+                    continue
+                if image_ok(it["art"]):   # a picture set in the picks file: check it once
+                    it["art_checked"] = True
+                    continue
+                print(f"  Picture given for {it.get('title')} is broken or too small; searching instead.")
+                it.pop("art")
             old = known.get((it.get("title"), it.get("by")))
             if old and old.get("art_checked") is None and not image_ok(old["art"]):
                 print(f"  Saved picture for {it.get('title')} failed the size check; looking again.")
