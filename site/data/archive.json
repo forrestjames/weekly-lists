@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T15:00:59Z",
+  "updated": "2026-11-14T15:04:37Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -1070,7 +1070,9 @@
                 "@drawdownbooks"
               ],
               "shop": "Draw Down",
-              "price": "$75"
+              "price": "$75",
+              "art": "https://draw-down.com/cdn/shop/files/DossierScriptoriumdeToulouse.jpg?v=1745192069",
+              "art_checked": true
             },
             {
               "title": "Some Other Book(i)s(h) Logos",
@@ -1135,7 +1137,9 @@
                 "@drawdownbooks"
               ],
               "shop": "Draw Down",
-              "price": "$16"
+              "price": "$16",
+              "art": "https://draw-down.com/cdn/shop/files/DreaderThanDreads.jpg?v=1745192800",
+              "art_checked": true
             },
             {
               "title": "PLOP #03: Polish Design Revue",
@@ -2177,13 +2181,16 @@
                 "editorial design"
               ],
               "note": "A Paris annual about making, this time on air and breath. Objects made from balloons, a history of inflatable buildings, crystal glassblowing at Saint-Louis, and an essay on breathlessness and bad air. Art directed by Twice studio, 248 pages, French and English. Calm, well paced pages.",
-              "link": "https://magculture.com/collections/new-this-week/products/tools-7",
+              "link": "https://magculture.com/products/tools-6",
               "by": "Twice studio (art direction)",
               "instagram": [
                 "@tools_magazine_"
               ],
               "shop": "magCulture",
-              "price": "£22"
+              "price": "£22",
+              "art": "https://cdn.shopify.com/s/files/1/0514/7889/files/Screenshot2026-10-13at16.58.03.png?v=1791907096",
+              "art_checked": true,
+              "link_fixed": true
             },
             {
               "title": "Tinted #1",
@@ -2307,7 +2314,15 @@
                 "@selinabernet"
               ],
               "shop": "Magma",
-              "price": "£18"
+              "price": "£18",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-19122019.png?v=1771503817",
+              "art_checked": true,
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-19122019.png?v=1771503817",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-19122033.png?v=1771503817",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-19122055.png?v=1771503817",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-19122106.png?v=1771503817"
+              ]
             },
             {
               "title": "A Book on Zines: New Aesthetics in Zine Design",
@@ -2323,7 +2338,15 @@
                 "@victionary"
               ],
               "shop": "Magma",
-              "price": "£35"
+              "price": "£35",
+              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/ABookonZines.jpg?v=1784926912",
+              "art_checked": true,
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/ABookonZines.jpg?v=1784926912",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/i05-1.jpg?v=1758918468",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/i02-1.jpg?v=1758918468",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/i06.jpg?v=1758918468"
+              ]
             },
             {
               "title": "Flower Stamps",
@@ -2547,7 +2570,16 @@
               "link": "https://magma-shop.com/collections/books/products/design-as-art-copy-1",
               "by": "Bruno Munari",
               "shop": "Magma",
-              "price": "£19.99"
+              "price": "£19.99",
+              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/FantasyInvention_Creativity.jpg?v=1734121516",
+              "art_checked": true,
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/FantasyInvention_Creativity.jpg?v=1734121516",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/DSCN6033.jpg?v=1734123988",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/DSCN6030.jpg?v=1734124028",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/DSCN6034.jpg?v=1734124038",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/DSCN6031.jpg?v=1734124038"
+              ]
             },
             {
               "title": "Identity: Chermayeff & Geismar & Haviv",
@@ -2672,7 +2704,15 @@
                 "@setmargins"
               ],
               "shop": "Magma",
-              "price": "£13.50"
+              "price": "£13.50",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-42-23LogoInRealLife-SetMargins.png?v=1779889408",
+              "art_checked": true,
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-42-23LogoInRealLife-SetMargins.png?v=1779889408",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-42-09LogoInRealLife-SetMargins.png?v=1779889409",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-42-03LogoInRealLife-SetMargins.png?v=1779889409",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-41-58LogoInRealLife-SetMargins.png?v=1779889409"
+              ]
             },
             {
               "title": "Ninety-Nine Graphic Design Workshops: The Way We Attend to Things",
@@ -2688,7 +2728,15 @@
                 "@setmargins"
               ],
               "shop": "Magma",
-              "price": "£16.99"
+              "price": "£16.99",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-35-16Ninety-NineGraphicDesignWorkshops-SetMargins.png?v=1779888951",
+              "art_checked": true,
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-35-16Ninety-NineGraphicDesignWorkshops-SetMargins.png?v=1779888951",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-35-12Ninety-NineGraphicDesignWorkshops-SetMargins.png?v=1779888952",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-35-08Ninety-NineGraphicDesignWorkshops-SetMargins.png?v=1779888951",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-35-04Ninety-NineGraphicDesignWorkshops-SetMargins.png?v=1779888951"
+              ]
             },
             {
               "title": "Publishing as Method: Ways of Working Together in Asia",
