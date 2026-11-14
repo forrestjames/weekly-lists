@@ -31,6 +31,8 @@ The Saturday design list lives in `design/YYYY-MM-DD.json`, outside
 ```
 
 `kind` is `book`, `magazine` or `designer`. Only `title` is required.
+If the build can't find a picture, add `"pictures_from": ["https://..."]` with
+one or more pages that show the work (a review, a poster archive).
 Pictures: the "Build site data" action reads each new pick's shop page and
 saves the cover (plus up to four more photos from Shopify shops like Magma,
 magCulture, Draw Down, Counter-Print and Perimeter) into `archive.json`. Set

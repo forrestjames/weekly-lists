@@ -69,7 +69,7 @@ FOLDERS = {"rob": PICKS / "rob", "juno": PICKS / "juno", "design": DESIGN}
 MUSIC = ["rob", "juno"]
 
 FIELDS = ["artist", "title", "kind", "tags", "note", "source", "source_url", "spotify_url", "link", "art",
-          "by", "instagram", "shop", "price", "images"]
+          "by", "instagram", "shop", "price", "images", "pictures_from"]
 MAX_IMAGES = 5
 MAX_SPOTIFY_FAILURES = 3  # give up on Spotify for this run after this many errors in a row
 
@@ -251,8 +251,10 @@ def same_title(a, b):
     if (ma <= wb and len(mb - wa) <= 1) or (mb <= wa and len(ma - wb) <= 1):
         return True
     # "Bruno Munari: Fantasy" is the book "Fantasy": compare the part after the colon too.
-    sa = words(a.split(":", 1)[1]) if ":" in a else set()
-    sb = words(b.split(":", 1)[1]) if ":" in b else set()
+    # Shops also write "Author – Title", so the same goes for a dash.
+    split = lambda t: re.split(r"[:–—]| - ", t, maxsplit=1)  # noqa: E731
+    sa = words(split(a)[1]) if len(split(a)) > 1 else set()
+    sb = words(split(b)[1]) if len(split(b)) > 1 else set()
     return bool(sa and sa == mb) or bool(sb and sb == ma)
 
 
@@ -457,6 +459,11 @@ def find_pictures(it):
             if imgs:
                 return imgs, None
         imgs = checked("page", lambda: page_images(link))
+        if imgs:
+            return imgs, None
+    # 1b. Any extra pages the pick names for pictures (a review, a poster archive).
+    for extra in it.get("pictures_from") or []:
+        imgs = checked(extra, lambda extra=extra: page_images(extra))
         if imgs:
             return imgs, None
     if not designer:
