@@ -1777,8 +1777,8 @@
               ],
               "shop": "Magma",
               "price": "£45",
-              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-10-13155001.png?v=1791904371",
-              "art_checked": true
+              "art_checked": true,
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-10-13155001.png?v=1791904371"
             },
             {
               "title": "Women's Rights are Human Rights",
@@ -2366,7 +2366,16 @@
                 "@magma_books"
               ],
               "shop": "Magma",
-              "price": "£20"
+              "price": "£20",
+              "art": "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1885.jpg?v=1785377656",
+              "art_checked": true,
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1885.jpg?v=1785377656",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1910.jpg?v=1785377677",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1911_acbbfe61-dae6-447b-be3a-527a2d9d2c2d.jpg?v=1785377677",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1912_d32851cb-01e6-40c6-b9d0-364350124c81.jpg?v=1785377677",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1913_7300a0c8-aceb-4216-9b4d-84765d7d9b89.jpg?v=1785377677"
+              ]
             },
             {
               "title": "Only You Can Complete Me",
@@ -2662,7 +2671,13 @@
               "instagram": [
                 "@studiofeixen"
               ],
-              "shop": "Studio Feixen"
+              "shop": "Studio Feixen",
+              "pictures_from": [
+                "https://a-g-i.org/design/s%C3%BCdpol-plakate",
+                "https://www.itsnicethat.com/articles/feixen-1"
+              ],
+              "art": "https://m.itsnicethat.com/original_images/5405734c5c3e3c2dd8000f8a.png?class=w1440",
+              "art_checked": true
             },
             {
               "title": "Against Coffee Table Books",
