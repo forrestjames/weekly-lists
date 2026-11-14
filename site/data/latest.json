@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T14:42:13Z",
+  "updated": "2026-11-14T14:45:08Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -268,7 +268,15 @@
             "@drawdownbooks"
           ],
           "shop": "Draw Down",
-          "price": "$35"
+          "price": "$35",
+          "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/SomeOtherBook_i_s_h_Logos.jpg?v=1743797423",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/1681/2497/files/SomeOtherBook_i_s_h_Logos.jpg?v=1743797423",
+            "https://cdn.shopify.com/s/files/1/1681/2497/files/DSC02767.jpg?v=1743797673",
+            "https://cdn.shopify.com/s/files/1/1681/2497/files/DSC02764.jpg?v=1743797673",
+            "https://cdn.shopify.com/s/files/1/1681/2497/files/DSC02766.jpg?v=1743797673",
+            "https://cdn.shopify.com/s/files/1/1681/2497/files/DSC02762.jpg?v=1743797673"
+          ]
         },
         {
           "title": "GraphicDesign.zip",
@@ -286,7 +294,8 @@
             "@slanted_publishers"
           ],
           "shop": "Slanted",
-          "price": "€14 (pre-order)"
+          "price": "€14 (pre-order)",
+          "art": "https://www.slanted.de/wp-content/uploads/2026/10/GraphicDesignZip_Cover.png"
         },
         {
           "title": "Dreader Than Dreads: Posters by Fred Voisin",
@@ -323,7 +332,8 @@
             "@podpunkt"
           ],
           "shop": "Slanted",
-          "price": "€12 (pre-order)"
+          "price": "€12 (pre-order)",
+          "art": "https://www.slanted.de/wp-content/uploads/2026/10/PLOP-03-Cover-2560px-scaled.jpg"
         },
         {
           "title": "Mag to Mag Journal #2",
@@ -341,7 +351,8 @@
             "@magculture"
           ],
           "shop": "magCulture",
-          "price": "£25"
+          "price": "£25",
+          "art": "https://cdn.shopify.com/s/files/1/0514/7889/files/MagtoMagazineJournal_2.jpg?v=1793716303"
         },
         {
           "title": "Fracture: Japanese Graphic Design 1875 to 1975",
@@ -359,7 +370,15 @@
             "@perimeterbooks"
           ],
           "shop": "Perimeter Books",
-          "price": "A$77"
+          "price": "A$77",
+          "art": "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5832.jpg?v=1732769878",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5832.jpg?v=1732769878",
+            "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5833.jpg?v=1732769878",
+            "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5834.jpg?v=1732769878",
+            "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5835.jpg?v=1732769878",
+            "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5836.jpg?v=1732769878"
+          ]
         },
         {
           "title": "Graphic Design Play Book, Second Edition",
@@ -377,7 +396,15 @@
             "@magma_books"
           ],
           "shop": "Magma",
-          "price": "£18.99"
+          "price": "£18.99",
+          "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1782.jpg?v=1779372415",
+          "images": [
+            "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1782.jpg?v=1779372415",
+            "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1784.jpg?v=1779372415",
+            "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1786.jpg?v=1779372415",
+            "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1785.jpg?v=1779372415",
+            "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1787.jpg?v=1779372415"
+          ]
         },
         {
           "title": "Meet the Lithographer",
@@ -395,7 +422,8 @@
             "@drawdownbooks"
           ],
           "shop": "Draw Down",
-          "price": "$19.95"
+          "price": "$19.95",
+          "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/MeettheLithographer.jpg?v=1745193734"
         },
         {
           "title": "Podpunkt",

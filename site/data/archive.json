@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T14:42:13Z",
+  "updated": "2026-11-14T14:45:08Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -1088,7 +1088,15 @@
                 "@drawdownbooks"
               ],
               "shop": "Draw Down",
-              "price": "$35"
+              "price": "$35",
+              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/SomeOtherBook_i_s_h_Logos.jpg?v=1743797423",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/SomeOtherBook_i_s_h_Logos.jpg?v=1743797423",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/DSC02767.jpg?v=1743797673",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/DSC02764.jpg?v=1743797673",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/DSC02766.jpg?v=1743797673",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/DSC02762.jpg?v=1743797673"
+              ]
             },
             {
               "title": "GraphicDesign.zip",
@@ -1106,7 +1114,8 @@
                 "@slanted_publishers"
               ],
               "shop": "Slanted",
-              "price": "€14 (pre-order)"
+              "price": "€14 (pre-order)",
+              "art": "https://www.slanted.de/wp-content/uploads/2026/10/GraphicDesignZip_Cover.png"
             },
             {
               "title": "Dreader Than Dreads: Posters by Fred Voisin",
@@ -1143,7 +1152,8 @@
                 "@podpunkt"
               ],
               "shop": "Slanted",
-              "price": "€12 (pre-order)"
+              "price": "€12 (pre-order)",
+              "art": "https://www.slanted.de/wp-content/uploads/2026/10/PLOP-03-Cover-2560px-scaled.jpg"
             },
             {
               "title": "Mag to Mag Journal #2",
@@ -1161,7 +1171,8 @@
                 "@magculture"
               ],
               "shop": "magCulture",
-              "price": "£25"
+              "price": "£25",
+              "art": "https://cdn.shopify.com/s/files/1/0514/7889/files/MagtoMagazineJournal_2.jpg?v=1793716303"
             },
             {
               "title": "Fracture: Japanese Graphic Design 1875 to 1975",
@@ -1179,7 +1190,15 @@
                 "@perimeterbooks"
               ],
               "shop": "Perimeter Books",
-              "price": "A$77"
+              "price": "A$77",
+              "art": "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5832.jpg?v=1732769878",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5832.jpg?v=1732769878",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5833.jpg?v=1732769878",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5834.jpg?v=1732769878",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5835.jpg?v=1732769878",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5836.jpg?v=1732769878"
+              ]
             },
             {
               "title": "Graphic Design Play Book, Second Edition",
@@ -1197,7 +1216,15 @@
                 "@magma_books"
               ],
               "shop": "Magma",
-              "price": "£18.99"
+              "price": "£18.99",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1782.jpg?v=1779372415",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1782.jpg?v=1779372415",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1784.jpg?v=1779372415",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1786.jpg?v=1779372415",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1785.jpg?v=1779372415",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1787.jpg?v=1779372415"
+              ]
             },
             {
               "title": "Meet the Lithographer",
@@ -1215,7 +1242,8 @@
                 "@drawdownbooks"
               ],
               "shop": "Draw Down",
-              "price": "$19.95"
+              "price": "$19.95",
+              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/MeettheLithographer.jpg?v=1745193734"
             },
             {
               "title": "Podpunkt",
@@ -1255,7 +1283,14 @@
                 "@magma_books"
               ],
               "shop": "Magma",
-              "price": "£42"
+              "price": "£42",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/velvetyne.webp?v=1793964838",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/velvetyne.webp?v=1793964838",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/velvetyne2.png?v=1793964838",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/velvetyne1.png?v=1793964838",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/velvetyne-3.png?v=1793964901"
+              ]
             },
             {
               "title": "Zweikommasieben #31",
@@ -1273,7 +1308,8 @@
                 "@magculture"
               ],
               "shop": "magCulture",
-              "price": "£16"
+              "price": "£16",
+              "art": "https://cdn.shopify.com/s/files/1/0514/7889/files/zweikommasieben_31.jpg?v=1793538969"
             },
             {
               "title": "Revue Faire no. 30 bis: Types of Types, the Typographic Specimen by Lineto",
@@ -1291,7 +1327,15 @@
                 "@drawdownbooks"
               ],
               "shop": "Draw Down",
-              "price": "$22"
+              "price": "$22",
+              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/revue_30_lineto00009.jpg?v=1788557797",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/revue_30_lineto00009.jpg?v=1788557797",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/revue_30_lineto00001_4f81f9f9-7c39-4bdf-8cb4-df4f4e9d2fc9.jpg?v=1788557798",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/revue_30_lineto00003_119e4da0-8011-4f5e-a5fa-5cae10aac435.jpg?v=1788557810",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/revue_30_lineto00004_1d8571e3-7b49-40eb-8cdf-107d384b698a.jpg?v=1788557816",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/revue_30_lineto00002_d67b39d1-a579-4975-b578-cb08e057a512.jpg?v=1788557812"
+              ]
             },
             {
               "title": "Bye Bye Binary, No. eụ: Archives typo·graphiques du futur",
@@ -1309,7 +1353,15 @@
                 "@drawdownbooks"
               ],
               "shop": "Draw Down",
-              "price": "$21"
+              "price": "$21",
+              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/ByeByeBinaryArchivestypographiquesdufutur_2_christopher_sleboda_drawdown_010f5d66-0670-43bc-8ab2-0d02e5123c0c.jpg?v=1792784489",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/ByeByeBinaryArchivestypographiquesdufutur_2_christopher_sleboda_drawdown_010f5d66-0670-43bc-8ab2-0d02e5123c0c.jpg?v=1792784489",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/ByeByeBinary_No.e_Archives6.jpg?v=1792789450",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/ByeByeBinary_No.e_Archives15.jpg?v=1792789594",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/ByeByeBinary_No.e_Archives13.jpg?v=1792789595",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/ByeByeBinary_No.e_Archives14.jpg?v=1792789594"
+              ]
             },
             {
               "title": "Yearbook of Type #8: History Edition",
@@ -1326,7 +1378,8 @@
                 "@slanted_publishers"
               ],
               "shop": "Slanted",
-              "price": "€38 (pre-order)"
+              "price": "€38 (pre-order)",
+              "art": "https://www.slanted.de/wp-content/uploads/2026/06/YOT-8-Cover_1200px.jpg"
             },
             {
               "title": "Signs and Artifacts No. 5: CDMX, Mexico City",
@@ -1344,7 +1397,15 @@
                 "@drawdownbooks"
               ],
               "shop": "Draw Down",
-              "price": "$46"
+              "price": "$46",
+              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/signs_and_artif.jpg?v=1789157971",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/signs_and_artif.jpg?v=1789157971",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/SignsandArtifactsNo.57.jpg?v=1789767119",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/SignsandArtifactsNo.52.jpg?v=1789767118",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/SignsandArtifactsNo.511.jpg?v=1789767118",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/SA3.jpg?v=1789158005"
+              ]
             },
             {
               "title": "Breakout #2: 100 Posters",
@@ -1361,7 +1422,15 @@
                 "@drawdownbooks"
               ],
               "shop": "Draw Down",
-              "price": "$34"
+              "price": "$34",
+              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/Breakout2-100Posters.jpg?v=1784320887",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/Breakout2-100Posters.jpg?v=1784320887",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/Breakout22.jpg?v=1785629903",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/Breakout23.jpg?v=1785629903",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/Breakout2-100Posters5.jpg?v=1784322912",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/Breakout2-100Posters6.jpg?v=1784322912"
+              ]
             },
             {
               "title": "POSEUTEO POSTER: Contemporary Poster Designs from Korea",
@@ -1379,7 +1448,15 @@
                 "@counterprintbooks"
               ],
               "shop": "Counter-Print",
-              "price": "£35"
+              "price": "£35",
+              "art": "https://cdn.shopify.com/s/files/1/1595/5453/files/01_13e3aeda-944e-483d-b9a7-d9d7d3801ec3.jpg?v=1779964970",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/01_13e3aeda-944e-483d-b9a7-d9d7d3801ec3.jpg?v=1779964970",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/02_6a783473-4fb6-4f04-9719-93018415ed2d.jpg?v=1779964971",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/03_37431c26-26db-4a14-917f-d09221b7a46d.jpg?v=1779964971",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/04_871c936b-4667-4a3a-bfbf-bea7703ae168.jpg?v=1779964970",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/05_ffeb3182-52c2-4ec3-992d-670e2093d280.jpg?v=1779964971"
+              ]
             },
             {
               "title": "Merch: We Love Our Customers",
@@ -1397,7 +1474,15 @@
                 "@magma_books"
               ],
               "shop": "Magma",
-              "price": "£25"
+              "price": "£25",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/51XwEEBGd1L._AC_UF894_1000_QL80.jpg?v=1793537915",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/51XwEEBGd1L._AC_UF894_1000_QL80.jpg?v=1793537915",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/61Upch-fb3L._SL1020.jpg?v=1793538076",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/610PuopfLIL._SL1020.jpg?v=1793538076",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/61Ekm8k1vAL._SL1020.jpg?v=1793538076",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/71AN14DXW1L._SL1020.jpg?v=1793538076"
+              ]
             },
             {
               "title": "Götz Gramlich, gggrafik",
@@ -1434,7 +1519,15 @@
                 "@drawdownbooks"
               ],
               "shop": "Draw Down",
-              "price": "$28"
+              "price": "$28",
+              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/futurefragments.jpg?v=1787945092",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/futurefragments.jpg?v=1787945092",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/LettersandSpirit6.jpg?v=1787949985",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/LettersandSpirit5.jpg?v=1787949985",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/LettersandSpirit10.jpg?v=1787949985",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/LettersandSpirit11.jpg?v=1787949985"
+              ]
             },
             {
               "title": "Alphabettes Soup: Feminist Approaches to Type",
@@ -1453,7 +1546,15 @@
                 "@counterprintbooks"
               ],
               "shop": "Counter-Print",
-              "price": "£54"
+              "price": "£54",
+              "art": "https://cdn.shopify.com/s/files/1/1595/5453/files/01_c009c903-937d-4e91-941d-0621bb8e6177.jpg?v=1791973635",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/01_c009c903-937d-4e91-941d-0621bb8e6177.jpg?v=1791973635",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/02_621fb12a-dd1c-4cbb-a495-18fbbec68335.jpg?v=1791973634",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/04_597cd522-611f-4e76-b344-c3b8b2ea3014.jpg?v=1791973635",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/05_166626c6-b9bf-4660-8892-2df6855dbfd0.jpg?v=1791973635",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/06_6bf83fac-2995-4cc9-8c10-fa104707a3cb.jpg?v=1791973635"
+              ]
             },
             {
               "title": "Alphabet in Motion: How Letters Get Their Shape",
@@ -1470,7 +1571,15 @@
                 "@counterprintbooks"
               ],
               "shop": "Counter-Print",
-              "price": "£70"
+              "price": "£70",
+              "art": "https://cdn.shopify.com/s/files/1/1595/5453/files/01_d7269f63-4447-4603-928e-b13100924824.jpg?v=1768388048",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/01_d7269f63-4447-4603-928e-b13100924824.jpg?v=1768388048",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/02_754ca974-35be-4e6a-b3b5-d8e08b43015a.jpg?v=1768388048",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/03_6c64f312-8d26-4eb2-b8f6-4fa607ce14f9.jpg?v=1768388048",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/04_e6a3b95a-e05e-425b-bb6e-e37904ca45ca.jpg?v=1768388049",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/05_75d7f5e6-9d69-478d-b2fc-d0414123080e.jpg?v=1768388049"
+              ]
             },
             {
               "title": "Oh So Pretty: Punk in Print 1976 to 1980",
@@ -1487,7 +1596,15 @@
                 "@counterprintbooks"
               ],
               "shop": "Counter-Print",
-              "price": "£20"
+              "price": "£20",
+              "art": "https://cdn.shopify.com/s/files/1/1595/5453/files/01_e3b96615-ed9f-454a-b405-60bf9d2a9d7c.png?v=1785594594",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/01_e3b96615-ed9f-454a-b405-60bf9d2a9d7c.png?v=1785594594",
+                "https://cdn.shopify.com/s/files/1/1595/5453/products/02_b34948cf-bd1d-4824-bff3-4e1da3522536.png?v=1484048496",
+                "https://cdn.shopify.com/s/files/1/1595/5453/products/03_c5fbc2de-295d-4f36-b539-ccf712e03118.png?v=1484048501",
+                "https://cdn.shopify.com/s/files/1/1595/5453/products/04_99ea7b29-6b37-40fd-9d44-a61d20a1dead.png?v=1484048506",
+                "https://cdn.shopify.com/s/files/1/1595/5453/products/05_c4852d95-d158-43c3-b195-3e6feecd4676.png?v=1484048511"
+              ]
             },
             {
               "title": "Isidro Ferrer: About Nothing",
@@ -1505,7 +1622,15 @@
                 "@drawdownbooks"
               ],
               "shop": "Draw Down",
-              "price": "$39.95"
+              "price": "$39.95",
+              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/IsidroFerrerAboutNothing.jpg?v=1700935704",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/IsidroFerrerAboutNothing.jpg?v=1700935704",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/nov2600219.jpg?v=1701015694",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/nov2600217.jpg?v=1701015695",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/IMG_5941.jpg?v=1701015697",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/nov2600218.jpg?v=1701015700"
+              ]
             },
             {
               "title": "Slanted #48: Seoul",
@@ -1522,7 +1647,8 @@
                 "@slanted_publishers"
               ],
               "shop": "Slanted",
-              "price": "€24"
+              "price": "€24",
+              "art": "https://www.slanted.de/wp-content/uploads/2026/06/Slanted48-Seoul-Cover_1200px.jpg"
             },
             {
               "title": "BranD #82: Philippe Weisbecker",
@@ -1540,7 +1666,8 @@
                 "@magculture"
               ],
               "shop": "magCulture",
-              "price": "£21.95"
+              "price": "£21.95",
+              "art": "https://cdn.shopify.com/s/files/1/0514/7889/files/Brand82.jpg?v=1793101532"
             },
             {
               "title": "Showa Modern: Signs and Store Designs, 1920s to 30s",
@@ -1556,7 +1683,12 @@
                 "@magma_books"
               ],
               "shop": "Magma",
-              "price": "£21.99"
+              "price": "£21.99",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/250917.showasigns.9784861529948.jpg_500x696_19a43956-9dfb-49b9-a5e7-1eaecd7ddff9.jpg?v=1778056713",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/250917.showasigns.9784861529948.jpg_500x696_19a43956-9dfb-49b9-a5e7-1eaecd7ddff9.jpg?v=1778056713",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/250917.showasigns.97848615299482.jpg_800x800_362db8af-8b70-4f1b-9ea2-6dfebb14ff73.jpg?v=1778056713"
+              ]
             },
             {
               "title": "NODE Berlin Oslo",
@@ -1573,7 +1705,8 @@
                 "@nodeberlinoslo",
                 "@typographicposters"
               ],
-              "shop": "Typographic Posters"
+              "shop": "Typographic Posters",
+              "art": "https://images.typographicposters.com/poster/node/node-poster-69adc15a98b3b6509b2c8bf7.jpg"
             }
           ]
         },
@@ -1596,7 +1729,8 @@
                 "@editionsb42"
               ],
               "shop": "Magma",
-              "price": "£45"
+              "price": "£45",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-10-13155001.png?v=1791904371"
             },
             {
               "title": "Women's Rights are Human Rights",
@@ -1614,7 +1748,15 @@
                 "@perimeterbooks"
               ],
               "shop": "Perimeter Books",
-              "price": "A$64"
+              "price": "A$64",
+              "art": "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_3265_8451d186-4a54-418c-91b6-67fcef9c37e6.jpg?v=1790666788",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_3265_8451d186-4a54-418c-91b6-67fcef9c37e6.jpg?v=1790666788",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_3266_a607242f-0129-4729-98e0-04687eab205a.jpg?v=1790663333",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_3267_b915899b-8d90-48ed-8180-685fddbe6fe7.jpg?v=1790663333",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_3268_b9505697-fd68-41fe-a911-38ceb2738272.jpg?v=1790663334",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_3270_6a2f0fdb-657d-4e79-9604-5fdebc014add.jpg?v=1790663333"
+              ]
             },
             {
               "title": "Letterform Frequencies: Exploring the Visual Imprint of Arabic Type",
@@ -1633,7 +1775,15 @@
                 "@hmctartcenter"
               ],
               "shop": "Draw Down",
-              "price": "$35 (pre-sale)"
+              "price": "$35 (pre-sale)",
+              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/letterform-frequencies-cover_DRAWDOWN.jpg?v=1791389112",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/letterform-frequencies-cover_DRAWDOWN.jpg?v=1791389112",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/lf-spreads-hmct10.jpg?v=1791395491",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/lf-spreads-hmct7.jpg?v=1791395815",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/lf-spreads-hmct8.jpg?v=1791395815",
+                "https://cdn.shopify.com/s/files/1/1681/2497/files/lf-spreads-hmct6.jpg?v=1791395815"
+              ]
             },
             {
               "title": "To design is also getting on a bus, gazing out the window and thinking on the move",
@@ -1652,7 +1802,15 @@
                 "@setmargins"
               ],
               "shop": "Perimeter Books",
-              "price": "A$59"
+              "price": "A$59",
+              "art": "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_3230_ad2987cf-9818-4a05-ae4f-ee176784fc7b.jpg?v=1790665805",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_3230_ad2987cf-9818-4a05-ae4f-ee176784fc7b.jpg?v=1790665805",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_3231_1dba0bbf-f710-41b2-8ac4-dba058467767.jpg?v=1790663697",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_3232_6492b036-c6d8-4582-88d5-64fe202067b6.jpg?v=1790663697",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_3233_b2eb78fd-2b18-4b5c-8c2a-fb6488ab1c36.jpg?v=1790663697",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_3234_d3e13b09-16db-4f73-bb68-7e9917abd9d4.jpg?v=1790663697"
+              ]
             },
             {
               "title": "Logos of the Venezuelan Minitecas",
@@ -1670,7 +1828,15 @@
                 "@counterprintbooks"
               ],
               "shop": "Counter-Print",
-              "price": "£17"
+              "price": "£17",
+              "art": "https://cdn.shopify.com/s/files/1/1595/5453/files/01_fb733b11-10b2-494a-a46d-9a4ee4c52864.jpg?v=1792579069",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/01_fb733b11-10b2-494a-a46d-9a4ee4c52864.jpg?v=1792579069",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/02_c06b170e-abf3-4c1e-bc4e-8726101545b8.jpg?v=1792579069",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/03_bc86eade-2639-4df5-bca0-6c195dd37497.jpg?v=1792579070",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/04_cf7eded5-8769-4ec7-badf-8e782f17a9aa.jpg?v=1792579069",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/05_b87edbf0-e2db-4773-95e4-186cd27af081.jpg?v=1792579069"
+              ]
             },
             {
               "title": "Partners #4",
@@ -1688,7 +1854,8 @@
                 "@juliempeeters"
               ],
               "shop": "magCulture",
-              "price": "£28"
+              "price": "£28",
+              "art": "https://cdn.shopify.com/s/files/1/0514/7889/files/Partners_4.png?v=1786711032"
             },
             {
               "title": "Slanted Experimental Type 4.0",
@@ -1706,7 +1873,15 @@
                 "@counterprintbooks"
               ],
               "shop": "Counter-Print",
-              "price": "£23"
+              "price": "£23",
+              "art": "https://cdn.shopify.com/s/files/1/1595/5453/files/01_6666a541-6605-417f-a74c-2edcef07e46c.jpg?v=1791976519",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/01_6666a541-6605-417f-a74c-2edcef07e46c.jpg?v=1791976519",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/02_d572d7bf-92af-48a1-acc7-c7cbeb369c88.jpg?v=1791976519",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/03_6e240cce-872c-4483-8e85-9e8174faa11d.jpg?v=1791976519",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/05_7a72b4a2-2d18-4ce7-ac79-ce0d44aa639c.jpg?v=1791976520",
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/06_7b3af846-f2b6-4fd0-ab6c-595992226490.jpg?v=1791976519"
+              ]
             },
             {
               "title": "Jurriaan Schrofer (1926 to 1990)",
@@ -1723,7 +1898,15 @@
                 "@counterprintbooks"
               ],
               "shop": "Counter-Print",
-              "price": "£40"
+              "price": "£40",
+              "art": "https://cdn.shopify.com/s/files/1/1595/5453/files/Cover_4602c4b9-8856-434c-b4b8-b970fab565c2.png?v=1790326334",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1595/5453/files/Cover_4602c4b9-8856-434c-b4b8-b970fab565c2.png?v=1790326334",
+                "https://cdn.shopify.com/s/files/1/1595/5453/products/Spread-1_23149856-7f00-4168-b13b-b4b7151d07ef.png?v=1568750326",
+                "https://cdn.shopify.com/s/files/1/1595/5453/products/Spread-2_bf82f0a1-0d9e-4fbd-877d-44bf29ce1942.png?v=1568750326",
+                "https://cdn.shopify.com/s/files/1/1595/5453/products/Spread-3_52636dd9-a15f-4a35-8413-2667315965d7.png?v=1568750326",
+                "https://cdn.shopify.com/s/files/1/1595/5453/products/Spread-4_6af5c2cc-aef7-4092-bea5-6ca9b00a3f0f.png?v=1568750326"
+              ]
             },
             {
               "title": "Amphorae: An Incomplete Compendium of Non-Ancient Greek Vessels",
@@ -1740,7 +1923,15 @@
                 "@hyper.hypo.athens"
               ],
               "shop": "Magma",
-              "price": "£18"
+              "price": "£18",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-08-10at14-35-03AnnaKiosseAmphorae-HyperHypo.png?v=1786369086",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-08-10at14-35-03AnnaKiosseAmphorae-HyperHypo.png?v=1786369086",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-08-10at14-34-46AnnaKiosseAmphorae-HyperHypo.png?v=1786369087",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-08-10at14-34-39AnnaKiosseAmphorae-HyperHypo.png?v=1786369087",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-08-10at14-34-31AnnaKiosseAmphorae-HyperHypo.png?v=1786369087",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-08-10at14-34-22AnnaKiosseAmphorae-HyperHypo.png?v=1786369087"
+              ]
             },
             {
               "title": "Fons Hickmann m23",
@@ -1757,7 +1948,8 @@
                 "@fons_hickmann",
                 "@typographicposters"
               ],
-              "shop": "Typographic Posters"
+              "shop": "Typographic Posters",
+              "art": "https://images.typographicposters.com/studio-2x/_studio/fons-hickmann-m23/61435ca42b2a4cb49c6697ae.jpg"
             }
           ]
         },
@@ -1779,7 +1971,8 @@
                 "@setmargins"
               ],
               "shop": "Set Margins'",
-              "price": "€30"
+              "price": "€30",
+              "art": "https://www.setmargins.press/wp-content/uploads/2026/08/Segments-Book-Previews-Kim-Albrecht-1-kopie.png"
             },
             {
               "title": "Karel Martens: Cloakroom Tickets",
@@ -1797,7 +1990,15 @@
                 "@magma_books"
               ],
               "shop": "Magma",
-              "price": "£33"
+              "price": "£33",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-10-11at17-19-28CloakroomTickets_1-250_-KarelMartensRomaPublications.png?v=1791735665",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-10-11at17-19-28CloakroomTickets_1-250_-KarelMartensRomaPublications.png?v=1791735665",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-10-11at17-20-50CloakroomTickets_1-250_-KarelMartensRomaPublications.png?v=1791735665",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-10-11at17-20-23CloakroomTickets_1-250_-KarelMartensRomaPublications.png?v=1791735666",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-10-11at17-19-45CloakroomTickets_1-250_-KarelMartensRomaPublications.png?v=1791735666",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-10-11at17-20-13CloakroomTickets_1-250_-KarelMartensRomaPublications.png?v=1791735666"
+              ]
             },
             {
               "title": "Saâdane Afif: Affiches 2",
@@ -1814,7 +2015,15 @@
                 "@perimeterbooks"
               ],
               "shop": "Perimeter Books",
-              "price": "A$99"
+              "price": "A$99",
+              "art": "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_2551_a03244fb-99f8-481b-a97d-c4841e6969b5.jpg?v=1788231951",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_2551_a03244fb-99f8-481b-a97d-c4841e6969b5.jpg?v=1788231951",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_2552_a90acd90-d630-4b81-9ce2-3f0247647796.jpg?v=1788231951",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_2553_a2cc1d15-0cd1-450d-ad9f-4ed24fe1918d.jpg?v=1788231951",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_2554_28dae82d-aeec-4d2b-943a-6e854d4b1130.jpg?v=1788231951",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_2555_ae7ecaf0-bfa0-4b22-9009-1e907c7eecf9.jpg?v=1788231951"
+              ]
             },
             {
               "title": "Assume Nothing: On Practice-Based Art, Design and Education",
@@ -1830,7 +2039,8 @@
                 "@setmargins"
               ],
               "shop": "Set Margins'",
-              "price": "€20"
+              "price": "€20",
+              "art": "https://www.setmargins.press/wp-content/uploads/2026/01/SetMargins_AssumeNothing_004-kopie.jpeg"
             },
             {
               "title": "Fine Design: A Studio Guide to Remixing Design, Art, Craft, and Industry",
@@ -1847,7 +2057,8 @@
                 "@setmargins"
               ],
               "shop": "Set Margins'",
-              "price": "€30"
+              "price": "€30",
+              "art": "https://www.setmargins.press/wp-content/uploads/2025/12/SetMargins_FineDesign_026-kopie.jpeg"
             },
             {
               "title": "Street Report 7: Naptime",
@@ -1864,7 +2075,15 @@
                 "@temporarypress"
               ],
               "shop": "Perimeter Books",
-              "price": "A$48"
+              "price": "A$48",
+              "art": "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_2482_a84f9aeb-0830-4055-8258-9a1557d7fdd6.jpg?v=1787632412",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_2482_a84f9aeb-0830-4055-8258-9a1557d7fdd6.jpg?v=1787632412",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_2483_c58f107b-60a4-4d47-8c9e-a1b5a2f1bd55.jpg?v=1787632412",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_2484_9e6af2cc-27cd-4812-b882-37209c8e1839.jpg?v=1787632412",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_2485_b99f3c63-1275-4cac-ac84-faa7ca0a4519.jpg?v=1787632412",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_2486_3a9df4fc-0cf5-4554-a0bb-bd55ea65a57e.jpg?v=1787632412"
+              ]
             },
             {
               "title": "The National Grid #9",
@@ -1881,7 +2100,15 @@
                 "@gloria__books"
               ],
               "shop": "Perimeter Books",
-              "price": "A$25"
+              "price": "A$25",
+              "art": "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1740_92509144-8bf4-4e4f-a437-98d0ad0970fd.jpg?v=1784781416",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1740_92509144-8bf4-4e4f-a437-98d0ad0970fd.jpg?v=1784781416",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1741_61c6a9fa-7889-437a-8e33-76a57fec43fd.jpg?v=1784785554",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1742_4f0397b3-b665-4322-9843-8294ade8e140.jpg?v=1784785554",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1743_fbcf38f7-8474-404a-9d99-528d360061a0.jpg?v=1784785554",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1745_0b767ad1-42ee-4f29-8ada-2218bacbd66a.jpg?v=1784785554"
+              ]
             },
             {
               "title": "Tools #6: To Blow",
@@ -1912,7 +2139,13 @@
               "link": "https://magculture.com/collections/new/products/tinted-issue-1",
               "by": "Ida Yndal (ed.)",
               "shop": "magCulture",
-              "price": "£35"
+              "price": "£35",
+              "art": "https://cdn.shopify.com/s/files/1/0514/7889/files/Tinted_Issue_1_gif_ef1922ed-e662-4f34-b20e-050f4ddb5bf9.gif?v=1790604601",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0514/7889/files/Tinted_Issue_1_gif_ef1922ed-e662-4f34-b20e-050f4ddb5bf9.gif?v=1790604601",
+                "https://cdn.shopify.com/s/files/1/0514/7889/files/Ti_Mag_Vol-01_FINAL-Cover-B_dfc3946e-3b8e-4a98-a3d6-e25c6892f492.jpg?v=1790604567",
+                "https://cdn.shopify.com/s/files/1/0514/7889/files/Ti_Mag_Vol-01_FINAL-Cover-A.jpg?v=1790604578"
+              ]
             },
             {
               "title": "Daan Rietbergen",
@@ -1930,7 +2163,8 @@
                 "@daan_rietbergen",
                 "@typographicposters"
               ],
-              "shop": "Typographic Posters"
+              "shop": "Typographic Posters",
+              "art": "https://images.typographicposters.com/studio-2x/_studio/daan-rietbergen/68de6a7b5229f2ddc23b03ca.jpg"
             }
           ]
         },
@@ -1952,7 +2186,14 @@
                 "@setmargins"
               ],
               "shop": "Magma",
-              "price": "£11.99"
+              "price": "£11.99",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/volumes-design-reviewed-remixed-revealed-5.jpg?v=1743596648",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/volumes-design-reviewed-remixed-revealed-5.jpg?v=1743596648",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/ABE_SetMargins_Volumes_016-2500x0-c-default.jpg?v=1743596732",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/ABE_SetMargins_Volumes_028-2500x0-c-default.jpg?v=1743596772",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/ABE_SetMargins_Volumes_003-2500x0-c-default.jpg?v=1743596816"
+              ]
             },
             {
               "title": "How Many Female Type Designers Do You Know?",
@@ -1968,7 +2209,8 @@
                 "@setmargins"
               ],
               "shop": "Set Margins'",
-              "price": "€29"
+              "price": "€29",
+              "art": "https://www.setmargins.press/wp-content/uploads/2025/04/HowmanyFemaleTypeDesigners_026-kopie.jpeg"
             },
             {
               "title": "Translator #4",
@@ -1984,7 +2226,8 @@
                 "@translatormag"
               ],
               "shop": "magCulture",
-              "price": "£12"
+              "price": "£12",
+              "art": "https://cdn.shopify.com/s/files/1/0514/7889/files/Translator_4.jpg?v=1789390687"
             },
             {
               "title": "Sorties #1",
@@ -2001,7 +2244,15 @@
                 "@selinabernet"
               ],
               "shop": "Magma",
-              "price": "£18"
+              "price": "£18",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-19122006.png?v=1771503816",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-19122006.png?v=1771503816",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-19122019.png?v=1771503817",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-19122033.png?v=1771503817",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-19122055.png?v=1771503817",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-19122106.png?v=1771503817"
+              ]
             },
             {
               "title": "A Book on Zines: New Aesthetics in Zine Design",
@@ -2052,7 +2303,15 @@
                 "@rnvp_paris"
               ],
               "shop": "Magma",
-              "price": "£15.99"
+              "price": "£15.99",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-03-25141353.png?v=1774448256",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-03-25141353.png?v=1774448256",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-03-25141449.png?v=1774448256",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-03-25141505.png?v=1774448257",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-03-25141518.png?v=1774448256",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-03-25141533.png?v=1774448256"
+              ]
             },
             {
               "title": "Mascot: Mascots in Contemporary Graphic Design",
@@ -2069,7 +2328,14 @@
                 "@counterprintbooks"
               ],
               "shop": "Magma",
-              "price": "£20"
+              "price": "£20",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/products/51esBYCcc2L._SX522_BO1_204_203_200.jpg?v=1668094464",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/products/51esBYCcc2L._SX522_BO1_204_203_200.jpg?v=1668094464",
+                "https://cdn.shopify.com/s/files/1/0285/4760/products/619eq25m_GL.jpg?v=1668094464",
+                "https://cdn.shopify.com/s/files/1/0285/4760/products/61U_gI_qyBL.jpg?v=1668094465",
+                "https://cdn.shopify.com/s/files/1/0285/4760/products/71EJbczLr5L.jpg?v=1668094465"
+              ]
             },
             {
               "title": "I Got Something to Say: Poster Inventory, 2013 to 2021",
@@ -2085,7 +2351,13 @@
                 "@drawdownbooks"
               ],
               "shop": "Draw Down",
-              "price": "$29.95"
+              "price": "$29.95",
+              "art": "https://cdn.shopify.com/s/files/1/1681/2497/products/IGotSomethingToSay_Cover.jpg?v=1685136150",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/1681/2497/products/IGotSomethingToSay_Cover.jpg?v=1685136150",
+                "https://cdn.shopify.com/s/files/1/1681/2497/products/SomethingtoSay_back.jpg?v=1685136150",
+                "https://cdn.shopify.com/s/files/1/1681/2497/products/IMG_7453.jpg?v=1685136150"
+              ]
             },
             {
               "title": "baldinger•vu-huu",
@@ -2101,7 +2373,8 @@
               "instagram": [
                 "@baldinger_vu_huu"
               ],
-              "shop": "Typographic Posters"
+              "shop": "Typographic Posters",
+              "art": "https://images.typographicposters.com/poster/toan-vu-huu/toan-vu-huu-poster-1h13gerzxfda5nwa.jpg"
             }
           ]
         },
@@ -2123,7 +2396,15 @@
                 "@ecal_ch"
               ],
               "shop": "Magma",
-              "price": "£62"
+              "price": "£62",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-09-03171812.png?v=1788452655",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-09-03171812.png?v=1788452655",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-09-03171910.png?v=1788452654",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-09-03171925.png?v=1788452654",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-09-03171935.png?v=1788452654",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-09-03171949.png?v=1788452654"
+              ]
             },
             {
               "title": "UN/SEEN: Women in Graphic Design up to the Bauhaus",
@@ -2140,7 +2421,15 @@
                 "@slanted_publishers"
               ],
               "shop": "Magma",
-              "price": "£48"
+              "price": "£48",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-07-07145738.png?v=1783432963",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-07-07145738.png?v=1783432963",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-07-07145858.png?v=1783432963",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-07-07145909.png?v=1783432963",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-07-07145920.png?v=1783432964",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-07-07145931.png?v=1783432964"
+              ]
             },
             {
               "title": "Experimental Jetset: Statement and Counter-Statement 2",
@@ -2156,7 +2445,15 @@
                 "@jetset_experimental"
               ],
               "shop": "Magma",
-              "price": "£35"
+              "price": "£35",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot_2026-06-05_141420.png?v=1780665284",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot_2026-06-05_141420.png?v=1780665284",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-06-05140615_942d6b22-cd6b-4387-a61a-715b5eca9505.png?v=1780665236",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-06-05140632_514a894a-df88-4eea-a75f-3b13439f513f.png?v=1780665236",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-06-05140642_e24c047c-2440-4cd2-9375-3417686d4b68.png?v=1780665235",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-06-05141136.png?v=1780665236"
+              ]
             },
             {
               "title": "Bill #6",
@@ -2173,7 +2470,8 @@
                 "@bill_magazine"
               ],
               "shop": "magCulture",
-              "price": "£35"
+              "price": "£35",
+              "art": "https://cdn.shopify.com/s/files/1/0514/7889/files/Bill_6_a11154b3-10c0-4f1a-bc89-e378f78e2fda.png?v=1786010745"
             },
             {
               "title": "Bruno Munari: Fantasy",
@@ -2202,7 +2500,15 @@
                 "@chermayeff_geismar_haviv"
               ],
               "shop": "Magma",
-              "price": "£58"
+              "price": "£58",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-14170309.png?v=1771088963",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-02-14170309.png?v=1771088963",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot_2026-02-14_170602.png?v=1771088999",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot_2026-02-14_170623.png?v=1771088997",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot_2026-02-14_170635.png?v=1771088999",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot_2026-02-14_170656.png?v=1771088998"
+              ]
             },
             {
               "title": "What Is Post-Branding?",
@@ -2215,7 +2521,15 @@
               "link": "https://magma-shop.com/collections/books/products/james-ballard-all-that-mattered-was-sensation-copy-1",
               "by": "Jason Grant and Oliver Vodeb",
               "shop": "Magma",
-              "price": "£25"
+              "price": "£25",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-09-04123900.png?v=1788522244",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-09-04123900.png?v=1788522244",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-09-04124219.png?v=1788522244",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-09-04124227.png?v=1788522244",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-09-04124235.png?v=1788522244",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-09-04124244.png?v=1788522244"
+              ]
             },
             {
               "title": "Showa Modern: Ad Designs, 1920s to 30s",
@@ -2227,7 +2541,12 @@
               "note": "Over 200 Japanese ads from the Taisho and early Showa years. Posters, flyers, matchbox labels, packaging. Cheap, dense, and full of colour ideas.",
               "link": "https://magma-shop.com/collections/design-books/products/showa-modern-ad-designs-1920s-30s-new-ed",
               "shop": "Magma",
-              "price": "£21.99"
+              "price": "£21.99",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/250916.showaadvert.9784861529931.jpg_500x693_bfa4dd77-7962-4e84-b11d-c97adb14ab4d.jpg?v=1778057286",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/250916.showaadvert.9784861529931.jpg_500x693_bfa4dd77-7962-4e84-b11d-c97adb14ab4d.jpg?v=1778057286",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/250916.showaadvert.97848615299312.jpg_500x362_9e34ec58-61a5-45f9-8824-81abe09f35d2.jpg?v=1778057286"
+              ]
             },
             {
               "title": "Studio Feixen",
@@ -2260,7 +2579,15 @@
                 "@davidetolfo"
               ],
               "shop": "Magma",
-              "price": "£20"
+              "price": "£20",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-08-17at14-39-38AgainstCoffeeTableBooks-Lespressesdureel_book.png?v=1786974030",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-08-17at14-39-38AgainstCoffeeTableBooks-Lespressesdureel_book.png?v=1786974030",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-08-17at14-39-34AgainstCoffeeTableBooks-Lespressesdureel_book.png?v=1786974030",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-08-17at14-39-27AgainstCoffeeTableBooks-Lespressesdureel_book.png?v=1786974031",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-08-17at14-39-20AgainstCoffeeTableBooks-Lespressesdureel_book.png?v=1786974030",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-08-17at14-39-12AgainstCoffeeTableBooks-Lespressesdureel_book.png?v=1786974031"
+              ]
             },
             {
               "title": "Logo In Real Life",
@@ -2278,7 +2605,15 @@
                 "@setmargins"
               ],
               "shop": "Magma",
-              "price": "£13.50"
+              "price": "£13.50",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-42-56Logoinreallife-GoogleSearch.png?v=1779889407",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-42-56Logoinreallife-GoogleSearch.png?v=1779889407",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-42-23LogoInRealLife-SetMargins.png?v=1779889408",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-42-09LogoInRealLife-SetMargins.png?v=1779889409",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-42-03LogoInRealLife-SetMargins.png?v=1779889409",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-41-58LogoInRealLife-SetMargins.png?v=1779889409"
+              ]
             },
             {
               "title": "Ninety-Nine Graphic Design Workshops: The Way We Attend to Things",
@@ -2294,7 +2629,15 @@
                 "@setmargins"
               ],
               "shop": "Magma",
-              "price": "£16.99"
+              "price": "£16.99",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-35-33Ninety-NineGraphicDesignWorkshopsThewayweattendtothings-GoogleSearch.png?v=1779888951",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-35-33Ninety-NineGraphicDesignWorkshopsThewayweattendtothings-GoogleSearch.png?v=1779888951",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-35-16Ninety-NineGraphicDesignWorkshops-SetMargins.png?v=1779888951",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-35-12Ninety-NineGraphicDesignWorkshops-SetMargins.png?v=1779888952",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-35-08Ninety-NineGraphicDesignWorkshops-SetMargins.png?v=1779888951",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-35-04Ninety-NineGraphicDesignWorkshops-SetMargins.png?v=1779888951"
+              ]
             },
             {
               "title": "Publishing as Method: Ways of Working Together in Asia",
@@ -2307,7 +2650,14 @@
               "link": "https://magma-shop.com/collections/design-books/products/the-echo-how-to-design-brands-that-move-culture-copy",
               "by": "mediabus",
               "shop": "Magma",
-              "price": "£31.75"
+              "price": "£31.75",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot_2026-06-23_at_14-00-24_Publishing_as_Method_einBuch.haus.png?v=1782219657",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot_2026-06-23_at_14-00-24_Publishing_as_Method_einBuch.haus.png?v=1782219657",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-06-23at13-59-03PublishingasMethod.png?v=1782219604",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-06-23at13-58-47PublishingasMethod.png?v=1782219604",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-06-23at13-58-32PublishingasMethod.png?v=1782219604"
+              ]
             },
             {
               "title": "Library of Artistic Print on Demand",
@@ -2323,7 +2673,8 @@
                 "@spectorbooks"
               ],
               "shop": "Magma",
-              "price": "£27.99"
+              "price": "£27.99",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-03-13150910.png?v=1773414905"
             },
             {
               "title": "MacGuffin #16: The Mirror",
@@ -2339,7 +2690,8 @@
                 "@macguffinmagazine"
               ],
               "shop": "magCulture",
-              "price": "£26"
+              "price": "£26",
+              "art": "https://cdn.shopify.com/s/files/1/0514/7889/files/MacGuffin16TheMirror.jpg?v=1789995452"
             },
             {
               "title": "The Unimportance of Form and Other Arguments",
@@ -2352,7 +2704,15 @@
               "link": "https://magma-shop.com/collections/design-books/products/an-opinionated-guide-to-new-york-architecture-copy",
               "by": "Jasper Morrison",
               "shop": "Magma",
-              "price": "£25"
+              "price": "£25",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-23-22TheUnimportanceofFormJasperMorrison.png?v=1779888350",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-23-22TheUnimportanceofFormJasperMorrison.png?v=1779888350",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-23-14TheUnimportanceofFormJasperMorrison.png?v=1779888349",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-23-08TheUnimportanceofFormJasperMorrison.png?v=1779888350",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-23-03TheUnimportanceofFormJasperMorrison.png?v=1779888350",
+                "https://cdn.shopify.com/s/files/1/0285/4760/files/Screenshot2026-05-27at14-22-59TheUnimportanceofFormJasperMorrison.png?v=1779888349"
+              ]
             },
             {
               "title": "Poster Cult",
@@ -2370,7 +2730,8 @@
                 "@larsmullerpublishers"
               ],
               "shop": "Draw Down",
-              "price": "$60"
+              "price": "$60",
+              "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/DafiKuhnePosterCult.jpg?v=1738355504"
             },
             {
               "title": "Design Reviewed",
@@ -2388,7 +2749,8 @@
                 "@uniteditions"
               ],
               "shop": "Slanted",
-              "price": "from €70"
+              "price": "from €70",
+              "art": "https://www.slanted.de/wp-content/uploads/2026/04/2026-04-03_69cf924901faa_Design_Reviewed_Post_02_6.jpg"
             },
             {
               "title": "Huruf",
@@ -2404,7 +2766,8 @@
               "instagram": [
                 "@huruf.my"
               ],
-              "shop": "It's Nice That"
+              "shop": "It's Nice That",
+              "art": "https://m.itsnicethat.com/original_images/huruf-work-itsnicethat-graphic-design-3.jpg?class=w1440"
             }
           ]
         }
