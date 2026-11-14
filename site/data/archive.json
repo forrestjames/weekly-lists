@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T15:04:37Z",
+  "updated": "2026-11-14T17:04:42Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -554,6 +554,157 @@
       "name": "Juno Weekly",
       "playlist": "",
       "weeks": [
+        {
+          "date": "2026-11-14",
+          "items": [
+            {
+              "artist": "Blackhaine",
+              "title": "Saints in The Wethouse",
+              "kind": "album",
+              "tags": [
+                "industrial",
+                "experimental hip hop",
+                "gothic"
+              ],
+              "note": "His debut album on XL, industrial rap collapsed into gothic synths and marching percussion, with dancehall guests and real intensity. Quiet moments like the acoustic \"The Wind\" cut through the chaos and give it weight.",
+              "source": "Juno: Leftfield",
+              "spotify_url": "https://open.spotify.com/album/023yHwmTQDjCn4G5v60RGJ",
+              "art": "https://i.scdn.co/image/ab67616d0000b273907c0aed022cb332c0ac2c74"
+            },
+            {
+              "artist": "KCR1",
+              "title": "Extraxxion",
+              "kind": "album",
+              "tags": [
+                "gqom",
+                "dub",
+                "bass",
+                "afro-venezuelan"
+              ],
+              "note": "Debut album from Magu's KCR1 project, mixing bass, dub, gqom and changa with Afro-Venezuelan drums. Heavy, strange and physical.",
+              "source": "Juno: Leftfield",
+              "spotify_url": "https://open.spotify.com/album/3k5iGvthhUez4dHr6e89Vc",
+              "art": "https://i.scdn.co/image/ab67616d0000b273ad1ffcb9644ec7e23e27564a"
+            },
+            {
+              "artist": "Matthew Dear",
+              "title": "Dizzy",
+              "kind": "track",
+              "tags": [
+                "electroclash",
+                "electronic",
+                "pop"
+              ],
+              "note": "Dear's return to Ghostly International, a sleazy, strutting electroclash single. Short, sharp and fun.",
+              "source": "Juno: Disco",
+              "spotify_url": "https://open.spotify.com/track/4mYcrBVBKX6xmWOLDlFOnJ",
+              "art": "https://i.scdn.co/image/ab67616d0000b2737932355b91f22a80ece8d54b"
+            },
+            {
+              "artist": "Ana Lua Caiano",
+              "title": "Devagar Que A Vida É Curta",
+              "kind": "album",
+              "tags": [
+                "portuguese folk",
+                "electronic",
+                "experimental",
+                "world"
+              ],
+              "note": "Her second album, traditional Portuguese folk run through DAW-built electronics at full urgency, with tectonic percussion. A thrilling, defiant record about slowing down to actually live.",
+              "source": "Juno: Leftfield",
+              "spotify_url": "https://open.spotify.com/album/6WctvU1Itl3ipep21NKQTu",
+              "art": "https://i.scdn.co/image/ab67616d0000b273cd0e158809eaeace3d33b886"
+            },
+            {
+              "artist": "Buckfast Barbie",
+              "title": "any1 can cook!",
+              "kind": "album",
+              "tags": [
+                "footwork",
+                "jersey club",
+                "grime",
+                "baile funk"
+              ],
+              "note": "An Edinburgh producer's EP that moves fast between footwork, Jersey club, grime and baile funk without ever settling down. Restless, rough-edged club music.",
+              "source": "Juno: Leftfield",
+              "spotify_url": "https://open.spotify.com/album/2dsoJX1HDGoAzzU7DnBJi7",
+              "art": "https://i.scdn.co/image/ab67616d0000b273389603cdb4a65344fdece16b"
+            },
+            {
+              "artist": "Mytron",
+              "title": "Blackcurrant Jam",
+              "kind": "track",
+              "tags": [
+                "acid house",
+                "deep house",
+                "electronic"
+              ],
+              "note": "Sparse, jacking acid house from London's Mytron, from the Ascorbic EP. Lean and hypnotic, built for a late set.",
+              "source": "Juno: Deep House",
+              "spotify_url": "https://open.spotify.com/track/1fDy3HYv6DxH371lpcclnj",
+              "art": "https://i.scdn.co/image/ab67616d0000b2732e089e7df8368866656c3a19"
+            },
+            {
+              "artist": "Rizan Said",
+              "title": "Ma Waraa Al-Shaabi / Beyond Shaabi",
+              "kind": "album",
+              "tags": [
+                "dabke",
+                "electronic",
+                "world",
+                "experimental"
+              ],
+              "note": "Recorded in Iceland, his third solo album mixes high-BPM electronic dabke with slower drones and IDM textures. One foot in Levantine folk tradition, one in something far stranger.",
+              "source": "Juno: Balearic / Downtempo",
+              "spotify_url": "https://open.spotify.com/album/4Jk8QPo7yqrf9O9s4ZsVeU",
+              "art": "https://i.scdn.co/image/ab67616d0000b273dbdeb69f80628dda54142ebb"
+            },
+            {
+              "artist": "Skinshape",
+              "title": "Chapman's Pool",
+              "kind": "album",
+              "tags": [
+                "funk",
+                "lo-fi",
+                "soul",
+                "psych pop"
+              ],
+              "note": "Will Dorey's one-man-band suite of breezy, lo-fi AM radio songs on a strong classic funk backbone, with some stranger detours. Easy to love, a little scuffed round the edges.",
+              "source": "Juno: Soul / Funk",
+              "spotify_url": "https://open.spotify.com/album/7qKhBKmah1UMBLgz54xld4",
+              "art": "https://i.scdn.co/image/ab67616d0000b273fec20a856442eaf79d8bd918"
+            },
+            {
+              "artist": "Armand Hammer",
+              "title": "Snakes & Ladders",
+              "kind": "album",
+              "tags": [
+                "hip hop",
+                "jazz",
+                "experimental"
+              ],
+              "note": "A surprise album about modern life lulling people into complacency, with jazz-leaning beats from Kenny Segal and others and plenty of gallows humour. billy woods and E L U C I D at their sharpest.",
+              "source": "Juno: Broken Beat / Nu-Jazz",
+              "spotify_url": "https://open.spotify.com/album/7mM5Tj5zFnL8ZSHbADTyjJ",
+              "art": "https://i.scdn.co/image/ab67616d0000b27325688a28e8fdb7dffd3deeb3"
+            },
+            {
+              "artist": "Tara Cunningham",
+              "title": "Warm Ground",
+              "kind": "album",
+              "tags": [
+                "experimental guitar",
+                "ambient",
+                "folk",
+                "lo-fi"
+              ],
+              "note": "Seven restrained, improvised guitar miniatures in under 18 minutes, with creaky doors and dropped mics worked into the texture. Small, warm and strange in the best way.",
+              "source": "Juno: Ambient / Drone / Experimental",
+              "spotify_url": "https://open.spotify.com/album/2hVrV4Wr9xa5l9HwGzMuIk",
+              "art": "https://i.scdn.co/image/ab67616d0000b273bd81f71b8228367cd80daff0"
+            }
+          ]
+        },
         {
           "date": "2026-11-02",
           "items": [
