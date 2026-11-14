@@ -2367,8 +2367,8 @@
               ],
               "shop": "Magma",
               "price": "£20",
-              "art": "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1885.jpg?v=1785377656",
               "art_checked": true,
+              "art": "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1885.jpg?v=1785377656",
               "images": [
                 "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1885.jpg?v=1785377656",
                 "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1910.jpg?v=1785377677",
@@ -2676,8 +2676,8 @@
                 "https://a-g-i.org/design/s%C3%BCdpol-plakate",
                 "https://www.itsnicethat.com/articles/feixen-1"
               ],
-              "art": "https://m.itsnicethat.com/original_images/5405734c5c3e3c2dd8000f8a.png?class=w1440",
-              "art_checked": true
+              "art_checked": true,
+              "art": "https://m.itsnicethat.com/original_images/5405734c5c3e3c2dd8000f8a.png?class=w1440"
             },
             {
               "title": "Against Coffee Table Books",
