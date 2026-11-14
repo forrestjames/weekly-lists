@@ -40,6 +40,7 @@ looking covers up in the browser.
 """
 
 import base64
+import difflib
 import html
 import json
 import os
@@ -213,67 +214,196 @@ def absolute(u, base):
     return urllib.parse.urljoin(base, u) if u else ""
 
 
-def shop_pictures(link):
-    """Cover and extra pictures for a design pick, read from its shop page.
+# Design shops that run on Shopify. Each has a product search at
+# /search/suggest.json and every product's photos at <product URL>.json, so a
+# pick whose page has moved or sold out can still be found by title.
+SHOPIFY_SHOPS = ["magma-shop.com", "magculture.com", "draw-down.com", "www.counter-print.co.uk", "www.perimeterbooks.com"]
+IMG_EXT = re.compile(r"\.(jpe?g|png|webp|gif)(\?|$)", re.I)
+SKIP_IMG = re.compile(r"logo|icon|sprite|favicon|avatar|placeholder|blank|pixel|badge|payment|flag", re.I)
 
-    Shopify shops (Magma, magCulture, Draw Down, Counter-Print, Perimeter)
-    publish every product photo at the product URL plus ".json". Anything
-    else falls back to the page's og:image. Returns a list of URLs, cover
-    first, or [] if nothing was found."""
-    parts = urllib.parse.urlsplit(link)
-    if "/products/" in parts.path:
-        try:
-            data = json.loads(fetch(urllib.parse.urlunsplit(
-                (parts.scheme, parts.netloc, parts.path.rstrip("/") + ".json", "", ""))))
-            imgs = [absolute(i.get("src"), link) for i in (data.get("product") or {}).get("images", [])]
-            imgs = [i for i in imgs if i]
-            if imgs:
-                return imgs[:MAX_IMAGES]
-        except Exception as e:  # noqa: BLE001  (not Shopify, or the shop is down: try the page)
-            print(f"  no product JSON for {link}: {e}", file=sys.stderr)
-    page = fetch(link)
+
+def simplify(s):
+    s = html.unescape(s or "").lower()
+    s = re.sub(r"[^\w\s]", " ", s)
+    return " ".join(s.split())
+
+
+def same_title(a, b):
+    """True when two product titles name the same thing."""
+    a, b = simplify(a), simplify(b)
+    if not a or not b:
+        return False
+    if a in b or b in a:
+        return True
+    return difflib.SequenceMatcher(None, a, b).ratio() >= 0.72
+
+
+def shopify_product_images(url):
+    parts = urllib.parse.urlsplit(url)
+    data = json.loads(fetch(urllib.parse.urlunsplit((parts.scheme or "https", parts.netloc, parts.path.rstrip("/") + ".json", "", ""))))
+    imgs = [absolute(i.get("src"), url) for i in (data.get("product") or {}).get("images", [])]
+    return [i for i in imgs if i][:MAX_IMAGES]
+
+
+def page_images(url):
+    """og:image, then twitter:image, then the first big-looking <img> on the page."""
+    page = fetch(url)
     for pat in (r'<meta[^>]+property=["\']og:image(?::secure_url)?["\'][^>]*content=["\']([^"\']+)',
                 r'<meta[^>]+content=["\']([^"\']+)["\'][^>]*property=["\']og:image',
-                r'<meta[^>]+name=["\']twitter:image["\'][^>]*content=["\']([^"\']+)'):
+                r'<meta[^>]+name=["\']twitter:image["\'][^>]*content=["\']([^"\']+)',
+                r'<meta[^>]+content=["\']([^"\']+)["\'][^>]*name=["\']twitter:image'):
         m = re.search(pat, page, re.I)
-        if m:
-            return [absolute(m.group(1), link)]
+        if m and not SKIP_IMG.search(m.group(1)):
+            return [absolute(m.group(1), url)]
+    found = []
+    for tag in re.findall(r"<img\b[^>]*>", page, re.I):
+        srcs = re.findall(r'(?:data-src|src|data-srcset|srcset)=["\']([^"\']+)', tag, re.I)
+        for src in srcs:
+            src = src.split(",")[-1].strip().split(" ")[0]   # largest srcset entry
+            if IMG_EXT.search(src) and not SKIP_IMG.search(src + tag):
+                u = absolute(src, url)
+                if u not in found:
+                    found.append(u)
+                break
+        if len(found) >= MAX_IMAGES:
+            break
+    return found
+
+
+def shopify_search(host, title):
+    """Finds a product by title on a Shopify shop. Returns (url, images) or None."""
+    q = urllib.parse.quote(title[:80])
+    data = json.loads(fetch(f"https://{host}/search/suggest.json?q={q}&resources[type]=product&resources[limit]=6"))
+    for prod in ((data.get("resources") or {}).get("results") or {}).get("products", []):
+        if same_title(prod.get("title"), title):
+            url = absolute(prod.get("url", "").split("?")[0], f"https://{host}/")
+            try:
+                imgs = shopify_product_images(url)
+            except Exception:  # noqa: BLE001
+                img = prod.get("image") or (prod.get("featured_image") or {}).get("url")
+                imgs = [absolute(img, url)] if img else []
+            if imgs:
+                return url, imgs
+    return None
+
+
+def book_cover(title, by):
+    """Cover from Open Library, then Google Books, for books no shop has."""
+    t = re.split(r"[:(]", title)[0].strip()
+    author = re.sub(r"\(.*?\)", "", by or "").split(" and ")[0].split(",")[0].strip()
+    q = {"title": t}
+    if author and not author.lower().startswith(("studio", "designer", "type collective")):
+        q["author"] = author
+    data = json.loads(fetch("https://openlibrary.org/search.json?" + urllib.parse.urlencode({**q, "limit": 5})))
+    for doc in data.get("docs", []):
+        if doc.get("cover_i") and same_title(doc.get("title"), t):
+            return [f"https://covers.openlibrary.org/b/id/{doc['cover_i']}-L.jpg"]
+    gq = f'intitle:"{t}"' + (f' inauthor:"{q["author"]}"' if "author" in q else "")
+    data = json.loads(fetch("https://www.googleapis.com/books/v1/volumes?" + urllib.parse.urlencode({"q": gq, "maxResults": 5})))
+    for vol in data.get("items", []):
+        info = vol.get("volumeInfo", {})
+        links = info.get("imageLinks") or {}
+        img = links.get("extraLarge") or links.get("large") or links.get("medium") or links.get("thumbnail")
+        if img and same_title(info.get("title"), t):
+            return [img.replace("http://", "https://").replace("&edge=curl", "").replace("zoom=1", "zoom=3")]
     return []
 
 
+def slug(s):
+    return re.sub(r"[^a-z0-9]+", "-", simplify(s).replace("ö", "o")).strip("-")
+
+
+def find_pictures(it):
+    """Every way we know to get a picture for a design pick, in order.
+
+    Returns (images, better_link). better_link is set when the pick's own link
+    is dead and the product turned up somewhere else."""
+    link, title = it.get("link", ""), it.get("title", "")
+    host = urllib.parse.urlsplit(link).netloc if link else ""
+    tried = []
+
+    def attempt(name, fn):
+        try:
+            res = fn()
+        except Exception as e:  # noqa: BLE001
+            tried.append(f"{name}: {e}")
+            return None
+        if not res:
+            tried.append(f"{name}: nothing")
+        return res
+
+    # 1. The pick's own page.
+    if link:
+        if "/products/" in link:
+            imgs = attempt("product json", lambda: shopify_product_images(link))
+            if imgs:
+                return imgs, None
+        imgs = attempt("page", lambda: page_images(link))
+        if imgs:
+            return imgs, None
+    # 2. Search the same shop by title (products get moved or renamed), then the others.
+    if it.get("kind") != "designer":
+        shops = ([host] if host in SHOPIFY_SHOPS else []) + [h for h in SHOPIFY_SHOPS if h != host]
+        for h in shops:
+            hit = attempt(f"search {h}", lambda h=h: shopify_search(h, title))
+            if hit:
+                url, imgs = hit
+                return imgs, (url if h == host or not link else None)
+        # 3. Book cover databases.
+        imgs = attempt("book covers", lambda: book_cover(title, it.get("by")))
+        if imgs:
+            return imgs, None
+    # 4. Designers: their poster archive page, then their own site from Instagram-free sources.
+    else:
+        name = re.split(r",| m23", title)[0]
+        for url in (f"https://www.typographicposters.com/{slug(title)}", f"https://www.typographicposters.com/{slug(name)}"):
+            imgs = attempt(url, lambda url=url: page_images(url))
+            if imgs:
+                return imgs, None
+    print(f"  No picture for {title}. Tried: " + "; ".join(tried), file=sys.stderr)
+    return [], None
+
+
 def add_design_art(archive, previous):
-    """Fills in "art" (and "images") on design picks that lack them."""
+    """Fills in "art" (and "images") on design picks that lack them.
+
+    Picks that still have no picture are tried again on every build, so a
+    picture turns up as soon as any source has one."""
     known = {}
     for week in ((previous or {}).get("editions", {}).get("design") or {}).get("weeks", []):
         for it in week.get("items", []):
-            if it.get("art") and it.get("link"):
-                known[it["link"]] = it
+            if it.get("art"):
+                known[(it.get("title"), it.get("by"))] = it
     found = tried = 0
+    missing = []
     for week in archive["design"]["weeks"]:
         for it in week["items"]:
-            if it.get("art") or not it.get("link"):
+            if it.get("art"):
                 continue
-            old = known.get(it["link"])
+            old = known.get((it.get("title"), it.get("by")))
             if old:
-                it["art"] = old["art"]
-                if old.get("images") and not it.get("images"):
-                    it["images"] = old["images"]
+                for k in ("art", "images", "link"):
+                    if old.get(k) and (k != "link" or old.get("link_fixed")):
+                        it[k] = old[k]
+                if old.get("link_fixed"):
+                    it["link_fixed"] = True
                 continue
             tried += 1
-            try:
-                pics = shop_pictures(it["link"])
-            except Exception as e:  # noqa: BLE001
-                print(f"Couldn't read {it['link']}: {e}", file=sys.stderr)
-                continue
+            pics, better = find_pictures(it)
             if pics:
                 it["art"] = pics[0]
-                if len(pics) > 1 and not it.get("images"):
+                if len(pics) > 1:
                     it["images"] = pics
+                if better and better != it.get("link"):
+                    print(f"  Link moved for {it['title']}: {better}")
+                    it["link"], it["link_fixed"] = better, True
                 found += 1
             else:
-                print(f"No picture found for {it.get('title')}")
+                missing.append(it.get("title"))
     if tried:
         print(f"Design pictures: {found} of {tried} new pick(s) filled in.")
+    if missing:
+        print("::warning title=Design picks without a picture::" + " | ".join(missing))
 
 
 def main():

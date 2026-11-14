@@ -9,6 +9,9 @@ on:
       - "design/*.json"
       - "scripts/build_site_data.py"
   workflow_dispatch:
+  # Once a week, look again for any design pick still missing a picture.
+  schedule:
+    - cron: "23 6 * * 0"
 
 permissions:
   contents: write
