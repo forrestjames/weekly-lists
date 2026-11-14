@@ -30,6 +30,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install Pillow (checks design pictures are real images)
+        run: pip install --quiet pillow
+
       - name: Build latest.json and archive.json
         env:
           # Used to look up cover art on Spotify. Optional: without them the

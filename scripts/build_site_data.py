@@ -47,6 +47,7 @@ import os
 import pathlib
 import re
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 from datetime import datetime, timezone
@@ -219,7 +220,10 @@ def absolute(u, base):
 # pick whose page has moved or sold out can still be found by title.
 SHOPIFY_SHOPS = ["magma-shop.com", "magculture.com", "draw-down.com", "www.counter-print.co.uk", "www.perimeterbooks.com"]
 IMG_EXT = re.compile(r"\.(jpe?g|png|webp|gif)(\?|$)", re.I)
-SKIP_IMG = re.compile(r"logo|icon|sprite|favicon|avatar|placeholder|blank|pixel|badge|payment|flag", re.I)
+SKIP_IMG = re.compile(r"logo|icon|sprite|favicon|avatar|placeholder|blank|pixel|badge|payment|flag|spacer|space-|arrow|button|"
+                      r"menu|close|loader|inactive|\.svg", re.I)
+STOP = {"a", "an", "the", "of", "on", "in", "and", "to", "for", "by", "de", "la", "le", "du", "des", "no", "vol", "issue"}
+MIN_SIDE = 300  # pictures smaller than this on their short side are icons, not covers
 
 
 def simplify(s):
@@ -228,14 +232,48 @@ def simplify(s):
     return " ".join(s.split())
 
 
+def words(s):
+    return {w for w in simplify(s).split() if w not in STOP}
+
+
 def same_title(a, b):
-    """True when two product titles name the same thing."""
-    a, b = simplify(a), simplify(b)
-    if not a or not b:
+    """True when two product titles name the same thing.
+
+    Every word of one title's main part (before any colon) has to appear in
+    the other, so "A Book on Zines" never matches its sister "A Book on Books"."""
+    if not simplify(a) or not simplify(b):
         return False
-    if a in b or b in a:
-        return True
-    return difflib.SequenceMatcher(None, a, b).ratio() >= 0.72
+    ma, mb = words(re.split(r"[:–—]| - ", a)[0]), words(re.split(r"[:–—]| - ", b)[0])
+    wa, wb = words(a), words(b)
+    if not ma or not mb:
+        return False
+    return (ma <= wb or mb <= wa) and len(wa & wb) >= min(2, len(wa), len(wb))
+
+
+def image_ok(url):
+    """Downloads a picture and checks it is a real, reasonably large image."""
+    try:
+        from PIL import Image
+    except ImportError:
+        return True   # can't check here; trust it
+    import io
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=20) as res:
+            data = res.read(8_000_000)
+        w, h = Image.open(io.BytesIO(data)).size
+        return min(w, h) >= MIN_SIDE
+    except Exception:  # noqa: BLE001
+        return False
+
+
+def good(imgs):
+    """Keeps the pictures that are real and big enough, cover first."""
+    out = []
+    for u in imgs:
+        if u not in out and image_ok(u):
+            out.append(u)
+    return out[:MAX_IMAGES]
 
 
 def shopify_product_images(url):
@@ -256,7 +294,7 @@ def page_images(url):
         if m and not SKIP_IMG.search(m.group(1)):
             return [absolute(m.group(1), url)]
     found = []
-    for tag in re.findall(r"<img\b[^>]*>", page, re.I):
+    for tag in sorted(re.findall(r"<img\b[^>]*>", page, re.I), key=lambda t: ".png" in t.lower()):  # photos before UI pngs
         srcs = re.findall(r'(?:data-src|src|data-srcset|srcset)=["\']([^"\']+)', tag, re.I)
         for src in srcs:
             src = src.split(",")[-1].strip().split(" ")[0]   # largest srcset entry
@@ -287,18 +325,35 @@ def shopify_search(host, title):
     return None
 
 
-def book_cover(title, by):
-    """Cover from Open Library, then Google Books, for books no shop has."""
+def book_query(title, by):
     t = re.split(r"[:(]", title)[0].strip()
     author = re.sub(r"\(.*?\)", "", by or "").split(" and ")[0].split(",")[0].strip()
-    q = {"title": t}
-    if author and not author.lower().startswith(("studio", "designer", "type collective")):
-        q["author"] = author
-    data = json.loads(fetch("https://openlibrary.org/search.json?" + urllib.parse.urlencode({**q, "limit": 5})))
+    if author.lower().startswith(("studio", "designer", "type collective")):
+        author = ""
+    return t, author
+
+
+def open_library(title, by):
+    t, author = book_query(title, by)
+    q = {"title": t, "limit": 5, **({"author": author} if author else {})}
+    for attempt in range(3):
+        try:
+            data = json.loads(fetch("https://openlibrary.org/search.json?" + urllib.parse.urlencode(q)))
+            break
+        except urllib.error.HTTPError as e:
+            if e.code != 429 or attempt == 2:
+                raise
+            import time
+            time.sleep(5 * (attempt + 1))
     for doc in data.get("docs", []):
         if doc.get("cover_i") and same_title(doc.get("title"), t):
             return [f"https://covers.openlibrary.org/b/id/{doc['cover_i']}-L.jpg"]
-    gq = f'intitle:"{t}"' + (f' inauthor:"{q["author"]}"' if "author" in q else "")
+    return []
+
+
+def google_books(title, by):
+    t, author = book_query(title, by)
+    gq = f'intitle:"{t}"' + (f' inauthor:"{author}"' if author else "")
     data = json.loads(fetch("https://www.googleapis.com/books/v1/volumes?" + urllib.parse.urlencode({"q": gq, "maxResults": 5})))
     for vol in data.get("items", []):
         info = vol.get("volumeInfo", {})
@@ -309,17 +364,55 @@ def book_cover(title, by):
     return []
 
 
+def wayback(link):
+    """Pictures from the last archived copy of a shop page that has gone."""
+    data = json.loads(fetch("https://archive.org/wayback/available?" + urllib.parse.urlencode({"url": link})))
+    snap = ((data.get("archived_snapshots") or {}).get("closest") or {}).get("url")
+    if not snap:
+        return []
+    imgs = page_images(snap)
+    # Archived image addresses point back into archive.org; strip that so the shop's CDN serves them.
+    return [re.sub(r"^https?://web\.archive\.org/web/\d+(im_)?/", "", u) for u in imgs]
+
+
+def web_search(title, by):
+    """Last resort: search the web for the title and take the picture from a
+    result page whose own title matches."""
+    q = f'{title} {re.sub(r"[(].*?[)]", "", by or "")}'.strip()
+    page = fetch("https://html.duckduckgo.com/html/?" + urllib.parse.urlencode({"q": q}))
+    urls = []
+    for href in re.findall(r'class="result__a"[^>]*href="([^"]+)"', page):
+        m = re.search(r"uddg=([^&]+)", href)
+        u = urllib.parse.unquote(m.group(1)) if m else html.unescape(href)
+        if u.startswith("http") and not re.search(r"instagram|facebook|twitter|x\.com|pinterest|youtube|amazon", u):
+            urls.append(u)
+    for u in urls[:6]:
+        try:
+            body = fetch(u)
+        except Exception:  # noqa: BLE001
+            continue
+        m = re.search(r'<meta[^>]+property=["\']og:title["\'][^>]*content=["\']([^"\']+)', body, re.I) or \
+            re.search(r"<title[^>]*>([^<]+)", body, re.I)
+        if m and same_title(m.group(1), title):
+            imgs = good(page_images(u))
+            if imgs:
+                return imgs
+    return []
+
+
 def slug(s):
     return re.sub(r"[^a-z0-9]+", "-", simplify(s).replace("ö", "o")).strip("-")
 
 
 def find_pictures(it):
-    """Every way we know to get a picture for a design pick, in order.
+    """Every way we know to get a picture for a design pick, in order. Each
+    candidate is downloaded and checked, so icons and broken links never win.
 
     Returns (images, better_link). better_link is set when the pick's own link
-    is dead and the product turned up somewhere else."""
-    link, title = it.get("link", ""), it.get("title", "")
+    is dead and the same product turned up elsewhere in the same shop."""
+    link, title, by = it.get("link", ""), it.get("title", ""), it.get("by", "")
     host = urllib.parse.urlsplit(link).netloc if link else ""
+    designer = it.get("kind") == "designer"
     tried = []
 
     def attempt(name, fn):
@@ -332,34 +425,53 @@ def find_pictures(it):
             tried.append(f"{name}: nothing")
         return res
 
+    def checked(name, fn):
+        imgs = attempt(name, fn)
+        imgs = good(imgs) if imgs else []
+        if not imgs and name not in " ".join(tried):
+            tried.append(f"{name}: too small or broken")
+        return imgs
+
     # 1. The pick's own page.
     if link:
         if "/products/" in link:
-            imgs = attempt("product json", lambda: shopify_product_images(link))
+            imgs = checked("product json", lambda: shopify_product_images(link))
             if imgs:
                 return imgs, None
-        imgs = attempt("page", lambda: page_images(link))
+        imgs = checked("page", lambda: page_images(link))
         if imgs:
             return imgs, None
-    # 2. Search the same shop by title (products get moved or renamed), then the others.
-    if it.get("kind") != "designer":
+    if not designer:
+        # 2. Search the same shop by title (products get moved or renamed), then the other shops.
         shops = ([host] if host in SHOPIFY_SHOPS else []) + [h for h in SHOPIFY_SHOPS if h != host]
         for h in shops:
             hit = attempt(f"search {h}", lambda h=h: shopify_search(h, title))
             if hit:
                 url, imgs = hit
-                return imgs, (url if h == host or not link else None)
-        # 3. Book cover databases.
-        imgs = attempt("book covers", lambda: book_cover(title, it.get("by")))
-        if imgs:
-            return imgs, None
-    # 4. Designers: their poster archive page, then their own site from Instagram-free sources.
-    else:
-        name = re.split(r",| m23", title)[0]
-        for url in (f"https://www.typographicposters.com/{slug(title)}", f"https://www.typographicposters.com/{slug(name)}"):
-            imgs = attempt(url, lambda url=url: page_images(url))
+                imgs = good(imgs)
+                if imgs:
+                    return imgs, (url if h == host else None)
+        # 3. The last archived copy of the pick's own page.
+        if link:
+            imgs = checked("wayback", lambda: wayback(link))
             if imgs:
                 return imgs, None
+        # 4. Book cover databases.
+        for name, fn in (("open library", open_library), ("google books", google_books)):
+            imgs = checked(name, lambda fn=fn: fn(title, by))
+            if imgs:
+                return imgs, None
+    else:
+        # Designers: their Typographic Posters archive page.
+        name = re.split(r",| m23", title)[0]
+        for url in dict.fromkeys((f"https://www.typographicposters.com/{slug(title)}", f"https://www.typographicposters.com/{slug(name)}")):
+            imgs = checked(url, lambda url=url: page_images(url))
+            if imgs:
+                return imgs, None
+    # 5. Search the web.
+    imgs = attempt("web search", lambda: web_search(title, by))
+    if imgs:
+        return imgs, None
     print(f"  No picture for {title}. Tried: " + "; ".join(tried), file=sys.stderr)
     return [], None
 
@@ -381,7 +493,11 @@ def add_design_art(archive, previous):
             if it.get("art"):
                 continue
             old = known.get((it.get("title"), it.get("by")))
+            if old and old.get("art_checked") is None and not image_ok(old["art"]):
+                print(f"  Saved picture for {it.get('title')} failed the size check; looking again.")
+                old = None
             if old:
+                it["art_checked"] = True
                 for k in ("art", "images", "link"):
                     if old.get(k) and (k != "link" or old.get("link_fixed")):
                         it[k] = old[k]
@@ -391,7 +507,7 @@ def add_design_art(archive, previous):
             tried += 1
             pics, better = find_pictures(it)
             if pics:
-                it["art"] = pics[0]
+                it["art"], it["art_checked"] = pics[0], True
                 if len(pics) > 1:
                     it["images"] = pics
                 if better and better != it.get("link"):
