@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T14:45:08Z",
+  "updated": "2026-11-14T14:57:07Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -440,7 +440,15 @@
           "instagram": [
             "@podpunkt"
           ],
-          "shop": "Studio site"
+          "shop": "Studio site",
+          "art": "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c462d1fd37fb5963348104_PP-ilustracje-beauty.jpg",
+          "images": [
+            "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c462d1fd37fb5963348104_PP-ilustracje-beauty.jpg",
+            "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c462fc95300695f53dfbb0_PP-ilustracje-food%26beverage.jpg",
+            "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c46301631b4ed92b464606_PP-ilustracje-art.jpg",
+            "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c462fc60293cc1a56c554a_PP-ilustracje-public.jpg",
+            "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/662bd914359509cf1c26bfd7_education.jpeg"
+          ]
         }
       ]
     }

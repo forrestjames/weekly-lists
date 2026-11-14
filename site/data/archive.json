@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14T14:45:08Z",
+  "updated": "2026-11-14T14:57:07Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -1260,7 +1260,15 @@
               "instagram": [
                 "@podpunkt"
               ],
-              "shop": "Studio site"
+              "shop": "Studio site",
+              "art": "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c462d1fd37fb5963348104_PP-ilustracje-beauty.jpg",
+              "images": [
+                "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c462d1fd37fb5963348104_PP-ilustracje-beauty.jpg",
+                "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c462fc95300695f53dfbb0_PP-ilustracje-food%26beverage.jpg",
+                "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c46301631b4ed92b464606_PP-ilustracje-art.jpg",
+                "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c462fc60293cc1a56c554a_PP-ilustracje-public.jpg",
+                "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/662bd914359509cf1c26bfd7_education.jpeg"
+              ]
             }
           ]
         },
@@ -1497,7 +1505,15 @@
               "instagram": [
                 "@instagggramlich"
               ],
-              "shop": "gggrafik"
+              "shop": "gggrafik",
+              "art": "https://framerusercontent.com/images/6jyLTHDmPFV2S6U7IK2ZnkM0Oc.jpg?width=2000&height=2857",
+              "images": [
+                "https://framerusercontent.com/images/6jyLTHDmPFV2S6U7IK2ZnkM0Oc.jpg?width=2000&height=2857",
+                "https://framerusercontent.com/images/BV0nDCZNJPEYVmF1XJt2CeXExs.jpg?width=2000&height=2857",
+                "https://framerusercontent.com/images/kMf85ZhBE10ly7tFJVW381DAC5s.jpg?width=1080&height=1440",
+                "https://framerusercontent.com/images/Iau0csFw8HWEzwV2DTaWQc27nI.jpg?width=1080&height=1440",
+                "https://framerusercontent.com/images/1RS0nSBrpBaskIbVzv24rgxAs.jpg?width=1400&height=1974"
+              ]
             }
           ]
         },
@@ -2119,13 +2135,15 @@
                 "editorial design"
               ],
               "note": "A Paris annual about making, this time on air and breath. Objects made from balloons, a history of inflatable buildings, crystal glassblowing at Saint-Louis, and an essay on breathlessness and bad air. Art directed by Twice studio, 248 pages, French and English. Calm, well paced pages.",
-              "link": "https://magculture.com/collections/new-this-week/products/tools-7",
+              "link": "https://magculture.com/products/tools-6",
               "by": "Twice studio (art direction)",
               "instagram": [
                 "@tools_magazine_"
               ],
               "shop": "magCulture",
-              "price": "£22"
+              "price": "£22",
+              "art": "https://cdn.shopify.com/s/files/1/0514/7889/files/Screenshot2026-10-13at16.58.03.png?v=1791907096",
+              "link_fixed": true
             },
             {
               "title": "Tinted #1",
@@ -2262,13 +2280,22 @@
                 "editorial design"
               ],
               "note": "304 pages on zines now, with interviews with artists, designers, publishers and curators. It is a survey, so it skims, but it is a quick way to find people worth following.",
-              "link": "https://magma-shop.com/collections/design-books/products/a-book-on-zines",
+              "link": "https://magma-shop.com/products/a-book-on-books",
               "by": "Victionary",
               "instagram": [
                 "@victionary"
               ],
               "shop": "Magma",
-              "price": "£35"
+              "price": "£35",
+              "art": "https://cdn.shopify.com/s/files/1/0285/4760/products/ABookonBooks.jpg?v=1605877824",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0285/4760/products/ABookonBooks.jpg?v=1605877824",
+                "https://cdn.shopify.com/s/files/1/0285/4760/products/ABookonBooks3.jpg?v=1605877824",
+                "https://cdn.shopify.com/s/files/1/0285/4760/products/ABookonBooks6.jpg?v=1605877824",
+                "https://cdn.shopify.com/s/files/1/0285/4760/products/ABookonBooks4.jpg?v=1605877824",
+                "https://cdn.shopify.com/s/files/1/0285/4760/products/ABookonBooks2.jpg?v=1605877824"
+              ],
+              "link_fixed": true
             },
             {
               "title": "Flower Stamps",
@@ -2286,7 +2313,15 @@
                 "@magma_books"
               ],
               "shop": "Magma",
-              "price": "£20"
+              "price": "£20",
+              "art": "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1885.jpg?v=1785377656",
+              "images": [
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1885.jpg?v=1785377656",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1910.jpg?v=1785377677",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1911_acbbfe61-dae6-447b-be3a-527a2d9d2c2d.jpg?v=1785377677",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1912_d32851cb-01e6-40c6-b9d0-364350124c81.jpg?v=1785377677",
+                "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_1913_7300a0c8-aceb-4216-9b4d-84765d7d9b89.jpg?v=1785377677"
+              ]
             },
             {
               "title": "Only You Can Complete Me",
@@ -2484,7 +2519,8 @@
               "link": "https://magma-shop.com/collections/books/products/design-as-art-copy-1",
               "by": "Bruno Munari",
               "shop": "Magma",
-              "price": "£19.99"
+              "price": "£19.99",
+              "art": "https://cdn.shopify.com/s/files/1/1595/5453/products/01_b454df94-135b-4140-97a3-1edac1e33a0e.png?v=1575408781"
             },
             {
               "title": "Identity: Chermayeff & Geismar & Haviv",
@@ -2562,7 +2598,15 @@
               "instagram": [
                 "@studiofeixen"
               ],
-              "shop": "Studio Feixen"
+              "shop": "Studio Feixen",
+              "art": "https://www.studiofeixen.ch/wp-content/themes/studiofeixen/bilder/space-inactive.png",
+              "images": [
+                "https://www.studiofeixen.ch/wp-content/themes/studiofeixen/bilder/space-inactive.png",
+                "https://www.studiofeixen.ch/wp-content/themes/studiofeixen/bilder/surface-inactive.png",
+                "https://www.studiofeixen.ch/wp-content/themes/studiofeixen/bilder/time-inactive.png",
+                "https://www.studiofeixen.ch/wp-content/themes/studiofeixen/bilder/search-inactive.png",
+                "https://www.studiofeixen.ch/wp-content/themes/studiofeixen/bilder/cloud_small-01.png"
+              ]
             },
             {
               "title": "Against Coffee Table Books",
