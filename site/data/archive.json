@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T11:42:15Z",
+  "updated": "2026-11-15T11:43:12Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -1206,7 +1206,7 @@
       "name": "Pitchfork Weekly",
       "type": "music",
       "colour": "#ff4f70",
-      "playlist": "",
+      "playlist": "https://open.spotify.com/playlist/3dpMdHl7DgSw0ORy7GumJo",
       "weeks": [
         {
           "date": "2026-11-15",
@@ -1323,8 +1323,8 @@
               "note": "The last of their Zodiac Cycle albums and the end of the Grass Can Move Stones trilogy, out on Tankcrimes with a lot of punk and rock guests. I couldn't find it on Spotify yet.",
               "source": "Pitchfork, 9 New Albums You Should Listen to Now",
               "source_url": "https://www.yahoo.com/entertainment/music/new-albums/articles/9-albums-listen-now-2hollis-145902235.html",
-              "spotify_url": "https://open.spotify.com/album/6PcK44BzFdTxXEd6KOx3qN",
-              "art": "https://i.scdn.co/image/ab67616d0000b2730aba0336cd7c4d18ad871a19"
+              "art": "https://i.scdn.co/image/ab67616d0000b2730aba0336cd7c4d18ad871a19",
+              "spotify_url": "https://open.spotify.com/album/6PcK44BzFdTxXEd6KOx3qN"
             }
           ]
         }
