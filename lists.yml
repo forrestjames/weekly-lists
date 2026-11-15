@@ -70,6 +70,7 @@ lists:
     day: monday
     colour: "#ff4f70"
     playlist_name: Pitchfork Weekly
+    playlist_url: https://open.spotify.com/playlist/3dpMdHl7DgSw0ORy7GumJo
     count: 10
     taste: >
       Electronic, experimental, jazz, soul, world, ambient, guitar-based and
