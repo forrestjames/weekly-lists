@@ -1,8 +1,10 @@
 {
-  "updated": "2026-11-14T17:04:42Z",
+  "updated": "2026-11-15T11:19:38Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
+      "type": "music",
+      "colour": "#ff8a3d",
       "playlist": "https://open.spotify.com/playlist/6YpWmU0EK7fFa62dpR8Ip7",
       "date": "2026-11-09",
       "items": [
@@ -74,6 +76,8 @@
     },
     "juno": {
       "name": "Juno Weekly",
+      "type": "music",
+      "colour": "#4fd1c5",
       "playlist": "",
       "date": "2026-11-14",
       "items": [
@@ -225,8 +229,18 @@
         }
       ]
     },
+    "pitchfork": {
+      "name": "Pitchfork Weekly",
+      "type": "music",
+      "colour": "#ff4f70",
+      "playlist": "",
+      "date": null,
+      "items": []
+    },
     "design": {
       "name": "Design Shelf",
+      "type": "design",
+      "colour": "#f5c542",
       "playlist": "",
       "date": "2026-11-14",
       "items": [
