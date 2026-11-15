@@ -4,7 +4,7 @@ Builds the JSON the website reads, from the weekly picks files.
 
 Usage:  python scripts/build_site_data.py
 
-Reads   picks/rob/*.json, picks/juno/*.json and design/*.json
+Reads   lists.yml, then picks/<list>/*.json and design/*.json
 Writes  site/data/latest.json    this week's picks for every edition
         site/data/archive.json   every past week, newest first
 
@@ -60,13 +60,18 @@ PICKS = ROOT / "picks"
 DESIGN = ROOT / "design"
 OUT = ROOT / "site" / "data"
 
-EDITIONS = {
-    "rob": {"name": "Rob's List", "playlist": "https://open.spotify.com/playlist/6YpWmU0EK7fFa62dpR8Ip7"},
-    "juno": {"name": "Juno Weekly", "playlist": ""},
-    "design": {"name": "Design Shelf", "playlist": ""},
-}
-FOLDERS = {"rob": PICKS / "rob", "juno": PICKS / "juno", "design": DESIGN}
-MUSIC = ["rob", "juno"]
+# Every list (edition) comes from lists.yml: its name, colour and playlist
+# go into the site data, so a new list there gets its own tab on the page.
+sys.path.insert(0, str(ROOT / "scripts"))
+import lists as list_config  # noqa: E402
+
+EDITIONS, FOLDERS, MUSIC = {}, {}, []
+for _l in list_config.all_lists():
+    EDITIONS[_l["id"]] = {"name": _l["name"], "type": _l["type"], "colour": _l.get("colour", ""),
+                          "playlist": _l.get("playlist_url", "")}
+    FOLDERS[_l["id"]] = ROOT / list_config.folder(_l)
+    if _l["type"] == "music":
+        MUSIC.append(_l["id"])
 
 FIELDS = ["artist", "title", "kind", "tags", "note", "source", "source_url", "spotify_url", "link", "art",
           "by", "instagram", "shop", "price", "images", "pictures_from"]
@@ -508,6 +513,8 @@ def add_design_art(archive, previous):
 
     Picks that still have no picture are tried again on every build, so a
     picture turns up as soon as any source has one."""
+    if "design" not in archive:
+        return
     known = {}
     for week in ((previous or {}).get("editions", {}).get("design") or {}).get("weeks", []):
         for it in week.get("items", []):

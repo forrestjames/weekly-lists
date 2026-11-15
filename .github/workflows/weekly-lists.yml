@@ -1,0 +1,182 @@
+name: Weekly lists
+
+# The whole weekly routine, start to finish, inside GitHub:
+#   1. work out which lists are due today (lists.yml, "day")
+#   2. Claude curates each list, one job per list, side by side
+#   3. save the picks, update the Spotify playlists, rebuild the site data,
+#      commit once, redeploy the site
+#   4. one email with everything
+# A list that fails doesn't stop the others; the email says what happened.
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"   # Mondays, music lists (06:17 UTC)
+    - cron: "47 7 * * 6"   # Saturdays, Design Shelf (07:47 UTC)
+  workflow_dispatch:
+    inputs:
+      lists:
+        description: "Lists to run, comma separated (e.g. rob,pitchfork). Blank runs today's."
+        required: false
+        default: ""
+      email:
+        description: "Send the email"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  actions: write
+  issues: write
+  id-token: write
+
+concurrency:
+  group: weekly-lists
+  cancel-in-progress: false
+
+env:
+  SITE_URL: https://forrestjames.github.io/weekly-lists/
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      lists: ${{ steps.due.outputs.lists }}
+      date: ${{ steps.due.outputs.date }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pyyaml
+      - id: due
+        env:
+          WANTED: ${{ github.event.inputs.lists }}
+          HAS_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}
+        run: |
+          echo "date=$(TZ=Europe/London date +%F)" >> "$GITHUB_OUTPUT"
+          if [ "$HAS_TOKEN" != "true" ]; then
+            echo "::warning::CLAUDE_CODE_OAUTH_TOKEN isn't set yet, so nothing runs. See the README."
+            echo "lists=[]" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "lists=$(python scripts/lists.py due "$WANTED")" >> "$GITHUB_OUTPUT"
+          echo "Due today: $(python scripts/lists.py due "$WANTED")"
+
+  curate:
+    needs: plan
+    if: needs.plan.outputs.lists != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      max-parallel: 2
+      matrix:
+        list: ${{ fromJSON(needs.plan.outputs.lists) }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pyyaml
+      - name: Write the brief
+        run: |
+          python scripts/lists.py prompt "${{ matrix.list }}" "${{ needs.plan.outputs.date }}"
+          mkdir -p out
+
+      - name: Claude curates ${{ matrix.list }}
+        uses: anthropics/claude-code-action@v1
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          allowed_bots: "*"
+          prompt: "Read .weekly/prompt-${{ matrix.list }}.md and do exactly what it says."
+          claude_args: |
+            --max-turns 120
+            --allowedTools "Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(python3 scripts/spotify_lookup.py:*),Bash(python3 scripts/lists.py check:*)"
+
+      - name: Check the picks
+        run: python scripts/lists.py check "${{ matrix.list }}" "out/${{ matrix.list }}.json"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: picks-${{ matrix.list }}
+          path: out/${{ matrix.list }}.json
+          if-no-files-found: ignore
+          retention-days: 14
+
+  publish:
+    needs: [plan, curate]
+    if: always() && needs.plan.outputs.lists != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install --quiet pyyaml pillow
+
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: picks-*
+          path: incoming
+          merge-multiple: true
+
+      - name: Save the picks
+        id: save
+        run: echo "files=$(python scripts/publish.py '${{ needs.plan.outputs.lists }}' '${{ needs.plan.outputs.date }}')" >> "$GITHUB_OUTPUT"
+
+      - name: Add to Spotify playlists
+        if: steps.save.outputs.files != ''
+        continue-on-error: true
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+          ROB_PLAYLIST_ID: ${{ secrets.ROB_PLAYLIST_ID }}
+          JUNO_PLAYLIST_ID: ${{ secrets.JUNO_PLAYLIST_ID }}
+          ADD_TRACKS_RESULTS: .weekly/spotify.json
+        run: python add_tracks.py ${{ steps.save.outputs.files }}
+
+      - name: Rebuild the site data (covers, pictures)
+        continue-on-error: true
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+        run: python scripts/build_site_data.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add picks design site/data
+          if git diff --cached --quiet; then echo "Nothing new to commit."; exit 0; fi
+          git commit -m "Weekly lists ${{ needs.plan.outputs.date }}"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1
+
+      - name: Redeploy the site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
+
+      - name: Email
+        if: always() && (github.event_name == 'schedule' || github.event.inputs.email == 'true')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python scripts/send_email.py

@@ -6,7 +6,7 @@ Usage:  python add_tracks.py picks/rob/2026-10-05.json [more files...]
 
 Each picks file looks like:
 {
-  "list": "rob",                 # "rob" or "juno"
+  "list": "rob",                 # a list id from lists.yml
   "date": "2026-10-05",
   "items": [
     {"artist": "Lusine", "title": "Melting Days", "kind": "album",
@@ -15,7 +15,9 @@ Each picks file looks like:
   ]
 }
 
-A one-off list can name its own playlist instead of "rob"/"juno":
+Each list's playlist is set in lists.yml, either as a secret holding the
+playlist id (playlist_secret) or by name (playlist_name, created the first
+time). A one-off list can name its own playlist instead:
   {"list": "dub", "playlist_name": "10 Essential Dub Albums", "items": [...]}
 The playlist is created the first time and reused after that.
 
@@ -49,6 +51,26 @@ PLAYLIST_ENV = {"rob": "ROB_PLAYLIST_ID", "juno": "JUNO_PLAYLIST_ID"}
 
 class SpotifyError(Exception):
     pass
+
+
+_LISTS = None
+
+
+def configured_lists():
+    """Music lists from lists.yml, by id. Empty if PyYAML or the file is missing."""
+    global _LISTS
+    if _LISTS is None:
+        _LISTS = {}
+        try:
+            import yaml
+            path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "lists.yml")
+            with open(path) as f:
+                for item in (yaml.safe_load(f) or {}).get("lists", []):
+                    if item.get("type", "music") == "music" and item.get("id"):
+                        _LISTS[str(item["id"]).lower()] = item
+        except (ImportError, OSError):
+            pass
+    return _LISTS
 
 
 def env(name):
@@ -199,10 +221,19 @@ def process(token, path, summary):
             force_new=bool(picks.get("new_playlist")))
         print(f"::notice title=Playlist::https://open.spotify.com/playlist/{playlist_id}")
         which = which or "custom"
+    elif which in configured_lists():
+        conf = configured_lists()[which]
+        if conf.get("playlist_secret"):
+            playlist_id = env(conf["playlist_secret"])
+        elif conf.get("playlist_name"):
+            playlist_id = find_or_create_playlist(token, conf["playlist_name"], conf.get("playlist_description", ""))
+            print(f"::notice title=Playlist::https://open.spotify.com/playlist/{playlist_id}")
+        else:
+            raise SpotifyError(f"lists.yml: '{which}' needs a playlist_secret or a playlist_name")
     elif which in PLAYLIST_ENV:
         playlist_id = env(PLAYLIST_ENV[which])
     else:
-        raise SpotifyError(f"{path}: 'list' must be 'rob' or 'juno' (or give a 'playlist_name'), got {which!r}")
+        raise SpotifyError(f"{path}: 'list' {which!r} isn't in lists.yml (or give the file a 'playlist_name')")
 
     already = existing_uris(token, playlist_id)
     to_add, lines, missing = [], [], []
@@ -239,6 +270,8 @@ def process(token, path, summary):
     if missing:
         print("Not on Spotify:", "; ".join(missing))
         print(f"::warning title=Not on Spotify::{'; '.join(missing)}")
+    return {"list": which, "date": picks.get("date", ""), "playlist_id": playlist_id,
+            "added": len(to_add), "missing": missing}
 
 
 def main(paths):
@@ -246,14 +279,24 @@ def main(paths):
         print("No picks files to process.")
         return 0
     token = access_token()
-    summary = []
+    summary, results, failed = [], [], 0
     for p in paths:
-        process(token, p, summary)
+        try:
+            results.append({"file": p, **process(token, p, summary)})
+        except (SpotifyError, OSError, ValueError) as e:
+            # One bad list shouldn't stop the others.
+            failed += 1
+            print(f"::error title={p}::{e}")
+            results.append({"file": p, "error": str(e)})
+    # The weekly workflow reads this to say in the email how each playlist went.
+    if os.environ.get("ADD_TRACKS_RESULTS"):
+        with open(os.environ["ADD_TRACKS_RESULTS"], "w") as f:
+            json.dump(results, f, indent=2)
     out = os.environ.get("GITHUB_STEP_SUMMARY")
     if out:
         with open(out, "a") as f:
             f.write("\n".join(summary))
-    return 0
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":

@@ -1,9 +1,47 @@
 # Weekly lists
 
-Adds the Monday picks to Spotify.
+Rob's List, Juno Weekly, Pitchfork Weekly and Design Shelf: picked every week,
+added to Spotify, put on the website and emailed. All of it runs here in
+GitHub, on its own.
 
-- Rob's List picks go in `picks/rob/YYYY-MM-DD.json` and land in "Rob's List, Weekly".
-- Juno picks go in `picks/juno/YYYY-MM-DD.json` and land in "Juno Weekly".
+## How it works
+
+The "Weekly lists" action (`.github/workflows/weekly-lists.yml`) runs every
+Monday for the music lists and every Saturday for Design Shelf:
+
+1. It reads `lists.yml` to see which lists are due.
+2. Claude curates each one, side by side, and writes a picks file.
+3. The picks are saved, added to Spotify, the site data is rebuilt, and it
+   all goes in one commit.
+4. One email with every list. If a list fails, the others still go out and
+   the email says which one didn't run.
+
+To run it by hand: Actions > Weekly lists > Run workflow. Leave "lists" blank
+for today's lists, or name some, like `pitchfork`.
+
+## Adding or changing a list
+
+Everything about each list is in `lists.yml`: name, day, colour, playlist,
+taste and sources. Edit it right on GitHub (the pencil icon).
+
+- New source: add a line under that list's `sources`.
+- New music list: copy a block, give it a new `id`, `name`, `colour` and a
+  `playlist_name`. It gets its own tab on the site and its own playlist.
+- Pause a list: add `paused: true`.
+
+## Secrets
+
+Settings > Secrets and variables > Actions:
+
+- `CLAUDE_CODE_OAUTH_TOKEN`: from `claude setup-token` on your Mac. Uses your
+  Claude subscription. Lasts about a year.
+- `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`, `SPOTIFY_REFRESH_TOKEN`,
+  `ROB_PLAYLIST_ID`, `JUNO_PLAYLIST_ID`: from `get_token.py`.
+- Email (optional): `SMTP_USER` (the Gmail address it sends from),
+  `SMTP_PASSWORD` (a Gmail app password), `EMAIL_TO`. Without these the
+  rundown arrives as a GitHub issue, which GitHub emails to you.
+
+## Spotify
 
 When a picks file is pushed, the "Add picks to Spotify" action runs and adds
 each album (whole) or single (one track) to the right playlist, in order.

@@ -1,0 +1,108 @@
+# Weekly lists
+#
+# This one file drives everything: the weekly runs, the Spotify playlists,
+# the tabs on the website and the email.
+#
+# To add a source to a list:  add a line under its "sources".
+# To add a new music list:     copy a whole block (from "- id:" down),
+#                              give it a new id, name and colour, and save.
+#                              It gets its own tab, playlist and email section.
+# To pause a list:             add "paused: true" to its block.
+#
+# Lists run on the day in "day". The run starts early morning UK time.
+
+email_subject: "Weekly Lists"
+
+lists:
+
+  - id: rob
+    name: Rob's List
+    type: music
+    day: monday
+    colour: "#ff8a3d"
+    playlist_secret: ROB_PLAYLIST_ID
+    playlist_url: https://open.spotify.com/playlist/6YpWmU0EK7fFa62dpR8Ip7
+    count: 10
+    taste: >
+      Electronic, experimental, jazz, soul, world, ambient, guitar-based and
+      beat-based. Mostly albums, since I like going deep, plus two or three
+      standout singles. Skip anything mainstream or obvious.
+    sources:
+      - "Jazz: Free Jazz Collective, Burning Ambulance, Jazzwise, JazzTrail, bestofjazz"
+      - "Experimental, ambient and drone: The Quietus, a closer listen, Vital Weekly, Foxy Digitalis, Tone Glow, Boomkat"
+      - "Electronic: Resident Advisor, First Floor, Inverted Audio, Hard Wax"
+      - "World: Syrphe, Awesome Tapes From Africa, Habibi Funk, Sublime Frequencies, Death Is Not The End"
+      - "Radio: NTS, WFMU, dublab, Noods, Resonance, Rinse, where the buried stuff surfaces first"
+    notes: >
+      Lean toward the small-label and freeform-radio sources. Algorithms will
+      not surface those.
+
+  - id: juno
+    name: Juno Weekly
+    type: music
+    day: monday
+    colour: "#4fd1c5"
+    playlist_secret: JUNO_PLAYLIST_ID
+    count: 10
+    taste: >
+      Electronic, experimental, jazz, soul, world, ambient, guitar-based and
+      beat-based. Mostly albums plus two or three standout single tracks.
+      Skip straight DJ tools, generic big-room, and reissues unless one is
+      genuinely special.
+    sources:
+      - "Juno Daily, Juno's own blog: https://www.juno.co.uk/juno-daily/"
+      - "Juno product pages (https://www.juno.co.uk/products/...) to confirm details and for links"
+      - "Resident Advisor weekly new music: https://ra.co/news"
+      - "Bandcamp Daily Essential Releases: https://daily.bandcamp.com/essential-releases"
+      - "The Quietus reviews: https://thequietus.com/quietus-reviews/"
+      - "UK Jazz News: https://ukjazznews.com"
+    notes: >
+      Juno's genre "new this week" grids and charts are JavaScript pages that
+      come back empty, so don't rely on them. Give every pick a "source" that
+      names the Juno section it fits best: Juno Deep House, Juno Techno, Juno
+      Broken Beat / Nu-Jazz, Juno Ambient / Drone / Experimental, Juno
+      Leftfield, Juno Disco, Juno Soul / Funk, Juno Jazz, Juno Reggae / Dub or
+      Juno Balearic / Downtempo.
+
+  - id: pitchfork
+    name: Pitchfork Weekly
+    type: music
+    day: monday
+    colour: "#ff4f70"
+    playlist_name: Pitchfork Weekly
+    count: 10
+    taste: >
+      Electronic, experimental, jazz, soul, world, ambient, guitar-based and
+      beat-based. Mostly albums plus two or three standout tracks. Skip big
+      mainstream pop and rap unless Pitchfork rates it very highly and it is
+      genuinely adventurous.
+    sources:
+      - "Best New Music, albums: https://pitchfork.com/reviews/best/albums/"
+      - "Best New Music, tracks: https://pitchfork.com/reviews/best/tracks/"
+      - "Album reviews: https://pitchfork.com/reviews/albums/"
+      - "Track reviews: https://pitchfork.com/reviews/tracks/"
+      - "Lists and guides: https://pitchfork.com/features/lists-and-guides/"
+    notes: >
+      Only Pitchfork picks, from the past seven days of reviews. Prefer Best
+      New Music and high scores, then fill with well-reviewed records in my
+      genres. Put the review score in the note when there is one, and the
+      review link in "source_url".
+
+  - id: design
+    name: Design Shelf
+    type: design
+    day: saturday
+    colour: "#f5c542"
+    count: 10
+    taste: >
+      Books, magazines and designers in graphic design, typography, posters,
+      editorial design, logos and identity, and visual culture. Mostly books,
+      one or two designers or studios to follow, and at least one poster pick.
+      Skip mainstream coffee-table titles.
+    sources:
+      - "Magma: https://magma-shop.com/collections/design-books and https://magma-shop.com/collections/books"
+      - "magCulture: https://magculture.com/collections/new-this-week and https://magculture.com/collections/new"
+      - "Slanted: https://www.slanted.de"
+      - "Counter-Print: https://counter-print.co.uk"
+      - "Good Press, Draw Down, Perimeter Books, Actual Source, Standards Manual, Set Margins', Roma Publications"
+      - "Typographic Posters: https://www.typographicposters.com"

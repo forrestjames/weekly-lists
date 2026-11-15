@@ -187,7 +187,7 @@ dialog::backdrop{background:rgba(0,0,0,.65);backdrop-filter:blur(4px)}
 </head>
 <body>
 <header>
-  <h1>Weekly Lists <span>/ Rob's List, Juno Weekly &amp; Design Shelf</span></h1>
+  <h1>Weekly Lists <span id="subtitle"></span></h1>
   <div class="stats" id="stats"></div>
 </header>
 
@@ -195,10 +195,6 @@ dialog::backdrop{background:rgba(0,0,0,.65);backdrop-filter:blur(4px)}
   <div class="controls-inner">
     <div class="seg" id="source" role="group" aria-label="Source">
       <button data-v="all" aria-pressed="true">All music</button>
-      <button data-v="rob"><span class="dot" style="background:var(--rob)"></span>Rob's List</button>
-      <button data-v="juno"><span class="dot" style="background:var(--juno)"></span>Juno Weekly</button>
-      <button data-v="both"><span class="dot" style="background:var(--both)"></span>On both</button>
-      <button data-v="design"><span class="dot" style="background:var(--design)"></span>Design Shelf</button>
     </div>
     <div class="seg" id="view" role="group" aria-label="View">
       <button data-v="grid" aria-pressed="true">Grid</button>
@@ -232,8 +228,11 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt
 const safeUrl = u => /^https?:\/\//i.test(u || "") ? u : "";
 const norm = s => String(s||"").toLowerCase().normalize("NFKD").replace(/[̀-ͯ]/g,"").replace(/\(.*?\)|\[.*?\]/g," ").replace(/[^a-z0-9]+/g," ").trim();
 const hue = s => { let h = 0; for (const c of s) h = (h*31 + c.charCodeAt(0)) >>> 0; return h % 360; };
-const SRC = { rob:{name:"Rob's List"}, juno:{name:"Juno Weekly"}, design:{name:"Design Shelf"} };
-const MUSIC = ["rob", "juno"];
+/* Lists come from data/archive.json (built from lists.yml), so a new list
+   there gets its own tab and colour here without touching this page. */
+const SRC = { design:{name:"Design Shelf"} };
+const MUSIC = [];
+const isMusicList = v => MUSIC.includes(v);
 const isDesign = () => state.source === "design";
 
 const state = { source:"all", view:"grid", q:"", sort:"date", genre:"" , albums:[], meta:{} };
@@ -341,7 +340,8 @@ async function load() {
   const data = await res.json();
   const map = new Map();
   for (const [ed, e] of Object.entries(data.editions)) {
-    SRC[ed] = {name:e.name, playlist:e.playlist};
+    SRC[ed] = {name:e.name, playlist:e.playlist, colour:e.colour, type:e.type || (ed === "design" ? "design" : "music")};
+    if (SRC[ed].type === "music" && !MUSIC.includes(ed)) MUSIC.push(ed);
     if (ed === "design") { loadDesign(e, map); continue; }
     for (const w of e.weeks) for (const it of w.items) {
       const key = norm(it.artist) + "|" + norm(it.title);
@@ -386,7 +386,7 @@ function filtered() {
   const q = norm(state.q);
   let out = state.albums.filter(a => {
     if (!!a.design !== isDesign()) return false;
-    if (state.source === "rob" || state.source === "juno") { if (!a.lists.includes(state.source)) return false; }
+    if (isMusicList(state.source)) { if (!a.lists.includes(state.source)) return false; }
     if (state.source === "both" && a.lists.length < 2) return false;
     if (state.genre && genreOf(a) !== state.genre) return false;
     if (q && !norm(`${a.artist} ${a.title} ${genreOf(a)} ${a.tags.join(" ")} ${a.shop || ""} ${(a.instagram || []).join(" ")}`).includes(q)) return false;
@@ -407,7 +407,7 @@ function artHTML(a, withBadges=true) {
   const u = artOf(a), h = hue(a.key);
   const ph = `<div class="ph" style="background:linear-gradient(135deg,hsl(${h} 45% 32%),hsl(${(h+50)%360} 55% 20%))">${esc(a.title)}</div>`;
   const img = u ? `<img src="${esc(u.replace("600x600","400x400"))}" data-k="${esc(a.key)}" data-u="${esc(u)}" alt="" loading="lazy" onerror="artFailed(this)">` : "";
-  const dots = withBadges && !a.design ? `<div class="badges">${a.lists.map(l=>`<span class="badge ${l}" title="${esc(SRC[l].name)}"></span>`).join("")}</div>${a.lists.length>1?'<span class="both-flag">BOTH</span>':""}` : "";
+  const dots = withBadges && !a.design ? `<div class="badges">${a.lists.map(l=>`<span class="badge ${l}" title="${esc(SRC[l].name)}"></span>`).join("")}</div>${a.lists.length>1?`<span class="both-flag">${a.lists.length>2 ? a.lists.length+" LISTS" : "BOTH"}</span>`:""}` : "";
   return `<div class="art${a.design ? " fit" : ""}">${ph}${img}${dots}</div>`;
 }
 function cardHTML(a) {
@@ -456,7 +456,7 @@ function render() {
     html = dates.map(d => {
       const sub = (isDesign() ? ["design"] : MUSIC).map(l => {
         const here = items.filter(a => a.picks.some(p => p.date===d && p.list===l));
-        if (state.source==="rob" && l!=="rob" || state.source==="juno" && l!=="juno" || !here.length) return "";
+        if (isMusicList(state.source) && l!==state.source || !here.length) return "";
         return `<div class="sub"><span class="dot" style="background:var(--${l})"></span>${esc(SRC[l].name)} · ${here.length}</div><div class="grid">${here.map(cardHTML).join("")}</div>`;
       }).join("");
       return sub ? `<section class="sec"><h2>${fmtDate(d)}</h2>${sub}</section>` : "";
@@ -597,7 +597,31 @@ $("#dlgBody").addEventListener("click", e => {
 });
 $("#dlg").addEventListener("click", e => { if (e.target === $("#dlg")) $("#dlg").close(); });
 
-load().then(() => { buildChips(); render(); }).catch(err => {
+/* One tab per list, coloured from lists.yml. */
+function buildTabs() {
+  const css = [], tab = (v, label, colour) =>
+    `<button data-v="${esc(v)}"><span class="dot" style="background:${esc(colour)}"></span>${esc(label)}</button>`;
+  const safe = c => /^#[0-9a-f]{3,8}$/i.test(c || "") ? c : "";
+  for (const [id, e] of Object.entries(SRC)) {
+    const c = safe(e.colour); if (!c || !/^[a-z0-9_-]+$/i.test(id)) continue;
+    css.push(`:root{--${id}:${c}} .badge.${id}{background:${c}} .src-tag.${id},.who.${id}{color:${c}} .pick.${id}{border-color:${c}}`);
+  }
+  let st = document.getElementById("list-colours");
+  if (!st) { st = document.createElement("style"); st.id = "list-colours"; document.head.appendChild(st); }
+  st.textContent = css.join("\n");
+  const design = Object.keys(SRC).filter(k => SRC[k].type === "design");
+  $("#source").innerHTML = `<button data-v="all">All music</button>` +
+    MUSIC.map(id => tab(id, SRC[id].name, safe(SRC[id].colour) || `var(--${id})`)).join("") +
+    (MUSIC.length > 1 ? tab("both", MUSIC.length > 2 ? "On 2+ lists" : "On both", "var(--both)") : "") +
+    design.map(id => tab(id, SRC[id].name, safe(SRC[id].colour) || "var(--design)")).join("");
+  const names = [...MUSIC, ...design].map(id => SRC[id].name);
+  $("#subtitle").textContent = names.length ? "/ " + names.slice(0, -1).join(", ") + (names.length > 1 ? " & " : "") + names[names.length-1] : "";
+  if (!$(`#source button[data-v="${CSS.escape(state.source)}"]`)) state.source = "all";
+  $("#source").querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", b.dataset.v === state.source));
+  relabel();
+}
+
+load().then(() => { buildTabs(); buildChips(); render(); }).catch(err => {
   $("#main").innerHTML = `<div class="empty">Couldn't load data/archive.json (${esc(err.message)}).<br>Serve the <code>site/</code> folder over http, e.g. <code>python3 -m http.server -d site</code>.</div>`;
 });
 </script>

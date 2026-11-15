@@ -25,6 +25,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install PyYAML (reads lists.yml)
+        run: pip install --quiet pyyaml
+
       - name: Work out which picks files changed
         id: files
         env:

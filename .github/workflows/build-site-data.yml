@@ -4,8 +4,8 @@ on:
   push:
     branches: [main]
     paths:
-      - "picks/rob/*.json"
-      - "picks/juno/*.json"
+      - "picks/*/*.json"
+      - "lists.yml"
       - "design/*.json"
       - "scripts/build_site_data.py"
   workflow_dispatch:
@@ -30,8 +30,8 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install Pillow (checks design pictures are real images)
-        run: pip install --quiet pillow
+      - name: Install Pillow and PyYAML (pictures check, lists.yml)
+        run: pip install --quiet pillow pyyaml
 
       - name: Build latest.json and archive.json
         env:
