@@ -79,7 +79,7 @@ lists:
       genuinely adventurous.
     sources:
       - "Pitchfork's own site can't be read by Claude (it's blocked), so find Pitchfork's picks where they're republished:"
-      - "Album of the Year, Pitchfork ratings: https://www.albumoftheyear.org/ratings/1-pitchfork-highest-rated/2026/1"
+      - "Album of the Year, Pitchfork ratings for the current year: https://www.albumoftheyear.org/ratings/1-pitchfork-highest-rated/YEAR/1 (put in this year)"
       - "Metacritic critic reviews pages, which show Pitchfork's score and quote"
       - "Web search for this week's Pitchfork Best New Music and Best New Track picks"
     notes: >
