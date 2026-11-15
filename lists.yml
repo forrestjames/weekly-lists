@@ -128,5 +128,6 @@ lists:
     notes: >
       Give the price as shown on the shop. Use "shop" for the shop name and
       "by" for the brand. Spread the picks across shops: no more than five
-      from any one shop. If a shop rate-limits you, wait a little and try it
-      again rather than dropping it.
+      from any one shop. If a shop says "too many requests", try it once more
+      after a minute, then move on to other boutique shops. Don't keep
+      waiting.

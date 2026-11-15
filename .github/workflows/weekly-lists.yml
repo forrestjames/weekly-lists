@@ -66,7 +66,7 @@ jobs:
     needs: plan
     if: needs.plan.outputs.lists != '[]'
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     strategy:
       fail-fast: false
       max-parallel: 2
@@ -87,6 +87,9 @@ jobs:
 
       - name: Claude curates ${{ matrix.list }}
         id: claude
+        # The check below decides if the picks are good, so a run that
+        # wrote good picks but went over its turn count still counts.
+        continue-on-error: true
         uses: anthropics/claude-code-action@v1
         env:
           SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
@@ -98,7 +101,7 @@ jobs:
           prompt: "Read .weekly/prompt-${{ matrix.list }}.md and do exactly what it says."
           claude_args: |
             --model claude-opus-5-5
-            --max-turns 120
+            --max-turns 220
             --allowedTools "Read,Write,Edit,Glob,Grep,WebSearch,WebFetch,Bash(python3 scripts/spotify_lookup.py:*),Bash(python3 scripts/lists.py check:*)"
 
       - name: Show what Claude said
