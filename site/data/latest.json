@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T11:43:12Z",
+  "updated": "2026-11-15T12:10:10Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -589,6 +589,14 @@
           ]
         }
       ]
+    },
+    "fashion": {
+      "name": "Menswear",
+      "type": "design",
+      "colour": "#8b7cf6",
+      "playlist": "",
+      "date": null,
+      "items": []
     }
   }
 }
