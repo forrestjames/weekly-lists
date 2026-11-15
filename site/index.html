@@ -182,7 +182,48 @@ dialog::backdrop{background:rgba(0,0,0,.65);backdrop-filter:blur(4px)}
   .pick p{font-size:19px;line-height:1.6}
   .close{position:sticky;top:10px;right:auto;float:right;margin:10px 10px -54px 0}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+/* Design Shelf overlay: pictures first. The work fills the screen on a dark
+   stage; title and author sit in a slim caption; the write-up, facts and
+   links wait below for a scroll or a tap on "Details". */
+dialog.immersive{width:100vw;height:100vh;height:100dvh;max-width:none;max-height:none;margin:0;border:0;border-radius:0;background:#0b0b0d;color:#f2f1ee}
+dialog.immersive::backdrop{background:#0b0b0d}
+dialog.immersive .close{position:fixed;top:16px;right:16px;float:none;margin:0;background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.18);color:#fff;z-index:5}
+.imm-top{height:100vh;height:100dvh;display:flex;flex-direction:column}
+.imm-stage{position:relative;flex:1;min-height:0;display:flex;align-items:center;justify-content:center;padding:32px 84px 14px;touch-action:pan-y}
+.imm-stage img{max-width:100%;max-height:100%;object-fit:contain;display:block;border-radius:2px;box-shadow:0 30px 90px rgba(0,0,0,.65);cursor:zoom-in;animation:immIn .25s ease}
+.imm-stage .art{width:min(70vh,90%);box-shadow:0 30px 90px rgba(0,0,0,.65)}
+@keyframes immIn{from{opacity:0}to{opacity:1}}
+.imm-nav{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);color:#fff;font-size:22px;cursor:pointer;z-index:2}
+.imm-nav:hover{background:rgba(255,255,255,.18)}
+.imm-nav.prev{left:16px} .imm-nav.next{right:16px}
+.imm-count{position:absolute;bottom:18px;right:28px;font-size:12px;letter-spacing:.16em;color:rgba(255,255,255,.5)}
+.imm-thumbs{display:flex;gap:8px;justify-content:center;padding:4px 16px 12px;overflow-x:auto;scrollbar-width:none}
+.imm-thumbs button{flex:none;width:58px;height:58px;padding:0;border:1px solid rgba(255,255,255,.16);border-radius:4px;overflow:hidden;opacity:.45;background:#1a1a1f;cursor:pointer;transition:opacity .15s}
+.imm-thumbs button:hover{opacity:.8}
+.imm-thumbs button[aria-pressed="true"]{opacity:1;outline:2px solid var(--design);outline-offset:1px}
+.imm-thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+.imm-cap{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;padding:14px 32px 22px;border-top:1px solid rgba(255,255,255,.1)}
+.imm-cap .k2{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+.imm-cap .t2{font:700 clamp(22px,2.6vw,34px)/1.08 var(--serif);letter-spacing:-.02em;margin-top:6px}
+.imm-cap .b2{font:italic 400 17px/1.3 var(--serif);color:rgba(255,255,255,.62);margin-top:3px}
+.imm-more{flex:none;background:none;border:1px solid rgba(255,255,255,.28);color:#fff;border-radius:999px;padding:10px 18px;cursor:pointer;font-size:14px}
+.imm-more:hover{background:rgba(255,255,255,.1)}
+.imm-details{background:var(--panel);color:var(--text);padding:56px 32px 72px}
+.imm-details .inner{max-width:760px;margin:0 auto}
+.imm-details .links{margin-top:8px}
+@media (max-width:620px){
+  .imm-stage{padding:60px 10px 10px}
+  .imm-nav{width:40px;height:40px;font-size:18px;background:rgba(0,0,0,.35)}
+  .imm-nav.prev{left:6px} .imm-nav.next{right:6px}
+  .imm-count{bottom:14px;right:16px}
+  .imm-thumbs{justify-content:flex-start}
+  .imm-thumbs button{width:48px;height:48px}
+  .imm-cap{padding:12px 16px 18px;gap:12px}
+  .imm-cap .b2{font-size:15px}
+  .imm-more{padding:9px 14px}
+  .imm-details{padding:36px 20px 48px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
@@ -500,15 +541,52 @@ function openDesign(a) {
   const ig = a.instagram.map(h => h.replace(/^@/, "")).filter(h => /^[\w.]+$/.test(h));
   const links = `<div class="links">${link ? `<a href="${esc(link)}" target="_blank" rel="noopener">${esc(go)}</a>` : ""}
     ${ig.map(h => `<a class="alt" href="https://www.instagram.com/${esc(h)}/" target="_blank" rel="noopener">Instagram @${esc(h)}</a>`).join("")}</div>`;
-  const gallery = pics.length > 1 ? `<div class="gallery">${pics.map((u, i) =>
-    `<button data-src="${esc(u)}" aria-pressed="${i === 0}" aria-label="Picture ${i + 1}"><img src="${esc(u)}" alt="" loading="lazy" onerror="this.parentNode.remove()"></button>`).join("")}</div>` : "";
-  $("#dlgBody").innerHTML = `<div class="detail"><div class="side">${artHTML(a,false)}${gallery}${links}</div><article>
-    <div class="kicker">${kicker}</div>
-    <h3>${esc(a.title)}</h3>${a.artist ? `<div class="by">${esc(a.artist)}</div>` : `<div class="by"></div>`}
-    ${picks}
-    <div class="facts">${fact("Tags", a.tags.map(cap).join(", "))}${fact("Type", KIND[a.kind] || cap(a.kind))}${fact("Price", a.price)}${fact("Shop", a.shop)}</div>
-  </article></div>`;
+  const thumbs = pics.length > 1 ? `<div class="imm-thumbs">${pics.map((u, i) =>
+    `<button data-i="${i}" aria-pressed="${i === 0}" aria-label="Picture ${i + 1}"><img src="${esc(u)}" alt="" loading="lazy" onerror="this.parentNode.remove()"></button>`).join("")}</div>` : "";
+  const nav = pics.length > 1 ? `<button class="imm-nav prev" data-d="-1" aria-label="Previous picture">‹</button><button class="imm-nav next" data-d="1" aria-label="Next picture">›</button><div class="imm-count"></div>` : "";
+  $("#dlgBody").innerHTML = `<div class="imm-top">
+      <div class="imm-stage">${pics.length ? "" : artHTML(a,false)}${nav}</div>
+      ${thumbs}
+      <div class="imm-cap"><div><div class="k2">${kicker}</div><div class="t2">${esc(a.title)}</div>${a.artist ? `<div class="b2">${esc(a.artist)}</div>` : ""}</div>
+        <button class="imm-more" type="button">Details ↓</button></div>
+    </div>
+    <div class="imm-details"><div class="inner">
+      ${picks}
+      <div class="facts">${fact("Tags", a.tags.map(cap).join(", "))}${fact("Type", KIND[a.kind] || cap(a.kind))}${fact("Price", a.price)}${fact("Shop", a.shop)}</div>
+      ${links}
+    </div></div>`;
+  imm.pics = pics; imm.i = -1;
+  $("#dlg").classList.add("immersive");
   showDlg();
+  showPic(0);
+}
+/* Picture stage for the Design Shelf overlay. A picture that fails to load is
+   dropped and the next one shown, so a dead link never leaves a blank stage. */
+const imm = { pics: [], i: 0 };
+function showPic(i) {
+  const stage = $("#dlgBody .imm-stage"); if (!stage || !imm.pics.length) return;
+  const n = imm.pics.length;
+  imm.i = (i + n) % n;
+  let img = stage.querySelector("img.main");
+  if (!img) { img = document.createElement("img"); img.className = "main"; img.alt = ""; stage.prepend(img); }
+  img.onerror = () => {
+    imm.pics.splice(imm.i, 1);
+    $("#dlgBody .imm-thumbs")?.querySelectorAll("button").forEach((b, k) => { if (k === imm.i) b.remove(); });
+    $("#dlgBody .imm-thumbs")?.querySelectorAll("button").forEach((b, k) => b.dataset.i = k);
+    if (!imm.pics.length) { img.remove(); stage.insertAdjacentHTML("afterbegin", artHTML(state.albums.find(x => x.key === current), false)); stage.querySelectorAll(".imm-nav,.imm-count").forEach(x => x.remove()); return; }
+    showPic(imm.i);
+  };
+  img.style.animation = "none"; void img.offsetWidth; img.style.animation = "";
+  img.src = imm.pics[imm.i];
+  $("#dlgBody .imm-thumbs")?.querySelectorAll("button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.i === imm.i));
+  const c = stage.querySelector(".imm-count"); if (c) c.textContent = n > 1 ? `${imm.i + 1} / ${n}` : "";
+  if (n < 2) stage.querySelectorAll(".imm-nav,.imm-count").forEach(x => x.remove());
+}
+// Arrow keys go through the pictures first, then on to the next pick.
+function immStep(dir) {
+  const n = imm.pics.length, j = imm.i + dir;
+  if (n > 1 && j >= 0 && j < n) { showPic(j); return true; }
+  return false;
 }
 /* Overlay: opening it, and stepping through entries with the arrow keys in
    the same order they're shown on the page (whatever view, filter or sort). */
@@ -528,13 +606,18 @@ function step(dir) {
 }
 document.addEventListener("keydown", e => {
   if (!$("#dlg").open || e.altKey || e.ctrlKey || e.metaKey) return;
-  if (e.key === "ArrowRight") { e.preventDefault(); step(1); }
-  else if (e.key === "ArrowLeft") { e.preventDefault(); step(-1); }
+  const dir = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0;
+  if (!dir) return;
+  e.preventDefault();
+  if ($("#dlg").classList.contains("immersive") && immStep(dir)) return;
+  step(dir);
+  if (dir < 0 && $("#dlg").classList.contains("immersive") && imm.pics.length > 1) showPic(imm.pics.length - 1);
 });
 function openDetail(key) {
   const a = state.albums.find(x => x.key === key); if (!a) return;
   current = key;
   if (a.design) return openDesign(a);
+  $("#dlg").classList.remove("immersive");
   const i = info(a);
   const spot = safeUrl(a.links.spotify) || `https://open.spotify.com/search/${encodeURIComponent(a.artist+" "+a.title)}`;
   const kicker = `${a.lists.map(l => esc(SRC[l].name)).join(" &amp; ")} · ${fmtDate(a.added)}`;
@@ -589,11 +672,20 @@ $("#chips").onclick = e => { const b = e.target.closest(".chip"); if (!b) return
 $("#main").onclick = e => { const c = e.target.closest("[data-k]"); if (c) openDetail(c.dataset.k); };
 $("#dlgClose").onclick = () => $("#dlg").close();
 $("#dlgBody").addEventListener("click", e => {
-  const b = e.target.closest(".gallery button"); if (!b) return;
-  const art = $("#dlgBody .side .art"); let img = art.querySelector("img");
-  if (!img) { img = document.createElement("img"); img.alt = ""; art.appendChild(img); }
-  img.src = b.dataset.src;
-  b.parentNode.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  const t = e.target.closest(".imm-thumbs button"); if (t) return showPic(+t.dataset.i);
+  const n = e.target.closest(".imm-nav"); if (n) return showPic(imm.i + +n.dataset.d);
+  if (e.target.closest(".imm-more")) return $("#dlgBody .imm-details").scrollIntoView({behavior:"smooth"});
+  if (e.target.matches(".imm-stage img.main")) {   // click the picture: next one, or the details if there's only one
+    if (imm.pics.length > 1) showPic(imm.i + 1); else $("#dlgBody .imm-details").scrollIntoView({behavior:"smooth"});
+  }
+});
+// Swipe left and right on the picture stage (phones).
+let touchX = null;
+$("#dlgBody").addEventListener("touchstart", e => { touchX = e.target.closest(".imm-stage") ? e.touches[0].clientX : null; }, {passive:true});
+$("#dlgBody").addEventListener("touchend", e => {
+  if (touchX === null) return;
+  const dx = e.changedTouches[0].clientX - touchX; touchX = null;
+  if (Math.abs(dx) > 40 && imm.pics.length > 1) showPic(imm.i + (dx < 0 ? 1 : -1));
 });
 $("#dlg").addEventListener("click", e => { if (e.target === $("#dlg")) $("#dlg").close(); });
 
