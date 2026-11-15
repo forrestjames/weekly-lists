@@ -183,6 +183,7 @@ Write exactly one file, `{out_path}`, as valid JSON in this shape:
 {shape}
 ```
 
+Read web pages with WebFetch (it can read a Shopify shop's .json too). You can't run curl or other shell commands, so don't try.
 Leave out any field you don't have, except "list", "date" and "items". Don't edit or commit any other file; the next step does that.
 When the file is written, check it with: python3 scripts/lists.py check {lid} {out_path}
 If the check complains, fix the file and check again.
