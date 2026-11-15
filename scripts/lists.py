@@ -36,6 +36,7 @@ def load():
         item.setdefault("day", "monday")
         item.setdefault("count", 10)
         item.setdefault("sources", [])
+        item.setdefault("kinds", ["book", "magazine", "designer"])
         item["day"] = str(item["day"]).lower()
     return data
 
@@ -53,7 +54,7 @@ def get(lid):
 
 def folder(item):
     """Where a list's weekly files live, relative to the repo root."""
-    return Path("design") if item["type"] == "design" else Path("picks") / item["id"]
+    return Path("picks") / item["id"] if item["type"] == "music" else Path(item["id"])
 
 
 def london_today():
@@ -104,11 +105,11 @@ MUSIC_SHAPE = """{
 }"""
 
 DESIGN_SHAPE = """{
-  "list": "design",
+  "list": "%(id)s",
   "date": "%(date)s",
   "email_intro": "One or two plain lines for the top of the email, or empty.",
   "items": [
-    {"title": "...", "by": "author, editor, studio or publisher", "kind": "book",
+    {"title": "...", "by": "author, studio, brand or publisher", "kind": "%(kind)s",
      "tags": ["posters", "typography"], "note": "Two or three honest sentences.",
      "instagram": ["@handle"], "shop": "Magma", "price": "£25",
      "link": "https://the real product or profile page",
@@ -128,6 +129,7 @@ def prompt(lid, day):
     extra = f"\nAlso: {notes}\n" if notes else ""
 
     if is_design:
+        kinds = ", ".join(f'"{k}"' for k in item["kinds"])
         task = f"""Curate this week's {item['name']}: {item['count']} picks.
 
 What I like: {item.get('taste', '').strip()}
@@ -136,14 +138,14 @@ Check the newest stock at these first, then widen if you need to:
 {sources}
 
 For every pick:
-- "kind" is "book", "magazine" or "designer".
-- Instagram handles: include one for each designer, studio, publisher or magazine where it exists, but only after a web search returns the actual instagram.com profile. Never guess. Leave the list empty if you can't confirm one.
+- "kind" is one of: {kinds}.
+- Instagram handles: include one for each designer, brand, studio, publisher, shop or magazine where it exists, but only after a web search returns the actual instagram.com profile. Never guess. Leave the list empty if you can't confirm one.
 - "link" is the real product or profile page you opened.
 - "art" must be a real image URL you found: the og:image, or the first image in a Shopify shop's product JSON (the product URL plus ".json"). Never guess one.
-- "pictures_from": one or two more pages showing the work. Always fill it for designers, and for any pick without "art".
+- "pictures_from": one or two more pages showing the work. Always fill it for designers and brands, and for any pick without "art".
 - "tags": two to four short lowercase tags. "note": two or three sentences.
 - The website is public, so nothing personal about me."""
-        shape = DESIGN_SHAPE % {"date": day}
+        shape = DESIGN_SHAPE % {"id": lid, "date": day, "kind": item["kinds"][0]}
     else:
         task = f"""Curate this week's {item['name']}: the {item['count']} best new releases from the past seven days.
 
@@ -222,8 +224,8 @@ def check(lid, path):
             if url and not url.startswith("https://open.spotify.com/"):
                 problems.append(f"item {n}: spotify_url should be an open.spotify.com link")
         else:
-            if it.get("kind") not in ("book", "magazine", "designer"):
-                problems.append(f'item {n}: kind should be "book", "magazine" or "designer"')
+            if it.get("kind") not in item["kinds"]:
+                problems.append(f'item {n}: kind should be one of {", ".join(item["kinds"])}')
         if "—" in (it.get("note") or ""):
             problems.append(f"item {n}: note has an em dash")
     if problems:

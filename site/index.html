@@ -274,7 +274,7 @@ const hue = s => { let h = 0; for (const c of s) h = (h*31 + c.charCodeAt(0)) >>
 const SRC = { design:{name:"Design Shelf"} };
 const MUSIC = [];
 const isMusicList = v => MUSIC.includes(v);
-const isDesign = () => state.source === "design";
+const isDesign = () => (SRC[state.source] || {}).type === "design";   // Design Shelf and other shop lists
 
 const state = { source:"all", view:"grid", q:"", sort:"date", genre:"" , albums:[], meta:{} };
 try { Object.assign(state, JSON.parse(localStorage.getItem("wl-state")||"{}"), {albums:[],meta:{}}); } catch {}
@@ -383,7 +383,7 @@ async function load() {
   for (const [ed, e] of Object.entries(data.editions)) {
     SRC[ed] = {name:e.name, playlist:e.playlist, colour:e.colour, type:e.type || (ed === "design" ? "design" : "music")};
     if (SRC[ed].type === "music" && !MUSIC.includes(ed)) MUSIC.push(ed);
-    if (ed === "design") { loadDesign(e, map); continue; }
+    if (SRC[ed].type === "design") { loadDesign(e, map, ed); continue; }
     for (const w of e.weeks) for (const it of w.items) {
       const key = norm(it.artist) + "|" + norm(it.title);
       let a = map.get(key);
@@ -406,13 +406,13 @@ async function load() {
 /* Design Shelf picks: books, magazines and designers to follow. They share the
    music cards, views and overlay, with "by" in the artist slot and tags as
    genres. Pictures come from the shop page, saved by the build step. */
-function loadDesign(e, map) {
+function loadDesign(e, map, ed) {
   for (const w of e.weeks) for (const it of w.items) {
-    const key = "design|" + norm(it.title) + "|" + norm(it.by);
+    const key = ed + "|" + norm(it.title) + "|" + norm(it.by);
     let a = map.get(key);
     if (!a) map.set(key, a = {key, design:true, artist:it.by||"", title:it.title, kind:it.kind||"book", tags:[], picks:[], links:{},
       instagram:[], shop:it.shop||"", price:it.price||"", images:[]});
-    a.picks.push({list:"design", date:w.date, source:[it.shop, it.price].filter(Boolean).join(", "), sourceUrl:"", note:it.note||""});
+    a.picks.push({list:ed, date:w.date, source:[it.shop, it.price].filter(Boolean).join(", "), sourceUrl:"", note:it.note||""});
     (it.tags||[]).forEach(t => a.tags.includes(t) || a.tags.push(t));
     (it.instagram||[]).forEach(h => a.instagram.includes(h) || a.instagram.push(h));
     if (it.link) a.links.other = it.link;
@@ -427,6 +427,7 @@ function filtered() {
   const q = norm(state.q);
   let out = state.albums.filter(a => {
     if (!!a.design !== isDesign()) return false;
+    if (isDesign() && !a.lists.includes(state.source)) return false;
     if (isMusicList(state.source)) { if (!a.lists.includes(state.source)) return false; }
     if (state.source === "both" && a.lists.length < 2) return false;
     if (state.genre && genreOf(a) !== state.genre) return false;
@@ -483,7 +484,7 @@ const fmtDate = d => new Date(d+"T12:00:00").toLocaleDateString(undefined,{month
 
 function render() {
   const items = filtered(), main = $("#main");
-  const pool = state.albums.filter(a => !!a.design === isDesign());
+  const pool = state.albums.filter(a => !!a.design === isDesign() && (!isDesign() || a.lists.includes(state.source)));
   const nGenre = new Set(pool.map(genreOf).filter(Boolean)).size;
   $("#stats").innerHTML = `<b>${items.length}</b> of ${pool.length} ${isDesign() ? "picks" : "albums"} · ${nGenre} ${isDesign() ? "tags" : "genres"} · ${new Set(pool.flatMap(a=>a.picks.map(p=>p.date))).size} weeks`;
   document.documentElement.style.setProperty("--size", $("#size").value + "px");
@@ -495,7 +496,7 @@ function render() {
     const dates = [...new Set(items.flatMap(a => a.picks.map(p=>p.date)))].sort().reverse();
     if (state.sort === "dateAsc") dates.reverse();
     html = dates.map(d => {
-      const sub = (isDesign() ? ["design"] : MUSIC).map(l => {
+      const sub = (isDesign() ? [state.source] : MUSIC).map(l => {
         const here = items.filter(a => a.picks.some(p => p.date===d && p.list===l));
         if (isMusicList(state.source) && l!==state.source || !here.length) return "";
         return `<div class="sub"><span class="dot" style="background:var(--${l})"></span>${esc(SRC[l].name)} · ${here.length}</div><div class="grid">${here.map(cardHTML).join("")}</div>`;
@@ -511,7 +512,7 @@ function render() {
     const d = isDesign();
     html = `<table class="list"><thead><tr><th></th><th>${d ? "Title" : "Album"}</th><th class="hide-m">${d ? "By" : "Artist"}</th><th class="hide-m">${d ? "Tag" : "Genre"}</th><th>${d ? "Shop" : "Source"}</th><th class="hide-m">Added</th></tr></thead><tbody>${items.map(a => `
       <tr class="row" data-k="${esc(a.key)}"><td class="thumb">${artHTML(a,false)}</td><td><b>${esc(a.title)}</b><div class="by-m dim">${esc(a.artist)}</div></td><td class="hide-m">${esc(a.artist)}</td>
-      <td class="hide-m dim">${esc(genreOf(a))}</td><td>${a.design ? `<span class="src-tag design">${esc(a.shop || "Design Shelf")}</span>` : a.lists.map(l=>`<span class="src-tag ${l}">${esc(SRC[l].name)}</span>`).join("")}</td>
+      <td class="hide-m dim">${esc(genreOf(a))}</td><td>${a.design ? `<span class="src-tag ${esc(a.lists[0])}">${esc(a.shop || SRC[a.lists[0]].name)}</span>` : a.lists.map(l=>`<span class="src-tag ${l}">${esc(SRC[l].name)}</span>`).join("")}</td>
       <td class="hide-m dim">${fmtDate(a.added)}</td></tr>`).join("")}</tbody></table>`;
   }
   main.innerHTML = html;
@@ -527,17 +528,17 @@ function buildChips() {
     top.map(([g,n]) => `<button class="chip" data-g="${esc(g)}" aria-pressed="${state.genre===g}">${esc(g)}<small>${n}</small></button>`).join("");
 }
 
-const KIND = { book:"Book", magazine:"Magazine", designer:"Designer to follow" };
+const KIND = { book:"Book", magazine:"Magazine", designer:"Designer to follow", piece:"Piece", brand:"Brand to follow" };
 function openDesign(a) {
   const pics = [artOf(a), ...a.images.filter(u => u !== a.art)].filter(Boolean).slice(0, 5);
-  const kicker = `Design Shelf · ${fmtDate(a.added)} · ${esc(KIND[a.kind] || cap(a.kind))}`;
-  const picks = a.picks.map(p => `<section class="pick design">
-      <span class="who design">Design Shelf</span>
+  const kicker = `${esc(SRC[a.lists[0]].name)} · ${fmtDate(a.added)} · ${esc(KIND[a.kind] || cap(a.kind))}`;
+  const picks = a.picks.map(p => `<section class="pick ${esc(p.list)}">
+      <span class="who ${esc(p.list)}">${esc(SRC[p.list].name)}</span>
       <div class="when">${fmtDate(p.date)}${p.source ? ` · ${esc(p.source)}` : ""}</div>
       ${p.note ? `<p>${esc(p.note)}</p>` : ""}</section>`).join("");
   const fact = (k, v) => v ? `<div><span class="k">${k}</span><span class="v">${esc(v)}</span></div>` : "";
   const link = safeUrl(a.links.other);
-  const go = a.kind === "designer" ? `See their work` : `View at ${a.shop || "the shop"}`;
+  const go = a.kind === "designer" || a.kind === "brand" ? `See their work` : `View at ${a.shop || "the shop"}`;
   const ig = a.instagram.map(h => h.replace(/^@/, "")).filter(h => /^[\w.]+$/.test(h));
   const links = `<div class="links">${link ? `<a href="${esc(link)}" target="_blank" rel="noopener">${esc(go)}</a>` : ""}
     ${ig.map(h => `<a class="alt" href="https://www.instagram.com/${esc(h)}/" target="_blank" rel="noopener">Instagram @${esc(h)}</a>`).join("")}</div>`;

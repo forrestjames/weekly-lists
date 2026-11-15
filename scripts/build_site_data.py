@@ -508,21 +508,21 @@ def find_pictures(it):
     return [], None
 
 
-def add_design_art(archive, previous):
+def add_design_art(archive, previous, key="design"):
     """Fills in "art" (and "images") on design picks that lack them.
 
     Picks that still have no picture are tried again on every build, so a
     picture turns up as soon as any source has one."""
-    if "design" not in archive:
+    if key not in archive:
         return
     known = {}
-    for week in ((previous or {}).get("editions", {}).get("design") or {}).get("weeks", []):
+    for week in ((previous or {}).get("editions", {}).get(key) or {}).get("weeks", []):
         for it in week.get("items", []):
             if it.get("art"):
                 known[(it.get("title"), it.get("by"))] = it
     found = tried = 0
     missing = []
-    for week in archive["design"]["weeks"]:
+    for week in archive[key]["weeks"]:
         for it in week["items"]:
             if it.get("art"):
                 old = known.get((it.get("title"), it.get("by")))
@@ -563,9 +563,9 @@ def add_design_art(archive, previous):
             else:
                 missing.append(it.get("title"))
     if tried:
-        print(f"Design pictures: {found} of {tried} new pick(s) filled in.")
+        print(f"{EDITIONS[key]['name']} pictures: {found} of {tried} new pick(s) filled in.")
     if missing:
-        print("::warning title=Design picks without a picture::" + " | ".join(missing))
+        print(f"::warning title={EDITIONS[key]['name']} picks without a picture::" + " | ".join(missing))
 
 
 def main():
@@ -580,7 +580,9 @@ def main():
     except json.JSONDecodeError:
         previous_archive = {}
     add_art(archive, previous_archive)
-    add_design_art(archive, previous_archive)
+    for key, meta in EDITIONS.items():
+        if meta["type"] == "design":   # Design Shelf and any other shop-style list
+            add_design_art(archive, previous_archive, key)
 
     for key, meta in EDITIONS.items():
         weeks = archive[key]["weeks"]

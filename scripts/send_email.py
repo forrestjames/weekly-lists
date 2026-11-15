@@ -191,7 +191,7 @@ def design_html(n, it):
         parts.append(f"<p style='margin:4px 0'>{handles}</p>")
     shop = e(", ".join(x for x in [it.get("shop", ""), it.get("price", "")] if x))
     if it.get("link"):
-        shop = f"{shop} · <a href='{e(it['link'])}'>{'See their work' if it.get('kind') == 'designer' else 'View'}</a>"
+        shop = f"{shop} · <a href='{e(it['link'])}'>{'See their work' if it.get('kind') in ('designer', 'brand') else 'View'}</a>"
     if shop:
         parts.append(f"<p style='margin:4px 0;color:#777;font-size:14px'>{shop}</p>")
     return "\n".join(parts)
