@@ -112,17 +112,21 @@ lists:
     type: design
     day: monday
     colour: "#8b7cf6"
-    count: 10
+    count: 20
     kinds: [piece, brand]
     taste: >
       In my words: "japanese baggy designer cool". Japanese designers and
       that kind of relaxed, baggy, well-made look. New arrivals worth knowing
       about, mostly clothing, shoes and accessories, plus one or two brands
       to follow. Skip logo-heavy hype pieces and fast fashion. I like boutique shops.
+      Price: nothing over £300 (convert other currencies roughly, and leave
+      out anything that would be over £300).
     sources:
       - "Goodhood (London), men's latest: https://goodhoodstore.com/collections/mens-latest"
       - "Kyoto (Copenhagen), new for men: https://kyoto.dk/en/collections/nyheder-maend"
       - "Then other boutique menswear shops with that Japanese, relaxed leaning, for example Couverture & The Garbstore, Haven, Neighbour and Blue in Green. Check a shop is still trading before using it."
     notes: >
       Give the price as shown on the shop. Use "shop" for the shop name and
-      "by" for the brand.
+      "by" for the brand. Spread the picks across shops: no more than five
+      from any one shop. If a shop rate-limits you, wait a little and try it
+      again rather than dropping it.

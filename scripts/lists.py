@@ -70,9 +70,10 @@ def due(ids=None, today=None):
     return [l["id"] for l in lists if l["day"] == DAYS[today.weekday()]]
 
 
-def recent_picks(item, weeks=8):
-    """Titles already featured, so Claude doesn't repeat them."""
-    files = sorted((ROOT / folder(item)).glob("*.json"))[-weeks:]
+def recent_picks(item, weeks=8, day=None):
+    """Titles already featured, so Claude doesn't repeat them. A re-run of
+    the same day doesn't count its own earlier picks."""
+    files = [f for f in sorted((ROOT / folder(item)).glob("*.json")) if f.stem != day][-weeks:]
     out = []
     for f in files:
         try:
@@ -123,7 +124,7 @@ def prompt(lid, day):
     item = get(lid)
     out_path = f"out/{lid}.json"
     sources = "\n".join(f"- {s}" for s in item["sources"]) or "- Use your judgement."
-    already = "\n".join(recent_picks(item)) or "- (nothing yet)"
+    already = "\n".join(recent_picks(item, day=day)) or "- (nothing yet)"
     notes = (item.get("notes") or "").strip()
     is_design = item["type"] == "design"
     extra = f"\nAlso: {notes}\n" if notes else ""
