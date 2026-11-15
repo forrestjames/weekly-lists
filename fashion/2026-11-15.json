@@ -3,53 +3,91 @@
   "date": "2026-11-15",
   "items": [
     {
-      "title": "H.D. Pant Shrink Wool, Dark Navy",
+      "title": "H.D. Jean, 12oz Denim Indigo",
+      "by": "Needles",
+      "kind": "piece",
+      "tags": [
+        "denim",
+        "wide",
+        "trousers"
+      ],
+      "note": "Needles' exaggerated wide fit applied to a 5-pocket jean in 12oz denim. It has a worn-in vintage wash, darts and an adjustable waist cinch so you can pull the shape in.",
+      "instagram": [
+        "@needles_tokyo_official",
+        "@havenshop"
+      ],
+      "shop": "Haven",
+      "price": "$311.00",
+      "link": "https://havenshop.com/products/needles-h-d-jean-12oz-denim-indigo-fw26",
+      "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Needles-H.D.-Jean-12oz-Denim-Indigo-1.jpg?v=1794499736"
+    },
+    {
+      "title": "Railroad Pant, Melange Double Cloth Brown",
       "by": "Needles",
       "kind": "piece",
       "tags": [
         "trousers",
-        "wide",
-        "wool"
+        "workwear",
+        "relaxed"
       ],
-      "note": "The H.D. is Needles' big, voluminous pant, here in a heavyweight wool blend. Deep pleats at the waist and hem give it a wide, sculpted shape, with a drawstring waist and cupro lining behind the knees.",
+      "note": "A roomy trouser based on old workwear, cut from a textured melange double cloth. Haven says it feels substantial but easy to wear every day.",
       "instagram": [
         "@needles_tokyo_official",
         "@havenshop"
       ],
       "shop": "Haven",
-      "price": "$621.00",
-      "link": "https://havenshop.com/products/needles-h-d-pant-shrink-wool-dark-navy-fw26",
-      "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Needles-H.D.-Pant-Shrink-Wool-Dark-Navy-1.jpg?v=1794499904"
+      "price": "$311.00",
+      "link": "https://havenshop.com/products/needles-railroad-pant-melange-double-cloth-brown-fw26",
+      "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Needles-Railroad-Pant-Melange-Double-Cloth-Brown-1.jpg?v=1794499781"
     },
     {
-      "title": "Railroad Zip Jacket, Melange Double Cloth Brown",
+      "title": "Field Jacket, Cotton Ripstop Woodland",
       "by": "Needles",
       "kind": "piece",
       "tags": [
         "jacket",
-        "workwear",
-        "relaxed"
+        "military",
+        "camo"
       ],
-      "note": "A workwear jacket in a mélange double cloth with some depth to it. It has a relaxed cut, a plain zip front and a purple lining. There is a matching Railroad Pant if you want the set.",
+      "note": "A military field jacket in woodland camo cotton ripstop. It has big gusseted chest pockets with flaps and adjustable cuffs, and the fabric is light enough to layer.",
       "instagram": [
         "@needles_tokyo_official",
         "@havenshop"
       ],
       "shop": "Haven",
-      "price": "$480.00",
-      "link": "https://havenshop.com/products/needles-railroad-zip-jacket-melange-double-cloth-brown-fw26",
-      "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Needles-Railroad-Zip-Jacket-Melange-Double-Cloth-Brown-1.jpg?v=1794499850"
+      "price": "$289.00",
+      "link": "https://havenshop.com/products/needles-field-jacket-cotton-ripstop-woodland-fw26",
+      "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Needles-Field-Jacket-Cotton-Ripstop-Woodland-1.jpg"
     },
     {
-      "title": "Watch Cap Shetland Wool, Umber",
+      "title": "Between Snap Shirt, Poly Fleece Brown",
       "by": "Needles",
       "kind": "piece",
       "tags": [
-        "accessories",
-        "knit",
-        "beanie"
+        "fleece",
+        "shirt",
+        "outdoor"
       ],
-      "note": "A simple rib-knit beanie in Shetland wool with the small purple Papillon butterfly embroidered on. An easy way into the brand. It also comes in black, with matching Shetland gloves.",
+      "note": "A loose, unlined fleece shirt with a four-snap front and piped cuffs and hem. It works on its own or as a warm middle layer.",
+      "instagram": [
+        "@needles_tokyo_official",
+        "@havenshop"
+      ],
+      "shop": "Haven",
+      "price": "$268.00",
+      "link": "https://havenshop.com/products/needles-between-snap-shirt-poly-fleece-brown-fw26",
+      "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Needles-Between-Snap-Shirt-Poly-Fleece-Brown-1.jpg?v=1794499674"
+    },
+    {
+      "title": "Watch Cap, Shetland Wool Umber",
+      "by": "Needles",
+      "kind": "piece",
+      "tags": [
+        "hat",
+        "knitwear",
+        "accessories"
+      ],
+      "note": "A ribbed beanie in Shetland wool, made in Japan. The only branding is a small purple butterfly embroidered on it.",
       "instagram": [
         "@needles_tokyo_official",
         "@havenshop"
@@ -57,83 +95,102 @@
       "shop": "Haven",
       "price": "$109.00",
       "link": "https://havenshop.com/products/needles-watch-cap-shetland-wool-umber-fw26",
-      "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Needles-Watch-Cap-Shetland-Wool-Umber-1.jpg"
+      "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Needles-Watch-Cap-Shetland-Wool-Umber-1.jpg?v=1794499654"
     },
     {
-      "title": "Double Face Cotton Two Pleats Trouser, Black",
-      "by": "TOHNAI",
+      "title": "W/N Wide Pants PT08263OS, Dark Brown",
+      "by": "Still By Hand",
+      "kind": "piece",
+      "tags": [
+        "trousers",
+        "wide",
+        "wool"
+      ],
+      "note": "Wide trousers in a wool and nylon mix, made in Japan. The shop describes a lot of volume through the whole leg and a relaxed drape.",
+      "instagram": [
+        "@stillbyhand",
+        "@rendezvoustore_official"
+      ],
+      "shop": "Rendez-Vous Store",
+      "price": "280,00 €",
+      "link": "https://rendez-vous-store.com/shop/men-selection-discover-our-selection-rendez-vous-store/trousers-shorts-rendez-vous-store/still-by-hand-w-n-wide-pants-pt08263os-dark-brown-rendez-vous-store/",
+      "art": "https://rendez-vous-store.com/app/uploads/2026/09/IMG_1165.webp"
+    },
+    {
+      "title": "Wool Mixed Deep Tuck Pants PT07263OS, Black",
+      "by": "Still By Hand",
       "kind": "piece",
       "tags": [
         "trousers",
         "pleats",
-        "japanese fabric"
+        "wool"
       ],
-      "note": "Two-pleat trousers in a dense double-weave cotton twill, woven on old wool looms so it has real body. The face is black and the reverse is brown, which shows a little as it moves. A quieter label worth knowing.",
+      "note": "Deep tucks give these extra room through the upper leg while the line stays clean. Cotton, wool and polyester, made in Japan.",
       "instagram": [
-        "@tohnai_design",
-        "@havenshop"
+        "@stillbyhand",
+        "@rendezvoustore_official"
       ],
-      "shop": "Haven",
-      "price": "$517.00",
-      "link": "https://havenshop.com/products/tohnai-double-face-cotton-two-pleats-trouser-black-fw26",
-      "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/TOHNAI-Double-Face-Cotton-Two-Pleats-Trouser-Black-1_8f153005-c16f-45d5-a36c-46e2fe76649f.jpg?v=1793223300"
+      "shop": "Rendez-Vous Store",
+      "price": "265,00 €",
+      "link": "https://rendez-vous-store.com/shop/men-selection-discover-our-selection-rendez-vous-store/trousers-shorts-rendez-vous-store/still-by-hand-pt07263os-wool-mixed-deep-tuck-pants-black-rendez-vous-store/",
+      "art": "https://rendez-vous-store.com/app/uploads/2026/09/IMG_1037.webp"
     },
     {
-      "title": "Dyed Denim Work Jacket, Cub Brown",
-      "by": "Kaptain Sunshine",
+      "title": "Shoulder Stole GD04263OS, Melange Navy",
+      "by": "Still By Hand",
       "kind": "piece",
       "tags": [
-        "jacket",
+        "scarf",
+        "wool",
+        "accessories"
+      ],
+      "note": "A generous one-size stole in soft 100% wool, made in Japan. A simple way to add some texture to a plain outfit.",
+      "instagram": [
+        "@stillbyhand",
+        "@rendezvoustore_official"
+      ],
+      "shop": "Rendez-Vous Store",
+      "price": "155,00 €",
+      "link": "https://rendez-vous-store.com/shop/men-selection-discover-our-selection-rendez-vous-store/accessories-men-rendez-vous-store/still-by-hand-shoulder-stole-gd04263os-melange-navy-rendez-vous-store/",
+      "art": "https://rendez-vous-store.com/app/uploads/2026/09/IMG_1203.webp"
+    },
+    {
+      "title": "101 Dad's Fit Denim Pant, Black Denim Stone",
+      "by": "orSlow",
+      "kind": "piece",
+      "tags": [
         "denim",
-        "workwear"
+        "black",
+        "relaxed"
       ],
-      "note": "A work jacket in the brand's own 13.5oz denim, mercerised and garment-dyed brown. It is lined in cotton flannel and has a zip front, buckles at the hem and adjustable cuffs. The matching Riviera Pants came in too.",
+      "note": "orSlow's relaxed Dad's Fit jean in soft stonewashed black denim, made in Japan. The shop notes the brand was started in 2005 by Ichiro Nakatsu, who studies old military and workwear.",
       "instagram": [
-        "@kaptainsunshine",
-        "@havenshop"
+        "@orslow",
+        "@rendezvoustore_official"
       ],
-      "shop": "Haven",
-      "price": "$737.00",
-      "link": "https://havenshop.com/products/kaptain-sunshine-dyed-denim-work-jacket-cub-brown-fw26",
-      "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Kaptain-Sunshine-Dyed-Denim-Work-Jacket-Cub-Brown-1_e438ea1c-2c5b-4953-ad9d-858ccf842cce.jpg?v=1793222382"
+      "shop": "Rendez-Vous Store",
+      "price": "285,00 €",
+      "link": "https://rendez-vous-store.com/shop/men-selection-discover-our-selection-rendez-vous-store/trousers-shorts-rendez-vous-store/orslow-unisex-101-dads-fit-denim-pant-01-1010w-d61s-black-denim-stone/",
+      "art": "https://rendez-vous-store.com/app/uploads/2025/10/IMG_3223.webp"
     },
     {
-      "title": "Three-Dimensional Down Parka, After Dark",
-      "by": "Goldwin 0",
+      "title": "Wave Cotton 85-252-006, Black",
+      "by": "Yonetomi",
       "kind": "piece",
       "tags": [
-        "outerwear",
-        "down",
-        "technical"
+        "knitwear",
+        "cotton",
+        "loose"
       ],
-      "note": "A light down parka with 3D box baffles that the shop says take their cue from origami folds. The shell is 10-denier nylon ripstop and it packs down. Sculptural, but still a practical winter coat.",
+      "note": "A loose long-sleeve crew in a wave-knit cotton with a bit of relief to the surface. It has dropped shoulders and is made in Japan by a knitwear company that runs much of its own production.",
       "instagram": [
-        "@goldwin_0",
-        "@havenshop"
+        "@yonetomiseni",
+        "@rendezvoustore_official"
       ],
-      "shop": "Haven",
-      "price": "$758.00",
-      "link": "https://havenshop.com/products/golwin-0-three-dimensional-down-parka-after-dark-fw26",
-      "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Goldwin-0-Three-Dimensional-Down-Parka-After-Dark-1.jpg?v=1794449276"
-    },
-    {
-      "title": "Beefroll Loafer, Black",
-      "by": "REGAL",
-      "kind": "piece",
-      "tags": [
-        "shoes",
-        "loafers",
-        "leather"
-      ],
-      "note": "A classic beefroll loafer from the long-running Japanese shoemaker, built on its saddle shoe last. It uses kip leather and suede from Sanyo Leather, with a GORE-TEX lining and a light Vibram sole. Good for wide trousers in wet weather.",
-      "instagram": [
-        "@regal_official_jp",
-        "@havenshop"
-      ],
-      "shop": "Haven",
-      "price": "$448.00",
-      "link": "https://havenshop.com/products/regal-beefroll-loafer-black-fw26",
-      "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/REGAL-Beefroll-Loafer-Black-1.jpg?v=1794500851"
+      "shop": "Rendez-Vous Store",
+      "price": "285,00 €",
+      "link": "https://rendez-vous-store.com/shop/men-selection-discover-our-selection-rendez-vous-store/t-shirts-discover-our-selection-rendez-vous-store/yonetomi-wave-cotton-85-252-006-black-rendez-vous-store/",
+      "art": "https://rendez-vous-store.com/app/uploads/2025/12/IMG_3140_11zon-scaled.webp"
     },
     {
       "title": "Balloon Wide Pants, Ash Grey",
@@ -142,9 +199,13 @@
       "tags": [
         "trousers",
         "wide",
-        "beams"
+        "grey"
       ],
-      "note": "Goodhood's newest men's stock is almost all Beams right now: wide chinos, wide denim, tweed coats and these balloon pants. I couldn't open the product page this week, so this is just the name and price from the listing. Worth a look if you like the shape.",
+      "note": "One of a run of new Beams trousers at Goodhood, in a soft ash grey. It sits alongside wide chinos, wide slacks and wide denim from the same drop, all well under £200.",
+      "instagram": [
+        "@beams_official",
+        "@goodhood"
+      ],
       "shop": "Goodhood",
       "price": "£135.00",
       "link": "https://goodhoodstore.com/products/beams-balloon-wide-pants-ash-grey",
@@ -153,47 +214,190 @@
       ]
     },
     {
-      "title": "A.PRESSE",
-      "by": "A.PRESSE",
-      "kind": "brand",
+      "title": "Wide Denim Pants, Nep Indigo",
+      "by": "Beams",
+      "kind": "piece",
       "tags": [
-        "tokyo",
-        "vintage-inspired",
-        "tailoring"
+        "denim",
+        "wide",
+        "indigo"
       ],
-      "note": "A Tokyo label that remakes vintage pieces like flight jackets, deck jackets and beach cloth in very good fabrics. Haven just took in a big delivery, from cashmere coats to washed wide denim. Pricey, but this one, the Cashmere Beach Cloth Jacket, is cotton slub outside and brushed cashmere inside.",
+      "note": "Wide-leg Beams jeans in a nepped indigo denim, new at Goodhood this week. There is also a lighter Dusty Indigo version at the same price.",
       "instagram": [
-        "@havenshop"
+        "@beams_official",
+        "@goodhood"
       ],
-      "shop": "Haven",
-      "price": "$2,220.00",
-      "link": "https://havenshop.com/products/a-presse-cashmere-beach-cloth-jacket-navy-fw26",
-      "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/A.PRESSE-Cashmere-Beach-Cloth-Jacket-Navy-1.jpg?v=1794400914",
+      "shop": "Goodhood",
+      "price": "£175.00",
+      "link": "https://goodhoodstore.com/products/beams-wide-denim-pants-nep-indigo",
       "pictures_from": [
-        "https://hypebeast.com/2025/10/a-presse-2026-offers-refined-utility-casual-tailoring",
-        "https://havenshop.com/collections/new-arrivals?page=3"
+        "https://goodhoodstore.com/collections/mens-latest"
       ]
     },
     {
-      "title": "HERILL",
-      "by": "HERILL",
+      "title": "3G Kasuri Nep Crew Neck Sweater, Olive",
+      "by": "Beams",
+      "kind": "piece",
+      "tags": [
+        "knitwear",
+        "sweater",
+        "olive"
+      ],
+      "note": "A chunky 3-gauge crew neck in a kasuri nep knit, new from Beams at Goodhood. Beams started in Harajuku in 1976, and this is one of the cheaper knits in the drop.",
+      "instagram": [
+        "@beams_official",
+        "@goodhood"
+      ],
+      "shop": "Goodhood",
+      "price": "£145.00",
+      "link": "https://goodhoodstore.com/products/beams-3g-kasuri-nep-crew-neck-sweater-olive",
+      "pictures_from": [
+        "https://goodhoodstore.com/collections/beams"
+      ]
+    },
+    {
+      "title": "FISHERMAN-III Mock Neck, Terra Magma Brown",
+      "by": "S.N.S. Herning",
+      "kind": "piece",
+      "tags": [
+        "knitwear",
+        "mock neck",
+        "brown"
+      ],
+      "note": "A fisherman-style mock neck knit from S.N.S. Herning, new in at Kyoto. It is the more affordable of the two Herning knits in this drop.",
+      "instagram": [
+        "@snsherning",
+        "@kyotoistedgade"
+      ],
+      "shop": "Kyoto",
+      "price": "1.700,00 kr",
+      "link": "https://kyoto.dk/en/collections/nyheder-maend/products/s-n-s-herning-fisherman-iii-mock-neck-terra-magma-brown",
+      "pictures_from": [
+        "https://kyoto.dk/en/collections/nyheder-maend"
+      ]
+    },
+    {
+      "title": "LOOSE 720, Dark Blue Vintage",
+      "by": "Sunflower",
+      "kind": "piece",
+      "tags": [
+        "denim",
+        "loose",
+        "copenhagen"
+      ],
+      "note": "The loose cut of jeans from Sunflower, a Copenhagen menswear label, in a dark vintage wash. Kyoto also has the slimmer Standard cut in the same wash.",
+      "instagram": [
+        "@_hello_sunflower",
+        "@kyotoistedgade"
+      ],
+      "shop": "Kyoto",
+      "price": "1.600,00 kr",
+      "link": "https://kyoto.dk/en/collections/nyheder-maend/products/sunflower-loose-720-dark-blue-vintage",
+      "pictures_from": [
+        "https://kyoto.dk/en/collections/nyheder-maend"
+      ]
+    },
+    {
+      "title": "11oz Blue Denim Work Coat",
+      "by": "Sugar Cane",
+      "kind": "piece",
+      "tags": [
+        "denim",
+        "jacket",
+        "workwear"
+      ],
+      "note": "A work coat in 11oz blue denim from Sugar Cane, new at Blue in Green. The SoHo shop is known for Japanese selvedge denim, and this arrived next to new Buzz Rickson's and orSlow pieces.",
+      "instagram": [
+        "@sugarcanedenim",
+        "@blueingreensoho"
+      ],
+      "shop": "Blue in Green",
+      "price": "$294.00 USD",
+      "link": "https://www.blueingreensoho.com/products/11oz-blue-denim-work-coat",
+      "pictures_from": [
+        "https://blueingreensoho.com/collections/new-arrivals-1"
+      ]
+    },
+    {
+      "title": "Original Spec. Chinos, Olive",
+      "by": "Buzz Rickson's",
+      "kind": "piece",
+      "tags": [
+        "chinos",
+        "military",
+        "olive"
+      ],
+      "note": "Plain olive chinos from Buzz Rickson's, new at Blue in Green. The same drop has a pea coat and camo combat trousers, and at $170 these are the cheapest way in.",
+      "instagram": [
+        "@blueingreensoho"
+      ],
+      "shop": "Blue in Green",
+      "price": "$170.00 USD",
+      "link": "https://www.blueingreensoho.com/products/original-spec-chinos-olive",
+      "pictures_from": [
+        "https://blueingreensoho.com/collections/new-arrivals-1"
+      ]
+    },
+    {
+      "title": "Vaquero Chambray Western Shirt, White",
+      "by": "Jelado",
+      "kind": "piece",
+      "tags": [
+        "shirt",
+        "western",
+        "chambray"
+      ],
+      "note": "A western shirt in white chambray from Jelado, a Tokyo brand with a flagship in Ebisu. It is one of the newest things at Clutch Cafe, and there is a faded indigo denim version too.",
+      "instagram": [
+        "@jelado_official",
+        "@clutchcafelondon"
+      ],
+      "shop": "Clutch Cafe",
+      "price": "£175.00",
+      "link": "https://clutch-cafe.com/products/jelado-vaquero-denim-western-shirt-white",
+      "pictures_from": [
+        "https://clutch-cafe.com/collections/latest-arrivals"
+      ]
+    },
+    {
+      "title": "Clutch Magazine Vol. 105: Made in Japan",
+      "by": "Clutch Magazine",
+      "kind": "piece",
+      "tags": [
+        "magazine",
+        "made in japan",
+        "reading"
+      ],
+      "note": "The new issue of Clutch, the Tokyo men's style magazine, themed around things made in Japan. The London shop that sells it was set up by the magazine's editor, Atsushi Matsushima.",
+      "instagram": [
+        "@clutchmagazinejapan",
+        "@clutchcafelondon"
+      ],
+      "shop": "Clutch Cafe",
+      "price": "£35.00",
+      "link": "https://clutch-cafe.com/products/clutch-magazine-vol-105",
+      "pictures_from": [
+        "https://clutch-cafe.com/collections/latest-arrivals"
+      ]
+    },
+    {
+      "title": "Sillage",
+      "by": "Sillage",
       "kind": "brand",
       "tags": [
-        "japanese",
-        "wool",
-        "minimal"
+        "tokyo",
+        "wide",
+        "one size"
       ],
-      "note": "A Japanese label built around fabric. Haven has a Rigidwool range made for the shop, including this zip-up jacket based on old swing-top jackets, in long-staple wool with a softening finish. There are matching jungle fatigue pants and a field coat too.",
+      "note": "A Tokyo label started by Nicolas Yuthanan Chalmeau, made in Japan. Its Circular Pants are very wide and come in one size, with an elastic drawstring waist. Blue in Green and Rendez-Vous both stock it now.",
       "instagram": [
-        "@herill_official",
-        "@havenshop"
+        "@sillage.online"
       ],
-      "shop": "Haven",
-      "price": "$1,000.00",
-      "link": "https://havenshop.com/products/herill-rigidwool-zip-up-jacket-black-fw26",
-      "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Herill-Rigidwool-Zip-up-Jacket-Black-1.jpg?v=1792676507",
+      "link": "https://www.sillage.online/",
+      "art": "https://static.wixstatic.com/media/a1a94c_60c1e643af9d406682beeb0880c1f69d~mv2.jpg/v1/fill/w_960,h_1280,fp_0.44_0.47,q_90,enc_avif,quality_auto/a1a94c_60c1e643af9d406682beeb0880c1f69d~mv2.jpg",
       "pictures_from": [
-        "https://havenshop.com/collections/new-arrivals?page=3"
+        "https://rendez-vous-store.com/shop/men-selection-discover-our-selection-rendez-vous-store/trousers-shorts-rendez-vous-store/sillage-circular-pants-black-rendez-vous-store",
+        "https://blueingreensoho.com/collections/new-arrivals-1"
       ]
     }
   ]
