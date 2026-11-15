@@ -78,16 +78,15 @@ lists:
       mainstream pop and rap unless Pitchfork rates it very highly and it is
       genuinely adventurous.
     sources:
-      - "Best New Music, albums: https://pitchfork.com/reviews/best/albums/"
-      - "Best New Music, tracks: https://pitchfork.com/reviews/best/tracks/"
-      - "Album reviews: https://pitchfork.com/reviews/albums/"
-      - "Track reviews: https://pitchfork.com/reviews/tracks/"
-      - "Lists and guides: https://pitchfork.com/features/lists-and-guides/"
+      - "Pitchfork's own site can't be read by Claude (it's blocked), so find Pitchfork's picks where they're republished:"
+      - "Album of the Year, Pitchfork ratings: https://www.albumoftheyear.org/ratings/1-pitchfork-highest-rated/2026/1"
+      - "Metacritic critic reviews pages, which show Pitchfork's score and quote"
+      - "Web search for this week's Pitchfork Best New Music and Best New Track picks"
     notes: >
-      Only Pitchfork picks, from the past seven days of reviews. Prefer Best
-      New Music and high scores, then fill with well-reviewed records in my
-      genres. Put the review score in the note when there is one, and the
-      review link in "source_url".
+      Only Pitchfork picks, from the past seven days of reviews. Don't try
+      pitchfork.com itself. Prefer Best New Music and high scores, then fill
+      with well-reviewed records in my genres. Put the Pitchfork score in the
+      note when there is one. Eight is fine if there aren't ten good ones.
 
   - id: design
     name: Design Shelf
