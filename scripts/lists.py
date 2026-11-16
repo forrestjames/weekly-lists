@@ -61,13 +61,32 @@ def london_today():
     return datetime.now(ZoneInfo("Europe/London")).date()
 
 
-def due(ids=None, today=None):
+def ran_recently(item, today, days=3):
+    """True if this list already has picks from the last few days."""
+    for f in (ROOT / folder(item)).glob("*.json"):
+        try:
+            if 0 <= (today - date.fromisoformat(f.stem)).days < days:
+                return True
+        except ValueError:
+            continue
+    return False
+
+
+def due(ids=None, today=None, day=None, skip_recent=False):
+    """Which lists to run. Named ids win; otherwise the lists for `day`
+    (a weekday name, default today's). With skip_recent, lists that already
+    ran in the last few days are left out, so a late or repeated scheduled
+    run never does the same list twice."""
     today = today or london_today()
     lists = [l for l in all_lists() if not l.get("paused")]
     if ids:
         wanted = [i.strip().lower() for i in ids if i.strip()]
         return [l["id"] for l in lists if l["id"] in wanted]
-    return [l["id"] for l in lists if l["day"] == DAYS[today.weekday()]]
+    day = (day or DAYS[today.weekday()]).lower()
+    picked = [l for l in lists if l["day"] == day]
+    if skip_recent:
+        picked = [l for l in picked if not ran_recently(l, today)]
+    return [l["id"] for l in picked]
 
 
 def recent_picks(item, weeks=8, day=None):
@@ -241,8 +260,12 @@ def main(argv):
         raise SystemExit(__doc__)
     cmd, rest = argv[0], argv[1:]
     if cmd == "due":
-        ids = ",".join(rest).split(",") if rest and any(rest) else None
-        print(json.dumps(due(ids)))
+        # due [ids] [--day monday] [--skip-recent]
+        day = rest[rest.index("--day") + 1] if "--day" in rest else None
+        skip = "--skip-recent" in rest
+        words = [r for i, r in enumerate(rest) if not r.startswith("--") and not (i and rest[i - 1] == "--day")]
+        ids = ",".join(words).split(",") if words and any(words) else None
+        print(json.dumps(due(ids, day=day or None, skip_recent=skip)))
     elif cmd == "prompt":
         prompt(rest[0], rest[1] if len(rest) > 1 else london_today().isoformat())
     elif cmd == "check":

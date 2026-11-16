@@ -51,6 +51,7 @@ jobs:
       - id: due
         env:
           WANTED: ${{ github.event.inputs.lists }}
+          SCHEDULE: ${{ github.event.schedule }}
           HAS_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}
         run: |
           echo "date=$(TZ=Europe/London date +%F)" >> "$GITHUB_OUTPUT"
@@ -59,8 +60,17 @@ jobs:
             echo "lists=[]" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          echo "lists=$(python scripts/lists.py due "$WANTED")" >> "$GITHUB_OUTPUT"
-          echo "Due today: $(python scripts/lists.py due "$WANTED")"
+          # GitHub sometimes starts scheduled runs hours late, so a scheduled
+          # run goes by which schedule fired, not the clock, and skips any
+          # list that already ran in the last few days.
+          ARGS=("$WANTED")
+          case "$SCHEDULE" in
+            "17 6 * * 1") ARGS+=(--day monday --skip-recent) ;;
+            "47 7 * * 6") ARGS+=(--day saturday --skip-recent) ;;
+          esac
+          LISTS=$(python scripts/lists.py due "${ARGS[@]}")
+          echo "lists=$LISTS" >> "$GITHUB_OUTPUT"
+          echo "Due: $LISTS"
 
   curate:
     needs: plan
