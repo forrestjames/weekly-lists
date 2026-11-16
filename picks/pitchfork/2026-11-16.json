@@ -1,0 +1,143 @@
+{
+  "list": "pitchfork",
+  "date": "2026-11-16",
+  "items": [
+    {
+      "artist": "Blackhaine",
+      "title": "Saints in the Wethouse",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/023yHwmTQDjCn4G5v60RGJ",
+      "tags": [
+        "experimental",
+        "noise",
+        "rap"
+      ],
+      "note": "The Lancashire artist's debut album, out Nov 13 on XL. Pitchfork hears heavy noise-rap with overwhelming bass, and the review's headline points to a turn from harsh noise toward ambient tenderness.",
+      "source": "Pitchfork",
+      "source_url": "https://pitchfork.com/reviews/albums/blackhaine-saints-in-the-wethouse/"
+    },
+    {
+      "artist": "Dawuna",
+      "title": "Love's Arp",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/4hXdSScuXDeJWbaeZ6KTPH",
+      "tags": [
+        "experimental r&b",
+        "soul"
+      ],
+      "note": "His fourth album, out Nov 6 on True Panther. Pitchfork calls it muted experimental R&B, a tribute to a romance and to Black music history. Clash mentions East African rhythms, vintage gospel and house-inspired sound design.",
+      "source": "Pitchfork",
+      "source_url": "https://pitchfork.com/reviews/albums/dawuna-loves-arp/"
+    },
+    {
+      "artist": "Sam Gendel",
+      "title": "Advanced White Trash",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/26kPsreKm9O3n76k8AWhs7",
+      "tags": [
+        "experimental",
+        "beats"
+      ],
+      "note": "The LA saxophonist steps away from jazz here. Pitchfork describes Auto-Tuned vocals, hip-hop beats and fantasy themes, so expect something odd.",
+      "source": "Pitchfork",
+      "source_url": "https://pitchfork.com/reviews/albums/sam-gendel-advanced-white-trash/"
+    },
+    {
+      "artist": "OR (John Talabot)",
+      "title": "Music for Empty Stadiums",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/5TrIb5RT795Fuwx2Gqnv1U",
+      "tags": [
+        "electronic",
+        "ambient",
+        "dance"
+      ],
+      "note": "John Talabot's first solo full-length in over a decade, 95 minutes long on AD 93. He started it in lockdown, and Philip Sherburne's review hears dancefloor tracks built on sharp supersaws and cycling arpeggios.",
+      "source": "Pitchfork",
+      "source_url": "https://pitchfork.com/reviews/albums/or-music-for-empty-stadiums/"
+    },
+    {
+      "artist": "Shygirl",
+      "title": "SWALLOW!",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/3dQzmmWFcow0z84wGW6RpD",
+      "tags": [
+        "electronic",
+        "trip-hop",
+        "big beat"
+      ],
+      "note": "Pitchfork 7.2. Her second album leans on trip-hop and big beat, and the review says the bonkers electronics are the best bits.",
+      "source": "Pitchfork via Metacritic",
+      "source_url": "https://pitchfork.com/reviews/albums/shygirl-swallow/"
+    },
+    {
+      "artist": "Chuck Roth",
+      "title": "Texture Songs",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/6AclhyMrB2cs1a59N6637i",
+      "tags": [
+        "guitar",
+        "free improv",
+        "songwriter"
+      ],
+      "note": "Solo guitar and voice on Bill Orcutt's Palilalia label. Pitchfork notes extended guitar techniques and free-improv energy under quiet, understated singing.",
+      "source": "Pitchfork",
+      "source_url": "https://pitchfork.com/reviews/albums/chuck-roth-texture-songs/"
+    },
+    {
+      "artist": "Sun Araw",
+      "title": "Rapid Response EP",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/0lArlEVJ34BpvPCF5YmGyw",
+      "tags": [
+        "psychedelic",
+        "new age",
+        "ambient"
+      ],
+      "note": "A 12-inch of three long pieces. Pitchfork hears him going further into dark new age psychedelia.",
+      "source": "Pitchfork",
+      "source_url": "https://pitchfork.com/reviews/albums/sun-araw-rapid-response-ep/"
+    },
+    {
+      "artist": "More Eaze",
+      "title": "valley and structure",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/18t7DxYFiBtezVUfDkSv3z",
+      "tags": [
+        "experimental",
+        "electronic",
+        "country"
+      ],
+      "note": "Pitchfork 7.4, the best score in this batch. A Thrill Jockey album that follows sentence structure in the country, the record Pitchfork says started a new stage for Rubio.",
+      "source": "Pitchfork via Metacritic",
+      "source_url": "https://www.metacritic.com/publication/pitchfork/"
+    },
+    {
+      "artist": "Hiroshi Yoshimura",
+      "title": "Quiet Forest",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/5OpHyVdmQEY9n7vGlUTYUX",
+      "tags": [
+        "ambient",
+        "reissue"
+      ],
+      "note": "A reissue of his 1996 album, the last full-length released in his lifetime, inspired by a visit to the Hoh Rainforest. Pitchfork says it shows a playful side, and the new CD came out Nov 13 with vinyl due in December.",
+      "source": "Pitchfork",
+      "source_url": "https://pitchfork.com/reviews/albums/hiroshi-yoshimura-quiet-forest/"
+    },
+    {
+      "artist": "Kaitlyn Aurelia Smith",
+      "title": "RUIN: It's Not Just Music",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/1sYKpHvzVmZxcc2RxiVOk0",
+      "tags": [
+        "electronic",
+        "synth",
+        "experimental"
+      ],
+      "note": "Pitchfork 6.4, so a mixed review that compares it with out-there records like Gush and The Kid. It is the first release on her own label, Someone Special.",
+      "source": "Pitchfork via Metacritic",
+      "source_url": "https://www.metacritic.com/publication/pitchfork/"
+    }
+  ]
+}

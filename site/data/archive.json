@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T13:50:08Z",
+  "updated": "2026-11-16T09:26:36Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -7,6 +7,158 @@
       "colour": "#ff8a3d",
       "playlist": "https://open.spotify.com/playlist/6YpWmU0EK7fFa62dpR8Ip7",
       "weeks": [
+        {
+          "date": "2026-11-16",
+          "items": [
+            {
+              "artist": "Emergence Collective",
+              "title": "Concord",
+              "kind": "album",
+              "tags": [
+                "modern composition",
+                "improvisation",
+                "chamber"
+              ],
+              "note": "A Sheffield dectet on Dwell Records playing five slow, improvised pieces with no drums and no voice. A Closer Listen says the players respond to tiny changes in each other's playing, and the shifts creep up on you over time.",
+              "source": "A Closer Listen",
+              "source_url": "https://acloserlisten.com/2026/11/10/emergence-collective-concord/",
+              "spotify_url": "https://open.spotify.com/album/4G9U4IxHhQKVEVPFUHkLEL",
+              "art": "https://i.scdn.co/image/ab67616d0000b2738de2c4e35e239b9ec03e742d"
+            },
+            {
+              "artist": "Phantom Wizard",
+              "title": "One Of Many",
+              "kind": "album",
+              "tags": [
+                "experimental jazz",
+                "afro-caribbean",
+                "ambient"
+              ],
+              "note": "The second album from an Amsterdam musician who composed, played and recorded all of it at home. It's self-released and tagged everywhere from Afro-Caribbean ritual music to drone and experimental jazz. That's exactly the kind of record an algorithm won't hand you.",
+              "source": "Bandcamp",
+              "source_url": "https://phantomwizard.bandcamp.com/album/one-of-many",
+              "spotify_url": "https://open.spotify.com/album/1dbjaS8eFqjSUV5dPnGkvD",
+              "art": "https://i.scdn.co/image/ab67616d0000b273ebd0acc557bf9d3fcb60df2a"
+            },
+            {
+              "artist": "Dialog",
+              "title": "Symbol Of The Land",
+              "kind": "album",
+              "tags": [
+                "dub techno",
+                "electronic",
+                "ambient"
+              ],
+              "note": "Eleven tracks on the small Kynant label. Hard Wax calls it a warm, laid back, atmospheric dub electronic journey.",
+              "source": "Hard Wax",
+              "source_url": "https://hardwax.com/89812/dialog/symbol-of-the-land/",
+              "spotify_url": "https://open.spotify.com/album/7osopcoLMajRcbTf32ux4c",
+              "art": "https://i.scdn.co/image/ab67616d0000b273a7f196e821842b1cbc901726"
+            },
+            {
+              "artist": "Ukweli",
+              "title": "Toy (feat. Xenia Manasseh, tg.blk)",
+              "kind": "track",
+              "tags": [
+                "soul",
+                "kenya"
+              ],
+              "note": "A soul single built around the back and forth between Xenia Manasseh and tg.blk. OkayAfrica calls it pure, unfiltered soul.",
+              "source": "OkayAfrica",
+              "source_url": "https://www.okayafrica.com/the-african-songs-you-need-to-hear-this-week/1441910",
+              "spotify_url": "https://open.spotify.com/track/2hexOs4Q6ou4VW1RgN90Sh",
+              "art": "https://i.scdn.co/image/ab67616d0000b273c6e69c92350b0b7a5b57c5d0"
+            },
+            {
+              "artist": "Jakob Bro",
+              "title": "Bjerge, Strand",
+              "kind": "album",
+              "tags": [
+                "jazz",
+                "guitar",
+                "atmospheric"
+              ],
+              "note": "Bro's guitar with Larry Grenadier and Jorge Rossy, plus Charles Lloyd on saxophone and flute. JazzTrail calls it intimate and atmospheric, and picks out \"Osaka\" and \"Peace Song\" as favourites.",
+              "source": "JazzTrail",
+              "source_url": "https://www.jazztrail.net/blog/jakob-bro-bjerge-strand-album-review",
+              "spotify_url": "https://open.spotify.com/album/44nuLU2OFJwORESs5NKxX8",
+              "art": "https://i.scdn.co/image/ab67616d0000b2738a34ab23557068219b1f3b1e"
+            },
+            {
+              "artist": "Various Artists",
+              "title": "La Ola Nocturna: Experimental Songs and Deviant Pop from the Spanish 80's",
+              "kind": "album",
+              "tags": [
+                "post-punk",
+                "synth",
+                "spain",
+                "compilation"
+              ],
+              "note": "Bongo Joe digs into post-punk, synthwave and darkwave from independent scenes across Spain after Franco, well beyond the usual Madrid Movida story. Bandcamp says it has something for both longtime fans and newcomers, with real oddities alongside the songs.",
+              "source": "Bandcamp Daily",
+              "source_url": "https://daily.bandcamp.com/album-of-the-day/various-artists-la-ola-nocturna-experimental-songs-and-deviant-pop-from-the-spanish-80s-review",
+              "spotify_url": "https://open.spotify.com/album/4ZxtYj4l4b9Pfm4LahwCp8",
+              "art": "https://i.scdn.co/image/ab67616d0000b2736174e06efc3fbf35ea2ae809"
+            },
+            {
+              "artist": "Jimi Tenor",
+              "title": "Wormhole Mystic",
+              "kind": "album",
+              "tags": [
+                "electronic",
+                "jazz",
+                "minimal"
+              ],
+              "note": "Minimal, rhythmic music built from synths, flute, saxophone and voice. It sits right where your beat and jazz sides meet.",
+              "source": "Silent Radio",
+              "source_url": "https://www.silentradio.co.uk/11/12/album-roundup-week-ending-13-november-2026/",
+              "spotify_url": "https://open.spotify.com/album/1tGdVOhrtiPbQx7zqMD9ti",
+              "art": "https://i.scdn.co/image/ab67616d0000b27373004d14c4d1665937d7b4f3"
+            },
+            {
+              "artist": "Sienna Senate",
+              "title": "Do Your Thing (A COLORS SHOW)",
+              "kind": "track",
+              "tags": [
+                "soul",
+                "uk"
+              ],
+              "note": "Her COLORS debut. OkayAfrica hears current British soul with a nostalgic swing, and it's a song about love.",
+              "source": "OkayAfrica",
+              "source_url": "https://www.okayafrica.com/the-african-songs-you-need-to-hear-this-week/1441910",
+              "spotify_url": "https://open.spotify.com/track/04lQ7LO70aKDsonma8MU9O",
+              "art": "https://i.scdn.co/image/ab67616d0000b2739208dbfdd75f1080062a9544"
+            },
+            {
+              "artist": "JK Flesh & Orphx",
+              "title": "Death/Rebirth One",
+              "kind": "album",
+              "tags": [
+                "techno",
+                "industrial"
+              ],
+              "note": "Justin Broadrick's JK Flesh with the Canadian duo Orphx on KR3. Hard Wax sums it up as dark, heavy, raw techno, for when you want something with weight.",
+              "source": "Hard Wax",
+              "source_url": "https://hardwax.com/89804/jk-flesh-and-orphx/death-rebirth-one/",
+              "spotify_url": "https://open.spotify.com/album/06KpJwyJ1nc2TrbY2bI2Ni",
+              "art": "https://i.scdn.co/image/ab67616d0000b27304170998e876dedcf3275a89"
+            },
+            {
+              "artist": "Masayoshi Fujita",
+              "title": "Forest of Tranquility",
+              "kind": "album",
+              "tags": [
+                "ambient",
+                "kankyo ongaku"
+              ],
+              "note": "Seven long pieces on Erased Tapes in the Japanese environmental music tradition, each one shifting with the time of day. The press notes stress silence and point to Laraaji and Harold Budd. It's a quiet one to end on.",
+              "source": "Silent Radio",
+              "source_url": "https://www.silentradio.co.uk/11/12/album-roundup-week-ending-13-november-2026/",
+              "spotify_url": "https://open.spotify.com/album/70TI4vmpTkFnXhhww9EGY8",
+              "art": "https://i.scdn.co/image/ab67616d0000b273a3120b72279708888a084cf1"
+            }
+          ]
+        },
         {
           "date": "2026-11-09",
           "items": [
@@ -558,6 +710,159 @@
       "colour": "#4fd1c5",
       "playlist": "",
       "weeks": [
+        {
+          "date": "2026-11-16",
+          "items": [
+            {
+              "artist": "Jimi Tenor",
+              "title": "Wormhole Mystic",
+              "kind": "album",
+              "tags": [
+                "electronic",
+                "soul",
+                "leftfield"
+              ],
+              "note": "Twelve tracks built on old 60s and 70s drum machine loops, with Tenor adding synths, flute, sax and his own voice. Bureau B mentions Suicide and No Wave grooves, and calls one track cosmic drift.",
+              "source": "Juno Leftfield (found via Bureau B)",
+              "source_url": "https://www.bureau-b.com/artists/jimi-tenor",
+              "spotify_url": "https://open.spotify.com/album/1tGdVOhrtiPbQx7zqMD9ti",
+              "art": "https://i.scdn.co/image/ab67616d0000b27373004d14c4d1665937d7b4f3"
+            },
+            {
+              "artist": "Anna Butterss, John Raymond, Ben Lumsdaine",
+              "title": "Beginningless",
+              "kind": "album",
+              "tags": [
+                "jazz",
+                "improvised",
+                "ambient jazz"
+              ],
+              "note": "Bass, trumpet and drums, fully improvised over two days in an LA studio with very little overdubbing. The Line of Best Fit gave it 8/10 for its open space and slow, hypnotic build.",
+              "source": "Juno Jazz (found via The Line of Best Fit)",
+              "source_url": "https://thelineofbestfit.com/albums/supple-improvisations-weave-a-hypnotic-spell-on-beginningless-from-anna-butterss-new-trio",
+              "spotify_url": "https://open.spotify.com/album/0MAxYyYgAok6DjSjfbhv6N",
+              "art": "https://i.scdn.co/image/ab67616d0000b27362ce947a89cb455fb256cd4f"
+            },
+            {
+              "artist": "Glenn Davis",
+              "title": "A New Day",
+              "kind": "track",
+              "tags": [
+                "deep house",
+                "soulful house"
+              ],
+              "note": "Title track from the Dublin DJ and collector's new EP on Ascension On Wax, a small label that presses short vinyl runs. Dirty Disco played it in their deep, soulful house show this month.",
+              "source": "Juno Deep House (found via Dirty Disco)",
+              "source_url": "https://www.dirtydiscoradio.com/dirty-disco-665-new-house-music-november-2026/",
+              "spotify_url": "https://open.spotify.com/track/59OK1tx7d00YA008TCKxSC",
+              "art": "https://i.scdn.co/image/ab67616d0000b273fbb34170dc0e2ea1608ddb6f"
+            },
+            {
+              "artist": "Yangze",
+              "title": "Heartbreak Stew",
+              "kind": "album",
+              "tags": [
+                "electronic",
+                "experimental pop",
+                "guitar"
+              ],
+              "note": "A debut from Copenhagen that puts acoustic guitar next to hyperpop and trap touches. Bandcamp Daily found it more cohesive than that mix suggests, with tender processed vocals.",
+              "source": "Juno Leftfield (found via Bandcamp Daily Essential Releases)",
+              "source_url": "https://daily.bandcamp.com/essential-releases/essential-releases-november-13-2026",
+              "spotify_url": "https://open.spotify.com/album/71JbANfvjiWqdhCb83IrMA",
+              "art": "https://i.scdn.co/image/ab67616d0000b2736c5da57a08cf2e6526610085"
+            },
+            {
+              "artist": "Masayoshi Fujita",
+              "title": "Forest of Tranquility",
+              "kind": "album",
+              "tags": [
+                "ambient",
+                "vibraphone",
+                "modern classical"
+              ],
+              "note": "The vibraphone player's new Erased Tapes album grew out of music he made for a living forest installation at Expo 2025. Seven long pieces that shift with the time of day.",
+              "source": "Juno Ambient / Drone / Experimental (found via The Line of Best Fit)",
+              "source_url": "https://www.thelineofbestfit.com/news/masayoshi-fujita-previews-upcoming-album-forest-of-tranquility",
+              "spotify_url": "https://open.spotify.com/album/70TI4vmpTkFnXhhww9EGY8",
+              "art": "https://i.scdn.co/image/ab67616d0000b273a3120b72279708888a084cf1"
+            },
+            {
+              "artist": "Donwill & The Expert",
+              "title": "EXPERTISE",
+              "kind": "album",
+              "tags": [
+                "hip-hop",
+                "boom bap",
+                "jazzy beats"
+              ],
+              "note": "Donwill's first proper album in seven years, over old-school boom bap and jazzy samples. Bandcamp Daily heard it as a joyful record that invites you to a party.",
+              "source": "Juno Broken Beat / Nu-Jazz (found via Bandcamp Daily Album of the Day)",
+              "source_url": "https://daily.bandcamp.com/album-of-the-day/donwill-the-expert-expertise-review",
+              "spotify_url": "https://open.spotify.com/album/5eiauhewJCJTRVmly88CYS",
+              "art": "https://i.scdn.co/image/ab67616d0000b2730089f0d6abc5c60fd0fd5a49"
+            },
+            {
+              "artist": "The Body & Cel Genesis",
+              "title": "Whole Wide World",
+              "kind": "track",
+              "tags": [
+                "experimental",
+                "electronic",
+                "noise"
+              ],
+              "note": "Title track from a two-year collaboration that grew out of touring together. Silent Radio describes the album as trance, distortion and experimental electronics with two live drummers.",
+              "source": "Juno Ambient / Drone / Experimental (found via Silent Radio)",
+              "source_url": "https://www.silentradio.co.uk/11/12/album-roundup-week-ending-13-november-2026/",
+              "spotify_url": "https://open.spotify.com/track/50AtX6xge8yf0lU1DLJTpU",
+              "art": "https://i.scdn.co/image/ab67616d0000b273184248fce4c1d46173640617"
+            },
+            {
+              "artist": "Stephan Micus",
+              "title": "Traces in the Sand",
+              "kind": "album",
+              "tags": [
+                "world",
+                "ambient",
+                "ecm"
+              ],
+              "note": "His 27th solo album for ECM, dedicated to the sea and played on lamellophones he collected from places like Borneo, Japan and Armenia. It's about how the sea makes you feel, not a picture of it.",
+              "source": "Juno Ambient / Drone / Experimental (found via uDiscover Music)",
+              "source_url": "https://www.udiscovermusic.com/?p=2769180",
+              "spotify_url": "https://open.spotify.com/album/1eG7wpa0IAoDx3LhLR1xwR",
+              "art": "https://i.scdn.co/image/ab67616d0000b273e09fe4650c21a5f393a108e1"
+            },
+            {
+              "artist": "Cello Octet Amsterdam",
+              "title": "Cocon",
+              "kind": "album",
+              "tags": [
+                "modern classical",
+                "drone",
+                "ambient"
+              ],
+              "note": "Eight cellos with imagined electronic echoes, from a live audiovisual show with commissioned pieces including one by Sarah Davachi. Worth it if you like slow, physical string drone.",
+              "source": "Juno Ambient / Drone / Experimental (found via Silent Radio)",
+              "source_url": "https://www.silentradio.co.uk/11/12/album-roundup-week-ending-13-november-2026/",
+              "spotify_url": "https://open.spotify.com/album/2EirI7rdTnMAF6KTmCW7tL",
+              "art": "https://i.scdn.co/image/ab67616d0000b273225e276ea3d9d1f84ace075b"
+            },
+            {
+              "artist": "Felix Rösch",
+              "title": "ARP",
+              "kind": "album",
+              "tags": [
+                "modern classical",
+                "ambient"
+              ],
+              "note": "A new modern classical record about pain, perseverance and family. We only read a short line on this one, so treat it as a tip to try.",
+              "source": "Juno Ambient / Drone / Experimental (found via Silent Radio)",
+              "source_url": "https://www.silentradio.co.uk/11/12/album-roundup-week-ending-13-november-2026/",
+              "spotify_url": "https://open.spotify.com/album/1NjOUiBBVueeLMIVZXkJUc",
+              "art": "https://i.scdn.co/image/ab67616d0000b2733ed385984f09e12241edf8e8"
+            }
+          ]
+        },
         {
           "date": "2026-11-14",
           "items": [
@@ -1208,6 +1513,158 @@
       "colour": "#ff4f70",
       "playlist": "https://open.spotify.com/playlist/3dpMdHl7DgSw0ORy7GumJo",
       "weeks": [
+        {
+          "date": "2026-11-16",
+          "items": [
+            {
+              "artist": "Blackhaine",
+              "title": "Saints in the Wethouse",
+              "kind": "album",
+              "tags": [
+                "experimental",
+                "noise",
+                "rap"
+              ],
+              "note": "The Lancashire artist's debut album, out Nov 13 on XL. Pitchfork hears heavy noise-rap with overwhelming bass, and the review's headline points to a turn from harsh noise toward ambient tenderness.",
+              "source": "Pitchfork",
+              "source_url": "https://pitchfork.com/reviews/albums/blackhaine-saints-in-the-wethouse/",
+              "spotify_url": "https://open.spotify.com/album/023yHwmTQDjCn4G5v60RGJ",
+              "art": "https://i.scdn.co/image/ab67616d0000b273907c0aed022cb332c0ac2c74"
+            },
+            {
+              "artist": "Dawuna",
+              "title": "Love's Arp",
+              "kind": "album",
+              "tags": [
+                "experimental r&b",
+                "soul"
+              ],
+              "note": "His fourth album, out Nov 6 on True Panther. Pitchfork calls it muted experimental R&B, a tribute to a romance and to Black music history. Clash mentions East African rhythms, vintage gospel and house-inspired sound design.",
+              "source": "Pitchfork",
+              "source_url": "https://pitchfork.com/reviews/albums/dawuna-loves-arp/",
+              "spotify_url": "https://open.spotify.com/album/4hXdSScuXDeJWbaeZ6KTPH",
+              "art": "https://i.scdn.co/image/ab67616d0000b273692d5986440d61df02bde426"
+            },
+            {
+              "artist": "Sam Gendel",
+              "title": "Advanced White Trash",
+              "kind": "album",
+              "tags": [
+                "experimental",
+                "beats"
+              ],
+              "note": "The LA saxophonist steps away from jazz here. Pitchfork describes Auto-Tuned vocals, hip-hop beats and fantasy themes, so expect something odd.",
+              "source": "Pitchfork",
+              "source_url": "https://pitchfork.com/reviews/albums/sam-gendel-advanced-white-trash/",
+              "spotify_url": "https://open.spotify.com/album/26kPsreKm9O3n76k8AWhs7",
+              "art": "https://i.scdn.co/image/ab67616d0000b2739106297470d018fbdaab546a"
+            },
+            {
+              "artist": "OR (John Talabot)",
+              "title": "Music for Empty Stadiums",
+              "kind": "album",
+              "tags": [
+                "electronic",
+                "ambient",
+                "dance"
+              ],
+              "note": "John Talabot's first solo full-length in over a decade, 95 minutes long on AD 93. He started it in lockdown, and Philip Sherburne's review hears dancefloor tracks built on sharp supersaws and cycling arpeggios.",
+              "source": "Pitchfork",
+              "source_url": "https://pitchfork.com/reviews/albums/or-music-for-empty-stadiums/",
+              "spotify_url": "https://open.spotify.com/album/5TrIb5RT795Fuwx2Gqnv1U",
+              "art": "https://i.scdn.co/image/ab67616d0000b273393276e66c9f62302bceb345"
+            },
+            {
+              "artist": "Shygirl",
+              "title": "SWALLOW!",
+              "kind": "album",
+              "tags": [
+                "electronic",
+                "trip-hop",
+                "big beat"
+              ],
+              "note": "Pitchfork 7.2. Her second album leans on trip-hop and big beat, and the review says the bonkers electronics are the best bits.",
+              "source": "Pitchfork via Metacritic",
+              "source_url": "https://pitchfork.com/reviews/albums/shygirl-swallow/",
+              "spotify_url": "https://open.spotify.com/album/3dQzmmWFcow0z84wGW6RpD",
+              "art": "https://i.scdn.co/image/ab67616d0000b273386f243bc8f40a2669ba7aa6"
+            },
+            {
+              "artist": "Chuck Roth",
+              "title": "Texture Songs",
+              "kind": "album",
+              "tags": [
+                "guitar",
+                "free improv",
+                "songwriter"
+              ],
+              "note": "Solo guitar and voice on Bill Orcutt's Palilalia label. Pitchfork notes extended guitar techniques and free-improv energy under quiet, understated singing.",
+              "source": "Pitchfork",
+              "source_url": "https://pitchfork.com/reviews/albums/chuck-roth-texture-songs/",
+              "spotify_url": "https://open.spotify.com/album/6AclhyMrB2cs1a59N6637i",
+              "art": "https://i.scdn.co/image/ab67616d0000b2733eccf84bdd92337420973939"
+            },
+            {
+              "artist": "Sun Araw",
+              "title": "Rapid Response EP",
+              "kind": "album",
+              "tags": [
+                "psychedelic",
+                "new age",
+                "ambient"
+              ],
+              "note": "A 12-inch of three long pieces. Pitchfork hears him going further into dark new age psychedelia.",
+              "source": "Pitchfork",
+              "source_url": "https://pitchfork.com/reviews/albums/sun-araw-rapid-response-ep/",
+              "spotify_url": "https://open.spotify.com/album/0lArlEVJ34BpvPCF5YmGyw",
+              "art": "https://i.scdn.co/image/ab67616d0000b2734e6f2d81b64b76a6f49a238d"
+            },
+            {
+              "artist": "More Eaze",
+              "title": "valley and structure",
+              "kind": "album",
+              "tags": [
+                "experimental",
+                "electronic",
+                "country"
+              ],
+              "note": "Pitchfork 7.4, the best score in this batch. A Thrill Jockey album that follows sentence structure in the country, the record Pitchfork says started a new stage for Rubio.",
+              "source": "Pitchfork via Metacritic",
+              "source_url": "https://www.metacritic.com/publication/pitchfork/",
+              "spotify_url": "https://open.spotify.com/album/18t7DxYFiBtezVUfDkSv3z",
+              "art": "https://i.scdn.co/image/ab67616d0000b2731f9cf4b3d796b4b1b1df5942"
+            },
+            {
+              "artist": "Hiroshi Yoshimura",
+              "title": "Quiet Forest",
+              "kind": "album",
+              "tags": [
+                "ambient",
+                "reissue"
+              ],
+              "note": "A reissue of his 1996 album, the last full-length released in his lifetime, inspired by a visit to the Hoh Rainforest. Pitchfork says it shows a playful side, and the new CD came out Nov 13 with vinyl due in December.",
+              "source": "Pitchfork",
+              "source_url": "https://pitchfork.com/reviews/albums/hiroshi-yoshimura-quiet-forest/",
+              "spotify_url": "https://open.spotify.com/album/5OpHyVdmQEY9n7vGlUTYUX",
+              "art": "https://i.scdn.co/image/ab67616d0000b273b9d0d885187cf705bdf6ebe9"
+            },
+            {
+              "artist": "Kaitlyn Aurelia Smith",
+              "title": "RUIN: It's Not Just Music",
+              "kind": "album",
+              "tags": [
+                "electronic",
+                "synth",
+                "experimental"
+              ],
+              "note": "Pitchfork 6.4, so a mixed review that compares it with out-there records like Gush and The Kid. It is the first release on her own label, Someone Special.",
+              "source": "Pitchfork via Metacritic",
+              "source_url": "https://www.metacritic.com/publication/pitchfork/",
+              "spotify_url": "https://open.spotify.com/album/1sYKpHvzVmZxcc2RxiVOk0",
+              "art": "https://i.scdn.co/image/ab67616d0000b2733ed89caeb6fb407b5bef97d3"
+            }
+          ]
+        },
         {
           "date": "2026-11-15",
           "items": [
