@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T09:26:36Z",
+  "updated": "2026-11-21T15:51:32Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -1793,6 +1793,211 @@
       "colour": "#f5c542",
       "playlist": "",
       "weeks": [
+        {
+          "date": "2026-11-21",
+          "items": [
+            {
+              "title": "Visual Culture of Northeast Brazil (Cordel Edition)",
+              "kind": "book",
+              "tags": [
+                "vernacular",
+                "brazil",
+                "woodcut",
+                "print"
+              ],
+              "note": "A 700-page study of cordel, the cheap pamphlet poetry of Brazil's Northeast with its woodcut covers. Victor Yves treats it as a communication system rather than folklore, with essays, close visual analysis, interviews and an anthology of more than 500 illustrations. It grew out of his CASCA Archive of Northeast Brazilian design, and comes as a small, thick, thread-sewn hardcover. Draw Down has it in stock too.",
+              "link": "https://shop.casca-archive.org",
+              "art": "https://m.itsnicethat.com/original_images/9_-_Dila__Cordel_Copyright__Dila_1979.jpg?class=w1080",
+              "by": "Victor Yves",
+              "instagram": [
+                "@victoryves"
+              ],
+              "shop": "CASCA Archive",
+              "price": "$129",
+              "pictures_from": [
+                "https://www.itsnicethat.com/articles/victor-yves-casca-archive-brazil-graphic-design-151025",
+                "https://casca-archive.org/"
+              ],
+              "art_checked": true
+            },
+            {
+              "title": "The Century of the Poster: Slovenian Poster Design in the 20th Century",
+              "kind": "book",
+              "tags": [
+                "posters",
+                "design history",
+                "slovenia"
+              ],
+              "note": "More than 300 Slovenian posters, drawn from the visual communications collection at the Museum of Architecture and Design in Ljubljana and from libraries, archives and private holdings. It runs from early 20th century lithographs through modernism to post-socialist work, and reads the poster as a tool that shaped public space and political debate. 390 pages, paperback, in English. This week's poster book.",
+              "link": "https://www.ideabooks.nl/9789617247039-the-century-of-the-poster-slovenian-poster-design-in-the-20th-century",
+              "art": "https://www.ideabooks.nl/media/75/df/c2/1770686032/251026.century.9789617247039.jpg.jpg?ts=1777298946",
+              "by": "Cvetka Požar (ed.), MAO",
+              "instagram": [
+                "@mao_slovenia"
+              ],
+              "shop": "Idea Books",
+              "price": "$64",
+              "art_checked": true
+            },
+            {
+              "title": "MXTP Vol. 2 (Music Typefaces)",
+              "kind": "book",
+              "tags": [
+                "type specimen",
+                "music",
+                "fonts"
+              ],
+              "note": "The second font mixtape from Maxitype, the independent Swiss foundry and publisher. The typefaces came out of a summer type residency, and all of them are made for or inspired by music, from grunge and jungle to classical and Goa trance. 176 pages, hardcover, with a download code for 46 typefaces, so it is half specimen and half font library.",
+              "link": "https://www.ideabooks.nl/9782940874002-mxtp-vol-2-music-fonts",
+              "art": "https://www.ideabooks.nl/media/50/c7/a8/1792456028/260724.9782940874002.mxtp.jpg.jpg?ts=1792456028",
+              "by": "Maxitype",
+              "instagram": [
+                "@maxitype_com"
+              ],
+              "shop": "Idea Books",
+              "price": "$55",
+              "art_checked": true
+            },
+            {
+              "title": "Bilingual Typography: A Guide to Categorisation and Design Principles",
+              "kind": "book",
+              "tags": [
+                "typography",
+                "multilingual",
+                "pre-order"
+              ],
+              "note": "A small guide to setting two languages in one layout, built on Khajeh's doctoral research into Arabic and Latin typography and her own bilingual design work. It defines key terms, proposes new categories for bilingual layouts and sets out principles for balancing them. 144 pages, hardcover with a round spine, spot colours on uncoated paper. Ships in January 2027.",
+              "link": "https://www.slanted.de/product/bilingual-typography/",
+              "by": "Sahar Khajeh",
+              "instagram": [
+                "@slanted_publishers"
+              ],
+              "shop": "Slanted",
+              "price": "€26 (pre-order)",
+              "pictures_from": [
+                "https://downloads.slanted.de/Slanted_Publishers/Slanted-Publishers-Catalog_26-2_Fall.pdf",
+                "https://uhra.herts.ac.uk/id/eprint/25991/"
+              ],
+              "art": "https://www.slanted.de/wp-content/uploads/2026/07/Slanted-Bilingual-Typography-Sahar-Khajeh-Cover_2560px-scaled.jpg",
+              "art_checked": true
+            },
+            {
+              "title": "Design Subject to Change: Human Agency in the Digital Interface",
+              "kind": "book",
+              "tags": [
+                "interface design",
+                "essays",
+                "pre-order"
+              ],
+              "note": "Part manifesto and part confession from an interface designer who has spent a decade building software at scale. Spradlin asks why so many digital products now work against the people using them, drawing on design history, social theory and philosophy, and argues that the future of the interface is still open. Edited by Jarrett Fuller, with a foreword by Silvio Lorusso and a cover by Oliver Munday. 280 pages, expected mid to late January 2027.",
+              "link": "https://www.setmargins.press/books/design-subject-to-change/",
+              "by": "Liam Spradlin",
+              "instagram": [
+                "@setmargins"
+              ],
+              "shop": "Set Margins'",
+              "price": "€27 (pre-order)",
+              "pictures_from": [
+                "https://www.setmargins.press/books/design-subject-to-change/"
+              ],
+              "art": "https://www.setmargins.press/wp-content/uploads/2026/07/Cover-Source3.png",
+              "art_checked": true
+            },
+            {
+              "title": "The World's Best Typography: Typography 47",
+              "kind": "book",
+              "tags": [
+                "typography",
+                "lettering",
+                "annual"
+              ],
+              "note": "The latest Type Directors Club winners in communication design, lettering and typeface design, now published by Slanted. This edition is smaller and cheaper than before, with a Judges' Choices section where jurors explain their picks and an index of typefaces and designers. 384 pages, edited by Griffin McCabe and Joe Newton, art directed by Lars Harmsen and Marian Misiak.",
+              "link": "https://www.slanted.de/product/the-worlds-best-typography-typography-47/",
+              "art": "https://www.ideabooks.nl/media/c8/5b/47/1792714125/260765.world.9783692020136.jpg.jpg?ts=1792714125",
+              "by": "Type Directors Club",
+              "instagram": [
+                "@typedirectors",
+                "@slanted_publishers"
+              ],
+              "shop": "Slanted",
+              "price": "€45",
+              "art_checked": true
+            },
+            {
+              "title": "The Best Dutch Book Designs 2025",
+              "kind": "book",
+              "tags": [
+                "book design",
+                "editorial design",
+                "netherlands"
+              ],
+              "note": "The yearly round-up of the best designed Dutch books, presented by the Stedelijk Museum Amsterdam. Two juries pick the books, one of design, publishing and production people and one of graphic design students, and they look at typography, image editing, paper, printing and binding. 332 pages, Dutch and English. A good catalogue to steal ideas from.",
+              "link": "https://www.ideabooks.nl/9789083173863-the-best-dutch-book-designs-2025-de-best-verzorgde-boeken-2025",
+              "art": "https://www.ideabooks.nl/media/6b/1c/bd/1794440131/260884.bestdutch.9789083173863.jpg.jpg?ts=1794440131",
+              "by": "De Best Verzorgde Boeken",
+              "shop": "Idea Books",
+              "price": "$48",
+              "art_checked": true
+            },
+            {
+              "title": "To Have an Idea: 50 Years of Idea Books",
+              "kind": "book",
+              "tags": [
+                "publishing",
+                "distribution",
+                "book trade"
+              ],
+              "note": "Idea Books has distributed art, architecture and design books out of Amsterdam since 1976, and this is its 50th birthday book. Current and former staff, reps, publishers and customers share stories, next to archive documents, behind-the-scenes material and favourite titles. 156 pages, designed by Dongyoung Lee with photographs by Johannes Schwartz. A look at the part of the book world readers rarely see.",
+              "link": "https://www.ideabooks.nl/9789080270084-to-have-an-idea-50-years-of-idea-books",
+              "art": "https://www.ideabooks.nl/media/1d/a8/b6/1793232860/260786.idea.9789080270084.jpg.jpg?ts=1793232860",
+              "by": "Idea Books",
+              "shop": "Idea Books",
+              "price": "$49.50",
+              "art_checked": true
+            },
+            {
+              "title": "Mikhail Lychkovskiy",
+              "kind": "designer",
+              "tags": [
+                "posters",
+                "typography",
+                "screen printing"
+              ],
+              "note": "Poster designer who builds his work on type and grids, with Müller-Brockmann, Ruder and Hofmann as touchstones and French posters as a newer interest. He mostly works in Figma but also makes posters by hand with metal and wood type, paint and brushes, a habit he picked up from Peter Bankov. This spring he had a solo show, Typoposterized, at PANDA Platforma in Berlin, with a screen printed poster that tries to fit in as many ways of handling type as possible.",
+              "link": "https://www.typographicposters.com/lychkovskiy",
+              "art": "https://peopleofprint.com/wp-content/uploads/2026/06/MikhailLychkovskiy2.png",
+              "by": "Designer, Minsk",
+              "instagram": [
+                "@khalitzburg"
+              ],
+              "shop": "Typographic Posters",
+              "pictures_from": [
+                "https://peopleofprint.com/illustration-2/safe-from-anything-except-typography-mikhail-lychkovskiys-typoposterized/",
+                "https://www.creativeboom.com/work/mikhail-lychkovskiy/"
+              ],
+              "art_checked": true
+            },
+            {
+              "title": "Thiago Lacaz",
+              "kind": "designer",
+              "tags": [
+                "posters",
+                "music",
+                "book covers"
+              ],
+              "note": "Rio designer who makes posters for Brazilian musicians, films and festivals, plus book covers. His animated poster for a micro bookstore's 11th birthday, with coloured bars that read as both book spines and a sound equalizer, was picked for the Typographic Arts 100 this year. His newest posters, for Amaro Freitas and Romulo Fróes, are on Typographic Posters, and he has won first place at the International Poster Biennial in Mexico.",
+              "link": "https://thiagolacaz.com/",
+              "art": "https://retroavangarda.com/gallery-of-friends/upload/Thiago_Lacaz/thiagolacaz08.png",
+              "by": "Designer, Rio de Janeiro",
+              "shop": "Studio site",
+              "pictures_from": [
+                "https://www.typographicposters.com/thiago-lacaz",
+                "https://100.typographicarts.org/winners/2026/desculpe-a-poeira"
+              ],
+              "art_checked": true
+            }
+          ]
+        },
         {
           "date": "2026-11-14",
           "items": [

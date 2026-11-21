@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T09:26:36Z",
+  "updated": "2026-11-21T15:51:32Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
@@ -475,235 +475,207 @@
       "type": "design",
       "colour": "#f5c542",
       "playlist": "",
-      "date": "2026-11-14",
+      "date": "2026-11-21",
       "items": [
         {
-          "title": "Dossier Scriptorium de Toulouse",
+          "title": "Visual Culture of Northeast Brazil (Cordel Edition)",
           "kind": "book",
           "tags": [
-            "type design",
-            "calligraphy",
-            "teaching"
+            "vernacular",
+            "brazil",
+            "woodcut",
+            "print"
           ],
-          "note": "The story of the Scriptorium de Toulouse, a type and calligraphy workshop that ran from 1967 to 2005 and trained a generation of French letter makers. Mostly unpublished documents and first-hand accounts, with contributions from nearly twenty type designers and calligraphers. 240 pages, two colour offset, French and English, designed by Juliette Flécheux with Bureau 205 and co-published with ANRT. A good one on how a school's way of teaching shapes the work that comes after it.",
-          "link": "https://draw-down.com/products/dossier-scriptorium-de-toulouse",
-          "by": "Bureau 205 and ANRT",
+          "note": "A 700-page study of cordel, the cheap pamphlet poetry of Brazil's Northeast with its woodcut covers. Victor Yves treats it as a communication system rather than folklore, with essays, close visual analysis, interviews and an anthology of more than 500 illustrations. It grew out of his CASCA Archive of Northeast Brazilian design, and comes as a small, thick, thread-sewn hardcover. Draw Down has it in stock too.",
+          "link": "https://shop.casca-archive.org",
+          "art": "https://m.itsnicethat.com/original_images/9_-_Dila__Cordel_Copyright__Dila_1979.jpg?class=w1080",
+          "by": "Victor Yves",
           "instagram": [
-            "@bureau_205",
-            "@drawdownbooks"
+            "@victoryves"
           ],
-          "shop": "Draw Down",
-          "price": "$75",
-          "art_checked": true,
-          "art": "https://draw-down.com/cdn/shop/files/DossierScriptoriumdeToulouse.jpg?v=1745192069"
+          "shop": "CASCA Archive",
+          "price": "$129",
+          "pictures_from": [
+            "https://www.itsnicethat.com/articles/victor-yves-casca-archive-brazil-graphic-design-151025",
+            "https://casca-archive.org/"
+          ],
+          "art_checked": true
         },
         {
-          "title": "Some Other Book(i)s(h) Logos",
+          "title": "The Century of the Poster: Slovenian Poster Design in the 20th Century",
           "kind": "book",
           "tags": [
-            "logos",
-            "small press",
-            "artist's book"
+            "posters",
+            "design history",
+            "slovenia"
           ],
-          "note": "174 logos from small presses, zine makers, bookshops, book fairs and printers, all redrawn by hand by a third grader called Zaiah Drawing. It's a colouring book too, and the back of each fold gives the name, a short bio and the Instagram handle, so it doubles as a directory of the art book world. Designed by Kristen Mueller, coil bound, risograph and inkjet. Funny, and a sharp test of which marks survive being drawn by a child.",
-          "link": "https://draw-down.com/products/some-other-bookish-logos",
-          "by": "Zaiah Drawing",
+          "note": "More than 300 Slovenian posters, drawn from the visual communications collection at the Museum of Architecture and Design in Ljubljana and from libraries, archives and private holdings. It runs from early 20th century lithographs through modernism to post-socialist work, and reads the poster as a tool that shaped public space and political debate. 390 pages, paperback, in English. This week's poster book.",
+          "link": "https://www.ideabooks.nl/9789617247039-the-century-of-the-poster-slovenian-poster-design-in-the-20th-century",
+          "art": "https://www.ideabooks.nl/media/75/df/c2/1770686032/251026.century.9789617247039.jpg.jpg?ts=1777298946",
+          "by": "Cvetka Požar (ed.), MAO",
           "instagram": [
-            "@someotherbooks",
-            "@drawdownbooks"
+            "@mao_slovenia"
           ],
-          "shop": "Draw Down",
-          "price": "$35",
-          "art_checked": true,
-          "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/SomeOtherBook_i_s_h_Logos.jpg?v=1743797423",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/1681/2497/files/SomeOtherBook_i_s_h_Logos.jpg?v=1743797423",
-            "https://cdn.shopify.com/s/files/1/1681/2497/files/DSC02767.jpg?v=1743797673",
-            "https://cdn.shopify.com/s/files/1/1681/2497/files/DSC02764.jpg?v=1743797673",
-            "https://cdn.shopify.com/s/files/1/1681/2497/files/DSC02766.jpg?v=1743797673",
-            "https://cdn.shopify.com/s/files/1/1681/2497/files/DSC02762.jpg?v=1743797673"
-          ]
+          "shop": "Idea Books",
+          "price": "$64",
+          "art_checked": true
         },
         {
-          "title": "GraphicDesign.zip",
+          "title": "MXTP Vol. 2 (Music Typefaces)",
           "kind": "book",
           "tags": [
-            "stamps",
-            "swiss design",
-            "small formats",
+            "type specimen",
+            "music",
+            "fonts"
+          ],
+          "note": "The second font mixtape from Maxitype, the independent Swiss foundry and publisher. The typefaces came out of a summer type residency, and all of them are made for or inspired by music, from grunge and jungle to classical and Goa trance. 176 pages, hardcover, with a download code for 46 typefaces, so it is half specimen and half font library.",
+          "link": "https://www.ideabooks.nl/9782940874002-mxtp-vol-2-music-fonts",
+          "art": "https://www.ideabooks.nl/media/50/c7/a8/1792456028/260724.9782940874002.mxtp.jpg.jpg?ts=1792456028",
+          "by": "Maxitype",
+          "instagram": [
+            "@maxitype_com"
+          ],
+          "shop": "Idea Books",
+          "price": "$55",
+          "art_checked": true
+        },
+        {
+          "title": "Bilingual Typography: A Guide to Categorisation and Design Principles",
+          "kind": "book",
+          "tags": [
+            "typography",
+            "multilingual",
             "pre-order"
           ],
-          "note": "Nearly a century of Swiss stamp design, looked at through eight lenses: format, shape, sheet layout, material, cropping, symbols, typography and imagery. Braille embossing, fabric stamps and foils turn up along the way. Tiny at 7.4 x 10.5 cm, 96 pages, Wire-O bound. Small screens are your world, and this is all about saying a lot in very little space.",
-          "link": "https://www.slanted.de/product/graphicdesign-zip/",
-          "by": "Svenja Kolly and Mia Gujer",
+          "note": "A small guide to setting two languages in one layout, built on Khajeh's doctoral research into Arabic and Latin typography and her own bilingual design work. It defines key terms, proposes new categories for bilingual layouts and sets out principles for balancing them. 144 pages, hardcover with a round spine, spot colours on uncoated paper. Ships in January 2027.",
+          "link": "https://www.slanted.de/product/bilingual-typography/",
+          "by": "Sahar Khajeh",
           "instagram": [
             "@slanted_publishers"
           ],
           "shop": "Slanted",
-          "price": "€14 (pre-order)",
-          "art_checked": true,
-          "art": "https://www.slanted.de/wp-content/uploads/2026/10/GraphicDesignZip_Cover.png"
+          "price": "€26 (pre-order)",
+          "pictures_from": [
+            "https://downloads.slanted.de/Slanted_Publishers/Slanted-Publishers-Catalog_26-2_Fall.pdf",
+            "https://uhra.herts.ac.uk/id/eprint/25991/"
+          ],
+          "art": "https://www.slanted.de/wp-content/uploads/2026/07/Slanted-Bilingual-Typography-Sahar-Khajeh-Cover_2560px-scaled.jpg",
+          "art_checked": true
         },
         {
-          "title": "Dreader Than Dreads: Posters by Fred Voisin",
+          "title": "Design Subject to Change: Human Agency in the Digital Interface",
           "kind": "book",
           "tags": [
-            "posters",
-            "reggae",
-            "paris"
-          ],
-          "note": "A folio of concert posters Frédéric Voisin made for reggae shows in Paris: Yellowman, Aswad, Culture, Burning Spear, Dennis Brown. Unbound, 16 pages, full colour, with a short text by Olivier Cachin. Published by le Signe, the national graphic design centre in Chaumont. This week's poster pick, and at $16 an easy one to say yes to.",
-          "link": "https://draw-down.com/products/dreader-than-dreads-posters-by-fred-voisin",
-          "by": "Fred Voisin",
-          "instagram": [
-            "@lesigne_cndg",
-            "@drawdownbooks"
-          ],
-          "shop": "Draw Down",
-          "price": "$16",
-          "art_checked": true,
-          "art": "https://draw-down.com/cdn/shop/files/DreaderThanDreads.jpg?v=1745192800"
-        },
-        {
-          "title": "PLOP #03: Polish Design Revue",
-          "kind": "magazine",
-          "tags": [
-            "magazine",
-            "poland",
-            "social design",
+            "interface design",
+            "essays",
             "pre-order"
           ],
-          "note": "A slim Polish design magazine asking what graphic design can do beyond selling or looking good. The theme is wrażliwość, roughly sensitivity or openness. Inside: Poster Rex's collective screen printing, Sonia Góral's family imagery, and Podpunkt's safety booklet that went to 16.8 million Polish households. 32 pages. Out in December.",
-          "link": "https://www.slanted.de/product/plop-03-polish-design-revue/",
-          "by": "Marian Misiak, Rene Wawrzkiewicz and Lars Harmsen",
+          "note": "Part manifesto and part confession from an interface designer who has spent a decade building software at scale. Spradlin asks why so many digital products now work against the people using them, drawing on design history, social theory and philosophy, and argues that the future of the interface is still open. Edited by Jarrett Fuller, with a foreword by Silvio Lorusso and a cover by Oliver Munday. 280 pages, expected mid to late January 2027.",
+          "link": "https://www.setmargins.press/books/design-subject-to-change/",
+          "by": "Liam Spradlin",
           "instagram": [
-            "@slanted_publishers",
-            "@podpunkt"
+            "@setmargins"
+          ],
+          "shop": "Set Margins'",
+          "price": "€27 (pre-order)",
+          "pictures_from": [
+            "https://www.setmargins.press/books/design-subject-to-change/"
+          ],
+          "art": "https://www.setmargins.press/wp-content/uploads/2026/07/Cover-Source3.png",
+          "art_checked": true
+        },
+        {
+          "title": "The World's Best Typography: Typography 47",
+          "kind": "book",
+          "tags": [
+            "typography",
+            "lettering",
+            "annual"
+          ],
+          "note": "The latest Type Directors Club winners in communication design, lettering and typeface design, now published by Slanted. This edition is smaller and cheaper than before, with a Judges' Choices section where jurors explain their picks and an index of typefaces and designers. 384 pages, edited by Griffin McCabe and Joe Newton, art directed by Lars Harmsen and Marian Misiak.",
+          "link": "https://www.slanted.de/product/the-worlds-best-typography-typography-47/",
+          "art": "https://www.ideabooks.nl/media/c8/5b/47/1792714125/260765.world.9783692020136.jpg.jpg?ts=1792714125",
+          "by": "Type Directors Club",
+          "instagram": [
+            "@typedirectors",
+            "@slanted_publishers"
           ],
           "shop": "Slanted",
-          "price": "€12 (pre-order)",
-          "art_checked": true,
-          "art": "https://www.slanted.de/wp-content/uploads/2026/10/PLOP-03-Cover-2560px-scaled.jpg"
+          "price": "€45",
+          "art_checked": true
         },
         {
-          "title": "Mag to Mag Journal #2",
-          "kind": "magazine",
-          "tags": [
-            "magazine",
-            "independent publishing",
-            "editorial design"
-          ],
-          "note": "The journal of Milan's independent magazine fair, run by the shop Frab's. This issue's theme is \"Error\", with interviews with MacGuffin's Ernst van der Hoeven, TypeOne's Amber Weaver and the Fukt team, plus a look at the Dutch distributor Idea Books. Big format, 160 pages, designed by Laura Bortolotti. A quick read on where indie magazines are now.",
-          "link": "https://magculture.com/collections/new-this-week/products/mag-to-mag-journal-2",
-          "by": "Frab's, Milan",
-          "instagram": [
-            "@mag__to__mag",
-            "@magculture"
-          ],
-          "shop": "magCulture",
-          "price": "£25",
-          "art_checked": true,
-          "art": "https://cdn.shopify.com/s/files/1/0514/7889/files/MagtoMagazineJournal_2.jpg?v=1793716303"
-        },
-        {
-          "title": "Fracture: Japanese Graphic Design 1875 to 1975",
+          "title": "The Best Dutch Book Designs 2025",
           "kind": "book",
           "tags": [
-            "design history",
-            "japan",
-            "essays"
+            "book design",
+            "editorial design",
+            "netherlands"
           ],
-          "note": "Not new (2024), but it fits well after the Japan books from earlier lists. Lynam traces Japanese graphic design from the graphic arts to just before digital, through essays on modernity, empire, gender, commerce and taste. 447 pages, hardback, from Set Margins'.",
-          "link": "https://perimeterbooks.com/products/fracture-japanese-graphic-design-1875-1975",
-          "by": "Ian Lynam",
-          "instagram": [
-            "@ianlynam",
-            "@perimeterbooks"
-          ],
-          "shop": "Perimeter Books",
-          "price": "A$77",
-          "art_checked": true,
-          "art": "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5832.jpg?v=1732769878",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5832.jpg?v=1732769878",
-            "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5833.jpg?v=1732769878",
-            "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5834.jpg?v=1732769878",
-            "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5835.jpg?v=1732769878",
-            "https://cdn.shopify.com/s/files/1/0734/3927/files/IMG_5836.jpg?v=1732769878"
-          ]
+          "note": "The yearly round-up of the best designed Dutch books, presented by the Stedelijk Museum Amsterdam. Two juries pick the books, one of design, publishing and production people and one of graphic design students, and they look at typography, image editing, paper, printing and binding. 332 pages, Dutch and English. A good catalogue to steal ideas from.",
+          "link": "https://www.ideabooks.nl/9789083173863-the-best-dutch-book-designs-2025-de-best-verzorgde-boeken-2025",
+          "art": "https://www.ideabooks.nl/media/6b/1c/bd/1794440131/260884.bestdutch.9789083173863.jpg.jpg?ts=1794440131",
+          "by": "De Best Verzorgde Boeken",
+          "shop": "Idea Books",
+          "price": "$48",
+          "art_checked": true
         },
         {
-          "title": "Graphic Design Play Book, Second Edition",
+          "title": "To Have an Idea: 50 Years of Idea Books",
           "kind": "book",
           "tags": [
-            "visual thinking",
-            "workshops",
-            "puzzles"
+            "publishing",
+            "distribution",
+            "book trade"
           ],
-          "note": "Sophie Cure and Aurélien Farina teach type, signage, logos, posters and branding through puzzles: spot the difference, matching, dot to dot. Work by Otl Aicher, Otto Neurath and Gerd Arntz turns up along the way. Light, but handy for warming up a team workshop.",
-          "link": "https://magma-shop.com/collections/design-books/products/graphic-design-play-book-copy",
-          "by": "Sophie Cure and Aurélien Farina",
-          "instagram": [
-            "@laurencekingpub",
-            "@magma_books"
-          ],
-          "shop": "Magma",
-          "price": "£18.99",
-          "art_checked": true,
-          "art": "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1782.jpg?v=1779372415",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1782.jpg?v=1779372415",
-            "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1784.jpg?v=1779372415",
-            "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1786.jpg?v=1779372415",
-            "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1785.jpg?v=1779372415",
-            "https://cdn.shopify.com/s/files/1/0285/4760/files/IMG_1787.jpg?v=1779372415"
-          ]
+          "note": "Idea Books has distributed art, architecture and design books out of Amsterdam since 1976, and this is its 50th birthday book. Current and former staff, reps, publishers and customers share stories, next to archive documents, behind-the-scenes material and favourite titles. 156 pages, designed by Dongyoung Lee with photographs by Johannes Schwartz. A look at the part of the book world readers rarely see.",
+          "link": "https://www.ideabooks.nl/9789080270084-to-have-an-idea-50-years-of-idea-books",
+          "art": "https://www.ideabooks.nl/media/1d/a8/b6/1793232860/260786.idea.9789080270084.jpg.jpg?ts=1793232860",
+          "by": "Idea Books",
+          "shop": "Idea Books",
+          "price": "$49.50",
+          "art_checked": true
         },
         {
-          "title": "Meet the Lithographer",
-          "kind": "book",
-          "tags": [
-            "print",
-            "picture book",
-            "process"
-          ],
-          "note": "A picture book tour of a lithographer's workshop, from the invention of lithography to how books, posters and magazines get printed now. 40 pages, illustrations in three colours. Made for kids, but a clear, charming explainer at any age. Its sister book, Meet the Typographer, is there too.",
-          "link": "https://draw-down.com/products/meet-the-lithographer",
-          "by": "Gaby Bazin",
-          "instagram": [
-            "@davidzwirnerbooks",
-            "@drawdownbooks"
-          ],
-          "shop": "Draw Down",
-          "price": "$19.95",
-          "art_checked": true,
-          "art": "https://cdn.shopify.com/s/files/1/1681/2497/files/MeettheLithographer.jpg?v=1745193734"
-        },
-        {
-          "title": "Podpunkt",
+          "title": "Mikhail Lychkovskiy",
           "kind": "designer",
           "tags": [
-            "identity",
-            "wayfinding",
-            "public design",
-            "warsaw"
+            "posters",
+            "typography",
+            "screen printing"
           ],
-          "note": "Warsaw branding studio behind the City of Warsaw logo, Culture.pl, the Adam Mickiewicz Institute and the Kraków National Museum, with a digital sister studio, Superskrypt, for UX and code. They also designed Poland's national safety guide. Public-facing design at real scale. Follow for identity systems that have to work for everyone.",
-          "link": "https://www.podpunkt.pl/",
-          "by": "Studio, Warsaw",
+          "note": "Poster designer who builds his work on type and grids, with Müller-Brockmann, Ruder and Hofmann as touchstones and French posters as a newer interest. He mostly works in Figma but also makes posters by hand with metal and wood type, paint and brushes, a habit he picked up from Peter Bankov. This spring he had a solo show, Typoposterized, at PANDA Platforma in Berlin, with a screen printed poster that tries to fit in as many ways of handling type as possible.",
+          "link": "https://www.typographicposters.com/lychkovskiy",
+          "art": "https://peopleofprint.com/wp-content/uploads/2026/06/MikhailLychkovskiy2.png",
+          "by": "Designer, Minsk",
           "instagram": [
-            "@podpunkt"
+            "@khalitzburg"
           ],
+          "shop": "Typographic Posters",
+          "pictures_from": [
+            "https://peopleofprint.com/illustration-2/safe-from-anything-except-typography-mikhail-lychkovskiys-typoposterized/",
+            "https://www.creativeboom.com/work/mikhail-lychkovskiy/"
+          ],
+          "art_checked": true
+        },
+        {
+          "title": "Thiago Lacaz",
+          "kind": "designer",
+          "tags": [
+            "posters",
+            "music",
+            "book covers"
+          ],
+          "note": "Rio designer who makes posters for Brazilian musicians, films and festivals, plus book covers. His animated poster for a micro bookstore's 11th birthday, with coloured bars that read as both book spines and a sound equalizer, was picked for the Typographic Arts 100 this year. His newest posters, for Amaro Freitas and Romulo Fróes, are on Typographic Posters, and he has won first place at the International Poster Biennial in Mexico.",
+          "link": "https://thiagolacaz.com/",
+          "art": "https://retroavangarda.com/gallery-of-friends/upload/Thiago_Lacaz/thiagolacaz08.png",
+          "by": "Designer, Rio de Janeiro",
           "shop": "Studio site",
-          "art_checked": true,
-          "art": "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c462d1fd37fb5963348104_PP-ilustracje-beauty.jpg",
-          "images": [
-            "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c462d1fd37fb5963348104_PP-ilustracje-beauty.jpg",
-            "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c462fc95300695f53dfbb0_PP-ilustracje-food%26beverage.jpg",
-            "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c46301631b4ed92b464606_PP-ilustracje-art.jpg",
-            "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/66c462fc60293cc1a56c554a_PP-ilustracje-public.jpg",
-            "https://cdn.prod.website-files.com/662a432aa8d19086fc66adff/662bd914359509cf1c26bfd7_education.jpeg"
-          ]
+          "pictures_from": [
+            "https://www.typographicposters.com/thiago-lacaz",
+            "https://100.typographicarts.org/winners/2026/desculpe-a-poeira"
+          ],
+          "art_checked": true
         }
       ]
     },
