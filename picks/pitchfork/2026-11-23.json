@@ -1,0 +1,90 @@
+{
+  "list": "pitchfork",
+  "date": "2026-11-23",
+  "items": [
+    {
+      "artist": "Radie Peat",
+      "title": "No Human Tongue Can Tell",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/6TxgYAxC0MRdjZ2HJ4eAWH",
+      "tags": [
+        "folk",
+        "traditional",
+        "irish"
+      ],
+      "note": "The Lankum singer's first solo album is a set of traditional folk songs, made with John Spud Murphy and partly inspired by Tubular Bells. Pitchfork gave it 8.0, and it's the best-reviewed record here. Out Nov 13 on Rough Trade.",
+      "source": "Pitchfork (via The Fork)",
+      "source_url": "https://the-fork.vercel.app/album/radie-peat-no-human-tongue-can-tell"
+    },
+    {
+      "artist": "Jura",
+      "title": "Keep Driving, Son",
+      "kind": "track",
+      "spotify_url": "https://open.spotify.com/track/0QYnWGcqu0ZYdaMW6f16aK",
+      "tags": [
+        "avant-pop",
+        "choral",
+        "experimental"
+      ],
+      "note": "The Danish composer writes for five Copenhagen voices, including ML Buch and Ydegirl, telling the story of two men who knew the same woman. Picked for Pitchfork Selects on Nov 17. Out Nov 16.",
+      "source": "Pitchfork Selects (via Yahoo)",
+      "source_url": "https://www.yahoo.com/entertainment/music/new-albums/articles/matthew-dear-armand-hammer-more-205547098.html"
+    },
+    {
+      "artist": "Kim Deal",
+      "title": "Live at the Barbican",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/5Nr6C3df2eVTJBxFshXacp",
+      "tags": [
+        "indie rock",
+        "live",
+        "orchestral"
+      ],
+      "note": "Recorded at her sold-out Barbican show in March 2025, where she played Nobody Loves You More with a 25-piece ensemble. Pitchfork gave it 7.7. Out Nov 13 on 4AD.",
+      "source": "Pitchfork (via Metacritic)",
+      "source_url": "https://www.metacritic.com/publication/pitchfork/"
+    },
+    {
+      "artist": "Matthew Dear",
+      "title": "Dizzy",
+      "kind": "track",
+      "spotify_url": "https://open.spotify.com/track/4mYcrBVBKX6xmWOLDlFOnJ",
+      "tags": [
+        "electronic",
+        "electroclash",
+        "synth"
+      ],
+      "note": "His official comeback single goes back to the darker sound of Black City, with snaking riffs, thumping kicks and his low baritone. A Pitchfork Selects pick from Nov 17. Out Nov 11.",
+      "source": "Pitchfork Selects (via Yahoo)",
+      "source_url": "https://www.yahoo.com/entertainment/music/new-albums/articles/matthew-dear-armand-hammer-more-205547098.html"
+    },
+    {
+      "artist": "Astrønne",
+      "title": "123",
+      "kind": "album",
+      "spotify_url": "https://open.spotify.com/album/5vkFs4mdRiivSdC2MLXdw0",
+      "tags": [
+        "experimental r&b",
+        "folk",
+        "glitch"
+      ],
+      "note": "A new EP from the Cameroonian singer-songwriter, who works across experimental R&B, folk and glitch. Pitchfork put a song from it on Selects this week. There's no Pitchfork review or score yet. Out Nov 19.",
+      "source": "Pitchfork Selects (via Yahoo)",
+      "source_url": "https://www.yahoo.com/entertainment/music/new-albums/articles/matthew-dear-armand-hammer-more-205547098.html"
+    },
+    {
+      "artist": "Racing Mount Pleasant",
+      "title": "Great Destroyer",
+      "kind": "track",
+      "spotify_url": "https://open.spotify.com/track/37VSm7OkJYKnGszEqUQm6d",
+      "tags": [
+        "post-rock",
+        "indie rock",
+        "orchestral"
+      ],
+      "note": "Their first new song since last year's debut album. It starts with soft guitar and builds into a big orchestral post-rock swell. A Pitchfork Selects pick from Nov 17. Out Nov 11.",
+      "source": "Pitchfork Selects (via Yahoo)",
+      "source_url": "https://www.yahoo.com/entertainment/music/new-albums/articles/matthew-dear-armand-hammer-more-205547098.html"
+    }
+  ]
+}

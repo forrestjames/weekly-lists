@@ -1,159 +1,160 @@
 {
-  "updated": "2026-11-21T15:51:32Z",
+  "updated": "2026-11-23T18:22:29Z",
   "editions": {
     "rob": {
       "name": "Rob's List",
       "type": "music",
       "colour": "#ff8a3d",
       "playlist": "https://open.spotify.com/playlist/6YpWmU0EK7fFa62dpR8Ip7",
-      "date": "2026-11-16",
+      "date": "2026-11-23",
       "items": [
         {
-          "artist": "Emergence Collective",
-          "title": "Concord",
+          "artist": "AEAEA",
+          "title": "Mist",
           "kind": "album",
           "tags": [
-            "modern composition",
-            "improvisation",
-            "chamber"
+            "experimental",
+            "ambient",
+            "guitar"
           ],
-          "note": "A Sheffield dectet on Dwell Records playing five slow, improvised pieces with no drums and no voice. A Closer Listen says the players respond to tiny changes in each other's playing, and the shifts creep up on you over time.",
-          "source": "A Closer Listen",
-          "source_url": "https://acloserlisten.com/2026/11/10/emergence-collective-concord/",
-          "spotify_url": "https://open.spotify.com/album/4G9U4IxHhQKVEVPFUHkLEL",
-          "art": "https://i.scdn.co/image/ab67616d0000b2738de2c4e35e239b9ec03e742d"
+          "note": "Patrick Higgins on guitar and percussion, with Nicolás Jaar processing it live, recorded over three years in Berlin and upstate New York. The review describes sparse textures and metallic percussion where melodies surface and dissolve, and Judith Hamann's cello appears on some tracks.",
+          "source": "a closer listen",
+          "source_url": "https://acloserlisten.com/2026/11/19/aeaea-mist/",
+          "spotify_url": "https://open.spotify.com/album/5OcdlvY41jsL2yRLGebiLh",
+          "art": "https://i.scdn.co/image/ab67616d0000b2730175091abab726067b9d6b7a"
         },
         {
-          "artist": "Phantom Wizard",
-          "title": "One Of Many",
+          "artist": "Sylvia Meyer & Lila Tirando a Violeta",
+          "title": "Doble Ceniza",
           "kind": "album",
           "tags": [
-            "experimental jazz",
-            "afro-caribbean",
-            "ambient"
-          ],
-          "note": "The second album from an Amsterdam musician who composed, played and recorded all of it at home. It's self-released and tagged everywhere from Afro-Caribbean ritual music to drone and experimental jazz. That's exactly the kind of record an algorithm won't hand you.",
-          "source": "Bandcamp",
-          "source_url": "https://phantomwizard.bandcamp.com/album/one-of-many",
-          "spotify_url": "https://open.spotify.com/album/1dbjaS8eFqjSUV5dPnGkvD",
-          "art": "https://i.scdn.co/image/ab67616d0000b273ebd0acc557bf9d3fcb60df2a"
-        },
-        {
-          "artist": "Dialog",
-          "title": "Symbol Of The Land",
-          "kind": "album",
-          "tags": [
-            "dub techno",
             "electronic",
-            "ambient"
+            "minimal",
+            "piano"
           ],
-          "note": "Eleven tracks on the small Kynant label. Hard Wax calls it a warm, laid back, atmospheric dub electronic journey.",
-          "source": "Hard Wax",
-          "source_url": "https://hardwax.com/89812/dialog/symbol-of-the-land/",
-          "spotify_url": "https://open.spotify.com/album/7osopcoLMajRcbTf32ux4c",
-          "art": "https://i.scdn.co/image/ab67616d0000b273a7f196e821842b1cbc901726"
-        },
-        {
-          "artist": "Ukweli",
-          "title": "Toy (feat. Xenia Manasseh, tg.blk)",
-          "kind": "track",
-          "tags": [
-            "soul",
-            "kenya"
-          ],
-          "note": "A soul single built around the back and forth between Xenia Manasseh and tg.blk. OkayAfrica calls it pure, unfiltered soul.",
-          "source": "OkayAfrica",
-          "source_url": "https://www.okayafrica.com/the-african-songs-you-need-to-hear-this-week/1441910",
-          "spotify_url": "https://open.spotify.com/track/2hexOs4Q6ou4VW1RgN90Sh",
-          "art": "https://i.scdn.co/image/ab67616d0000b273c6e69c92350b0b7a5b57c5d0"
-        },
-        {
-          "artist": "Jakob Bro",
-          "title": "Bjerge, Strand",
-          "kind": "album",
-          "tags": [
-            "jazz",
-            "guitar",
-            "atmospheric"
-          ],
-          "note": "Bro's guitar with Larry Grenadier and Jorge Rossy, plus Charles Lloyd on saxophone and flute. JazzTrail calls it intimate and atmospheric, and picks out \"Osaka\" and \"Peace Song\" as favourites.",
-          "source": "JazzTrail",
-          "source_url": "https://www.jazztrail.net/blog/jakob-bro-bjerge-strand-album-review",
-          "spotify_url": "https://open.spotify.com/album/44nuLU2OFJwORESs5NKxX8",
-          "art": "https://i.scdn.co/image/ab67616d0000b2738a34ab23557068219b1f3b1e"
-        },
-        {
-          "artist": "Various Artists",
-          "title": "La Ola Nocturna: Experimental Songs and Deviant Pop from the Spanish 80's",
-          "kind": "album",
-          "tags": [
-            "post-punk",
-            "synth",
-            "spain",
-            "compilation"
-          ],
-          "note": "Bongo Joe digs into post-punk, synthwave and darkwave from independent scenes across Spain after Franco, well beyond the usual Madrid Movida story. Bandcamp says it has something for both longtime fans and newcomers, with real oddities alongside the songs.",
+          "note": "A dreamy, mostly beatless collaboration on pop soil. Lila's Latin-tinged machine music sits against Meyer's austere piano and voice.",
           "source": "Bandcamp Daily",
-          "source_url": "https://daily.bandcamp.com/album-of-the-day/various-artists-la-ola-nocturna-experimental-songs-and-deviant-pop-from-the-spanish-80s-review",
-          "spotify_url": "https://open.spotify.com/album/4ZxtYj4l4b9Pfm4LahwCp8",
-          "art": "https://i.scdn.co/image/ab67616d0000b2736174e06efc3fbf35ea2ae809"
+          "source_url": "https://daily.bandcamp.com/essential-releases/essential-releases-november-20-2026",
+          "spotify_url": "https://open.spotify.com/album/6s4kQrYOAzQs2vkhf3amWd",
+          "art": "https://i.scdn.co/image/ab67616d0000b2731465d49186f1e3ad388e61d2"
         },
         {
-          "artist": "Jimi Tenor",
-          "title": "Wormhole Mystic",
+          "artist": "Lorenzo Senni",
+          "title": "All Ages",
           "kind": "album",
           "tags": [
             "electronic",
-            "jazz",
-            "minimal"
+            "trance",
+            "experimental"
           ],
-          "note": "Minimal, rhythmic music built from synths, flute, saxophone and voice. It sits right where your beat and jazz sides meet.",
-          "source": "Silent Radio",
-          "source_url": "https://www.silentradio.co.uk/11/12/album-roundup-week-ending-13-november-2026/",
-          "spotify_url": "https://open.spotify.com/album/1tGdVOhrtiPbQx7zqMD9ti",
-          "art": "https://i.scdn.co/image/ab67616d0000b27373004d14c4d1665937d7b4f3"
+          "note": "His first album in six years, and his first for Warp. It draws on the hardcore punk shows he grew up with, and the review half-jokingly calls it his midlife crisis record.",
+          "source": "a closer listen",
+          "source_url": "https://acloserlisten.com/2026/11/19/lorenzo-senni-all-ages/",
+          "spotify_url": "https://open.spotify.com/album/3QmH0KVaIZ8uti1BSwpfQR",
+          "art": "https://i.scdn.co/image/ab67616d0000b273718a909a1449b28ae3caca56"
         },
         {
-          "artist": "Sienna Senate",
-          "title": "Do Your Thing (A COLORS SHOW)",
-          "kind": "track",
-          "tags": [
-            "soul",
-            "uk"
-          ],
-          "note": "Her COLORS debut. OkayAfrica hears current British soul with a nostalgic swing, and it's a song about love.",
-          "source": "OkayAfrica",
-          "source_url": "https://www.okayafrica.com/the-african-songs-you-need-to-hear-this-week/1441910",
-          "spotify_url": "https://open.spotify.com/track/04lQ7LO70aKDsonma8MU9O",
-          "art": "https://i.scdn.co/image/ab67616d0000b2739208dbfdd75f1080062a9544"
-        },
-        {
-          "artist": "JK Flesh & Orphx",
-          "title": "Death/Rebirth One",
+          "artist": "Shuteen Erdenebaatar",
+          "title": "Bright Folk",
           "kind": "album",
           "tags": [
-            "techno",
-            "industrial"
+            "jazz",
+            "piano",
+            "quartet"
           ],
-          "note": "Justin Broadrick's JK Flesh with the Canadian duo Orphx on KR3. Hard Wax sums it up as dark, heavy, raw techno, for when you want something with weight.",
-          "source": "Hard Wax",
-          "source_url": "https://hardwax.com/89804/jk-flesh-and-orphx/death-rebirth-one/",
-          "spotify_url": "https://open.spotify.com/album/06KpJwyJ1nc2TrbY2bI2Ni",
-          "art": "https://i.scdn.co/image/ab67616d0000b27304170998e876dedcf3275a89"
+          "note": "Third album from the Mongolian pianist and her quartet, on Motéma. It's built around the idea of home as a feeling you carry with you, and her debut Rising Sun was a poised record that makes this worth following up.",
+          "source": "Presto Music jazz round-up",
+          "source_url": "https://www.prestomusic.com/jazz/articles/7488--new-release-roundup-new-release-round-up-20th-november-2026",
+          "spotify_url": "https://open.spotify.com/album/0VeBMVUjKqswB59pKhswxt",
+          "art": "https://i.scdn.co/image/ab67616d0000b2734a1a5376255c34fd18fdb012"
         },
         {
-          "artist": "Masayoshi Fujita",
-          "title": "Forest of Tranquility",
+          "artist": "Erika de Casier",
+          "title": "Whispers",
+          "kind": "track",
+          "tags": [
+            "r&b",
+            "electronic"
+          ],
+          "note": "Her first release since the surprise album Lifetime, co-produced with Eurohead. It's a standalone single for now.",
+          "source": "Resident Advisor",
+          "source_url": "https://ra.co/news/86416",
+          "spotify_url": "https://open.spotify.com/track/4JQbBJYPjnQjqmTeuNb4VK",
+          "art": "https://i.scdn.co/image/ab67616d0000b2732a1e4cc6621a9b1a11e6310d"
+        },
+        {
+          "artist": "St. Panther",
+          "title": "East Side Love Story",
+          "kind": "album",
+          "tags": [
+            "soul",
+            "r&b",
+            "funk"
+          ],
+          "note": "A debut of intimate love songs, with rich vocals and production that sounds true to an older era. Bandcamp Daily called it a standout.",
+          "source": "Bandcamp Daily",
+          "source_url": "https://daily.bandcamp.com/essential-releases/essential-releases-november-20-2026",
+          "spotify_url": "https://open.spotify.com/album/3f0hiMpMMUhGgko24BUlqn",
+          "art": "https://i.scdn.co/image/ab67616d0000b273d47d415ff1969fb770835e0b"
+        },
+        {
+          "artist": "xicada",
+          "title": "Interastral Communications",
+          "kind": "album",
+          "tags": [
+            "electronic",
+            "idm",
+            "breakbeat"
+          ],
+          "note": "A debut that imagines The Orb's space ambient pushed decades forward, through breakbeat and IDM. Looped flute, choral voices and fast drums, and it ends in a whisper.",
+          "source": "a closer listen",
+          "source_url": "https://acloserlisten.com/2026/11/17/xicada-interastral-communications/",
+          "spotify_url": "https://open.spotify.com/album/1sitGM2HAJ8cWVMNgFnADY",
+          "art": "https://i.scdn.co/image/ab67616d0000b273f0f583a8348254b446c43833"
+        },
+        {
+          "artist": "CYCLO BONETTE",
+          "title": "Mesopotamian #1",
+          "kind": "album",
+          "tags": [
+            "electronic",
+            "club",
+            "world"
+          ],
+          "note": "Self-released debut EP from a Lebanese artist based in Brooklyn, written as a tribute to her homeland. Small and easy to miss, which is why it's here.",
+          "source": "Resident Advisor",
+          "source_url": "https://ra.co/news/86394",
+          "spotify_url": "https://open.spotify.com/album/1Zlwa3G7jELnrnjyD9oRot",
+          "art": "https://i.scdn.co/image/ab67616d0000b273dd59b41e322e13d1179a8cde"
+        },
+        {
+          "artist": "Sheherazaad",
+          "title": "Khudgarzi",
+          "kind": "album",
+          "tags": [
+            "world",
+            "electronic",
+            "south asian"
+          ],
+          "note": "The singer sets Indian musical traditions against atmospheric electronics. The songs push back against the limits put on women.",
+          "source": "Bandcamp Daily",
+          "source_url": "https://daily.bandcamp.com/essential-releases/essential-releases-november-20-2026",
+          "spotify_url": "https://open.spotify.com/album/3Loo6QTxNiGuJ3woJvsFuM",
+          "art": "https://i.scdn.co/image/ab67616d0000b2738d832d65d9477e2536bb4a0f"
+        },
+        {
+          "artist": "Lucy Claire",
+          "title": "With Child, Without",
           "kind": "album",
           "tags": [
             "ambient",
-            "kankyo ongaku"
+            "modern classical"
           ],
-          "note": "Seven long pieces on Erased Tapes in the Japanese environmental music tradition, each one shifting with the time of day. The press notes stress silence and point to Laraaji and Harold Budd. It's a quiet one to end on.",
-          "source": "Silent Radio",
-          "source_url": "https://www.silentradio.co.uk/11/12/album-roundup-week-ending-13-november-2026/",
-          "spotify_url": "https://open.spotify.com/album/70TI4vmpTkFnXhhww9EGY8",
-          "art": "https://i.scdn.co/image/ab67616d0000b273a3120b72279708888a084cf1"
+          "note": "A sorrowful album about pregnancy loss, infertility and IVF. The review says her later birth doesn't soften the grief, and that honesty is the reason to hear it.",
+          "source": "a closer listen",
+          "source_url": "https://acloserlisten.com/2026/11/16/lucy-claire-with-child-without/",
+          "spotify_url": "https://open.spotify.com/album/1OzBuB2gMrwf7v1NJQdKbv",
+          "art": "https://i.scdn.co/image/ab67616d0000b27334813665c59c3776ca2359c0"
         }
       ]
     },
@@ -162,155 +163,154 @@
       "type": "music",
       "colour": "#4fd1c5",
       "playlist": "",
-      "date": "2026-11-16",
+      "date": "2026-11-23",
       "items": [
         {
-          "artist": "Jimi Tenor",
-          "title": "Wormhole Mystic",
-          "kind": "album",
-          "tags": [
-            "electronic",
-            "soul",
-            "leftfield"
-          ],
-          "note": "Twelve tracks built on old 60s and 70s drum machine loops, with Tenor adding synths, flute, sax and his own voice. Bureau B mentions Suicide and No Wave grooves, and calls one track cosmic drift.",
-          "source": "Juno Leftfield (found via Bureau B)",
-          "source_url": "https://www.bureau-b.com/artists/jimi-tenor",
-          "spotify_url": "https://open.spotify.com/album/1tGdVOhrtiPbQx7zqMD9ti",
-          "art": "https://i.scdn.co/image/ab67616d0000b27373004d14c4d1665937d7b4f3"
-        },
-        {
-          "artist": "Anna Butterss, John Raymond, Ben Lumsdaine",
-          "title": "Beginningless",
-          "kind": "album",
-          "tags": [
-            "jazz",
-            "improvised",
-            "ambient jazz"
-          ],
-          "note": "Bass, trumpet and drums, fully improvised over two days in an LA studio with very little overdubbing. The Line of Best Fit gave it 8/10 for its open space and slow, hypnotic build.",
-          "source": "Juno Jazz (found via The Line of Best Fit)",
-          "source_url": "https://thelineofbestfit.com/albums/supple-improvisations-weave-a-hypnotic-spell-on-beginningless-from-anna-butterss-new-trio",
-          "spotify_url": "https://open.spotify.com/album/0MAxYyYgAok6DjSjfbhv6N",
-          "art": "https://i.scdn.co/image/ab67616d0000b27362ce947a89cb455fb256cd4f"
-        },
-        {
-          "artist": "Glenn Davis",
-          "title": "A New Day",
-          "kind": "track",
-          "tags": [
-            "deep house",
-            "soulful house"
-          ],
-          "note": "Title track from the Dublin DJ and collector's new EP on Ascension On Wax, a small label that presses short vinyl runs. Dirty Disco played it in their deep, soulful house show this month.",
-          "source": "Juno Deep House (found via Dirty Disco)",
-          "source_url": "https://www.dirtydiscoradio.com/dirty-disco-665-new-house-music-november-2026/",
-          "spotify_url": "https://open.spotify.com/track/59OK1tx7d00YA008TCKxSC",
-          "art": "https://i.scdn.co/image/ab67616d0000b273fbb34170dc0e2ea1608ddb6f"
-        },
-        {
-          "artist": "Yangze",
-          "title": "Heartbreak Stew",
-          "kind": "album",
-          "tags": [
-            "electronic",
-            "experimental pop",
-            "guitar"
-          ],
-          "note": "A debut from Copenhagen that puts acoustic guitar next to hyperpop and trap touches. Bandcamp Daily found it more cohesive than that mix suggests, with tender processed vocals.",
-          "source": "Juno Leftfield (found via Bandcamp Daily Essential Releases)",
-          "source_url": "https://daily.bandcamp.com/essential-releases/essential-releases-november-13-2026",
-          "spotify_url": "https://open.spotify.com/album/71JbANfvjiWqdhCb83IrMA",
-          "art": "https://i.scdn.co/image/ab67616d0000b2736c5da57a08cf2e6526610085"
-        },
-        {
-          "artist": "Masayoshi Fujita",
-          "title": "Forest of Tranquility",
+          "artist": "Richard Skelton & Lawrence English",
+          "title": "NOON",
           "kind": "album",
           "tags": [
             "ambient",
-            "vibraphone",
-            "modern classical"
+            "drone"
           ],
-          "note": "The vibraphone player's new Erased Tapes album grew out of music he made for a living forest installation at Expo 2025. Seven long pieces that shift with the time of day.",
-          "source": "Juno Ambient / Drone / Experimental (found via The Line of Best Fit)",
-          "source_url": "https://www.thelineofbestfit.com/news/masayoshi-fujita-previews-upcoming-album-forest-of-tranquility",
-          "spotify_url": "https://open.spotify.com/album/70TI4vmpTkFnXhhww9EGY8",
-          "art": "https://i.scdn.co/image/ab67616d0000b273a3120b72279708888a084cf1"
+          "note": "The Quietus made this their album of the week. It pairs the Lancashire composer with the Room40 boss, and the review says the two find \"a still point in the midst of the storm of contemporary history\".",
+          "source": "Juno Ambient / Drone / Experimental (via The Quietus)",
+          "source_url": "https://thequietus.com/quietus-reviews/album-of-the-week/noon-richard-skelton-lawrence-english-review/",
+          "spotify_url": "https://open.spotify.com/album/2sKYcYNAP9IlVhnQrjbfHD",
+          "art": "https://i.scdn.co/image/ab67616d0000b2734b6b471f6d95bf35a1230aef"
         },
         {
-          "artist": "Donwill & The Expert",
-          "title": "EXPERTISE",
+          "artist": "Hoavi",
+          "title": "711Falx",
           "kind": "album",
           "tags": [
-            "hip-hop",
-            "boom bap",
-            "jazzy beats"
+            "ambient",
+            "idm",
+            "electronic"
           ],
-          "note": "Donwill's first proper album in seven years, over old-school boom bap and jazzy samples. Bandcamp Daily heard it as a joyful record that invites you to a party.",
-          "source": "Juno Broken Beat / Nu-Jazz (found via Bandcamp Daily Album of the Day)",
-          "source_url": "https://daily.bandcamp.com/album-of-the-day/donwill-the-expert-expertise-review",
-          "spotify_url": "https://open.spotify.com/album/5eiauhewJCJTRVmly88CYS",
-          "art": "https://i.scdn.co/image/ab67616d0000b2730089f0d6abc5c60fd0fd5a49"
+          "note": "A debut album and the first release on Fovea Specs. Bandcamp Daily heard dubby chord stabs and crinkly pads with a sneaky sense of motion, and the label notes nods to 2-step and footwork along the way.",
+          "source": "Juno Ambient / Drone / Experimental (via Bandcamp Daily)",
+          "source_url": "https://daily.bandcamp.com/best-ambient/the-best-ambient-music-on-bandcamp-november-2026",
+          "spotify_url": "https://open.spotify.com/album/3qAyYU9R39lsl4opCpaMXx",
+          "art": "https://i.scdn.co/image/ab67616d0000b273281f3de8557a1611fef4342b"
         },
         {
-          "artist": "The Body & Cel Genesis",
-          "title": "Whole Wide World",
-          "kind": "track",
+          "artist": "Sylvia Meyer & Lila Tirando a Violeta",
+          "title": "Doble Ceniza",
+          "kind": "album",
           "tags": [
             "experimental",
             "electronic",
-            "noise"
+            "folk"
           ],
-          "note": "Title track from a two-year collaboration that grew out of touring together. Silent Radio describes the album as trance, distortion and experimental electronics with two live drummers.",
-          "source": "Juno Ambient / Drone / Experimental (found via Silent Radio)",
-          "source_url": "https://www.silentradio.co.uk/11/12/album-roundup-week-ending-13-november-2026/",
-          "spotify_url": "https://open.spotify.com/track/50AtX6xge8yf0lU1DLJTpU",
-          "art": "https://i.scdn.co/image/ab67616d0000b273184248fce4c1d46173640617"
+          "note": "A five-track EP where two Uruguayan artists from different generations meet. Sylvia Meyer's old piano and voice demos are reshaped with field recordings and fragments, and Bandcamp Daily called it a blissful, mostly beatless listen.",
+          "source": "Juno Leftfield (via Bandcamp Daily)",
+          "source_url": "https://daily.bandcamp.com/essential-releases/essential-releases-november-20-2026",
+          "spotify_url": "https://open.spotify.com/album/6s4kQrYOAzQs2vkhf3amWd",
+          "art": "https://i.scdn.co/image/ab67616d0000b2731465d49186f1e3ad388e61d2"
         },
         {
-          "artist": "Stephan Micus",
-          "title": "Traces in the Sand",
+          "artist": "Sheherazaad",
+          "title": "Khudgarzi",
           "kind": "album",
           "tags": [
             "world",
-            "ambient",
-            "ecm"
+            "electronic",
+            "experimental"
           ],
-          "note": "His 27th solo album for ECM, dedicated to the sea and played on lamellophones he collected from places like Borneo, Japan and Armenia. It's about how the sea makes you feel, not a picture of it.",
-          "source": "Juno Ambient / Drone / Experimental (found via uDiscover Music)",
-          "source_url": "https://www.udiscovermusic.com/?p=2769180",
-          "spotify_url": "https://open.spotify.com/album/1eG7wpa0IAoDx3LhLR1xwR",
-          "art": "https://i.scdn.co/image/ab67616d0000b273e09fe4650c21a5f393a108e1"
+          "note": "Her first full album, on Erased Tapes, sung mostly in Urdu over Hindustani, Carnatic, Turkish and Arabic instruments. Bandcamp Daily says it filters traditional currents into futuristic electronic landscapes, like her mentor Arooj Aftab with a bit more bite.",
+          "source": "Juno Leftfield (via Bandcamp Daily)",
+          "source_url": "https://daily.bandcamp.com/essential-releases/essential-releases-november-20-2026",
+          "spotify_url": "https://open.spotify.com/album/3Loo6QTxNiGuJ3woJvsFuM",
+          "art": "https://i.scdn.co/image/ab67616d0000b2738d832d65d9477e2536bb4a0f"
         },
         {
-          "artist": "Cello Octet Amsterdam",
-          "title": "Cocon",
+          "artist": "RÓIS",
+          "title": "MO LÉAN (Expanded)",
           "kind": "album",
           "tags": [
-            "modern classical",
-            "drone",
-            "ambient"
+            "electronic",
+            "folk",
+            "trip-hop"
           ],
-          "note": "Eight cellos with imagined electronic echoes, from a live audiovisual show with commissioned pieces including one by Sarah Davachi. Worth it if you like slow, physical string drone.",
-          "source": "Juno Ambient / Drone / Experimental (found via Silent Radio)",
-          "source_url": "https://www.silentradio.co.uk/11/12/album-roundup-week-ending-13-november-2026/",
-          "spotify_url": "https://open.spotify.com/album/2EirI7rdTnMAF6KTmCW7tL",
-          "art": "https://i.scdn.co/image/ab67616d0000b273225e276ea3d9d1f84ace075b"
+          "note": "An expanded international edition, via Domino, of her 2024 album, so not strictly new, but worth it. She reworks the Irish funeral lament with electronics, and Bandcamp Daily points to the trip-hop of \"Cití\" and the ambient-to-dub drift of \"Oh Lovely Appearance of Death\".",
+          "source": "Juno Balearic / Downtempo (via Bandcamp Daily)",
+          "source_url": "https://daily.bandcamp.com/album-of-the-day/rois-mo-lean-review",
+          "spotify_url": "https://open.spotify.com/album/0SK8SU9rhhdvraQWehlWgP",
+          "art": "https://i.scdn.co/image/ab67616d0000b2738610196f3c3cb6ec6806f433"
         },
         {
-          "artist": "Felix Rösch",
-          "title": "ARP",
+          "artist": "Lorenzo Senni",
+          "title": "All Ages",
           "kind": "album",
           "tags": [
-            "modern classical",
+            "electronic",
+            "trance",
+            "experimental"
+          ],
+          "note": "A new album for Warp. The Quietus interviewed him about the skateboarding and hardcore scenes that shaped him as a teenager, and the rebellion against himself that went into making it.",
+          "source": "Juno Leftfield (via The Quietus)",
+          "source_url": "https://thequietus.com/interviews/inner-rebellion-lorenzo-senni-interviewed/",
+          "spotify_url": "https://open.spotify.com/album/3QmH0KVaIZ8uti1BSwpfQR",
+          "art": "https://i.scdn.co/image/ab67616d0000b273718a909a1449b28ae3caca56"
+        },
+        {
+          "artist": "St. Panther",
+          "title": "East Side Love Story",
+          "kind": "album",
+          "tags": [
+            "soul",
+            "r&b",
+            "funk"
+          ],
+          "note": "A debut made over six years in East LA and co-produced with Chris McClenney, drawing on Chicano soul, Motown and G-funk. Bandcamp Daily called it one of the year's most swoon-worthy debuts.",
+          "source": "Juno Soul / Funk (via Bandcamp Daily)",
+          "source_url": "https://daily.bandcamp.com/essential-releases/essential-releases-november-20-2026",
+          "spotify_url": "https://open.spotify.com/album/3f0hiMpMMUhGgko24BUlqn",
+          "art": "https://i.scdn.co/image/ab67616d0000b273d47d415ff1969fb770835e0b"
+        },
+        {
+          "artist": "Dominic Miller",
+          "title": "Diana",
+          "kind": "album",
+          "tags": [
+            "jazz",
+            "guitar"
+          ],
+          "note": "A guitar quartet record on ECM. Jazz Views called it a marvellous set of original compositions that pull at the ears and the heart.",
+          "source": "Juno Jazz (via Jazz Views)",
+          "source_url": "https://jazzviews.net/",
+          "spotify_url": "https://open.spotify.com/album/2Hbv3WDEy7nsshBwNPVz29",
+          "art": "https://i.scdn.co/image/ab67616d0000b273a0bb623530a4b3e54ad26b7a"
+        },
+        {
+          "artist": "Wayfarer",
+          "title": "Riders of the Setting Sun",
+          "kind": "album",
+          "tags": [
+            "americana",
+            "guitar",
+            "gothic"
+          ],
+          "note": "The band leave their black metal past behind for gothic Americana built on acoustic guitar, slide and memorable melodies. David Eugene Edwards and Jay Munly guest, according to Bandcamp Daily's album of the day write-up.",
+          "source": "Juno Leftfield (via Bandcamp Daily)",
+          "source_url": "https://daily.bandcamp.com/album-of-the-day/wayfarer-riders-of-the-setting-sun-review",
+          "spotify_url": "https://open.spotify.com/album/4MNBj9upoM911S2jHtAYU6",
+          "art": "https://i.scdn.co/image/ab67616d0000b2739ba96041669e0fff3a028601"
+        },
+        {
+          "artist": "Lottie Brazier",
+          "title": "On Course But No-One There To Salute You",
+          "kind": "album",
+          "tags": [
+            "experimental",
             "ambient"
           ],
-          "note": "A new modern classical record about pain, perseverance and family. We only read a short line on this one, so treat it as a tip to try.",
-          "source": "Juno Ambient / Drone / Experimental (found via Silent Radio)",
-          "source_url": "https://www.silentradio.co.uk/11/12/album-roundup-week-ending-13-november-2026/",
-          "spotify_url": "https://open.spotify.com/album/1NjOUiBBVueeLMIVZXkJUc",
-          "art": "https://i.scdn.co/image/ab67616d0000b2733ed385984f09e12241edf8e8"
+          "note": "Partly recorded at 4AD's studios. I could only read The Quietus feed summary, which calls it \"less sunburst and snowblind than wind-battered and rain-sodden\", so give it a listen before you buy.",
+          "source": "Juno Ambient / Drone / Experimental (via The Quietus)",
+          "source_url": "https://thequietus.com/quietus-reviews/lottie-brazier-on-course-but-no-one-there-to-salute-you-review/",
+          "spotify_url": "https://open.spotify.com/album/5qv5WzGR4hxMnfax4owJZN",
+          "art": "https://i.scdn.co/image/ab67616d0000b27357f90a1982240cc253f2840f"
         }
       ]
     },
@@ -319,154 +319,97 @@
       "type": "music",
       "colour": "#ff4f70",
       "playlist": "https://open.spotify.com/playlist/3dpMdHl7DgSw0ORy7GumJo",
-      "date": "2026-11-16",
+      "date": "2026-11-23",
       "items": [
         {
-          "artist": "Blackhaine",
-          "title": "Saints in the Wethouse",
+          "artist": "Radie Peat",
+          "title": "No Human Tongue Can Tell",
           "kind": "album",
           "tags": [
-            "experimental",
-            "noise",
-            "rap"
+            "folk",
+            "traditional",
+            "irish"
           ],
-          "note": "The Lancashire artist's debut album, out Nov 13 on XL. Pitchfork hears heavy noise-rap with overwhelming bass, and the review's headline points to a turn from harsh noise toward ambient tenderness.",
-          "source": "Pitchfork",
-          "source_url": "https://pitchfork.com/reviews/albums/blackhaine-saints-in-the-wethouse/",
-          "spotify_url": "https://open.spotify.com/album/023yHwmTQDjCn4G5v60RGJ",
-          "art": "https://i.scdn.co/image/ab67616d0000b273907c0aed022cb332c0ac2c74"
+          "note": "The Lankum singer's first solo album is a set of traditional folk songs, made with John Spud Murphy and partly inspired by Tubular Bells. Pitchfork gave it 8.0, and it's the best-reviewed record here. Out Nov 13 on Rough Trade.",
+          "source": "Pitchfork (via The Fork)",
+          "source_url": "https://the-fork.vercel.app/album/radie-peat-no-human-tongue-can-tell",
+          "spotify_url": "https://open.spotify.com/album/6TxgYAxC0MRdjZ2HJ4eAWH",
+          "art": "https://i.scdn.co/image/ab67616d0000b2734dc8635183ee4689d3b431d4"
         },
         {
-          "artist": "Dawuna",
-          "title": "Love's Arp",
+          "artist": "Jura",
+          "title": "Keep Driving, Son",
+          "kind": "track",
+          "tags": [
+            "avant-pop",
+            "choral",
+            "experimental"
+          ],
+          "note": "The Danish composer writes for five Copenhagen voices, including ML Buch and Ydegirl, telling the story of two men who knew the same woman. Picked for Pitchfork Selects on Nov 17. Out Nov 16.",
+          "source": "Pitchfork Selects (via Yahoo)",
+          "source_url": "https://www.yahoo.com/entertainment/music/new-albums/articles/matthew-dear-armand-hammer-more-205547098.html",
+          "spotify_url": "https://open.spotify.com/track/0QYnWGcqu0ZYdaMW6f16aK",
+          "art": "https://i.scdn.co/image/ab67616d0000b2731002367b9eafdcc1126030a8"
+        },
+        {
+          "artist": "Kim Deal",
+          "title": "Live at the Barbican",
+          "kind": "album",
+          "tags": [
+            "indie rock",
+            "live",
+            "orchestral"
+          ],
+          "note": "Recorded at her sold-out Barbican show in March 2025, where she played Nobody Loves You More with a 25-piece ensemble. Pitchfork gave it 7.7. Out Nov 13 on 4AD.",
+          "source": "Pitchfork (via Metacritic)",
+          "source_url": "https://www.metacritic.com/publication/pitchfork/",
+          "spotify_url": "https://open.spotify.com/album/5Nr6C3df2eVTJBxFshXacp",
+          "art": "https://i.scdn.co/image/ab67616d0000b27335af18a544951ecb18256205"
+        },
+        {
+          "artist": "Matthew Dear",
+          "title": "Dizzy",
+          "kind": "track",
+          "tags": [
+            "electronic",
+            "electroclash",
+            "synth"
+          ],
+          "note": "His official comeback single goes back to the darker sound of Black City, with snaking riffs, thumping kicks and his low baritone. A Pitchfork Selects pick from Nov 17. Out Nov 11.",
+          "source": "Pitchfork Selects (via Yahoo)",
+          "source_url": "https://www.yahoo.com/entertainment/music/new-albums/articles/matthew-dear-armand-hammer-more-205547098.html",
+          "spotify_url": "https://open.spotify.com/track/4mYcrBVBKX6xmWOLDlFOnJ",
+          "art": "https://i.scdn.co/image/ab67616d0000b2737932355b91f22a80ece8d54b"
+        },
+        {
+          "artist": "Astrønne",
+          "title": "123",
           "kind": "album",
           "tags": [
             "experimental r&b",
-            "soul"
+            "folk",
+            "glitch"
           ],
-          "note": "His fourth album, out Nov 6 on True Panther. Pitchfork calls it muted experimental R&B, a tribute to a romance and to Black music history. Clash mentions East African rhythms, vintage gospel and house-inspired sound design.",
-          "source": "Pitchfork",
-          "source_url": "https://pitchfork.com/reviews/albums/dawuna-loves-arp/",
-          "spotify_url": "https://open.spotify.com/album/4hXdSScuXDeJWbaeZ6KTPH",
-          "art": "https://i.scdn.co/image/ab67616d0000b273692d5986440d61df02bde426"
+          "note": "A new EP from the Cameroonian singer-songwriter, who works across experimental R&B, folk and glitch. Pitchfork put a song from it on Selects this week. There's no Pitchfork review or score yet. Out Nov 19.",
+          "source": "Pitchfork Selects (via Yahoo)",
+          "source_url": "https://www.yahoo.com/entertainment/music/new-albums/articles/matthew-dear-armand-hammer-more-205547098.html",
+          "spotify_url": "https://open.spotify.com/album/5vkFs4mdRiivSdC2MLXdw0",
+          "art": "https://i.scdn.co/image/ab67616d0000b273395234a4bf7cfe3d28ecc98d"
         },
         {
-          "artist": "Sam Gendel",
-          "title": "Advanced White Trash",
-          "kind": "album",
+          "artist": "Racing Mount Pleasant",
+          "title": "Great Destroyer",
+          "kind": "track",
           "tags": [
-            "experimental",
-            "beats"
+            "post-rock",
+            "indie rock",
+            "orchestral"
           ],
-          "note": "The LA saxophonist steps away from jazz here. Pitchfork describes Auto-Tuned vocals, hip-hop beats and fantasy themes, so expect something odd.",
-          "source": "Pitchfork",
-          "source_url": "https://pitchfork.com/reviews/albums/sam-gendel-advanced-white-trash/",
-          "spotify_url": "https://open.spotify.com/album/26kPsreKm9O3n76k8AWhs7",
-          "art": "https://i.scdn.co/image/ab67616d0000b2739106297470d018fbdaab546a"
-        },
-        {
-          "artist": "OR (John Talabot)",
-          "title": "Music for Empty Stadiums",
-          "kind": "album",
-          "tags": [
-            "electronic",
-            "ambient",
-            "dance"
-          ],
-          "note": "John Talabot's first solo full-length in over a decade, 95 minutes long on AD 93. He started it in lockdown, and Philip Sherburne's review hears dancefloor tracks built on sharp supersaws and cycling arpeggios.",
-          "source": "Pitchfork",
-          "source_url": "https://pitchfork.com/reviews/albums/or-music-for-empty-stadiums/",
-          "spotify_url": "https://open.spotify.com/album/5TrIb5RT795Fuwx2Gqnv1U",
-          "art": "https://i.scdn.co/image/ab67616d0000b273393276e66c9f62302bceb345"
-        },
-        {
-          "artist": "Shygirl",
-          "title": "SWALLOW!",
-          "kind": "album",
-          "tags": [
-            "electronic",
-            "trip-hop",
-            "big beat"
-          ],
-          "note": "Pitchfork 7.2. Her second album leans on trip-hop and big beat, and the review says the bonkers electronics are the best bits.",
-          "source": "Pitchfork via Metacritic",
-          "source_url": "https://pitchfork.com/reviews/albums/shygirl-swallow/",
-          "spotify_url": "https://open.spotify.com/album/3dQzmmWFcow0z84wGW6RpD",
-          "art": "https://i.scdn.co/image/ab67616d0000b273386f243bc8f40a2669ba7aa6"
-        },
-        {
-          "artist": "Chuck Roth",
-          "title": "Texture Songs",
-          "kind": "album",
-          "tags": [
-            "guitar",
-            "free improv",
-            "songwriter"
-          ],
-          "note": "Solo guitar and voice on Bill Orcutt's Palilalia label. Pitchfork notes extended guitar techniques and free-improv energy under quiet, understated singing.",
-          "source": "Pitchfork",
-          "source_url": "https://pitchfork.com/reviews/albums/chuck-roth-texture-songs/",
-          "spotify_url": "https://open.spotify.com/album/6AclhyMrB2cs1a59N6637i",
-          "art": "https://i.scdn.co/image/ab67616d0000b2733eccf84bdd92337420973939"
-        },
-        {
-          "artist": "Sun Araw",
-          "title": "Rapid Response EP",
-          "kind": "album",
-          "tags": [
-            "psychedelic",
-            "new age",
-            "ambient"
-          ],
-          "note": "A 12-inch of three long pieces. Pitchfork hears him going further into dark new age psychedelia.",
-          "source": "Pitchfork",
-          "source_url": "https://pitchfork.com/reviews/albums/sun-araw-rapid-response-ep/",
-          "spotify_url": "https://open.spotify.com/album/0lArlEVJ34BpvPCF5YmGyw",
-          "art": "https://i.scdn.co/image/ab67616d0000b2734e6f2d81b64b76a6f49a238d"
-        },
-        {
-          "artist": "More Eaze",
-          "title": "valley and structure",
-          "kind": "album",
-          "tags": [
-            "experimental",
-            "electronic",
-            "country"
-          ],
-          "note": "Pitchfork 7.4, the best score in this batch. A Thrill Jockey album that follows sentence structure in the country, the record Pitchfork says started a new stage for Rubio.",
-          "source": "Pitchfork via Metacritic",
-          "source_url": "https://www.metacritic.com/publication/pitchfork/",
-          "spotify_url": "https://open.spotify.com/album/18t7DxYFiBtezVUfDkSv3z",
-          "art": "https://i.scdn.co/image/ab67616d0000b2731f9cf4b3d796b4b1b1df5942"
-        },
-        {
-          "artist": "Hiroshi Yoshimura",
-          "title": "Quiet Forest",
-          "kind": "album",
-          "tags": [
-            "ambient",
-            "reissue"
-          ],
-          "note": "A reissue of his 1996 album, the last full-length released in his lifetime, inspired by a visit to the Hoh Rainforest. Pitchfork says it shows a playful side, and the new CD came out Nov 13 with vinyl due in December.",
-          "source": "Pitchfork",
-          "source_url": "https://pitchfork.com/reviews/albums/hiroshi-yoshimura-quiet-forest/",
-          "spotify_url": "https://open.spotify.com/album/5OpHyVdmQEY9n7vGlUTYUX",
-          "art": "https://i.scdn.co/image/ab67616d0000b273b9d0d885187cf705bdf6ebe9"
-        },
-        {
-          "artist": "Kaitlyn Aurelia Smith",
-          "title": "RUIN: It's Not Just Music",
-          "kind": "album",
-          "tags": [
-            "electronic",
-            "synth",
-            "experimental"
-          ],
-          "note": "Pitchfork 6.4, so a mixed review that compares it with out-there records like Gush and The Kid. It is the first release on her own label, Someone Special.",
-          "source": "Pitchfork via Metacritic",
-          "source_url": "https://www.metacritic.com/publication/pitchfork/",
-          "spotify_url": "https://open.spotify.com/album/1sYKpHvzVmZxcc2RxiVOk0",
-          "art": "https://i.scdn.co/image/ab67616d0000b2733ed89caeb6fb407b5bef97d3"
+          "note": "Their first new song since last year's debut album. It starts with soft guitar and builds into a big orchestral post-rock swell. A Pitchfork Selects pick from Nov 17. Out Nov 11.",
+          "source": "Pitchfork Selects (via Yahoo)",
+          "source_url": "https://www.yahoo.com/entertainment/music/new-albums/articles/matthew-dear-armand-hammer-more-205547098.html",
+          "spotify_url": "https://open.spotify.com/track/37VSm7OkJYKnGszEqUQm6d",
+          "art": "https://i.scdn.co/image/ab67616d0000b273339ee5f0d4b2b86c8eb6606d"
         }
       ]
     },
@@ -684,218 +627,409 @@
       "type": "design",
       "colour": "#8b7cf6",
       "playlist": "",
-      "date": "2026-11-15",
+      "date": "2026-11-23",
       "items": [
         {
-          "title": "H.D. Jean, 12oz Denim Indigo",
+          "title": "Damage Waffle Crew LS, D.Brown",
           "kind": "piece",
           "tags": [
-            "denim",
-            "wide",
-            "trousers"
+            "knitwear",
+            "waffle",
+            "made in japan"
           ],
-          "note": "Needles' exaggerated wide fit applied to a 5-pocket jean in 12oz denim. It has a worn-in vintage wash, darts and an adjustable waist cinch so you can pull the shape in.",
-          "link": "https://havenshop.com/products/needles-h-d-jean-12oz-denim-indigo-fw26",
-          "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Needles-H.D.-Jean-12oz-Denim-Indigo-1.jpg?v=1794499736",
-          "by": "Needles",
+          "note": "A cotton waffle crew with distressing built in, so it already looks worn. Relaxed cut with dropped shoulders and a slightly longer body for layering. Made in Japan.",
+          "link": "https://havenshop.com/products/ancellm-damage-waffle-crew-ls-d-brown-fw26",
+          "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/ANCELLM-Damage-Waffle-Crew-Ls-D.Brown-1.jpg?v=1795044932",
+          "by": "ANCELLM",
           "instagram": [
-            "@needles_tokyo_official",
+            "@ancellm_official",
             "@havenshop"
           ],
           "shop": "Haven",
-          "price": "$311.00",
+          "price": "$220.00",
           "art_checked": true
         },
         {
-          "title": "Railroad Pant, Melange Double Cloth Brown",
+          "title": "Chambray Baggy Chino Pants, Beige",
           "kind": "piece",
           "tags": [
             "trousers",
-            "workwear",
-            "relaxed"
+            "baggy",
+            "pleats"
           ],
-          "note": "A roomy trouser based on old workwear, cut from a textured melange double cloth. Haven says it feels substantial but easy to wear every day.",
-          "link": "https://havenshop.com/products/needles-railroad-pant-melange-double-cloth-brown-fw26",
-          "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Needles-Railroad-Pant-Melange-Double-Cloth-Brown-1.jpg?v=1794499781",
-          "by": "Needles",
+          "note": "Wide, relaxed chinos with double front pleats that round out through the hip and thigh. The fabric is a dense cotton and poly chambray with a slight sheen. The waist and hem both adjust.",
+          "link": "https://havenshop.com/products/beams-chambray-baggy-chino-pants-beige-fw26",
+          "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/BEAMS-Chambray-Baggy-Chino-Pants-Beige-1.jpg?v=1795105825",
+          "by": "Beams",
           "instagram": [
-            "@needles_tokyo_official",
+            "@beams_official",
             "@havenshop"
           ],
           "shop": "Haven",
-          "price": "$311.00",
+          "price": "$219.00",
           "art_checked": true
         },
         {
-          "title": "Field Jacket, Cotton Ripstop Woodland",
+          "title": "Dou Trousers, Cotton Denim Sashiko, Black",
+          "kind": "piece",
+          "tags": [
+            "trousers",
+            "sashiko",
+            "made in japan"
+          ],
+          "note": "Heavy cotton sashiko denim with a stone bio finish to soften it up. Relaxed fit, zip front, an inside drawstring and reinforced double knees. Made in Japan, and no big logos.",
+          "link": "https://havenshop.com/products/wtaps-dou-trousers-cotton-denim-sashiko-black-fw26",
+          "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/WTAPS-Dou---Trousers---Cotton.-Denim.-Sashiko-Black-1.jpg?v=1795107700",
+          "by": "WTAPS",
+          "instagram": [
+            "@wtaps_tokyo",
+            "@havenshop"
+          ],
+          "shop": "Haven",
+          "price": "$288.00",
+          "art_checked": true
+        },
+        {
+          "title": "ANCELLM",
+          "kind": "brand",
+          "tags": [
+            "japanese label",
+            "aged finishes",
+            "natural materials"
+          ],
+          "note": "A Japanese label started in 2021 by Kazuya Yamachika. Haven says the clothes use natural materials, layered dyeing and hand finishing, and are meant to change as you wear them. Most pieces cost more than £300, but the waffle crews come in well under.",
+          "link": "https://havenshop.com/collections/ancellm",
+          "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/ANCELLM-Aging-Bomber-Jacket-Khaki-1.jpg?v=1795044903",
+          "by": "ANCELLM",
+          "instagram": [
+            "@ancellm_official"
+          ],
+          "shop": "Haven",
+          "pictures_from": [
+            "https://havenshop.com/collections/ancellm",
+            "https://hbx.com/th/men/brands/ancellm"
+          ],
+          "art_checked": true
+        },
+        {
+          "title": "10oz Canvas Coverall, Kakishibu Wine",
+          "kind": "piece",
+          "tags": [
+            "chore coat",
+            "natural dye",
+            "canvas"
+          ],
+          "note": "A chore coat in 10oz Kurashiki canvas, dyed with persimmon tannin to a wine colour that darkens in the sun. It comes pre-washed and has a hand-painted Amakusa pottery stone button. Made in Japan.",
+          "link": "https://rivetandhide.com/gbp/seuvas-10oz-canvas-coverall-kakishibu-wine",
+          "by": "Seuvas",
+          "instagram": [
+            "@seuvas",
+            "@rivetandhide"
+          ],
+          "shop": "Rivet & Hide",
+          "price": "£295.00",
+          "pictures_from": [
+            "https://rivetandhide.com/gbp/just-in.html",
+            "https://seuvas.jp/pages/concept_1"
+          ],
+          "art": "https://rivetandhide.com/media/catalog/product/cache/a9b74b859b62ec55565cf45c8b71f833/2/0/20261030-20261030-s27_9286-2.jpg",
+          "art_checked": true
+        },
+        {
+          "title": "Santa Cruz Black Jeans, Relaxed Tapered",
+          "kind": "piece",
+          "tags": [
+            "denim",
+            "selvedge",
+            "made in japan"
+          ],
+          "note": "Black on black 12oz selvedge, woven on shuttle looms at Nihon Menpu. Relaxed through the top with a gentle taper below the knee. Made in Japan, with hand-felled belt loops and single needle stitching.",
+          "link": "https://rivetandhide.com/gbp/stevenson-overall-santa-cruz-black-jeans-relaxed-tapered",
+          "by": "Stevenson Overall Co.",
+          "instagram": [
+            "@stevensonoveralls",
+            "@rivetandhide"
+          ],
+          "shop": "Rivet & Hide",
+          "price": "£265.00",
+          "pictures_from": [
+            "https://rivetandhide.com/gbp/just-in.html"
+          ],
+          "art": "https://rivetandhide.com/media/catalog/product/cache/a9b74b859b62ec55565cf45c8b71f833/DSC05947__99652.jpg",
+          "art_checked": true
+        },
+        {
+          "title": "Double Face L/S Crewneck, Natural",
+          "kind": "piece",
+          "tags": [
+            "jersey",
+            "layering",
+            "made in japan"
+          ],
+          "note": "A relaxed long sleeve in double faced cotton jersey. Each side has its own texture, and the two layers hold warm air. Made in Japan.",
+          "link": "https://rivetandhide.com/gbp/stevenson-overall-double-face-l-s-crewneck-natural",
+          "by": "Stevenson Overall Co.",
+          "instagram": [
+            "@stevensonoveralls",
+            "@rivetandhide"
+          ],
+          "shop": "Rivet & Hide",
+          "price": "£145.00",
+          "pictures_from": [
+            "https://rivetandhide.com/gbp/just-in.html"
+          ],
+          "art": "https://rivetandhide.com/media/catalog/product/cache/a9b74b859b62ec55565cf45c8b71f833/2/0/20261113-20261113-jdo06736.jpg",
+          "art_checked": true
+        },
+        {
+          "title": "Double Face Crew Socks, Merino Wool & Organic Cotton, Charcoal",
+          "kind": "piece",
+          "tags": [
+            "socks",
+            "merino",
+            "made in japan"
+          ],
+          "note": "Merino on the outside and organic cotton next to the skin, in a chunky low gauge knit. Rototo knits them in Koryo, Nara, on a mix of old and new machines. An easy small treat.",
+          "link": "https://rivetandhide.com/gbp/rototo-double-face-crew-socks-merino-wool-organic-cotton",
+          "by": "Rototo",
+          "instagram": [
+            "@rototo_store",
+            "@rivetandhide"
+          ],
+          "shop": "Rivet & Hide",
+          "price": "£30.00",
+          "pictures_from": [
+            "https://rivetandhide.com/gbp/just-in.html"
+          ],
+          "art": "https://rivetandhide.com/media/catalog/product/cache/a9b74b859b62ec55565cf45c8b71f833/j/d/jdo06204-2.jpg",
+          "art_checked": true
+        },
+        {
+          "title": "Seuvas",
+          "kind": "brand",
+          "tags": [
+            "canvas",
+            "natural dye",
+            "okayama"
+          ],
+          "note": "A canvas clothing label that sews in Kurashiki, Okayama, using canvas from the nearby Takeyari mill, founded in 1888. They work with natural dyers and recycled cotton and wool, and use porcelain buttons made from Amakusa pottery stone. Rivet & Hide has new kakishibu dyed pieces in now.",
+          "link": "https://seuvas.jp/pages/concept_1",
+          "by": "Seuvas",
+          "instagram": [
+            "@seuvas"
+          ],
+          "pictures_from": [
+            "https://rivetandhide.com/gbp/seuvas-8oz-canvas-flap-work-shirt-kakishibu-wine",
+            "https://www.blueowl.us/collections/seuvas"
+          ],
+          "art": "https://seuvas.jp/cdn/shop/files/sns_1200x628_2d6b27aa-b54a-43ac-b97b-3291f694e01d.jpg?v=1606706825",
+          "art_checked": true
+        },
+        {
+          "title": "4102 Shaggy Ombre Check Open Collar Shirt, Black",
+          "kind": "piece",
+          "tags": [
+            "shirt",
+            "check",
+            "open collar"
+          ],
+          "note": "An open collar shirt in a shaggy ombre check from the Osaka denim maker. It's one of a batch of new Fullcount pieces at Son of a Stag this week.",
+          "link": "https://sonofastag.com/products/fullcount-4102-shaggy-ombre-check-open-collar-shirt-black",
+          "art": "https://sonofastag.com/cdn/shop/files/FULLCOUNT_4102SHAGGYOMBRECHECKOPENCOLLARSHIRT_BLACK1.jpg?v=1795104776&width=1400",
+          "by": "Fullcount",
+          "instagram": [
+            "@fullcount_official",
+            "@sonofastag"
+          ],
+          "shop": "Son of a Stag",
+          "price": "£279",
+          "art_checked": true
+        },
+        {
+          "title": "3771 Fading Series Sweatshirt, Black",
+          "kind": "piece",
+          "tags": [
+            "sweatshirt",
+            "fading",
+            "basics"
+          ],
+          "note": "Part of Fullcount's Fading series, in plain black with no graphics. Fullcount has been making denim in Osaka since the early nineties, and its sweats are now arriving at Son of a Stag.",
+          "link": "https://sonofastag.com/products/fullcount-3771-fading-sweatshirt-black",
+          "art": "https://sonofastag.com/cdn/shop/files/FULLCOUNT_3771FADINGSWEATSHIRT_BLACK1.jpg?v=1795105854&width=1400",
+          "by": "Fullcount",
+          "instagram": [
+            "@fullcount_official",
+            "@sonofastag"
+          ],
+          "shop": "Son of a Stag",
+          "price": "£259",
+          "art_checked": true
+        },
+        {
+          "title": "5222LB Brushed Rib Flat Seam Longsleeve T Shirt, Ecru",
+          "kind": "piece",
+          "tags": [
+            "long sleeve",
+            "rib",
+            "basics"
+          ],
+          "note": "A brushed rib long sleeve with flat seams, in ecru. A good under layer for the colder weeks, and the most affordable of the new Fullcount pieces.",
+          "link": "https://sonofastag.com/products/fullcount-5222lb-brushed-rib-flat-seam-longsleeve-t-shirt-ecru",
+          "art": "https://sonofastag.com/cdn/shop/files/FULLCOUNT_5222BRUSHEDRIBFLATSEAMLONGSLEEVET_ECRU1.jpg?v=1795104997&width=1400",
+          "by": "Fullcount",
+          "instagram": [
+            "@fullcount_official",
+            "@sonofastag"
+          ],
+          "shop": "Son of a Stag",
+          "price": "£129",
+          "art_checked": true
+        },
+        {
+          "title": "Lot. 223 10oz Denim Painter Jeans, Raw",
+          "kind": "piece",
+          "tags": [
+            "denim",
+            "painter pants",
+            "raw"
+          ],
+          "note": "Painter jeans in raw 10oz denim. It's a loose workwear shape, and it costs less than most of the Japanese denim at Son of a Stag.",
+          "link": "https://sonofastag.com/products/denime-lot-223-10oz-painter-pants-indigo",
+          "art": "https://sonofastag.com/cdn/shop/files/DENIME_LOT22310OZDENIMPAINTERPANTS_RAW1.jpg?v=1793983938&width=1400",
+          "by": "Denime",
+          "instagram": [
+            "@sonofastag"
+          ],
+          "shop": "Son of a Stag",
+          "price": "£249",
+          "art_checked": true
+        },
+        {
+          "title": "1980s German Army Trainer, Panna Nubuck",
+          "kind": "piece",
+          "tags": [
+            "shoes",
+            "trainers",
+            "military"
+          ],
+          "note": "Reproduction of Found started in 2016 and remakes military shoes, going by its own profile. This is their version of the 1980s German army trainer, in panna nubuck.",
+          "link": "https://sonofastag.com/products/reproduction-of-found-1980s-german-military-trainer-panna-nubuck",
+          "art": "https://sonofastag.com/cdn/shop/files/REPRODUCTION_1980SGAT_12.jpg?v=1744900083&width=1400",
+          "by": "Reproduction of Found",
+          "instagram": [
+            "@reproduction.of.found_shoes",
+            "@sonofastag"
+          ],
+          "shop": "Son of a Stag",
+          "price": "£199",
+          "art_checked": true
+        },
+        {
+          "title": "Work 5 Pocket Easy Pants, Olive",
+          "kind": "piece",
+          "tags": [
+            "trousers",
+            "easy pants",
+            "workwear"
+          ],
+          "note": "Yoko Sakamoto has new stock at both Peggs & Son and Neighbour this season. Most of the range costs well over £300, but these olive easy pants come in just under.",
+          "link": "https://www.peggsandson.com/products/products-work-5-pocket-easy-pants-olive-25869",
+          "art": "https://www.peggsandson.com/cdn/shop/files/9B9A0146_8d18fbca-73fa-4630-9f86-78b15cb2dabd.jpg?v=1794391147&width=1024",
+          "by": "Yoko Sakamoto",
+          "instagram": [
+            "@peggsandson"
+          ],
+          "shop": "Peggs & Son",
+          "price": "£295.00",
+          "art_checked": true
+        },
+        {
+          "title": "Stand Collar Jacket, Heather Beige",
           "kind": "piece",
           "tags": [
             "jacket",
-            "military",
-            "camo"
+            "outerwear",
+            "neutral"
           ],
-          "note": "A military field jacket in woodland camo cotton ripstop. It has big gusseted chest pockets with flaps and adjustable cuffs, and the fabric is light enough to layer.",
-          "link": "https://havenshop.com/products/needles-field-jacket-cotton-ripstop-woodland-fw26",
-          "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Needles-Field-Jacket-Cotton-Ripstop-Woodland-1.jpg",
-          "by": "Needles",
+          "note": "A plain stand collar jacket in heather beige from Danton. Peggs & Son has it with Danton's new half coat, hooded jacket and gloves.",
+          "link": "https://www.peggsandson.com/products/products-stand-collar-jacket-heather-beige-25290",
+          "art": "https://www.peggsandson.com/cdn/shop/files/9B9A9817_d3bc869d-24b8-49b5-9dde-5119e4bc4942.jpg?v=1793783322&width=1024",
+          "by": "Danton",
           "instagram": [
-            "@needles_tokyo_official",
-            "@havenshop"
+            "@danton_official",
+            "@peggsandson"
           ],
-          "shop": "Haven",
-          "price": "$289.00",
+          "shop": "Peggs & Son",
+          "price": "£289.00",
           "art_checked": true
         },
         {
-          "title": "Between Snap Shirt, Poly Fleece Brown",
+          "title": "Grandpa Gloves, Mix Brown",
           "kind": "piece",
           "tags": [
-            "fleece",
-            "shirt",
+            "gloves",
+            "accessories",
+            "winter"
+          ],
+          "note": "Gloves in a mixed brown from Ends and Means, new in at Peggs & Son. A small, cheap way to add something warm for winter.",
+          "link": "https://www.peggsandson.com/products/products-grandpa-gloves-mix-brown-25328",
+          "art": "https://www.peggsandson.com/cdn/shop/files/9B9A9857_a8f0884d-608e-4a84-bc2b-5a4ed60213c7.jpg?v=1793783764&width=1024",
+          "by": "Ends and Means",
+          "instagram": [
+            "@peggsandson"
+          ],
+          "shop": "Peggs & Son",
+          "price": "£49.00",
+          "art_checked": true
+        },
+        {
+          "title": "Baggy Straight Pants, Dark Navy",
+          "kind": "piece",
+          "tags": [
+            "trousers",
+            "baggy",
             "outdoor"
           ],
-          "note": "A loose, unlined fleece shirt with a four-snap front and piped cuffs and hem. It works on its own or as a warm middle layer.",
-          "link": "https://havenshop.com/products/needles-between-snap-shirt-poly-fleece-brown-fw26",
-          "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Needles-Between-Snap-Shirt-Poly-Fleece-Brown-1.jpg?v=1794499674",
-          "by": "Needles",
+          "note": "Goldwin is a Japanese brand with its roots in skiing. These are a roomy straight leg in dark navy, new in at Oi Polloi.",
+          "link": "https://oipolloi.com/products/goldwin-baggy-straight-pants-dark-navy",
+          "art": "https://oipolloi.com/cdn/shop/files/STKGL76177-DN_01.webp?v=1795097803&width=2800",
+          "by": "Goldwin",
           "instagram": [
-            "@needles_tokyo_official",
-            "@havenshop"
+            "@goldwin_global"
           ],
-          "shop": "Haven",
-          "price": "$268.00",
+          "shop": "Oi Polloi",
+          "price": "£235.00",
           "art_checked": true
         },
         {
-          "title": "Watch Cap, Shetland Wool Umber",
+          "title": "Everyday Use Sacoche, Dark Brown",
           "kind": "piece",
           "tags": [
-            "hat",
-            "knitwear",
+            "bag",
+            "sacoche",
             "accessories"
           ],
-          "note": "A ribbed beanie in Shetland wool, made in Japan. The only branding is a small purple butterfly embroidered on it.",
-          "link": "https://havenshop.com/products/needles-watch-cap-shetland-wool-umber-fw26",
-          "art": "https://cdn.shopify.com/s/files/1/0051/7042/files/Needles-Watch-Cap-Shetland-Wool-Umber-1.jpg?v=1794499654",
-          "by": "Needles",
+          "note": "A small everyday shoulder bag in dark brown from Snow Peak, the outdoor company from Niigata. It's useful, low key, and £50.",
+          "link": "https://oipolloi.com/products/snow-peak-everyday-use-sacoche-dark-brown",
+          "art": "https://oipolloi.com/cdn/shop/files/STKAC-25SU405-033_01.webp?v=1795097773&width=1320",
+          "by": "Snow Peak",
           "instagram": [
-            "@needles_tokyo_official",
-            "@havenshop"
+            "@snowpeak_apparel"
           ],
-          "shop": "Haven",
-          "price": "$109.00",
+          "shop": "Oi Polloi",
+          "price": "£50.00",
           "art_checked": true
         },
         {
-          "title": "W/N Wide Pants PT08263OS, Dark Brown",
+          "title": "5G Boucle Cardigan, Natural",
           "kind": "piece",
           "tags": [
-            "trousers",
-            "wide",
-            "wool"
+            "cardigan",
+            "boucle",
+            "oversized"
           ],
-          "note": "Wide trousers in a wool and nylon mix, made in Japan. The shop describes a lot of volume through the whole leg and a relaxed drape.",
-          "link": "https://rendez-vous-store.com/shop/men-selection-discover-our-selection-rendez-vous-store/trousers-shorts-rendez-vous-store/still-by-hand-w-n-wide-pants-pt08263os-dark-brown-rendez-vous-store/",
-          "art": "https://rendez-vous-store.com/app/uploads/2026/09/IMG_1165.webp",
-          "by": "Still By Hand",
-          "instagram": [
-            "@stillbyhand",
-            "@rendezvoustore_official"
-          ],
-          "shop": "Rendez-Vous Store",
-          "price": "280,00 €",
-          "art_checked": true
-        },
-        {
-          "title": "Wool Mixed Deep Tuck Pants PT07263OS, Black",
-          "kind": "piece",
-          "tags": [
-            "trousers",
-            "pleats",
-            "wool"
-          ],
-          "note": "Deep tucks give these extra room through the upper leg while the line stays clean. Cotton, wool and polyester, made in Japan.",
-          "link": "https://rendez-vous-store.com/shop/men-selection-discover-our-selection-rendez-vous-store/trousers-shorts-rendez-vous-store/still-by-hand-pt07263os-wool-mixed-deep-tuck-pants-black-rendez-vous-store/",
-          "art": "https://rendez-vous-store.com/app/uploads/2026/09/IMG_1037.webp",
-          "by": "Still By Hand",
-          "instagram": [
-            "@stillbyhand",
-            "@rendezvoustore_official"
-          ],
-          "shop": "Rendez-Vous Store",
-          "price": "265,00 €",
-          "art_checked": true
-        },
-        {
-          "title": "Shoulder Stole GD04263OS, Melange Navy",
-          "kind": "piece",
-          "tags": [
-            "scarf",
-            "wool",
-            "accessories"
-          ],
-          "note": "A generous one-size stole in soft 100% wool, made in Japan. A simple way to add some texture to a plain outfit.",
-          "link": "https://rendez-vous-store.com/shop/men-selection-discover-our-selection-rendez-vous-store/accessories-men-rendez-vous-store/still-by-hand-shoulder-stole-gd04263os-melange-navy-rendez-vous-store/",
-          "art": "https://rendez-vous-store.com/app/uploads/2026/09/IMG_1203.webp",
-          "by": "Still By Hand",
-          "instagram": [
-            "@stillbyhand",
-            "@rendezvoustore_official"
-          ],
-          "shop": "Rendez-Vous Store",
-          "price": "155,00 €",
-          "art_checked": true
-        },
-        {
-          "title": "101 Dad's Fit Denim Pant, Black Denim Stone",
-          "kind": "piece",
-          "tags": [
-            "denim",
-            "black",
-            "relaxed"
-          ],
-          "note": "orSlow's relaxed Dad's Fit jean in soft stonewashed black denim, made in Japan. The shop notes the brand was started in 2005 by Ichiro Nakatsu, who studies old military and workwear.",
-          "link": "https://rendez-vous-store.com/shop/men-selection-discover-our-selection-rendez-vous-store/trousers-shorts-rendez-vous-store/orslow-unisex-101-dads-fit-denim-pant-01-1010w-d61s-black-denim-stone/",
-          "art": "https://rendez-vous-store.com/app/uploads/2025/10/IMG_3223.webp",
-          "by": "orSlow",
-          "instagram": [
-            "@orslow",
-            "@rendezvoustore_official"
-          ],
-          "shop": "Rendez-Vous Store",
-          "price": "285,00 €",
-          "art_checked": true
-        },
-        {
-          "title": "Wave Cotton 85-252-006, Black",
-          "kind": "piece",
-          "tags": [
-            "knitwear",
-            "cotton",
-            "loose"
-          ],
-          "note": "A loose long-sleeve crew in a wave-knit cotton with a bit of relief to the surface. It has dropped shoulders and is made in Japan by a knitwear company that runs much of its own production.",
-          "link": "https://rendez-vous-store.com/shop/men-selection-discover-our-selection-rendez-vous-store/t-shirts-discover-our-selection-rendez-vous-store/yonetomi-wave-cotton-85-252-006-black-rendez-vous-store/",
-          "art": "https://rendez-vous-store.com/app/uploads/2025/12/IMG_3140_11zon-scaled.webp",
-          "by": "Yonetomi",
-          "instagram": [
-            "@yonetomiseni",
-            "@rendezvoustore_official"
-          ],
-          "shop": "Rendez-Vous Store",
-          "price": "285,00 €",
-          "art_checked": true
-        },
-        {
-          "title": "Balloon Wide Pants, Ash Grey",
-          "kind": "piece",
-          "tags": [
-            "trousers",
-            "wide",
-            "grey"
-          ],
-          "note": "One of a run of new Beams trousers at Goodhood, in a soft ash grey. It sits alongside wide chinos, wide slacks and wide denim from the same drop, all well under £200.",
-          "link": "https://goodhoodstore.com/products/beams-balloon-wide-pants-ash-grey",
+          "note": "A chunky looped boucle cardigan in a melange yarn with faint tonal stripes. It's wide and boxy with a shorter body, and Goodhood says it runs large. It's mostly synthetic with a little wool.",
+          "link": "https://goodhoodstore.com/products/beams-5g-boucle-cardigan-natural",
           "by": "Beams",
           "instagram": [
             "@beams_official",
@@ -906,265 +1040,15 @@
           "pictures_from": [
             "https://goodhoodstore.com/collections/mens-latest"
           ],
+          "art": "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/5G_Boucle_Cardigan_-_Natural.png?v=1794504569",
           "art_checked": true,
-          "art": "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/Beams_Balloon_Wide_Pants_-_Ash_Grey.png?v=1794504565",
           "images": [
-            "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/Beams_Balloon_Wide_Pants_-_Ash_Grey.png?v=1794504565",
-            "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/Beams_Balloon_Wide_Pants_-_Ash_Grey2.png?v=1794504566",
-            "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/Beams_Balloon_Wide_Pants_-_Ash_Grey3.png?v=1794504570"
+            "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/5G_Boucle_Cardigan_-_Natural.png?v=1794504569",
+            "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/Beams_5G_Boucle_Cardigan_-_Natural.jpg?v=1794920675",
+            "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/Beams_5G_Boucle_Cardigan_-_Natural_1.jpg?v=1794920676",
+            "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/Beams_5G_Boucle_Cardigan_-_Natural_2.jpg?v=1794920675",
+            "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/5G_Boucle_Cardigan_-_Natural2.png?v=1794504570"
           ]
-        },
-        {
-          "title": "Wide Denim Pants, Nep Indigo",
-          "kind": "piece",
-          "tags": [
-            "denim",
-            "wide",
-            "indigo"
-          ],
-          "note": "Wide-leg Beams jeans in a nepped indigo denim, new at Goodhood this week. There is also a lighter Dusty Indigo version at the same price.",
-          "link": "https://goodhoodstore.com/products/beams-wide-denim-pants-nep-indigo",
-          "by": "Beams",
-          "instagram": [
-            "@beams_official",
-            "@goodhood"
-          ],
-          "shop": "Goodhood",
-          "price": "£175.00",
-          "pictures_from": [
-            "https://goodhoodstore.com/collections/mens-latest"
-          ],
-          "art_checked": true,
-          "art": "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/Beams_Wide_Denim_Pants_-_Nep_Indigo.png?v=1794504570",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/Beams_Wide_Denim_Pants_-_Nep_Indigo.png?v=1794504570",
-            "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/Beams_Wide_Denim_Pants_-_Nep_Indigo2.png?v=1794504569"
-          ]
-        },
-        {
-          "title": "3G Kasuri Nep Crew Neck Sweater, Olive",
-          "kind": "piece",
-          "tags": [
-            "knitwear",
-            "sweater",
-            "olive"
-          ],
-          "note": "A chunky 3-gauge crew neck in a kasuri nep knit, new from Beams at Goodhood. Beams started in Harajuku in 1976, and this is one of the cheaper knits in the drop.",
-          "link": "https://goodhoodstore.com/products/beams-3g-kasuri-nep-crew-neck-sweater-olive",
-          "by": "Beams",
-          "instagram": [
-            "@beams_official",
-            "@goodhood"
-          ],
-          "shop": "Goodhood",
-          "price": "£145.00",
-          "pictures_from": [
-            "https://goodhoodstore.com/collections/beams"
-          ],
-          "art_checked": true,
-          "art": "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/Beams_3G_Kasuri_Nep_Crew_Neck_Sweater_-_Olive.png?v=1794572194",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/Beams_3G_Kasuri_Nep_Crew_Neck_Sweater_-_Olive.png?v=1794572194",
-            "https://cdn.shopify.com/s/files/1/0321/4373/6963/files/Beams_3G_Kasuri_Nep_Crew_Neck_Sweater_-_Olive2.png?v=1794572194"
-          ]
-        },
-        {
-          "title": "FISHERMAN-III Mock Neck, Terra Magma Brown",
-          "kind": "piece",
-          "tags": [
-            "knitwear",
-            "mock neck",
-            "brown"
-          ],
-          "note": "A fisherman-style mock neck knit from S.N.S. Herning, new in at Kyoto. It is the more affordable of the two Herning knits in this drop.",
-          "link": "https://kyoto.dk/en/collections/nyheder-maend/products/s-n-s-herning-fisherman-iii-mock-neck-terra-magma-brown",
-          "by": "S.N.S. Herning",
-          "instagram": [
-            "@snsherning",
-            "@kyotoistedgade"
-          ],
-          "shop": "Kyoto",
-          "price": "1.700,00 kr",
-          "pictures_from": [
-            "https://kyoto.dk/en/collections/nyheder-maend"
-          ],
-          "art_checked": true,
-          "art": "https://cdn.shopify.com/s/files/1/0345/9134/2651/files/s-n-s-herning-fisherman-iii-mock-neck-terra-magma-brown-kyotos-n-s-herning-8924794.png?v=1792589900",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0345/9134/2651/files/s-n-s-herning-fisherman-iii-mock-neck-terra-magma-brown-kyotos-n-s-herning-8924794.png?v=1792589900",
-            "https://cdn.shopify.com/s/files/1/0345/9134/2651/files/s-n-s-herning-fisherman-iii-mock-neck-terra-magma-brown-kyotos-n-s-herning-8135352.png?v=1792589900",
-            "https://cdn.shopify.com/s/files/1/0345/9134/2651/files/IMG_8509.heic?v=1792581745"
-          ]
-        },
-        {
-          "title": "LOOSE 720, Dark Blue Vintage",
-          "kind": "piece",
-          "tags": [
-            "denim",
-            "loose",
-            "copenhagen"
-          ],
-          "note": "The loose cut of jeans from Sunflower, a Copenhagen menswear label, in a dark vintage wash. Kyoto also has the slimmer Standard cut in the same wash.",
-          "link": "https://kyoto.dk/en/collections/nyheder-maend/products/sunflower-loose-720-dark-blue-vintage",
-          "by": "Sunflower",
-          "instagram": [
-            "@_hello_sunflower",
-            "@kyotoistedgade"
-          ],
-          "shop": "Kyoto",
-          "price": "1.600,00 kr",
-          "pictures_from": [
-            "https://kyoto.dk/en/collections/nyheder-maend"
-          ],
-          "art_checked": true,
-          "art": "https://cdn.shopify.com/s/files/1/0345/9134/2651/files/sunflower-loose-720-dark-blue-vintage-kyotosunflower-8422801.jpg?v=1793320882",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0345/9134/2651/files/sunflower-loose-720-dark-blue-vintage-kyotosunflower-8422801.jpg?v=1793320882",
-            "https://cdn.shopify.com/s/files/1/0345/9134/2651/files/sunflower-loose-720-dark-blue-vintage-kyotosunflower-4030098.jpg?v=1793320884",
-            "https://cdn.shopify.com/s/files/1/0345/9134/2651/files/sunflower-loose-720-dark-blue-vintage-kyotosunflower-5054569.webp?v=1793320882",
-            "https://cdn.shopify.com/s/files/1/0345/9134/2651/files/sunflower-loose-720-dark-blue-vintage-kyotosunflower-1001846.webp?v=1793320882",
-            "https://cdn.shopify.com/s/files/1/0345/9134/2651/files/sunflower-loose-720-dark-blue-vintage-kyotosunflower-4321940.webp?v=1793320882"
-          ]
-        },
-        {
-          "title": "11oz Blue Denim Work Coat",
-          "kind": "piece",
-          "tags": [
-            "denim",
-            "jacket",
-            "workwear"
-          ],
-          "note": "A work coat in 11oz blue denim from Sugar Cane, new at Blue in Green. The SoHo shop is known for Japanese selvedge denim, and this arrived next to new Buzz Rickson's and orSlow pieces.",
-          "link": "https://www.blueingreensoho.com/products/11oz-blue-denim-work-coat",
-          "by": "Sugar Cane",
-          "instagram": [
-            "@sugarcanedenim",
-            "@blueingreensoho"
-          ],
-          "shop": "Blue in Green",
-          "price": "$294.00 USD",
-          "pictures_from": [
-            "https://blueingreensoho.com/collections/new-arrivals-1"
-          ],
-          "art_checked": true,
-          "art": "https://cdn.shopify.com/s/files/1/0789/4323/files/IMG_8620-Edit_88be560d-21ab-4bdb-a7e0-bdd2af3575cc.jpg?v=1733240077",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0789/4323/files/IMG_8620-Edit_88be560d-21ab-4bdb-a7e0-bdd2af3575cc.jpg?v=1733240077",
-            "https://cdn.shopify.com/s/files/1/0789/4323/files/IMG_8116_9d43015e-ca21-4665-9611-9dbcc005afd3.jpg?v=1733240083",
-            "https://cdn.shopify.com/s/files/1/0789/4323/files/IMG_8631-Edit-2.jpg?v=1733240077",
-            "https://cdn.shopify.com/s/files/1/0789/4323/files/IMG_8118.jpg?v=1733240083",
-            "https://cdn.shopify.com/s/files/1/0789/4323/files/IMG_8119_cfbd9b74-1328-4f59-96d8-5e243dc559d9.jpg?v=1733240083"
-          ]
-        },
-        {
-          "title": "Original Spec. Chinos, Olive",
-          "kind": "piece",
-          "tags": [
-            "chinos",
-            "military",
-            "olive"
-          ],
-          "note": "Plain olive chinos from Buzz Rickson's, new at Blue in Green. The same drop has a pea coat and camo combat trousers, and at $170 these are the cheapest way in.",
-          "link": "https://www.blueingreensoho.com/products/original-spec-chinos-olive",
-          "by": "Buzz Rickson's",
-          "instagram": [
-            "@blueingreensoho"
-          ],
-          "shop": "Blue in Green",
-          "price": "$170.00 USD",
-          "pictures_from": [
-            "https://blueingreensoho.com/collections/new-arrivals-1"
-          ],
-          "art_checked": true,
-          "art": "https://cdn.shopify.com/s/files/1/0789/4323/files/IMG_4159-2-Edit.jpg?v=1794584747",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/0789/4323/files/IMG_4159-2-Edit.jpg?v=1794584747",
-            "https://cdn.shopify.com/s/files/1/0789/4323/files/IMG_4390_21b2c474-a2ca-407f-9a22-ac3a716dd56c.jpg?v=1794584762",
-            "https://cdn.shopify.com/s/files/1/0789/4323/files/IMG_4163-2-Edit.jpg?v=1794584747",
-            "https://cdn.shopify.com/s/files/1/0789/4323/files/IMG_4391_88aa1308-db7b-451c-94e1-8f6ee5c0902d.jpg?v=1794584762",
-            "https://cdn.shopify.com/s/files/1/0789/4323/files/IMG_4392_25878395-1796-471b-a9cf-c5b93e6177a9.jpg?v=1794584762"
-          ]
-        },
-        {
-          "title": "Vaquero Chambray Western Shirt, White",
-          "kind": "piece",
-          "tags": [
-            "shirt",
-            "western",
-            "chambray"
-          ],
-          "note": "A western shirt in white chambray from Jelado, a Tokyo brand with a flagship in Ebisu. It is one of the newest things at Clutch Cafe, and there is a faded indigo denim version too.",
-          "link": "https://clutch-cafe.com/products/jelado-vaquero-denim-western-shirt-white",
-          "by": "Jelado",
-          "instagram": [
-            "@jelado_official",
-            "@clutchcafelondon"
-          ],
-          "shop": "Clutch Cafe",
-          "price": "£175.00",
-          "pictures_from": [
-            "https://clutch-cafe.com/collections/latest-arrivals"
-          ],
-          "art_checked": true,
-          "art": "https://cdn.shopify.com/s/files/1/2549/6314/files/Jelado-Vaquero-Chambray-Western-Shirt-White-Shirts-Clutch-Cafe-London.jpg?v=1780063426",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2549/6314/files/Jelado-Vaquero-Chambray-Western-Shirt-White-Shirts-Clutch-Cafe-London.jpg?v=1780063426",
-            "https://cdn.shopify.com/s/files/1/2549/6314/files/Jelado-Vaquero-Chambray-Western-Shirt-White-Shirts-Clutch-Cafe-London-2.jpg?v=1780063428",
-            "https://cdn.shopify.com/s/files/1/2549/6314/files/Jelado-Vaquero-Chambray-Western-Shirt-White-Shirts-Clutch-Cafe-London-3.jpg?v=1780063431",
-            "https://cdn.shopify.com/s/files/1/2549/6314/files/Jelado-Vaquero-Chambray-Western-Shirt-White-Shirts-Clutch-Cafe-London-4.jpg?v=1780063433",
-            "https://cdn.shopify.com/s/files/1/2549/6314/files/Jelado-Vaquero-Chambray-Western-Shirt-White-Shirts-Clutch-Cafe-London-5.jpg?v=1780063436"
-          ]
-        },
-        {
-          "title": "Clutch Magazine Vol. 105: Made in Japan",
-          "kind": "piece",
-          "tags": [
-            "magazine",
-            "made in japan",
-            "reading"
-          ],
-          "note": "The new issue of Clutch, the Tokyo men's style magazine, themed around things made in Japan. The London shop that sells it was set up by the magazine's editor, Atsushi Matsushima.",
-          "link": "https://clutch-cafe.com/products/clutch-magazine-vol-105",
-          "by": "Clutch Magazine",
-          "instagram": [
-            "@clutchmagazinejapan",
-            "@clutchcafelondon"
-          ],
-          "shop": "Clutch Cafe",
-          "price": "£35.00",
-          "pictures_from": [
-            "https://clutch-cafe.com/collections/latest-arrivals"
-          ],
-          "art_checked": true,
-          "art": "https://cdn.shopify.com/s/files/1/2549/6314/files/Clutch-Magazine-Vol_-105-MADE-IN-JAPAN-Magazine-Clutch-Cafe-London.png?v=1790949787",
-          "images": [
-            "https://cdn.shopify.com/s/files/1/2549/6314/files/Clutch-Magazine-Vol_-105-MADE-IN-JAPAN-Magazine-Clutch-Cafe-London.png?v=1790949787",
-            "https://cdn.shopify.com/s/files/1/2549/6314/files/Clutch-Magazine-Vol_-105-MADE-IN-JAPAN-Magazine-Clutch-Cafe-London-2.png?v=1790949790",
-            "https://cdn.shopify.com/s/files/1/2549/6314/files/Clutch-Magazine-Vol_-105-MADE-IN-JAPAN-Magazine-Clutch-Cafe-London-3.png?v=1790949794",
-            "https://cdn.shopify.com/s/files/1/2549/6314/files/Clutch-Magazine-Vol_-105-MADE-IN-JAPAN-Magazine-Clutch-Cafe-London-4.png?v=1790949797",
-            "https://cdn.shopify.com/s/files/1/2549/6314/files/Clutch-Magazine-Vol_-105-MADE-IN-JAPAN-Magazine-Clutch-Cafe-London-5.png?v=1790949801"
-          ]
-        },
-        {
-          "title": "Sillage",
-          "kind": "brand",
-          "tags": [
-            "tokyo",
-            "wide",
-            "one size"
-          ],
-          "note": "A Tokyo label started by Nicolas Yuthanan Chalmeau, made in Japan. Its Circular Pants are very wide and come in one size, with an elastic drawstring waist. Blue in Green and Rendez-Vous both stock it now.",
-          "link": "https://www.sillage.online/",
-          "art": "https://static.wixstatic.com/media/a1a94c_60c1e643af9d406682beeb0880c1f69d~mv2.jpg/v1/fill/w_960,h_1280,fp_0.44_0.47,q_90,enc_avif,quality_auto/a1a94c_60c1e643af9d406682beeb0880c1f69d~mv2.jpg",
-          "by": "Sillage",
-          "instagram": [
-            "@sillage.online"
-          ],
-          "pictures_from": [
-            "https://rendez-vous-store.com/shop/men-selection-discover-our-selection-rendez-vous-store/trousers-shorts-rendez-vous-store/sillage-circular-pants-black-rendez-vous-store",
-            "https://blueingreensoho.com/collections/new-arrivals-1"
-          ],
-          "art_checked": true
         }
       ]
     }
